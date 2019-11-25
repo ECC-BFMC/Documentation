@@ -18,7 +18,7 @@ Here you can find a picture of pedestrian:
    :align: center
    :scale: 75%
 
-You can find the template pdf on this [`link <../../source/templates/Pedestrian.pdf>`_] or [`link <../../source/templates/Pedestrian1.pdf>`_].
+You can find the template pdf on this [`link <https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/templates/Pedestrian.pdf>`_] or [`link <https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/templates/Pedestrian1.pdf>`_].
 
 Obstacle vehicle
 ``````````````````

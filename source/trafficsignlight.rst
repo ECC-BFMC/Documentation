@@ -9,7 +9,7 @@ On the track can appear four types of traffic sign:
  - Parking sign
  - Priority sign
  - Pedestrian crossing
-If you want to reproduce home the traffic signs with same size, than you need only to print the template file. [`link <../../source/templates/TrafficSign2020.pdf>`_]
+If you want to reproduce home the traffic signs with same size, than you need only to print the template file. [`link <https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/templates/TrafficSign2020.pdf>`_]
 Each sign are 6cm heigh and 6cm width. You can see on the picture below:
 
 .. image:: images/TrafficSign_Dim2.png

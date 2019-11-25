@@ -22,7 +22,7 @@ It's a micro-controller low level control. Here are some links:
     - `Technical Documentation of STM32F401`_
 
 .. _`Official site of NucleoF401RE`: https://www.st.com/en/evaluation-tools/nucleo-f401re.html
-.. _`Technical Documentation of STM32F401`: ../../source/documents/STM32F401.pdf
+.. _`Technical Documentation of STM32F401`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/STM32F401.pdf
 
 Raspberry Pi 4 Mobel b
 -----------------------
@@ -50,7 +50,7 @@ It's H-bridge for dc motor. Here are the links:
     - `Technical Documentation of VNH5019`_
 
 .. _`Official site of VNH5019`: https://www.pololu.com/product/1451
-.. _`Technical Documentation of VNH5019`: ../../source/documents/vnh5019.pdf
+.. _`Technical Documentation of VNH5019`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/vnh5019.pdf
 
 
 
@@ -69,7 +69,7 @@ It's a high accuracy incremental encoder. Here are some links:
 
     
 .. _`Official site of AMT103`: https://www.cuidevices.com/product/motion/rotary-encoders/incremental/modular/amt10-series
-.. _`Technical Documentation of AMT103`: ../../source/documents/amt10.pdf
+.. _`Technical Documentation of AMT103`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/amt10.pdf
 
 DC/DC Converters
 ----------------
@@ -83,7 +83,7 @@ It's a OKR-T/10-W12-C non-Isolated dc/dc converter to generate a 5V for supplyin
     - `Technical documentation (OKR-T/10-W12-C)`_
 
 .. _`Official site of converter`: https://power.murata.com/okr-t-10-w12-c.html
-.. _`Technical documentation (OKR-T/10-W12-C)`: ../../source/documents/DCConverter.pdf
+.. _`Technical documentation (OKR-T/10-W12-C)`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/DCConverter.pdf
 
 
 Servo motor
@@ -97,7 +97,7 @@ Servo motor
 It's a Reely RS610WP Servo Motor. Links:
     - `Technical documentation (RS610WP)`_
 
-.. _`Technical documentation (RS610WP)`: ../../source/documents/Servo.pdf
+.. _`Technical documentation (RS610WP)`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/Servo.pdf
 
 Battery
 -------
@@ -109,5 +109,5 @@ Battery
 It's a Topfuel Lipo Batt. 20C-ECO-X with capacity 5000MAH and two cells. Links: 
     - `Usage Manual`_
 
-.. _`Usage Manual`: ../../source/documents/ManualTopFuelLiPo.pdf
+.. _`Usage Manual`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/ManualTopFuelLiPo.pdf
 

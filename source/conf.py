@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'BFMC.Main'
-copyright = '2019, PJIU'
-author = 'PJIU'
+copyright = '2019, Bosch Engineering Center Cluj and BFMC organizers'
+author = 'Bosch Engineering Center Cluj and BFMC organizers'
 
 
 # -- General configuration ---------------------------------------------------
@@ -45,7 +45,12 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'alabaster'
-html_theme_options = {'body_max_width': 'none','page_width':'auto',"fixed_sidebar": True }
+html_theme_options = {  'body_max_width': 'none',
+                        'page_width':'auto',
+                        "fixed_sidebar": True ,
+                        'github_user': 'ECC-BFMC',
+                        'github_repo': 'BFMC2020.Main',
+                        'github_button': True}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
