@@ -34,11 +34,9 @@ Raspberry Pi 4 Mobel b
 It's a single board computer for high level control and features. The given version has 4GB RAM memory. Here are some links:
     - `Official site of Raspberry Pi 4`_
     - `Documentation of Raspberry Pi`_
-    - `Other links`_
 
 .. _`Official site of Raspberry Pi 4`: https://www.raspberrypi.org/products/raspberry-pi-4-model-b
 .. _`Documentation of Raspberry Pi`: https://www.raspberrypi.org/documentation
-.. _`Other links`: INVALID
 
 VNH5012 H-bridge Motor Driver
 -----------------------------
