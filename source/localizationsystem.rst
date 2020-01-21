@@ -22,6 +22,12 @@ In the case,  a team want to use this localization system, they need to satisfy 
  - The robot client has to interact with our serves, so the robot must connect to our network. 
    An example client written in Python will be published soon in the start up project. 
 
+Software:
+  - GpsTracker is implemented in the Start-up project. You can find in the following `link`_. 
+  - A simple version of GpsServer is realized in the test folder of Start-up project, which helps to test your application. 
+  
+  .. _`link`: https://bfmcstartup.readthedocs.io/en/stable/dataacquisition/GpsTracker.html
+
 Map
 `````````
 
