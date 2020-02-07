@@ -66,5 +66,5 @@ This symbolization is done so to simulate a layered highway intersection, and so
 +---------------------------------------+---------------------------------------+
   
   
-You can find a figure with digital representation on the following links: [`figure <https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/images/EliminationMap.png>`_] 
-and  [`digital map <https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/digitalmap/EliminationMap.graphml>`_]. 
+You can find a figure with digital representation on the following links: `figure <https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/images/EliminationMap.png>`_
+and  `digital map <https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/digitalmap/EliminationMap.graphml>`_ . 
