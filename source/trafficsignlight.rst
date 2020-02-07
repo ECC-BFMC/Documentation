@@ -9,6 +9,7 @@ On the track can appear four types of traffic sign:
  - Parking sign
  - Priority sign
  - Pedestrian crossing
+ 
 If you want to reproduce home the traffic signs with same size, than you need only to print the template file. [`link <https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/templates/TrafficSign2020.pdf>`_]
 Each sign are 6cm heigh and 6cm width. You can see on the picture below:
 
@@ -55,4 +56,4 @@ There will be three semaphores on the track. One placed at the track entrance, a
 Besides showing the appropriate color, they will also broadcast their state via Bluetooth advertisements (Manufacturer Specific Data field) 
 and Wi-Fi UDP messages directed to a specific port. The messages consist of semaphore ID (0, 1, and 2) and state (red – 0/green – 1).
 
-More information will be communicated later date. 
+.. include:: trafficlight.rst
