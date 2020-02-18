@@ -54,6 +54,6 @@ You can see on the pictures below:
 
 There will be three semaphores on the track. One placed at the track entrance, and two placed in an intersection. 
 Besides showing the appropriate color, they will also broadcast their state via Bluetooth advertisements (Manufacturer Specific Data field) 
-and Wi-Fi UDP messages directed to a specific port. The messages consist of semaphore ID (0, 1, and 2) and state (red – 0/green – 1).
+and Wi-Fi UDP messages directed to a specific port.
 
 .. include:: trafficlight.rst
