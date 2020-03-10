@@ -31,3 +31,8 @@ Below you can see the two type of intersection:
    :scale: 30%
 
 
+.. image:: images/roadmarkings/Crosswalk.PNG
+   :align: center
+   :scale: 130%
+
+
