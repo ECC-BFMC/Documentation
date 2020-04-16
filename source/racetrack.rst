@@ -10,3 +10,6 @@ In the next few sections are described more detailed the components.
    trafficsignlight
    pedestrianandobstacle
    roadmarkings
+
+
+You can find a template figure with elimination track on the following links: `figure <https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/images/EliminationTrack.png>`_  
