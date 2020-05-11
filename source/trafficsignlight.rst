@@ -56,4 +56,33 @@ There will be three semaphores on the track. One placed at the track entrance, a
 Besides showing the appropriate color, they will also broadcast their state via Bluetooth advertisements (Manufacturer Specific Data field) 
 and Wi-Fi UDP messages directed to a specific port.
 
+Signs position on track
+```````````````````````````
+
+The locations of traffic sign and light are similar as below pictures shown. 
+The following picture marks the position for stop and priority sign. 
+
+.. image:: images/Stop&Priority_Sign_Position.png
+   :align: center
+   :scale: 30%
+
+
+Each parking signs are placed on the starting and ending of parking spot, they are oriented to the arriving vehicle. 
+
+
+.. image:: images/Parking_sign_position.png
+   :align: center
+   :scale: 30%
+
+i
+In the case of cross walking, the signs are placed in each direction before the road marking of crosswalk. 
+
+.. image:: images/Pedestrian_Sign_Position.png
+   :align: center
+   :scale: 100%
+
+
+
 .. include:: trafficlight.rst
+
+
