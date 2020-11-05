@@ -13,101 +13,135 @@ The GPIO lines are marked on each components.
 
 NucleoF401RE
 ------------
-.. image:: images/NucleoF401RE.jpg
+.. image:: images/Components/NucleoF401RE.jpg
    :align: center
    :scale: 75%
 
 It's a micro-controller low level control. Here are some links: 
     - `Official site of NucleoF401RE`_ 
-    - `Technical Documentation of STM32F401`_
+    - `Nucleo - Useful link 1`_ 
+    - `Nucleo - Useful link 2`_  
 
 .. _`Official site of NucleoF401RE`: https://www.st.com/en/evaluation-tools/nucleo-f401re.html
-.. _`Technical Documentation of STM32F401`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/STM32F401.pdf
+.. _`Nucleo - Useful link 1`: https://www.youtube.com/watch?v=plzmC6lDR3o
+.. _`Nucleo - Useful link 2`: https://www.youtube.com/watch?v=weag4UxassY
 
 Raspberry Pi 4 Mobel b
 -----------------------
 
-.. image:: images/RaspberryPi4.jpg
+.. image:: images/Components/RaspberryPi4.jpg
    :align: center
    :scale: 40%
 
 It's a single board computer for high level control and features. The given version has 4GB RAM memory. Here are some links:
     - `Official site of Raspberry Pi 4`_
-    - `Documentation of Raspberry Pi`_
+    - `RPI4 - Useful link`_
 
 .. _`Official site of Raspberry Pi 4`: https://www.raspberrypi.org/products/raspberry-pi-4-model-b
-.. _`Documentation of Raspberry Pi`: https://www.raspberrypi.org/documentation
+.. _`RPI4 - Useful link`: https://www.youtube.com/watch?v=BpJCAafw2qE
 
 VNH5012 H-bridge Motor Driver
 -----------------------------
 
-.. image:: images/VNH5019.jpg
+.. image:: images/Components/VNH5019.jpg
    :align: center
    :scale: 50%
 
 It's H-bridge for dc motor. Here are the links:
     - `Official site of VNH5019`_ 
-    - `Technical Documentation of VNH5019`_
+    - `VNH - Useful link`_ 
 
 .. _`Official site of VNH5019`: https://www.pololu.com/product/1451
-.. _`Technical Documentation of VNH5019`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/vnh5019.pdf
-
-
-
+.. _`VNH - Useful link`: https://www.youtube.com/watch?v=9ShJ6IH0ZLs
 
 
 AMT103 Encoder
 --------------
 
-.. image:: images/CUIAMT103.png
+.. image:: images/Components/CUIAMT103.png
    :align: center
    :scale: 75%
 
 It's a high accuracy incremental encoder. Here are some links:
     - `Official site of AMT103`_ 
-    - `Technical Documentation of AMT103`_
-
+    - `Encoder - Useful link`_ 
     
 .. _`Official site of AMT103`: https://www.cuidevices.com/product/motion/rotary-encoders/incremental/modular/amt10-series
-.. _`Technical Documentation of AMT103`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/amt10.pdf
+.. _`Encoder - Useful link`: https://www.youtube.com/watch?v=k2GQVJ4z0kM
 
 DC/DC Converters
 ----------------
 
-.. image:: images/DCDCConv.jpg
+.. image:: images/Components/DCDCConv.jpg
    :align: center
    :scale: 100%
 
 It's a OKR-T/10-W12-C non-Isolated dc/dc converter to generate a 5V for supplying the components. Here are some links:
     - `Official site of converter`_
-    - `Technical documentation (OKR-T/10-W12-C)`_
+    - `Converter - Useful link`_
 
 .. _`Official site of converter`: https://power.murata.com/okr-t-10-w12-c.html
-.. _`Technical documentation (OKR-T/10-W12-C)`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/DCConverter.pdf
+.. _`Converter - Useful link`: https://www.youtube.com/watch?v=vmNpsofY4-U
 
 
 Servo motor
 ------------
 
-.. image:: images/Servo.jpg
+.. image:: images/Components/Servo.jpg
    :align: center
    :scale: 50%
 
 
 It's a Reely RS610WP Servo Motor. Links:
     - `Technical documentation (RS610WP)`_
+    - `Servomotor - Useful link`_
 
 .. _`Technical documentation (RS610WP)`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/Servo.pdf
+.. _`Servomotor - Useful link`: https://www.youtube.com/watch?v=ditS0a28Sko
 
 Battery
 -------
 
-.. image:: images/battery.jpg
+.. image:: images/Components/battery.jpg
    :align: center
    :scale: 100%
 
-It's a Topfuel Lipo Batt. 20C-ECO-X with capacity 5000MAH and two cells. Links: 
-    - `Usage Manual`_
+It's a Topfuel Lipo Batt. 20C-ECO-X with capacity 5000MAH and two cells or 7.4 V 5500 mAh No. of cells: 2 20 C Softcase XT90. Here you can see some info: `Battery info`_
 
-.. _`Usage Manual`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/ManualTopFuelLiPo.pdf
+.. _`Battery info`: https://www.youtube.com/watch?v=ogb0DTqsZEs
 
+Chassis
+-------
+
+.. image:: images/Components/chassis.png
+   :align: center
+   :scale: 100%
+
+It's a Reely TC-04 Onroad-Chassis 1:10, RC model car Electric Road version 4WD ARR. Here is the user manual: `Reely TC-04 Onroad-Chassis 1:10`_
+
+.. _`Reely TC-04 Onroad-Chassis 1:10`: https://asset.conrad.com/media10/add/160267/c1/-/gl/001406735ML02/manual-1406735-reely-tc-04-onroad-chassis-110-rc-model-car-electric-road-version-4wd-arr.pdf
+
+Camera
+-------------
+
+.. image:: images/Components/picamera.png
+   :align: center
+   :scale: 100%
+
+It's a PiCamera v2.1. Here is a useful link `PiCamera v2.1`_
+
+.. _`PiCamera v2.1`: https://picamera.readthedocs.io/en/release-1.13/
+
+Smart IMU
+------------------
+
+.. image:: images/Components/bno055.png
+   :align: center
+   :scale: 100%
+
+It's a smart IMU sensor, BNO055 . Here are some links: 
+    - `Usage Manual(Smart sensor: BNO055)`_
+    - `IMU - Useful link`_
+
+.. _`Usage Manual(Smart sensor: BNO055)`: https://www.bosch-sensortec.com/products/smart-sensors/bno055.html
+.. _`IMU - Useful link`: https://www.youtube.com/watch?v=Bw0WuAyGsnY&ab_channel=BoschSensortec

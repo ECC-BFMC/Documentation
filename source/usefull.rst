@@ -9,12 +9,12 @@ Usage of Raspberry Pi
 
 Getting started with Raspberry Pi
 `````````````````````````````````````
-In this tutorial you will find out the way in which you can **start up** your 
-system and use it as a **standalone** computer. Links: 
-
+In this tutorial you will find out the way in which you can **start up** your system and use it as a **standalone** computer. Links: 
     - `Setting up your Raspberry Pi`_
+    - `RPI Usage`_
 
 .. _`Setting up your Raspberry Pi`: https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up 
+.. _`RPI Usage`: https://www.youtube.com/watch?v=RpseX2ylEuw&list=PLQVvvaa0QuDesV8WWHLLXW_avmTzHmJLv&index=1 
 
 Accessing the terminal using a serial cable	
 ````````````````````````````````````````````
@@ -50,12 +50,8 @@ standalone computer or as a remote device).
 
 Setting up WLAN
 ```````````````
-For a more facile way of connecting to the Raspberry Pi, one could access its terminal 
-or Desktop wirelessly, provided that both the systems (Raspberry Pi and remote computer) 
-are connected to the same network. Therefore, a wireless connection has to be set up for 
-the Raspberry Pi. The tutorial given here helps the user to perform this action.
-
-    - `Setting up WLAN in command line`_ 
+For a more facile way of connecting to the Raspberry Pi, one could access its terminal or Desktop wirelessly, provided that both the systems (Raspberry Pi and remote computer) are connected to the same network. Therefore, a wireless connection has to be set up for the Raspberry Pi. The tutorial given here helps the user to perform this action:
+    - `Setting up WLAN in command line`_
 
 .. _`Setting up WLAN in command line`: https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
 
@@ -108,51 +104,59 @@ type of applications.
 Linux Images for Raspberry Pi 
 ------------------------------
 
-Here you can find some operating system images. Each images are Rapbian Buster, only the installed packages differs.
-We prepared four version:
-    - `Raspberry Buster Lite Basic  <https://mega.nz/#!8SY3hIyR!Q18c3AUF50h8X6EQOMOBicS5rYtMA0wpBWMqCcwMdpI>`_
+Here you can find some operating system images. Each images are Rapbian Buster, only the installed packages differs. We prepared four version:
+    - `Raspberry Buster Lite Basic`_  
         It's a **minimal** image based on Debian Buster with some python libraries: PiCamera, PySerial. 
-    - `Raspberry Buster Desktop Basic  <https://mega.nz/#!1XJXgahS!1pJK0r6ocunz4_EpSWVgSmedBuQIEO92xYwS4QQD3VQ>`_
+    - `Raspberry Buster Desktop Basic`_  
         It's a **desktop** version based on Debian Buster with same python libraries installed: PiCamera, PySerial.
-    - `Raspberry Buster Lite ROS <https://mega.nz/#!FKAjEIST!-ojWoB3Fg0t6GY0ouhhrbUia0DfWRoO7VE566u_6eUc>`_
+    - `Raspberry Buster Lite ROS`_ 
         It's based the above mentioned **minimal** image. We installed **ROS** Kinetic version 1.12.14. 
         We added a new user with name 'ros' and password 'raspberry', where the ros environment is initialized. 
-    - `Raspberry Buster Desktop ROS  <https://mega.nz/#!ELZhgKDB!sqhzVtXrpXuBw4pB9AiVWRCJ9PrS7vh74KRFrChwNq4>`_
+    - `Raspberry Buster Desktop ROS`_  
         It's based the above mentioned **desktop** image. We installed **ROS** Kinetic version 1.12.14. 
         We added a new user with name 'ros' and password 'raspberry', where the ros environment is initialized.
 
-    
+And `this`_ is how you write the image on the RPI card.
 
-
+.. _`Raspberry Buster Lite Basic`: https://mega.nz/#!8SY3hIyR!Q18c3AUF50h8X6EQOMOBicS5rYtMA0wpBWMqCcwMdpI
+.. _`Raspberry Buster Desktop Basic`: https://mega.nz/#!1XJXgahS!1pJK0r6ocunz4_EpSWVgSmedBuQIEO92xYwS4QQD3VQ
+.. _`Raspberry Buster Lite ROS`: https://mega.nz/#!FKAjEIST!-ojWoB3Fg0t6GY0ouhhrbUia0DfWRoO7VE566u_6eUc
+.. _`Raspberry Buster Desktop ROS`: https://mega.nz/#!ELZhgKDB!sqhzVtXrpXuBw4pB9AiVWRCJ9PrS7vh74KRFrChwNq4
+.. _`this`: https://www.youtube.com/watch?v=D2TISpT7yLI
 
 Image processing links
 ------------------------
 In this part, you can find some useful link for image processing on Raspberry pi.
 
-Our records: 
-    - Video on the old test track in 2019 `[link] <https://mega.nz/#!IPIVwAbK!fi66mVUr7g0ghC0e7_Ly-ApgCeO6QZopkvaqKtnHL58>`_ 
-
 Basic Python libraries:
-
-    - `PiCamera Python Library`_ 
     - `Opencv Official Documentation`_
+    - `Opencv with python`_
+    - `Lane detection link 1`_
+    - `Lane detection link 2`_
+    - `Traffic sign recognition link 1`_
+    - `Traffic sign recognition link 2`_
+
 
 Articles for Road Sign Recognition:
 
     - A. Mogelmose, M. M. Trivedi and T. B. Moeslund, "Vision-Based Traffic Sign Detection and Analysis for Intelligent Driver Assistance Systems: Perspectives and Survey," 
-      in IEEE Transactions on Intelligent Transportation Systems, vol. 13, no. 4, pp. 1484-1497, Dec. 2012. [`link <https://ieeexplore.ieee.org/document/6335478/>`_]
+      in IEEE Transactions on Intelligent Transportation Systems, vol. 13, no. 4, pp. 1484-1497, Dec. 2012. [`link2 <https://ieeexplore.ieee.org/document/6335478/>`_]
     - S. Maldonado-Bascon, S. Lafuente-Arroyo, P. Gil-Jimenez, H. Gomez-Moreno and F. Lopez-Ferreras, "Road-Sign Detection and Recognition Based on Support Vector Machines," 
-      in IEEE Transactions on Intelligent Transportation Systems, vol. 8, no. 2, pp. 264-278, June 2007. [`link <https://ieeexplore.ieee.org/document/4220659>`_]
+      in IEEE Transactions on Intelligent Transportation Systems, vol. 8, no. 2, pp. 264-278, June 2007. [`link3 <https://ieeexplore.ieee.org/document/4220659>`_]
     - Y. Han and E. Oruklu, "Traffic sign recognition based on the NVIDIA Jetson TX1 embedded system using convolutional neural networks," 
-      2017 IEEE 60th International Midwest Symposium on Circuits and Systems (MWSCAS), Boston, MA, 2017, pp. 184-187. [`link <https://ieeexplore.ieee.org/document/8052891>`_]
+      2017 IEEE 60th International Midwest Symposium on Circuits and Systems (MWSCAS), Boston, MA, 2017, pp. 184-187. [`link4 <https://ieeexplore.ieee.org/document/8052891>`_]
 
 Articles for Lane detection and tracking:
     - R. Danescu, S. Nedevschi, M. M. Meinecke and T. B. To, "Lane Geometry Estimation in Urban Environments Using a Stereovision System," 
-      2007 IEEE Intelligent Transportation Systems Conference, Seattle, WA, 2007, pp. 271-276. [`link <https://ieeexplore.ieee.org/document/4357686>`_]
+      2007 IEEE Intelligent Transportation Systems Conference, Seattle, WA, 2007, pp. 271-276. [`link5 <https://ieeexplore.ieee.org/document/4357686>`_]
     - R. Labayrade, J. Douret and D. Aubert, "A multi-model lane detector that handles road singularities," 
-      2006 IEEE Intelligent Transportation Systems Conference, Toronto, Ont., 2006, pp. 1143-1148. [`link <https://ieeexplore.ieee.org/document/1707376>`_]
+      2006 IEEE Intelligent Transportation Systems Conference, Toronto, Ont., 2006, pp. 1143-1148. [`link6 <https://ieeexplore.ieee.org/document/1707376>`_]
     - Yue Dong, Jintao Xiong, Liangchao Li and Jianyu Yang, "Robust lane detection and tracking for lane departure warning," 
-      2012 International Conference on Computational Problem-Solving (ICCP), Leshan, 2012, pp. 461-464. [`link <https://ieeexplore.ieee.org/document/6384266>`_]
+      2012 International Conference on Computational Problem-Solving (ICCP), Leshan, 2012, pp. 461-464. [`link7 <https://ieeexplore.ieee.org/document/6384266>`_]
 
-.. _`PiCamera Python Library`: https://picamera.readthedocs.io/en/release-1.13
 .. _`Opencv Official Documentation`: https://docs.opencv.org/4.1.2
+.. _`Opencv with python`: https://www.youtube.com/watch?v=kdLM6AOd2vc&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K
+.. _`Lane detection link 1`: https://www.youtube.com/watch?v=eLTLtUVuuy4
+.. _`Lane detection link 2`: https://www.youtube.com/watch?v=CvJN_jSVm30
+.. _`Traffic sign recognition link 1`: https://www.youtube.com/watch?v=QHra6Xf6Mew
+.. _`Traffic sign recognition link 2`: https://www.youtube.com/watch?v=LjK0hD3dfrY&ab_channel=gsnikitin
