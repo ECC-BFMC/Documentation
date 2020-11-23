@@ -135,7 +135,7 @@ It's a PiCamera v2.1. Here is a useful link `PiCamera v2.1`_
 Smart IMU
 ------------------
 
-.. image:: images/Components/bno055.png
+.. image:: images/Components/bno055.PNG
    :align: center
    :scale: 100%
 
