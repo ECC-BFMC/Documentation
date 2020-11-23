@@ -115,7 +115,7 @@ The pedestrian can move either to the right or to the left.
 
 Here you can find a picture of pedestrian:
 
-.. image:: images/environment/Pedestriandoll.png
+.. image:: images/environment/Pedestriandoll.jpg
    :align: center
    :scale: 75%
 
@@ -152,7 +152,7 @@ Exceptions to this rule are the highway traffic signs and:
     - Highway entry. There's a sign right at the intersection of the highway entrance
     - Highway exit. There's a sign before the dotted lane starts
 
-.. image:: images/environment/Highway.png
+.. image:: images/environment/Highway.PNG
    :align: center
    :scale: 60%
 
