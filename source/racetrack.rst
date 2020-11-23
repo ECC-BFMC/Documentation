@@ -9,41 +9,46 @@ Road markings
 
 You can find below all road markings and their dimension. The lane markings may be dashed or continuous and are ~2cm wide white line.
 The lane has a width of ~35 cm, measured from the inside of the respective markings. 
-
 In the case of dashed markings, the line has a length 4.5 cm and the distance between two marks is similarly 4.5 cm. 
 
-.. image:: images/environment/dashed_straight_lane.png
+.. image:: images/environment/road.png
    :align: center
-   :scale: 50%
+   :scale: 30%
 
 The following image shows the tightest curve, which is the most common curve on the track. 
 
 .. image:: images/environment/marking_tight_curve.png
    :align: center
-   :scale: 40%
+   :scale: 20%
 
 Below you can see the two types of intersections:
 
 .. image:: images/environment/intersection.png
    :align: center
-   :scale: 30%
+   :scale: 20%
 
 .. image:: images/environment/intersection_T.png
    :align: center
-   :scale: 30%
+   :scale: 20%
 
 Here are the dimensions for the crosswalk signalation
 
 .. image:: images/environment/Crosswalk.PNG
    :align: center
-   :scale: 130%
+   :scale: 80%
 
-You can find the maps in svg formats: 
+Here are the dimensions for the two types of parking spots
+
+.. image:: images/environment/Parking_spots.PNG
+   :align: center
+   :scale: 80%
+
+You can find the maps in svg formats. Here you can also see all the other dymensions: 
     - `Test track`_  
     - `Race track`_   
     
-    .. _`Test track`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/images/EliminationTrack.png
-    .. _`Race track`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/images/EliminationTrack.png
+    .. _`Test track`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Track_Test_1to2.svg
+    .. _`Race track`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Track_2021.svg
 
 Traffic signs
 '''''''''''''
@@ -98,7 +103,7 @@ Besides showing the appropriate color, they will also broadcast their state via 
 Pedestrian
 ''''''''''
 
-On the race track there will be a pedestrian crossing one of the crosswalks during the run and one crossing on an unsignaled space 
+On the race track there will be a human-like pedestrian doll crossing one of the crosswalks during the run and one crossing on an unsignaled space 
 on the map (if the team choses to have it)
 
 
@@ -108,16 +113,15 @@ the pedestrian will completly cross the road. After the pedestrian crossed the c
 The unsignalled pedestrian will be located on the middle of the passing lane of the car. The car has to stop untill it leaves the road. 
 The pedestrian can move either to the right or to the left.
 
-The pedestrian are 17.5cm heigh and it has a 0.5cm wide white border. 
 Here you can find a picture of pedestrian:
 
-.. image:: images/environment/pedestrian.png
+.. image:: images/environment/Pedestriandoll.png
    :align: center
    :scale: 75%
 
-You can find the template pdf on this link: `pedestrian`_. 
+You can find the templaofficial link to the store here: `pedestrian`_. 
 
-.. _`pedestrian`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Pedestrian.pdf
+.. _`pedestrian`: https://www.simbatoys.de/en/brands/evi-love/leisure/evi-love-my-first-bike-2-ass-105731715/
 
 Obstacle vehicles
 '''''''''''''''''
@@ -137,26 +141,30 @@ the collision with the other vehicle and must return to right lane before the da
 Elements positioning on track
 '''''''''''''''''''''''''''''
 
-The locations of traffic sign and light are similar as below pictures shown. 
-The following picture marks the position for stop and priority sign. 
-
-.. image:: images/environment/Stop&Priority_Sign_Position.png
-   :align: center
-   :scale: 30%
-
-
-Each parking signs are placed on the starting and ending of parking spot, they are oriented to the arriving vehicle. 
+The locations of traffic sign and light are similar and are calculated with respect to the object center. Each object is located 10 cm before 
+(or after, in depending on the case of the parking spot) the road signalation and 5 cm outside the road limits.
 
 .. image:: images/environment/Pedestrian_Sign_Position.png
    :align: center
-   :scale: 30%
+   :scale: 70%
 
-In the case of cross walking, the signs are placed in each direction before the road marking of crosswalk. 
+Exceptions to this rule are the highway traffic signs and:
+    - Highway entry. There's a sign right at the intersection of the highway entrance
+    - Highway exit. There's a sign before the dotted lane starts
 
-.. image:: images/environment/Pedestrian_Sign_Position.png
+.. image:: images/environment/Highway.png
    :align: center
-   :scale: 100%
+   :scale: 60%
 
 And at the following link, you can find some videos from the car perspective: `videos`_.
 
-.. _`videos`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/images/EliminationTrack.png
+.. _`videos`: https://mega.nz/folder/7TAjVISZ#DwlfgB_xHLqvuiU6QjI3AA
+
+Ramp
+''''
+
+The ramp is covered with the same material as the rest of the track, it's dimensions can be seen in the picture below:
+
+.. image:: images/environment/ramp.png
+   :align: center
+   :scale: 100%

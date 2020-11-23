@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'BFMC.Main'
-copyright = '2019, Bosch Engineering Center Cluj and BFMC organizers'
+copyright = 'Bosch Engineering Center Cluj and BFMC organizers'
 author = 'Bosch Engineering Center Cluj and BFMC organizers'
 
 
@@ -49,7 +49,7 @@ html_theme_options = {  'body_max_width': 'none',
                         'page_width':'auto',
                         "fixed_sidebar": True ,
                         'github_user': 'ECC-BFMC',
-                        'github_repo': 'BFMC2020.Main',
+                        'github_repo': 'BFMC_Main',
                         'github_button': True}
 
 # Add any paths that contain custom static files (such as style sheets) here,

@@ -18,6 +18,7 @@ You can access to other documentation:
    environmentsystems
    printedcomponents
    printedcircuitboards
+   hardwareimprovements
    usefull
    periodicstatus
    

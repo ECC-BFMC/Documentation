@@ -5,5 +5,5 @@ On the robot we built two pcb's, a power distribution board and a BNO shuttleboa
     - `Power Distribution Board`_
     - `BNO shuttleboard`_
 
-    .. _`Power Distribution Board`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/Nucleo+Rpi_Suport_v2.SLDPRT
-    .. _`BNO shuttleboard`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/CameraHolderBase_new_v1.SLDPRT
+    .. _`Power Distribution Board`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/PCB/pdboard_schematic.pdf
+    .. _`BNO shuttleboard`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/PCB/imu_schematic.pdf

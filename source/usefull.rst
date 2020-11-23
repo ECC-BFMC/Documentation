@@ -5,7 +5,7 @@ In this section, you can find some useful links and some documentations for basi
 raspberry usage and image processing. 
 
 Usage of Raspberry Pi 
------------------------------
+---------------------
 
 Getting started with Raspberry Pi
 `````````````````````````````````````
@@ -99,8 +99,37 @@ type of applications.
     - https://www.digikey.com/en/maker/blogs/2018/how-to-run-python-programs-on-a-raspberry-pi
 
 
+Robot operating system 
+-----------------------
 
+ROS (Robot operating system) is a robotic middleware (a collection of software frameworks for writing robot software). Although ROS is not an operating system , 
+it provides services designed for a heterogeneous computer cluster such as hardware abstraction, low-level device control, implementation of commonly used 
+functionality, message-passing between processes, and package management. Running sets of ROS-based processes(scripts) are represented in a graph architecture 
+where processing takes place in nodes that may receive, post and multiplex sensor data, control, state, planning, actuator, and other messages via "topics" and "services".
+Despite the importance of reactivity and low latency in robot control, ROS itself is not a real-time OS (RTOS).
+The main client libraries (C++, Python, and Lisp) are released under the terms of the BSD license as such as the other majority of available packages. 
 
+ROS distributions
+`````````````````
+A ROS distribution is a versioned set of ROS packages. These are akin to Linux distributions (e.g. Ubuntu). The purpose of the ROS distributions is to let developers work 
+against a relatively stable codebase until they are ready to roll everything forward. The latest stable distribution that we encourege you to use is ROS Melodic, together with Ubuntu 18.04.
+
+ROS installation
+````````````````
+You first have to install a supported operating system, either on your device or on a virtual machine. We suggest to not use a virtual machine since it may not have the same 
+specifications as if installed directly on the HDD/SSD. 
+For the Melodic installation, you can follow this link: 
+
+    - http://wiki.ros.org/melodic/Installation/Ubuntu
+
+In order to get started with the ROS functionalities, you can follow this guides:
+
+    - http://wiki.ros.org/ROS/Tutorials
+
+Together with ROS, you can easly use a virtual simulator, for this we suggest Gazebo, since it has good suport and a big community. In order to get started with this tool, you can follow this guides:
+    
+    - http://wiki.ros.org/gazebo_ros_pkgs
+ 
 Linux Images for Raspberry Pi 
 ------------------------------
 

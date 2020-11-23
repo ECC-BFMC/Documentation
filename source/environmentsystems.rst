@@ -44,8 +44,19 @@ exported by using the GraphML library, making it easier to be imported on your p
 Every node has 3 attributes (Tab 1): Id, X coordinate, Y coordinate. 
 On the connectivity table(Tab 2), instead, we have the start node id, the end node id and the type of connection (straight or dotted road). 
 
-.. image::  images/NodesAndConnectionsTable.PNG
-  :align: center
++------+-------+-------+--------+--------+----------+
+| Nodes table          | Connections table         |
++======+=======+=======+========+========+==========+
+|  id  |   X   |   Y   |  Id_1  |  Id_2  |  Dotted  |
++------+-------+-------+--------+--------+----------+
+|   1  |  3.6  |  2.4  |   1    |   2    |   TRUE   |
++------+-------+-------+--------+--------+----------+
+|   2  |  4.0  |  2.4  |   2    |   3    |   FALSE  |
++------+-------+-------+--------+--------+----------+
+|   3  |  4.4  |  2.4  |   3    |   4    |   FALSE  |
++------+-------+-------+--------+--------+----------+
+|   4  |  4.8  |  2.4. |                            |
++------+-------+-------+--------+--------+----------+
 
 
 In the intersections case, there will be 3 points with the same coordinates for a 3 roads intersection(A1, A2, A3) and 4 points for a 4 road intersection(A1, A2, A3, A4).
@@ -55,17 +66,17 @@ This symbolization is done so to simulate a layered highway intersection, and so
 +---------------------------------------+---------------------------------------+
 | .. image:: images/3roadsExample.PNG   | .. image:: images/4roadsExample.PNG   |
 +---------------------------------------+---------------------------------------+
-  
+
 You can find the figure and the digital representation on the following links: 
  - `Test track figure`_
  - `Test track digital`_
- - `Race track figure`_
- - `Race track digital`_.
+ - `Competition track figure`_
+ - `Competition track digital`_.
 
-  .. _`Test track figure`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/images/EliminationMap.png
-  .. _`Test track digital`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/digitalmap/EliminationMap.graphml> 
-  .. _`Race track figure`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/images/EliminationMap.png
-  .. _`Race track digital`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/digitalmap/EliminationMap.graphml> 
+  .. _`Test track figure`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/images/Test_track.png
+  .. _`Test track digital`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Test_track.graphml> 
+  .. _`Competition track figure`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/images/Competition_track.png
+  .. _`Competition track digital`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Competition_track.graphml> 
 
 Semaphore
 ''''''''''
