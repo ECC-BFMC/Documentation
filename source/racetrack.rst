@@ -117,7 +117,7 @@ Here you can find a picture of pedestrian:
 
 .. image:: images/environment/Pedestriandoll.jpg
    :align: center
-   :scale: 75%
+   :scale: 15%
 
 You can find the templaofficial link to the store here: `pedestrian`_. 
 
