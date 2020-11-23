@@ -115,7 +115,7 @@ The pedestrian can move either to the right or to the left.
 
 Here you can find a picture of pedestrian:
 
-.. image:: images/environment/Pedestriandoll.jpg
+.. image:: images/environment/Pedestriandoll.png
    :align: center
    :scale: 25%
 
