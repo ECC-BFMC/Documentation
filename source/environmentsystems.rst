@@ -74,9 +74,9 @@ You can find the figure and the digital representation on the following links:
  - `Competition track digital`_.
 
   .. _`Test track figure`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/images/Test_track.png
-  .. _`Test track digital`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Test_track.graphml> 
+  .. _`Test track digital`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Test_track.graphml
   .. _`Competition track figure`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/images/Competition_track.png
-  .. _`Competition track digital`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Competition_track.graphml> 
+  .. _`Competition track digital`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Competition_track.graphml
 
 Semaphore
 ''''''''''
