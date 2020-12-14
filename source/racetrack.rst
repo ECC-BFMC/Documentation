@@ -138,6 +138,24 @@ The obstacle vehicle is a fixed object on the right lane of road.
 On this part of the road the central line has to be dashed. The robot has to pass the line to left lane for avoiding 
 the collision with the other vehicle and must return to right lane before the dashed line's ending. 
 
+Closed road stand
+'''''''''''''''''
+
+The closed road stand is positioned on a one way&two lane road, it can be placed on each lane. If the stand is placed on the left lane, it's arrows are 
+pointing to the right, that means that at the intersection the car has to go right. If it is placed on the right lane, it's arrows are pointing to the left, 
+that means that at the intersection the car has to go to the left. This is the  `mark`_ , place on the separator identical to the highway separator. 
+And here are two pictures of how it looks like:
+
+.. _`mark`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/roadblock.png
+
+.. image:: images/environment/roadblock_left.png
+   :align: center
+   :scale: 25%
+
+.. image:: images/environment/roadblock_right.png
+   :align: center
+   :scale: 25%
+
 Elements positioning on track
 '''''''''''''''''''''''''''''
 
