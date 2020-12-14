@@ -33,7 +33,7 @@ Raspberry Pi 4 Mobel b
    :align: center
    :scale: 40%
 
-It's a single board computer for high level control and features. The given version has 4GB RAM memory. Here are some links:
+It's a single board computer for high level control and features. The given version has 4GB/2GB RAM memory. Here are some links:
     - `Official site of Raspberry Pi 4`_
     - `RPI4 - Useful link`_
 
