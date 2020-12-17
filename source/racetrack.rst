@@ -130,7 +130,7 @@ The obstacle vehicles are robots with different casing than the one of the parti
 are available at the links below. There are two types of vehicles: static and dynamic.
 A static vehicle will be placed on one of each parking type, 
 A static vehicle will be place on both lanes of a road. The lanes are separated by dashed lines. 
-A dynamic vehicle will be placed on a highway and one one the one-way road. 
+A dynamic vehicle will be placed on a highway and one on the one-way&one-lane road (on the country road). 
 
 Only the dynamic vehicles will stream their position via Wi-Fi UDP messages directed to a specific port.
 
@@ -146,7 +146,7 @@ pointing to the right, that means that at the intersection the car has to go rig
 that means that at the intersection the car has to go to the left. This is the  `mark`_ , place on the separator identical to the highway separator. 
 And here are two pictures of how it looks like:
 
-.. _`mark`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/roadblock.png
+.. _`mark`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/roadblock.pdf
 
 .. image:: images/environment/roadblock_left.png
    :align: center
