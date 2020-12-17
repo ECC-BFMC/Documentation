@@ -43,7 +43,7 @@ Task list
 
 Monthly report
 ````````````````````
-Recommended report length is one page. Maximum report length is 2 pages.
+Recommended report length is one/two page/2. Maximum report length is 3 pages.
 
 .. image:: templates/Monthly_report.PNG
     :align: center
