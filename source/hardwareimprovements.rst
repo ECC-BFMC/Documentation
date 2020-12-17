@@ -67,7 +67,7 @@ Let’s get this show on the road!
 
 Disconnect all wires, remove the mounting support’s nut, unscrew both sides’ screws from the mounting support and then remove the safety clamps and case holders.
 
-.. image::  images/mechanical/rpisupport.png
+.. image::  images/mechanical/RPIsupport.png
    :align: center
    :scale: 100%
 
