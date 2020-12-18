@@ -192,7 +192,8 @@ Always check for the suspension also to move freely after setting the Camber.
     :align: center
     :scale: 100%
 
-**How to set rear axle Camber? **
+
+**How to set rear axel Camber?**
 
 In order to set the Camber, you will need to turn the red circled screws so that the distance between the chassis and the top part of the wheels modify. The part doesn’t have to be disassembled in order to be modified, but of course you 
 can remove and measure it with a caliper rule.

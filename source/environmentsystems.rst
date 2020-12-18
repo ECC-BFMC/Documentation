@@ -22,7 +22,7 @@ In order to use the localization system, each team will have to satisfy the foll
  - The robot client has to interact with the server, so the robot must connect to our network. 
 
 Technical data of the system:
- - The frequency of the send messages is 1
+ - The frequency of the send messages is 1 Hz
  - The error of the system is about ~10 cm
 
 An example client written in Python is available in the StartUp project together with a simulated server that streams random data to the connected clients.
@@ -41,11 +41,11 @@ exported by using the GraphML library, making it easier to be imported on your p
   :align: center
   :scale: 60%
 
-Every node has 3 attributes (Tab 1): Id, X coordinate, Y coordinate. 
-On the connectivity table(Tab 2), instead, we have the start node id, the end node id and the type of connection (straight or dotted road). 
+Every node has 3 attributes: Id, X coordinate, Y coordinate. 
+On the connectivity table instead, we have the start node id, the end node id and the type of connection (straight or dotted road: TRUE or FALSE). 
 
 +------+-------+-------+--------+--------+----------+
-| Nodes table          | Connections table         |
+| Nodes table          | Connections table          |
 +======+=======+=======+========+========+==========+
 |  id  |   X   |   Y   |  Id_1  |  Id_2  |  Dotted  |
 +------+-------+-------+--------+--------+----------+
@@ -55,13 +55,13 @@ On the connectivity table(Tab 2), instead, we have the start node id, the end no
 +------+-------+-------+--------+--------+----------+
 |   3  |  4.4  |  2.4  |   3    |   4    |   FALSE  |
 +------+-------+-------+--------+--------+----------+
-|   4  |  4.8  |  2.4. |                            |
+|   4  |  4.8  |  2.4  |                            |
 +------+-------+-------+--------+--------+----------+
 
 
 In the intersections case, there will be 3 points with the same coordinates for a 3 roads intersection(A1, A2, A3) and 4 points for a 4 road intersection(A1, A2, A3, A4).
 This symbolization is done so to simulate a layered highway intersection, and so helping you to plan the path without taking into consideration U turn cases inside the intersection
-(if we only have a single point connected to all the nodes, then a turn like 18-A-14 would be possible). The representation is done in the following images.
+(if we only have a single point connected to all the nodes, then a turn like 18-A-17 would be possible). The representation is done in the following images.
 
 +---------------------------------------+---------------------------------------+
 | .. image:: images/3roadsExample.PNG   | .. image:: images/4roadsExample.PNG   |
@@ -81,7 +81,7 @@ You can find the figure and the digital representation on the following links:
 Semaphore
 ''''''''''
 
-Each one of the four semaphores send UDP broadcast messages every 0.1 ms on port 50007.
+Each one of the four semaphores send UDP broadcast messages with a frequency of 10 Hz on port 50007.
 The IP's and ID's of the semaphores are:
 
 ==============  ==============  ==============  ==============
@@ -130,3 +130,46 @@ The cycle of each semaphore is described in the table below
 =============  =============  =============  =============  =============
 
 An example client written in Python is available in the StartUp project together with a simulated server that streams random data to the network clients.
+
+
+Obstalce handler
+'''''''''''''''''
+In order to evaluate your performance on the track, we have developed an Obstacle handler server, to which you will have to send the position with 0.5 meter 
+radious error acceptance(the position will be written in meters) and the obstacle id. Down below, you can see the table with the id and description 
+of every obstacle that you have to take into consideration:
+
++------+------------------------+
+| ID   | Description            |
++======+========================+
+|   1  | TS - Stop              |
++------+------------------------+
+|   2  | TS - Priority          |
++------+------------------------+
+|   3  | TS - Parking           |
++------+------------------------+
+|   4  | TS - Crosswalk         |
++------+------------------------+
+|   5  | TS - Highway entrance  |
++------+------------------------+
+|   6  | TS - Highway exit      |
++------+------------------------+
+|   7  | TS - Roundabout        |
++------+------------------------+
+|   8  | TS - One way road      |
++------+------------------------+
+|   9  | Traffic light          |
++------+------------------------+
+|  10  | Static car on road     |
++------+------------------------+
+|  11  | Static car on parking  |
++------+------------------------+
+|  12  | Pedestrian on crowwalk |
++------+------------------------+
+|  13  | Pedetrian on road      |
++------+------------------------+
+|  14  | Roadblock              |
++------+------------------------+
+|  15  | Bumpy road             |
++------+------------------------+
+
+TS - Traffic Sign

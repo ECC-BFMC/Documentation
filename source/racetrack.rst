@@ -119,7 +119,7 @@ Here you can find a picture of pedestrian:
    :align: center
    :scale: 25%
 
-You can find the templaofficial link to the store here: `pedestrian`_. 
+You can find the oficial link to the store here: `pedestrian`_. 
 
 .. _`pedestrian`: https://www.simbatoys.de/en/brands/evi-love/leisure/evi-love-my-first-bike-2-ass-105731715/
 
@@ -129,7 +129,7 @@ Obstacle vehicles
 The obstacle vehicles are robots with different casing than the one of the participants. Videos of various runs, with various views of the cars 
 are available at the links below. There are two types of vehicles: static and dynamic.
 A static vehicle will be placed on one of each parking type, 
-A static vehicle will be place on both lanes of a road. The lanes are separated by dashed lines. 
+A static vehicle will be place on each lane of a road section. So that you have to overpass one of them regarding the arrival position at the parking.
 A dynamic vehicle will be placed on a highway and one on the one-way&one-lane road (on the country road). 
 
 Only the dynamic vehicles will stream their position via Wi-Fi UDP messages directed to a specific port.
