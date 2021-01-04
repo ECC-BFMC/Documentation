@@ -9,10 +9,10 @@ The 3d models of these components you download from following links:
     - `Camera joint 1`_
     - `Camera joint 2`_
 
-.. _`Nucleo and Raspberry Pi 4 suport`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/NucleoRpiSuport.SLDPRT
-.. _`Camera base`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/CameraHolderBase.SLDPRT
-.. _`Camera joint 1`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/CameraHolderJoint1.SLDPRT
-.. _`Camera joint 2`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/CameraHolderJoint2.SLDPRT
+.. _`Nucleo and Raspberry Pi 4 suport`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/Nucleo+Rpi_Suport.STL
+.. _`Camera base`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/CameraHolderBase.STL
+.. _`Camera joint 1`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/PicameraHolderPart2.STL
+.. _`Camera joint 2`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/PicameraHolderPart3.STL
 
 
 On the race track we place elements that are printed or built. The model for these posts you can download from following links:
@@ -20,6 +20,6 @@ On the race track we place elements that are printed or built. The model for the
     - `Traffic sign pole`_
     - `Separator block`_
 
-.. _`Traffic sign base`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/TrafficSignHolderBase.SLDPRT
-.. _`Traffic sign pole`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/TrafficSignHolderPole.SLDPRT
+.. _`Traffic sign base`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/sign_holder_base.STL
+.. _`Traffic sign pole`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/sign_holder_pole.STL
 .. _`Separator block`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/3DModels/Separator_block.STL
