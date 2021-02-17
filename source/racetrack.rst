@@ -47,7 +47,7 @@ You can find the maps in svg formats. Here you can also see all the other dymens
     - `Test track`_  
     - `Race track`_   
     
-    .. _`Test track`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Track_Test_1to2.svg
+    .. _`Test track`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Track_Test.svg
     .. _`Race track`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Track_2021.svg
 
 Traffic signs
