@@ -22,10 +22,17 @@ In order to use the localization system, each team will have to satisfy the foll
  - The robot client has to interact with the server, so the robot must connect to our network. 
 
 Technical data of the system:
- - The frequency of the send messages is 1 Hz
+ - The frequency of the sent messages is 4 Hz
  - The error of the system is about ~10 cm
 
 An example client written in Python is available in the StartUp project together with a simulated server that streams random data to the connected clients.
+
+The coordinates systems of the maps can be found here:
+ - `Test track coordinate system`_
+ - `Competition track coordinate system`_
+  .. _`Test track coordinate system`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Track_Test.png
+  .. _`Competition track coordinate system`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Track_2021.png
+
 
 Mapping
 '''''''
