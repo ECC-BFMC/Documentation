@@ -5,4 +5,4 @@ This repository contains the description of the BFMC:
 * Localization system and map
 * Other document: technical report. 
 
-[Documentation](https://bfmc2020main.readthedocs.io/en/stable/)
+[Documentation](https://bfmcmain.readthedocs.io/en/stable/)
