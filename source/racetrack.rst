@@ -1,8 +1,7 @@
 Race track
 ==========
 
-On the race track will be placed traffic signs, other vehicles, pedestrians, traffic lights, ramp. 
-In the next few sections are described more detailed the components. 
+In this section the characteristics of the race track are described. Templates on some of them are provided. 
 
 Road markings
 '''''''''''''
@@ -43,12 +42,12 @@ Here are the dimensions for the two types of parking spots
    :align: center
    :scale: 80%
 
-You can find the maps in svg formats. Here you can also see all the other dymensions: 
+You can find the maps in svg formats at the following links and extract all the non-specified dimensions: 
     - `Test track`_  
     - `Race track`_   
     
-    .. _`Test track`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Track_Test.svg
-    .. _`Race track`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/Track_2021.svg
+    .. _`Test track`: https://github.com/BFMC/Documentation/blob/master/source/templates/Track_Test.svg
+    .. _`Race track`: https://github.com/BFMC/Documentation/blob/master/source/templates/Track_2021.svg
 
 Traffic signs
 '''''''''''''
@@ -64,17 +63,20 @@ On the track can appear four types of traffic sign:
  - One way road sign
  - No-entry road sign
  
-If you want to reproduce home the traffic signs with same size, than you need only to print the template file at the following link: `traffic signs`_ 
-Each sign are encapsulate in a 6cm x 6cm square. You can see two examples in the picture below:
+You can find the traffic signs in pdf format at the following link:
 
-.. _`traffic signs`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/TrafficSign.pdf
+    - `traffic signs`_ 
+
+.. _`traffic signs`: https://github.com/BFMC/Documentation/blob/master/source/templates/TrafficSign.pdf
+
+Each sign is encapsulate in a 6x6 cm square (scaled accordingly. You can see two examples in the picture below:
 
 .. image:: images/environment/TrafficSign_Example.png
    :align: center
    :scale: 75%
 
 The pillars of the traffic sign are ~18.5 cm and the sign is placed at in the middle of the pole positioning surface.
-The complete heigh of the traffic sign is ~20cm. You can see an example below.
+The complete heigh of the traffic sign is ~20cm. You can see an example below. A sample in STL format is given in the '3D printed components' section.
 
 .. image:: images/environment/TrafficSign_Construct.png
    :align: center
@@ -89,7 +91,7 @@ In the reality they look like on the pictures below:
 Traffic lights
 ''''''''''''''
 
-The traffic lights are similar to the real lights with three color: red, yellow and green. 
+The traffic lights are similar to the real traffic lights with three colors: red, yellow and green. 
 It's 24 cm heigh and the lights are 4.5cm diameter. 
 You can see on the pictures below:
 
@@ -97,18 +99,21 @@ You can see on the pictures below:
    :align: center
    :scale: 10%
 
-There will be four semaphores on the race track. One placed at the track entrance, and three placed in an intersection. 
-Besides showing the appropriate color, they will also broadcast their state via Wi-Fi UDP messages directed to a specific port.
+There will be four semaphores on the race track. One placed at the track entrance, which will signal the start, and three placed in an intersection. 
+Besides showing the appropriate color, they will also broadcast their state via Wi-Fi UDP messages (described in the V2X section).
+
+You can find the link to the traffic light here: `traffic light`_. 
+
+.. _`traffic light`: https://www.aliexpress.com/item/32678327113.html?spm=a2g0o.productlist.0.0.1328774feswkGW&algo_pvid=e1a2a6c9-8adb-4b00-a0d7-6c5773c6e409&algo_expid=e1a2a6c9-8adb-4b00-a0d7-6c5773c6e409-26&btsid=2100bdcf16226354621923567e8b67&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
 
 Pedestrian
 ''''''''''
 
-On the race track there will be a human-like pedestrian doll crossing one of the crosswalks during the run and one crossing on an unsignaled space 
+On the race track there will be a human-like pedestrian doll waiting to pass at one of the crosswalks during the run and one crossing on an unsignaled space 
 on the map (if the team choses to have it)
 
-
 The crosswalk pedestrian is located by the side o the road when the car arrives (right side). The car has to stop and after it stopped 
-the pedestrian will completly cross the road. After the pedestrian crossed the car can continue it's movement on the round.
+the pedestrian will completly cross the road. After the pedestrian crossed the car can continue it's movement.
 
 The unsignalled pedestrian will be located on the middle of the passing lane of the car. The car has to stop untill it leaves the road. 
 The pedestrian can move either to the right or to the left.
@@ -129,24 +134,25 @@ Obstacle vehicles
 The obstacle vehicles are robots with different casing than the one of the participants. Videos of various runs, with various views of the cars 
 are available at the links below. There are two types of vehicles: static and dynamic.
 A static vehicle will be placed on one of each parking type, 
-A static vehicle will be place on each lane of a road section. So that you have to overpass one of them regarding the arrival position at the parking.
+A static vehicle will be place on each lane of a road section. The team will have to overpass the car on it's own lane (if the road signaling allows it).
 A dynamic vehicle will be placed on a highway and one on the one-way&one-lane road (on the country road). 
 
-Only the dynamic vehicles will stream their position via Wi-Fi UDP messages directed to a specific port.
-
-The obstacle vehicle is a fixed object on the right lane of road. 
-On this part of the road the central line has to be dashed. The robot has to pass the line to left lane for avoiding 
-the collision with the other vehicle and must return to right lane before the dashed line's ending. 
+The dynamic vehicles will stream their position via Wi-Fi UDP messages directed to a specific port.
 
 Closed road stand
 '''''''''''''''''
 
-The closed road stand is positioned on a one way&two lane road, it can be placed on each lane. If the stand is placed on the left lane, it's arrows are 
-pointing to the right, that means that at the intersection the car has to go right. If it is placed on the right lane, it's arrows are pointing to the left, 
-that means that at the intersection the car has to go to the left. This is the  `mark`_ , place on the separator identical to the highway separator. 
+The closed road stand is positioned on a one way&two lane road, it can be placed randomly on one of the lanes. If the stand is placed on the left lane, it's arrows are 
+pointing to the right, meaning that at the intersection the car has to go right. If it is placed on the right lane, it's arrows are pointing to the left, 
+meaning that at the intersection the car has to go to the left. 
+
+You can find the label in pdf format at the following link: `mark`_.
+The mark will be placed on a structure similar to te highway separator, listed in the "3D printed Components".
+
+This is the  `mark`_ , place on the separator identical to the highway separator. 
 And here are two pictures of how it looks like:
 
-.. _`mark`: https://github.com/ECC-BFMC/BFMC_Main/blob/master/source/templates/roadblock.pdf
+.. _`mark`: https://github.com/BFMC/Documentation/blob/master/source/templates/roadblock.pdf
 
 .. image:: images/environment/roadblock_left.png
    :align: center
@@ -174,10 +180,6 @@ Exceptions to this rule are the highway traffic signs and:
    :align: center
    :scale: 60%
 
-And at the following link, you can find some videos from the car perspective: `videos`_.
-
-.. _`videos`: https://mega.nz/folder/7TAjVISZ#DwlfgB_xHLqvuiU6QjI3AA
-
 Ramp
 ''''
 
@@ -186,3 +188,12 @@ The ramp is covered with the same material as the rest of the track, it's dimens
 .. image:: images/environment/ramp.png
    :align: center
    :scale: 100%
+
+Aditional material
+''''''''''''''''''''
+
+    - At the following link, you can find some testing materials: `videos`_.
+
+.. _`videos`: https://mega.nz/folder/7TAjVISZ#DwlfgB_xHLqvuiU6QjI3AA
+
+    - An open source gazebo simulator is provided, so to have an overview of the entire track and all it's components on our git.

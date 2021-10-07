@@ -1,20 +1,19 @@
 Periodic status and examples
 =============================
 
-Each selected team has to send an updated project plan, a report and a video in each month on the communicated platform. The deadlines can be seen on our website upload `section`_ . 
+Each selected team has to send an updated project plan, a report and a video in each month on the communicated platform, whithin the communicated time-frame.
 
-.. _`section`: https://www.boschfuturemobility.com/events/
-
-**All the information and described below are only proposed structures and models. You have to create your own documents in order to prepear the periodic status of your team.
-If used as it is, the team may lose points on the evaluation. We highly encourage you to adapt and the models while under development to the actual status of the project.**
+**The information described below is only presented as an example. You have to create your own documents in order to organize and present your team work.
+If used as it is, without adaptation to the team needs and plan, the team may lose points on the evaluation. We highly encourage you to adapt the models 
+while under development to the actual status of the project.**
 
 We recommend to first make software architecture. The architecture, is usually used in industry in order to have an overview of the project modules and the 
 communication between them. This helps parallel development, features addition, debugging and portability of the modules to other projects. By having a strong 
 architecture, you can make a project plan with deadlines, efforts, parallelness and dependencies, so that all the team components can work in the same time 
-without depending completly on other colleagues/modules and still respecting all the checkpoints of the project.
+without depending completly on other colleagues/modules and still respecting all the checkpoints of the project, reppresented in the time plan. 
 
 Periodic reports are usually sent in industry so that the clients always know the status of the requested projects. We all know the saying "an image worth 1000 words", so 
-in order to strengthen the view of a client on the developed project, some multimedia documents are needed (for example a video of the new implementations).
+in order to strengthen our view on your project, a multimedia file is required, emphasizing the actual work from the last month.
 
 Following, you can see some examples of the requested documents.
 
@@ -32,12 +31,6 @@ Here is an example of a projec plan(a time table and it's task list) based on th
 Project plan
 
 .. image:: templates/Project_plan.PNG
-    :align: center
-    :scale: 80%
-
-Task list
-
-.. image:: templates/Task_list.PNG
     :align: center
     :scale: 80%
 

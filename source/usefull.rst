@@ -4,157 +4,158 @@ Usage and Usefull link
 In this section, you can find some useful links and some documentations for basic
 raspberry usage and image processing. 
 
+
 Usage of Raspberry Pi 
 ---------------------
 
-Getting started with Raspberry Pi
-`````````````````````````````````````
-In this tutorial you will find out the way in which you can **start up** your system and use it as a **standalone** computer. Links: 
-    - `Setting up your Raspberry Pi`_
-    - `RPI Usage`_
+Install the image on the SD card
+````````````````````````````````
+Download the Raspbery Pi OS  (either Desktop or Lite version) from the following link: 
+- `Images`_
+.. _`Images`: https://www.raspberrypi.org/software/operating-systems/ 
 
-.. _`Setting up your Raspberry Pi`: https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up 
-.. _`RPI Usage`: https://www.youtube.com/watch?v=RpseX2ylEuw&list=PLQVvvaa0QuDesV8WWHLLXW_avmTzHmJLv&index=1 
-
-Accessing the terminal using a serial cable	
-````````````````````````````````````````````
-This option for connecting to your Raspberry Pi is useful in the case in which 
-you want to connect to its terminal. By using the serial cable (e.g. https://www.ftdichip.com/Products/Cables/USBTTLSerial.htm) 
-you can connect to your system for performing initial setup, such as WLAN SSID 
-and password. You should have the Serial Console enabled for being able to 
-connect to the Raspberry Pi in this way. This can be done easily by editing 
-the config.txt file of the system (point a below). Below you can find some 
-useful resources that describe the steps required for connecting to the terminal in this way.
-
-    a. https://learn.sparkfun.com/tutorials/headless-raspberry-pi-setup/serial-terminal
-    #. https://makezine.com/2014/02/28/talking-to-the-raspberry-pis-serial-console-with-an-ftdi-breakout-board/
-    #. https://www.thepolyglotdeveloper.com/2017/02/connect-raspberry-pi-pi-zero-usb-ttl-serial-cable/
-
-Configuring your Raspberry Pi
-``````````````````````````````
-The Raspberry Pi’s default operating system uses a range of configuration parameters 
-that are read when the computer boots from the microSD card. These are stored in the 
-**config.txt** document, found in the /boot/ folder. By editing this document one could, 
-for example, adjust the way the display is detected and the desktop displayed or overclock 
-the Raspberry Pi (or return to default clock settings). A useful setting is the enabling 
-of the Serial Console so that the Raspberry Pi’s terminal can be accessed using a serial 
-connection. There is also the possibility to use the **raspi-config** application, in case 
-one has already established a connection with the system (system operating either as a 
-standalone computer or as a remote device).
-
-    a. Editing the **config.txt** file:
-        - https://www.makeuseof.com/tag/edit-boot-config-file-raspberry-pi 
-        - https://elinux.org/R-Pi_configuration_file
-    b. Console based **raspi-config** application:
-        - https://www.raspberrypi.org/documentation/configuration/raspi-config.md 
+Mount the chosen image on your RPi with the help of balenaetcher:
+- `BalenaEtcher`_
+.. _`BalenaEtcher`: https://www.balena.io/etcher/
 
 Setting up WLAN
 ```````````````
-For a more facile way of connecting to the Raspberry Pi, one could access its terminal or Desktop wirelessly, provided that both the systems (Raspberry Pi and remote computer) are connected to the same network. Therefore, a wireless connection has to be set up for the Raspberry Pi. The tutorial given here helps the user to perform this action:
-    - `Setting up WLAN in command line`_
+Without directly connecting to the RPi, you can set the LAN from the PC by creating a wpa_supplicanf.conf file under boot folder, in your SD card.
+You can set the content as follows:
 
-.. _`Setting up WLAN in command line`: https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+| ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+| update_config=1
+| country=RO
+| network=
+| {
+| ssid="SSID"
+| psk="Passwd"
+| }
+
+You can also edit the file later on. it can be found under /etc/wpa_supplicant/wpa_supplicant.conf.
+
+Configuring your Raspberry Pi
+``````````````````````````````
+There is a series of configuration parameters that can be edited on the PC, prior to starting 
+the RPI. Some of these are stored in the **config.txt** document, found in the /boot/ folder. 
+By editing this document one could, for example, adjust the way the display is detected and 
+the desktop displayed or overclock the Raspberry Pi (or return to default clock settings). 
+A useful setting is the enabling of the Serial Console so that the Raspberry Pi’s terminal can
+be accessed using a serial connection. The file can be also visually edited by using the raspi-config 
+application while accessing the RPi. 
+
+Editing the **config.txt** file:
+    - https://www.makeuseof.com/tag/edit-boot-config-file-raspberry-pi 
+    - https://elinux.org/R-Pi_configuration_file
+
+Some more configurations can be done prior to starting the RPi, such as enabling SSH connection, 
+Camera connection or I2C connection. In order to do so, you just have to create an empty file with the 
+name of the interface, without an extension, under /boot/ folder. The same parameters can also be edited
+with the raspi-config application while accessing the RPi.
+
+Raspberry Pi IP address
+````````````````````````
+For most of the applications, the IP of the RPi is crucial. After you set up the network for your RPi and 
+power it up, you can find the address with different means, such as: using a network scan tool on your PC 
+(nmap for linux); connecting to your router and finding your connected devices; ping your device by using 
+it's username: 
+| ping raspberrypi.local
+|
+| PING raspberrypi.local (192.168.1.131): 56 data bytes
+| 64 bytes from 192.168.1.131: icmp_seq=0 ttl=255 time=2.618 ms
+|
+| More information can be found at the following link:
+- https://www.raspberrypi.org/documentation/remote-access/ip-address.md
 
 
-Getting your Raspberry Pi IP address
-`````````````````````````````````````
+Development on the Raspberry Pi 
+--------------------------------
 
-The Raspberry Pi will receive an IP address when it is connected to a network, 
-either wirelessly or using an internet cable. In both cases, for connecting to 
-the system, its IP address has to be known. The links below specify the way in 
-which this address can be retrieved.
+You have multiple ways of accessing the RPi: 
+- Direct development approach, by using it as a standalone computer and connecting all the pheripherials.
+- Direct connection approach, by connecting to it with a Serial cable or with an ethernet cable.
+- Remote connection approach, by connecting to it via ssh terminal communication and ftp for file transfer to the remote.
 
-    - https://www.raspberrypi.org/documentation/remote-access/ip-address.md
-    - Using the terminal (connected over serial) - https://raspberrypi.stackexchange.com/questions/1409/easiest-way-to-show-my-ip-address
+Direct development approach	
+````````````````````````````
+You can connect all the pheripherials and develop on it as you would do on a PC. The suggested OS is the desktop version. Follow this guide for more info:
+- `Setting up your Raspberry Pi`_
+.. _`Setting up your Raspberry Pi`: https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up 
 
-
-Connect to Raspberry Pi using VNC
-``````````````````````````````````
-VNC is a graphical desktop sharing system that allows you to remotely control 
-the desktop interface of one computer (running VNC Server, in our case Raspberry Pi) 
-from another computer or mobile device (running VNC Viewer). Sometimes it is 
-not convenient to work directly on the Raspberry Pi, and the tutorial below 
-describes how work on it from another device by remote control.
-
-    - https://www.raspberrypi.org/documentation/remote-access/vnc
-
-Connect to Raspberry Pi using WinSCP
-````````````````````````````````````
-WinSCP is a free SFTP, SCP and FTP client for Windows. WinSCP is a convenient 
-way to present, copy and manage files and folders on a Raspberry Pi from a 
-remote device. The links below describe the way in which one can connect to 
-a Raspberry Pi using WinSCP.
-
-    - https://www.behind-the-scenes.co.za/using-winscp-to-connect-to-a-raspberry-pi
-    - https://rasspberrypi.wordpress.com/2012/09/03/enabling-ssh-on-raspberry-pi-and-using-putty-and-winscp    
-    - https://raspberry-projects.com/pi/software_utilities/file-sharing/transfering-files-from-windows-pcs
-
-Running Python scripts on Raspberry Pi
-`````````````````````````````````````````
-Python is programming language that can be used for developing applications 
-on the Raspberry Pi. The links below represent a good starting point for this 
-type of applications.
-
-    - https://www.raspberrypi.org/documentation/usage/python
-    - https://www.digikey.com/en/maker/blogs/2018/how-to-run-python-programs-on-a-raspberry-pi
+Direct connection approach. 	
+````````````````````````````
+This option for connecting to your Raspberry Pi in phisical format can be done in may ways, but the most 
+handful ones are with a TTL cable or with an Ethernet cable. By using the serial cable (e.g. 
+https://www.ftdichip.com/Products/Cables/USBTTLSerial.htm) you can connect to your system for performing 
+initial setup, such as WLAN SSID and password. You should have the Serial Console enabled for being able to 
+connect to the Raspberry Pi in this way. This can be done easily by editing the config.txt file of the 
+system. Another way in doing so is by setting up a LAN between the RPi and the PC, connecting them via 
+ethernet and accessing it via ssh. Below you can find some useful resources that describe the steps 
+required for connecting to the terminal in this way.
+a. https://learn.sparkfun.com/tutorials/headless-raspberry-pi-setup/serial-terminal
+#. https://www.instructables.com/Set-Up-Raspberry-Pi-4-Through-Laptoppc-Using-Ether/
 
 
-Robot operating system 
+Remote Connection approach
+```````````````````````````
+The best combination in programming your RPi remotely is a combination between a ssh connection for 
+terminal commands and a SFTP connection for file sharing (this way, the OS installed can be the lite version). 
+On linux the SSH connection can be done in any terminal (ssh user@IP) and the SFTP connection in any file 
+explorer (other locations->Connect to Server: sftp://ip). On windows, the PUTTY application can be used for 
+ssh connection and the WINSCP can be used for file sharing.  
+- https://www.behind-the-scenes.co.za/using-winscp-to-connect-to-a-raspberry-pi
+
+VNC is a graphical desktop sharing system that allows you to remotely control the desktop interface of 
+one computer. Running VNC Server, in our case Raspberry Pi, you can connect to it from another computer 
+or mobile device (running VNC Viewer). The tutorial below describes how work on it from another device by remote control.
+- https://www.raspberrypi.org/documentation/remote-access/vnc
+
+
+Python on Raspberry Pi
+-----------------------
+Python is an interpreted high-level general-purpose programming language. It is versatile, easy to use and fast 
+to develop, which makes it ideal for rapid prototyping. Some of it's downsides is that it has speed limitation, 
+it does not perform well with multithreading, making it inferior in performances to other, low-level programming languages.
+The links below represent a good starting point for this type of applications.
+- https://www.raspberrypi.org/documentation/usage/python
+- https://www.digikey.com/en/maker/blogs/2018/how-to-run-python-programs-on-a-raspberry-pi
+
+CPP on Raspberry Pi
+-----------------------
+It is one of the oldest, most used and most efficient programming languages. It has a wide support, it is powerful, 
+fast and has a small amount of standard libraries. It's major downside beying it's complexity. 
+- https://www.aranacorp.com/en/program-your-raspberry-pi-with-c/
+
+
+Robot Operating System 
 -----------------------
 
-ROS (Robot operating system) is a robotic middleware (a collection of software frameworks for writing robot software). Although ROS is not an operating system , 
+ROS (Robot Operating System) is a robotic middleware (a collection of software frameworks for writing robot software). Although ROS is not an operating system , 
 it provides services designed for a heterogeneous computer cluster such as hardware abstraction, low-level device control, implementation of commonly used 
 functionality, message-passing between processes, and package management. Running sets of ROS-based processes(scripts) are represented in a graph architecture 
-where processing takes place in nodes that may receive, post and multiplex sensor data, control, state, planning, actuator, and other messages via "topics" and "services".
-Despite the importance of reactivity and low latency in robot control, ROS itself is not a real-time OS (RTOS).
+where processing takes place in nodes that may receive, post and multiplex sensor data, control, state, planning, actuator, and other messages via "topics", 
+"services" and "actions". Despite the importance of reactivity and low latency in robot control, ROS itself is not a real-time OS (RTOS).
 The main client libraries (C++, Python, and Lisp) are released under the terms of the BSD license as such as the other majority of available packages. 
 
 ROS distributions
 `````````````````
-A ROS distribution is a versioned set of ROS packages. These are akin to Linux distributions (e.g. Ubuntu). The purpose of the ROS distributions is to let developers work 
-against a relatively stable codebase until they are ready to roll everything forward. The latest stable distribution that we encourege you to use is ROS Melodic, together with Ubuntu 18.04.
+A ROS distribution is a versioned set of ROS packages. These are a kin to Linux distributions (e.g. Ubuntu). The purpose of the ROS distributions is to let developers work 
+against a relatively stable codebase until they are ready to roll everything forward. The latest stable distribution that we encourege you to use is ROS Noetic, together 
+with Ubuntu 20.04.
 
 ROS installation
 ````````````````
 You first have to install a supported operating system, either on your device or on a virtual machine. We suggest to not use a virtual machine since it may not have the same 
 specifications as if installed directly on the HDD/SSD. 
 For the Melodic installation, you can follow this link: 
-
-    - http://wiki.ros.org/melodic/Installation/Ubuntu
+- http://wiki.ros.org/melodic/Installation/Ubuntu
 
 In order to get started with the ROS functionalities, you can follow this guides:
-
     - http://wiki.ros.org/ROS/Tutorials
 
-Together with ROS, you can easly use a virtual simulator, for this we suggest Gazebo, since it has good suport and a big community. In order to get started with this tool, you can follow this guides:
-    
-    - http://wiki.ros.org/gazebo_ros_pkgs
- 
-Linux Images for Raspberry Pi 
-------------------------------
 
-Here you can find some operating system images. Each images are Rapbian Buster, only the installed packages differs. We prepared four version:
-    - `Raspberry Buster Lite Basic`_  
-        It's a **minimal** image based on Debian Buster with some python libraries: PiCamera, PySerial. 
-    - `Raspberry Buster Desktop Basic`_  
-        It's a **desktop** version based on Debian Buster with same python libraries installed: PiCamera, PySerial.
-    - `Raspberry Buster Lite ROS`_ 
-        It's based the above mentioned **minimal** image. We installed **ROS** Kinetic version 1.12.14. 
-        We added a new user with name 'ros' and password 'raspberry', where the ros environment is initialized. 
-    - `Raspberry Buster Desktop ROS`_  
-        It's based the above mentioned **desktop** image. We installed **ROS** Kinetic version 1.12.14. 
-        We added a new user with name 'ros' and password 'raspberry', where the ros environment is initialized.
-
-And `this`_ is how you write the image on the RPI card.
-
-.. _`Raspberry Buster Lite Basic`: https://mega.nz/#!8SY3hIyR!Q18c3AUF50h8X6EQOMOBicS5rYtMA0wpBWMqCcwMdpI
-.. _`Raspberry Buster Desktop Basic`: https://mega.nz/#!1XJXgahS!1pJK0r6ocunz4_EpSWVgSmedBuQIEO92xYwS4QQD3VQ
-.. _`Raspberry Buster Lite ROS`: https://mega.nz/#!FKAjEIST!-ojWoB3Fg0t6GY0ouhhrbUia0DfWRoO7VE566u_6eUc
-.. _`Raspberry Buster Desktop ROS`: https://mega.nz/#!ELZhgKDB!sqhzVtXrpXuBw4pB9AiVWRCJ9PrS7vh74KRFrChwNq4
-.. _`this`: https://www.youtube.com/watch?v=D2TISpT7yLI
-
-Image processing links
-------------------------
+Image processing 
+-----------------
 In this part, you can find some useful link for image processing on Raspberry pi.
 
 Basic Python libraries:

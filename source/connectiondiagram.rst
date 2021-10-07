@@ -1,10 +1,8 @@
 Connection diagram and components
 =================================
 
-
-In this section the components and the connections are listed. 
-In the picture below you can see a simple connections diagram of the components. 
-The GPIO lines are marked on each components.
+In this section the main components are listed, together with the connection diagram. 
+In the following schematics you can see a simple connections diagram. The GPIO lines are marked on each components.
 
 .. image:: images/ConnectionDiagram.png
    :align: center
@@ -96,17 +94,19 @@ It's a Reely RS610WP Servo Motor. Links:
     - `Technical documentation (RS610WP)`_
     - `Servomotor - Useful link`_
 
-.. _`Technical documentation (RS610WP)`: https://github.com/ECC-BFMC/BFMC2020.Main/blob/master/source/documents/Servo.pdf
+.. _`Technical documentation (RS610WP)`: https://github.com/BFMC/Documentation/blob/master/source/documents/Servo.pdf
 .. _`Servomotor - Useful link`: https://www.youtube.com/watch?v=ditS0a28Sko
 
 Battery
 -------
 
-.. image:: images/Components/battery.jpg
-   :align: center
-   :scale: 100%
+Two types of batteries were give:  
+Topfuel Lipo battery 20C-ECO-X with capacity 5000MAH and two cells or 7.4 V 5500 mAh No. of cells: 2 20 C Softcase XT90. 
+or 
+Conrad energy Scale model battery pack (LiPo) 7.4 V 5500 mAh No. of cells: 2 20 C Softcase XT90
 
-It's a Topfuel Lipo Batt. 20C-ECO-X with capacity 5000MAH and two cells or 7.4 V 5500 mAh No. of cells: 2 20 C Softcase XT90. Here you can see some info: `Battery info`_
+Here you can see some info: `Battery info`_
+
 
 .. _`Battery info`: https://www.youtube.com/watch?v=ogb0DTqsZEs
 
