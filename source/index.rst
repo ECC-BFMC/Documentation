@@ -7,13 +7,6 @@ In this competition the participants have to to implement autonomous driving alg
 This is the official documentation of the competition and it includes the description of the provided race-track and it's elements, the given components 
 and the diagrams, as well as a starting point and directions of the knowledge required.
 
-The other documentations are available on our `GitHub`_ page and on the following links:
-
-.. _`GitHub`: https://github.com/BFMC
-
-    - `Computer Project <https://bfmccomputer.readthedocs.io/en/stable/>`_
-    - `Embedded Project <https://bfmcembedded.readthedocs.io/en/stable/>`_ 
-
 The computer project is already implemented on the provided Raspberry Pi, while the embedded project is already implemented on the Nucleo board. Together, they give 
 a good starting point for the project, providing a remote keyboard control, remote camera stream, constant speed control of the given kit and others.  
 
