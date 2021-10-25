@@ -165,7 +165,17 @@ Basic Python libraries:
     - `Lane detection link 2`_
     - `Traffic sign recognition link 1`_
     - `Traffic sign recognition link 2`_
+    - `Automatic exposure control`_
+    - `Automatic gain control`_
 
+.. _`Opencv Official Documentation`: https://docs.opencv.org/4.1.2
+.. _`Opencv with python`: https://www.youtube.com/watch?v=kdLM6AOd2vc&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K
+.. _`Lane detection link 1`: https://www.youtube.com/watch?v=eLTLtUVuuy4
+.. _`Lane detection link 2`: https://www.youtube.com/watch?v=CvJN_jSVm30
+.. _`Traffic sign recognition link 1`: https://www.youtube.com/watch?v=QHra6Xf6Mew
+.. _`Traffic sign recognition link 2`: https://www.youtube.com/watch?v=LjK0hD3dfrY&ab_channel=gsnikitin
+.. _`Automatic exposure control`: https://www.researchgate.net/publication/228405828_Automatic_camera_exposure_control
+.. _`Automatic gain control`: https://ieeexplore.ieee.org/document/1315984
 
 Articles for Road Sign Recognition:
 
@@ -183,10 +193,3 @@ Articles for Lane detection and tracking:
       2006 IEEE Intelligent Transportation Systems Conference, Toronto, Ont., 2006, pp. 1143-1148. [`link6 <https://ieeexplore.ieee.org/document/1707376>`_]
     - Yue Dong, Jintao Xiong, Liangchao Li and Jianyu Yang, "Robust lane detection and tracking for lane departure warning," 
       2012 International Conference on Computational Problem-Solving (ICCP), Leshan, 2012, pp. 461-464. [`link7 <https://ieeexplore.ieee.org/document/6384266>`_]
-
-.. _`Opencv Official Documentation`: https://docs.opencv.org/4.1.2
-.. _`Opencv with python`: https://www.youtube.com/watch?v=kdLM6AOd2vc&list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K
-.. _`Lane detection link 1`: https://www.youtube.com/watch?v=eLTLtUVuuy4
-.. _`Lane detection link 2`: https://www.youtube.com/watch?v=CvJN_jSVm30
-.. _`Traffic sign recognition link 1`: https://www.youtube.com/watch?v=QHra6Xf6Mew
-.. _`Traffic sign recognition link 2`: https://www.youtube.com/watch?v=LjK0hD3dfrY&ab_channel=gsnikitin

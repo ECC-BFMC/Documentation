@@ -4,7 +4,8 @@ V2X - Vehicle to everything
 For all the V2X communications to work, all the cars RPi (or computers replaced) will have to be connected to the LAN. Prior the competition, the teams will 
 share with the organizers the MAC of the car computer and two other computers used for development & connection at the location.
 
-API's are given in the computer project for interaction with all the systems, together with simulated server in order to ensure the communication with them.
+API's are given in the brain project for interaction with all the systems, together with simulated servers (or components) in order to ensure that the 
+real systems will interact with yours in a propper manner.
 
 Localization system and mapping
 ''''''''''''''''''''''''''''''''''
@@ -13,7 +14,7 @@ system has three main components: server, robot client and camera client. The se
 calculates the position of the cars o the system and serves the robot clients with theirs coordination. 
 
 Technical data of the system:
- - The frequency of the given messages is 4 Hz
+ - The frequency of the given messages is 3-4 Hz
  - The error of the system is about ~10 cm
  - The delay of the received messages is ~0.4 seconds
  - Some areas do not have coverage. 
@@ -61,17 +62,17 @@ You can find the figure and the digital representation on the following links:
  - `Competition track figure`_
  - `Competition track digital`_
 
-  .. _`Test track figure`: https://github.com/BFMC/Documentation/blob/master/source/images/Test_track.png
-  .. _`Test track digital`: https://github.com/BFMC/Documentation/blob/master/source/templates/Test_track.graphml
-  .. _`Competition track figure`: https://github.com/BFMC/Documentation/blob/master/source/images/Competition_track.png
-  .. _`Competition track digital`: https://github.com/BFMC/Documentation/blob/master/source/templates/Competition_track.graphml
+  .. _`Test track figure`: https://github.com/ECC-BFMC/Documentation/blob/master/source/images/Test_track.png
+  .. _`Test track digital`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Test_track.graphml
+  .. _`Competition track figure`: https://github.com/ECC-BFMC/Documentation/blob/master/source/images/Competition_track.png
+  .. _`Competition track digital`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Competition_track.graphml
 
   The coordinates systems of the maps can be found here:
   - `Test track coordinate system`_
   - `Competition track coordinate system`_
   
-     .. _`Test track coordinate system`: https://github.com/BFMC/Documentation/blob/master/source/templates/Track_Test.png
-     .. _`Competition track coordinate system`: https://github.com/BFMC/Documentation/blob/master/source/templates/Track_2021.png
+     .. _`Test track coordinate system`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track_Test.png
+     .. _`Competition track coordinate system`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track.png
 
 Semaphore
 ''''''''''

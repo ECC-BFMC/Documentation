@@ -94,7 +94,7 @@ It's a Reely RS610WP Servo Motor. Links:
     - `Technical documentation (RS610WP)`_
     - `Servomotor - Useful link`_
 
-.. _`Technical documentation (RS610WP)`: https://github.com/BFMC/Documentation/blob/master/source/documents/Servo.pdf
+.. _`Technical documentation (RS610WP)`: https://www.conrad.com/p/reely-standard-servo-rs-610wp-mg-analogue-servo-gear-box-material-metal-connector-system-jr-2141322
 .. _`Servomotor - Useful link`: https://www.youtube.com/watch?v=ditS0a28Sko
 
 Battery

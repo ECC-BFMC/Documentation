@@ -12,10 +12,10 @@ The 3d models of these components you download from following links:
     - `Camera joint 1`_
     - `Camera joint 2`_
 
-.. _`Nucleo and Raspberry Pi 4 suport`: https://github.com/BFMC/Documentation/blob/master/source/3DModels/Nucleo+Rpi_Suport.STL
-.. _`Camera base`: https://github.com/BFMC/Documentation/blob/master/source/3DModels/CameraHolderBase.STL
-.. _`Camera joint 1`: https://github.com/BFMC/Documentation/blob/master/source/3DModels/PicameraHolderPart2.STL
-.. _`Camera joint 2`: https://github.com/BFMC/Documentation/blob/master/source/3DModels/PicameraHolderPart3.STL
+.. _`Nucleo and Raspberry Pi 4 suport`: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/Nucleo+Rpi_Suport.STL
+.. _`Camera base`: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CameraHolderBase.STL
+.. _`Camera joint 1`: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/PicameraHolderPart2.STL
+.. _`Camera joint 2`: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/PicameraHolderPart3.STL
 
 
 On the race track we place elements that are printed or built. The model for these posts you can download from following links:
@@ -23,9 +23,9 @@ On the race track we place elements that are printed or built. The model for the
     - `Traffic sign pole`_
     - `Separator block`_
 
-.. _`Traffic sign base`: https://github.com/BFMC/Documentation/blob/master/source/3DModels/sign_holder_base.STL
-.. _`Traffic sign pole`: https://github.com/BFMC/Documentation/blob/master/source/3DModels/sign_holder_pole.STL
-.. _`Separator block`: https://github.com/BFMC/Documentation/blob/master/source/3DModels/Separator_block.STL
+.. _`Traffic sign base`: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/sign_holder_base.STL
+.. _`Traffic sign pole`: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/sign_holder_pole.STL
+.. _`Separator block`: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/Separator_block.STL
 
 Printed circuit boards (PCB's)
 ''''''''''''''''''''''''''''''''
@@ -34,5 +34,5 @@ On the robot we built two pcb's, a power distribution board and a BNO shuttleboa
     - `Power Distribution Board`_
     - `BNO shuttleboard`_
 
-    .. _`Power Distribution Board`: https://github.com/BFMC/Documentation/blob/master/source/PCB/pdboard_schematic.pdf
-    .. _`BNO shuttleboard`: https://github.com/BFMC/Documentation/blob/master/source/PCB/imu_schematic.pdf
+    .. _`Power Distribution Board`: https://github.com/ECC-BFMC/Documentation/blob/master/source/PCB/pdboard_schematic.pdf
+    .. _`BNO shuttleboard`: https://github.com/ECC-BFMC/Documentation/blob/master/source/PCB/imu_schematic.pdf

@@ -46,8 +46,8 @@ You can find the maps in svg formats at the following links and extract all the 
     - `Test track`_  
     - `Race track`_   
     
-    .. _`Test track`: https://github.com/BFMC/Documentation/blob/master/source/templates/Track_Test.svg
-    .. _`Race track`: https://github.com/BFMC/Documentation/blob/master/source/templates/Track_2021.svg
+    .. _`Test track`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track_Test.svg
+    .. _`Race track`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track.svg
 
 Traffic signs
 '''''''''''''
@@ -67,7 +67,7 @@ You can find the traffic signs in pdf format at the following link:
 
     - `traffic signs`_ 
 
-.. _`traffic signs`: https://github.com/BFMC/Documentation/blob/master/source/templates/TrafficSign.pdf
+.. _`traffic signs`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/TrafficSign.pdf
 
 Each sign is encapsulate in a 6x6 cm square (scaled accordingly. You can see two examples in the picture below:
 
@@ -152,7 +152,7 @@ The mark will be placed on a structure similar to te highway separator, listed i
 This is the  `mark`_ , place on the separator identical to the highway separator. 
 And here are two pictures of how it looks like:
 
-.. _`mark`: https://github.com/BFMC/Documentation/blob/master/source/templates/roadblock.pdf
+.. _`mark`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/roadblock.pdf
 
 .. image:: images/environment/roadblock_left.png
    :align: center

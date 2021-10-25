@@ -10,4 +10,4 @@ The project contains all the resources that the organizing team may consider nec
 - Examples and explanation of the period statuses
 
 ## The documentation is available in more details here:
-[Documentation](https://boschfuturemobilitychallenge.readthedocs.io/en/stable/)
+[Documentation](https://boschfuturemobility.com/documentation/)
