@@ -14,11 +14,9 @@ system has three main components: server, robot client and camera client. The se
 calculates the position of the cars o the system and serves the robot clients with theirs coordination. 
 
 Technical data of the system:
- - The frequency of the given messages is 3-4 Hz
- - The error of the system is about ~10 cm
- - The delay of the received messages is ~0.4 seconds
- - Some areas do not have coverage. 
- - The last detected position is stored and served. If the position is older then 2 seconds it is discarded.
+ - The frequency of the given messages is up to 10 Hz
+ - The error of the system is about ~15 cm
+ - The delay of the received messages is ~1 second
 
 A digital map is provided in order to help the teams navigate in the environment. The map is saved in XML format and it is exported with the help of the GraphML 
 library (making it easier to be imported on your platform). There are two types of information: Nodes and Connections. Each node is placed in the middle o a lane 
@@ -148,4 +146,4 @@ TS - Traffic Sign
 V2V - Vehicle to vehicle communicaiton
 ''''''''''''''''''''''''''''''''''''''''
 The dinamic obstacles (moving cars) will stream their position on the map via WiFi UDP messages, including the car id and it's position. 
-The frequency of the sent messages will be of 4 Hz and the accuracy will be of 10 cm radious. 
+The technical data of the stream are the same as the ones of the localization system.
