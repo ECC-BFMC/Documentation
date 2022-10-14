@@ -45,13 +45,14 @@ VNH5012 H-bridge Motor Driver
    :align: center
    :scale: 50%
 
-It's H-bridge for dc motor. Here are the links:
+It's H-bridge for dc motor. In some of the cars, the driver model is is Pololu G2 High-Power Motor Driver. Here are the links:
     - `Official site of VNH5019`_ 
     - `VNH - Useful link`_ 
+    - `Official site of G2 18v17`_ 
 
 .. _`Official site of VNH5019`: https://www.pololu.com/product/1451
 .. _`VNH - Useful link`: https://www.youtube.com/watch?v=9ShJ6IH0ZLs
-
+.. _`Official site of G2 18v17`: https://www.pololu.com/product/2991
 
 AMT103 Encoder
 --------------
@@ -139,9 +140,11 @@ Smart IMU
    :align: center
    :scale: 100%
 
-It's a smart IMU sensor, BNO055 . Here are some links: 
+It's a smart IMU sensor, BNO055 or an MPU6050- . Here are some links: 
     - `Usage Manual(Smart sensor: BNO055)`_
     - `IMU - Useful link`_
+    - `Official doc MPU6050`_
 
 .. _`Usage Manual(Smart sensor: BNO055)`: https://www.bosch-sensortec.com/products/smart-sensors/bno055.html
 .. _`IMU - Useful link`: https://www.youtube.com/watch?v=Bw0WuAyGsnY&ab_channel=BoschSensortec
+.. _`Official doc MPU6050`: https://wiki.dfrobot.com/6_DOF_Sensor-MPU6050__SKU_SEN0142_

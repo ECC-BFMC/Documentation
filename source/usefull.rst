@@ -18,6 +18,11 @@ Mount the chosen image on your RPi with the help of balenaetcher:
 - `BalenaEtcher`_
 .. _`BalenaEtcher`: https://www.balena.io/etcher/
 
+Another alternative is to use the Raspberry Pi Imager (for Windows, Ubuntu or macOs). From this tool you can easily flash any available os for raspbery pi 
+and set up various things, such as network setup and ssh communication.
+- `Raspberry Pi Imager`_
+.. _`Raspberry Pi Imager`: https://www.raspberrypi.com/software/
+
 Setting up WLAN
 ```````````````
 Without directly connecting to the RPi, you can set the LAN from the PC by creating a wpa_supplicanf.conf file under boot folder, in your SD card.

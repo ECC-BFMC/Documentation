@@ -102,9 +102,9 @@ The cycle of each semaphore is described in the table below
 =============  =============  =============  =============  =============
 
 
-Environmental server
+Live traffic system
 '''''''''''''''''''''
-An environmental server will be available at the location. The car will have to send to it the position (with 0.5 meter radious error) the position and
+An live traffic server will be available at the location. The car will have to send to it the position (with 0.5 meter radious error) the position and
 the id of the encoutnered obstacle. Down below, you can see the table with the id and description of the obstacles.
 
 +------+------------------------+

@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'BFMC.Main'
+project = 'BFMC Documentation'
 copyright = 'Bosch Engineering Center Cluj and BFMC organizers'
 author = 'Bosch Engineering Center Cluj and BFMC organizers'
 

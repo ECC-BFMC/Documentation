@@ -104,7 +104,7 @@ Besides showing the appropriate color, they will also broadcast their state via 
 
 You can find the link to the traffic light here: `traffic light`_. 
 
-.. _`traffic light`: https://www.aliexpress.com/item/32678327113.html?spm=a2g0o.productlist.0.0.1328774feswkGW&algo_pvid=e1a2a6c9-8adb-4b00-a0d7-6c5773c6e409&algo_expid=e1a2a6c9-8adb-4b00-a0d7-6c5773c6e409-26&btsid=2100bdcf16226354621923567e8b67&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
+.. _`traffic light`: https://www.amazon.com/TOYANDONA-Multicoloured-Simulation-Crosswalk-Education/dp/B08SM96CHK/ref=sr_1_5?keywords=traffic+light+toy&qid=1665752048&qu=eyJxc2MiOiI1LjQ3IiwicXNhIjoiNS4xNiIsInFzcCI6IjQuNjQifQ%3D%3D&sr=8-5
 
 Pedestrian
 ''''''''''
@@ -126,7 +126,7 @@ Here you can find a picture of pedestrian:
 
 You can find the oficial link to the store here: `pedestrian`_. 
 
-.. _`pedestrian`: https://www.simbatoys.de/en/brands/evi-love/leisure/evi-love-my-first-bike-2-ass-105731715/
+.. _`pedestrian`: https://www.amazon.co.uk/Simba-EVI-Love-First-Bike/dp/B000UTKNI0
 
 Obstacle vehicles
 '''''''''''''''''
