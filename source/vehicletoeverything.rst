@@ -10,12 +10,26 @@ real systems will interact with yours in a propper manner.
 Localization system and mapping
 ''''''''''''''''''''''''''''''''''
 An indoor localization system is available. It aims to detect and send upon connection the relative position for each robot on the race track. The localization 
-system has three main components: server, robot client and camera client. The server collects the data from the camera client(position of the car on the camera), 
-calculates the position of the cars o the system and serves the robot clients with theirs coordination. 
+system is based on ROS2 in combination with a series of UWB devices. It has four main components: server, robot client(cars) and anchor device and tag device. 
+The anchors are set into know positions on the track. The tag devices, communicate with the anchors in order to get their position on the map; then the tags connect 
+to the server and sends in the location data. The server collects and stores the data from the tag devices (location on map) and waits for connections from the 
+robot clients; then, upon connection, it serves the desired data to the clients. Down below a picture describing the proccess.
+
+.. image::  images/Localisation_system.png
+  :align: center
+  :scale: 60%
+
+The system will be installed only at the phisical competition. It is made of two components: one fixed component that will be glued to the car body upon arival 
+and the actual device, which the team will get only while on the track. The active part will have displayed the ID of the connection. In the following image you 
+can see the place where the device will be placed, the fixed component and the actual device.
+
+.. image::  images/Localisation_system_HW.png
+  :align: center
+  :scale: 60%
 
 Technical data of the system:
- - The frequency of the given messages is up to 10 Hz
- - The error of the system is about ~15 cm
+ - The frequency of the given messages is 5-10 Hz
+ - The error of the system is of maximum 15 cm radious
  - The delay of the received messages is ~1 second
 
 A digital map is provided in order to help the teams navigate in the environment. The map is saved in XML format and it is exported with the help of the GraphML 
