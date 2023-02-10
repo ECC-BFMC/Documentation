@@ -9,11 +9,17 @@ real systems will interact with yours in a propper manner.
 
 Localization system and mapping
 ''''''''''''''''''''''''''''''''''
-An indoor localization system is available. It aims to detect and send upon connection the relative position for each robot on the race track. The localization 
-system is based on ROS2 in combination with a series of UWB devices. It has four main components: server, robot client(cars) and anchor device and tag device. 
-The anchors are set into know positions on the track. The tag devices, communicate with the anchors in order to get their position on the map; then the tags connect 
-to the server and sends in the location data. The server collects and stores the data from the tag devices (location on map) and waits for connections from the 
-robot clients; then, upon connection, it serves the desired data to the clients. Down below a picture describing the proccess.
+This indoor localization systems aims to detect and send upon connection the relative position for each robot on the race track. The localization 
+system is based on ROS2 in combination with a series of UWB devices from Quorvo (DWM1001-DEV). It has four main components: 
+- server, 
+- robot client(competitors cars), 
+- anchor devices,
+- Tag devices (made of a RPi+DWM). 
+The anchors position on the track is measured and configured. 
+The tag devices, communicate with the anchors in order to get their position on the map, and the RPi which is connected to the tag, gets this position; 
+The server knows the ip's of the tag device and, upon request from the robot clients, it returns this ip.
+The robot clients, after having the IP of the desired device (written on the device itself), connects to it and waits for continuous positions.
+All this is done via the given APi.
 
 .. image::  images/Localisation_system.png
   :align: center
@@ -25,7 +31,9 @@ can see the place where the device will be placed, the fixed component and the a
 
 .. image::  images/Localisation_system_HW.png
   :align: center
-  :scale: 60%
+  :scale: 25%
+
+The device waights 280 Grams, and designs can be found here. The mandatory location for it's positioning is the one in the picture.
 
 Technical data of the system:
  - The frequency of the given messages is 5-10 Hz
