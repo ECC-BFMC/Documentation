@@ -10,11 +10,11 @@ Embedded platform
 
 * :doc:`Tools for development <embeddedplatform/toolsfordevelopment>`
 
-  - Info about raspberry
+  - How to get modify, build and flash the Nucleo code.
 
 * :doc:`Debugging <embeddedplatform/debugging>`
 
-  - Info about raspberry
+  - A general debugging tool, Putty!
 
 The embedded platform refers to the code that is written on the Nucleo board, more precisely the low level application, which runs on the 
 micro-controller. It aims to control the robot movement and provide an interface between a higher level controllers and lower level actuators 

@@ -12,19 +12,20 @@ Computer projects
 
 * :doc:`Computer setup <computer/setup>`
 
-  - Info about raspberry
+  - Describing the setup for the computer code
 
 * :doc:`Computer Testing <computer/testing>`
 
-  - Info about raspberry
+  - Describing the setup for the computer simulated servers and devices!
   
 * :doc:`Demo <computer/demo>`
 
-  - Info about raspberry   
+  - Describing the setup for the computer demo code.
 
 * :doc:`Dashboard <computer/dashboard>`
 
-  - Info about raspberry   
+  - Describing the setup for the computer demo code.
+
 
 
 This is the sum of codes that have to be run on the computer side, either if it's for testing purposes (testing the V2X systems), the demo, 

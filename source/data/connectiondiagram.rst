@@ -12,18 +12,17 @@ Connection diagram and components
 
 * :doc:`Components <connectiondiagram/components>`
 
-  - Info about raspberry
+  - The list of all the bought components in the car.
 
 * :doc:`Printed Components <connectiondiagram/printedcomponents>`
 
-  - Info about raspberry
+  - A list of all the 3d printed components in the car.
   
 * :doc:`Powerboard <connectiondiagram/powerboard>`
 
-  - Info about raspberry   
+  - Info about the power distribution board.
 
-In this section the main components are listed, together with the connection diagram. 
-In the following schematics you can see a simple connections diagram. The GPIO lines are marked on each components.
+In this schematics you can see the connections diagram of all the HW components in the car. The GPIO lines are marked on each components.
 
 .. image:: ../images/ConnectionDiagram.png
    :align: center

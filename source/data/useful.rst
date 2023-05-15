@@ -17,24 +17,24 @@ raspberry usage and image processing.
 
 * :doc:`Raspberry Classic <useful/usageraspberryclassic>`
 
-  - Info about raspberry
+  - How to classicaly develop on the raspbery pi (keyboard, mouse and display)
 
 * :doc:`Raspberry Fast <useful/usageRaspberryFast>`
 
-  - Info about raspberry
+  - How to efficeiently develop on the raspbery pi (ssh connections)
   
 * :doc:`ROS <useful/ROS>`
 
-  - Info about raspberry
+  - Getting started with ROS
 
 * :doc:`Coding in Raspberry <useful/coding>`
 
-  - Info about raspberry
+  - Coding on the raspbery pi
 
 * :doc:`Hardware improvements <useful/hardwareimprovements>`
 
-  - Info about raspberry
+  - The kit could use some mechanical improvements!
 
 * :doc:`Materials used <useful/materials>`
 
-  - Info about raspberry
+  - Liks and other stuff for testing materials.

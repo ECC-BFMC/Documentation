@@ -12,24 +12,22 @@ Race track
 
 * :doc:`Ground markings on the track <racetrack/groundmarkings>`
 
-  - Info about raspberry
+  - The gounr marking dimensions, like lane width, spacing, separator lane, etc.
 
-* :doc:`Signs on the track <racetrack/trafficsigns>`
+* :doc:`Traffic signs <racetrack/trafficsigns>`
 
-  - Info about raspberry
+  - The traffic signs PDF and the 3d model of the poles. 
 
 * :doc:`Other elements on racetrack <racetrack/otherelements>`
 
-  - Info about raspberry
+  - Other elements on the track, like semaphores, pedestrian, blocks, etc.
 
 * :doc:`Positioning on the track <racetrack/positioning>`
 
-  - Info about raspberry
+  - The positioning of all the elements and where toe xpect them.
 
 
-In this section the characteristics of the race track are described. Templates on some of them are provided. 
-
-You can find the maps in svg formats at the following links and extract all the non-specified dimensions: 
+In this section the characteristics of the race track are described. You can find the maps in svg formats at the following links and extract all the non-specified dimensions: 
     - `Test track`_  
     - `Race track`_   
     

@@ -11,5 +11,5 @@ The 3d models of these components you download from following links:
 
 .. _`Nucleo and Raspberry Pi 4 suport`: https://github.com/ECC-BFMC/Documentation/blob/master/3DModels/Nucleo+Rpi_Suport.STL
 .. _`Camera base`: https://github.com/ECC-BFMC/Documentation/blob/master/3DModels/CameraHolderBase.STL
-.. _`Camera joint 1`: https://github.com/ECC-BFMC/Documentation/blob/master/3DModels/PicameraHolderPart2.STL
-.. _`Camera joint 2`: https://github.com/ECC-BFMC/Documentation/blob/master/3DModels/PicameraHolderPart3.STL
+.. _`Camera joint 1`: https://github.com/ECC-BFMC/Documentation/blob/master/3DModels/PIcameraHolderPart2.STL
+.. _`Camera joint 2`: https://github.com/ECC-BFMC/Documentation/blob/master/3DModels/PIcameraHolderPart3.STL

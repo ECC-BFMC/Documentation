@@ -32,36 +32,36 @@ Getting started
 
 * :doc:`Connection Diagram <data/connectiondiagram>`
 
-  - Diagrams with connections
+  - All the hardware components list that can be found on the car together with the diagram connection scheme.
 
 * :doc:`Race track <data/racetrack>`
 
-  - Info about the race track
+  - Info about all the phisical elements that can be found on the racetrack, their dimensions and placement. This info can be used in order to recreate a similar environment.
 
 * :doc:`Vehicle to everything <data/vehicletoeverything>`
 
-  - Vehicle to everything connection
+  - A series of connectivity servers and softwares will be present at the competition, like semaphores, a localization system, a traffic monitor and vehicle communication.
 
 * :doc:`Embedded platform <data/embeddedplatform>`
 
-  - Info about the embedded platform
+  - The code that is already installed on the Nucleo board. Here's how it works.
 
 * :doc:`Brain <data/brain>`
 
-  - Info about the brain platform
+  - The code that is already installed on the raspbery. Here's how it works.
 
 * :doc:`Computer <data/computer>`
 
-  - Info about the computer
+  - The code that can be run on a remote computer. Contains simulated servers or devices for the Vehicle-to-Everything communication, together with a demo on how to get the car running and a dashboard for monitoring it's states.
 
-* :doc:`Computer <data/simulator>`
+* :doc:`Simulator <data/simulator>`
 
-  - Simulator information
+  - All the information regarding the simulator, how to run it and how to make it interact with the car.
 
-* :doc:`Computer <data/useful>`
+* :doc:`Useful links and information <data/useful>`
 
-  - General useful information
+  - General useful information. A series of tools and skills that would be beneficial for this project. Of course you can use your own.
 
-* :doc:`Computer <data/periodicstatus>`
+* :doc:`Periodic status <data/periodicstatus>`
 
-  - Information regarding periodic status
+  - Examples of documents for the periodic status.
