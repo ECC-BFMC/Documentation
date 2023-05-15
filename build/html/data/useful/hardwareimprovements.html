@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hardware improvements &mdash; BFMC - Competition Documentation  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+    <link rel="canonical" href="https://boschfuturemobility.com/data/useful/hardwareimprovements.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Aditional materials" href="materials.html" />
+    <link rel="prev" title="Coding" href="coding.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> BFMC - Competition Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../connectiondiagram.html">Connection diagram and components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../connectiondiagram/components.html">Components list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connectiondiagram/printedcomponents.html">Printed components - 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connectiondiagram/powerboard.html">Powerboard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../racetrack.html">Race track</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/groundmarkings.html">Ground markings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/trafficsigns.html">Traffic signs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/otherelements.html">Other elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/positioning.html">Positioning on track</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../vehicletoeverything.html">V2X - Vehicle to everything</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/localizationsysandmap.html">Localization system and mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/semaphore.html">Semaphore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/livetraffic.html">Live traffic system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/vehicletovehicle.html">V2V - Vehicle to vehicle communication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../embeddedplatform.html">Embedded platform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../embeddedplatform/toolsfordevelopment.html">Tools for development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../embeddedplatform/debugging.html">Debugging the code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../brain.html">Brain project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../brain/pythonmultiprocessing.html">Python and multiprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brain/rosversion.html">ROS setup and packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brain/roswithsimulator.html">ROS with simulator data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../computer.html">Computer projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../computer/setup.html">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../computer/testing.html">Simulated servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../computer/demo.html">Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../computer/dashboard.html">Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../simulator.html">Simulator</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../useful.html">Useful</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="usageraspberryclassic.html">Usage of rasbery pi - Classical approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usageRaspberryFast.html">Usage of rasbery pi - Fast approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ROS.html">Robot Operating System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coding.html">Coding</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Hardware improvements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="materials.html">Aditional materials</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../periodicstatus.html">Periodic status and examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">BFMC - Competition Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../useful.html">Useful</a></li>
+      <li class="breadcrumb-item active">Hardware improvements</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ECC-BFMC/Documentation/blob/master/source/data/useful/hardwareimprovements.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hardware-improvements">
+<h1>Hardware improvements<a class="headerlink" href="#hardware-improvements" title="Permalink to this heading"></a></h1>
+<section id="faq">
+<h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this heading"></a></h2>
+<p><strong>WHY?</strong></p>
+<p>Let’s say you have just written a script that turns on a light bulb. At the first glance, there is no light coming out from the bulb. What are you going to do?
+Well, sometimes it’s better to check if the bulb is properly plugged in, rather than rewriting your code. Basically all you need to do is cleaning, lubricating
+and, where needed, removing some parts of the car.</p>
+<p><strong>What are the advantages?</strong></p>
+<dl class="simple">
+<dt>The advantages are:</dt><dd><ul class="simple">
+<li><p>Developing / improving mechanical skills;</p></li>
+<li><p>Lower friction - involving lower current consumption;</p></li>
+<li><p>Driving smoothness;</p></li>
+<li><p>Low chance of getting the car stuck when cornering.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Can this part be skipped?</strong></p>
+<p>The given car kit has an already implemented PID control, which means driving in a “constant speed” mode, meaning that even if the car tends to get stuck (based
+on the signals received from the encoder) the car’s speed will be automatically adjusted and therefore the problem of the smoothness is eliminated (at least
+partially). The car, by default, runs in “constant power consumption” mode, where any friction or physical tension will result in decreasing the car’s speed or
+even in the situation of the car being stuck. Nevertheless, in both situations, a hardware care for the chassys is always welcomed :).</p>
+<p><strong>What tools do I need?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Imbus screwdriver;</p></li>
+<li><p>Grease ;</p></li>
+<li><p>Degreaser;</p></li>
+<li><p>Isopropyl alcohol;</p></li>
+<li><p>Sponge &amp; brush;</p></li>
+<li><p>Pliers;</p></li>
+<li><p>Phillips screwdriver;</p></li>
+<li><p>Flat file / dremel / sandpaper.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/tools.png"><img alt="../../_images/tools.png" class="align-center" src="../../_images/tools.png" style="width: 100%;" /></a>
+<p><strong>How much time do I need?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Working time approximately 4 hours.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="lets-get-this-show-on-the-road">
+<h2>Let’s get this show on the road!<a class="headerlink" href="#lets-get-this-show-on-the-road" title="Permalink to this heading"></a></h2>
+<p><strong>Removing the computer boards’ support</strong></p>
+<p>Disconnect all wires, remove the mounting support’s nut and then remove the safety clamps and case holders.</p>
+<a class="reference internal image-reference" href="../../_images/RPIsupport.png"><img alt="../../_images/RPIsupport.png" class="align-center" src="../../_images/RPIsupport.png" style="width: 457.0px; height: 377.0px;" /></a>
+<p><strong>Removing the driving shafts</strong></p>
+<p>Unscrew the highlighted screws.</p>
+<a class="reference internal image-reference" href="../../_images/suspensions.png"><img alt="../../_images/suspensions.png" class="align-center" src="../../_images/suspensions.png" style="width: 472.0px; height: 269.0px;" /></a>
+<p><strong>Removing the differential</strong></p>
+<p>Unscrew the highlighted screws and after step no. 3 you will be able to see the cogwheels.</p>
+<a class="reference internal image-reference" href="../../_images/differential.png"><img alt="../../_images/differential.png" class="align-center" src="../../_images/differential.png" style="width: 475.0px; height: 270.0px;" /></a>
+<p><strong>Cleaning the cogwheels</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Remove both pieces. From Piece A remove the bearing and afterwards remove the washer permanently.</p></li>
+<li><p>Clean the grease from the differential’s case, cogwheels and bearings. Make sure you also use alcohol for degreasing the bearings until they freely spin.</p></li>
+</ol>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/cogwheel.png"><img alt="../../_images/cogwheel.png" class="align-center" src="../../_images/cogwheel.png" style="width: 470.0px; height: 267.0px;" /></a>
+<p><strong>Tighten the screws equally</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Remove the safety washer (A) and then also remove the (B) washer permanently.</p></li>
+<li><p>Remove the screws from the plastic cogwheel and then try sandpapering the surface where the flange will be attached (until it is perfectly flat).</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/drivenwheel.png"><img alt="../../_images/drivenwheel.png" class="align-center" src="../../_images/drivenwheel.png" style="width: 472.0px; height: 266.0px;" /></a>
+<p><strong>Mount them back</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Grease all moving parts .</p></li>
+<li><p>Tighten the screws equally (do not screw them too hard) in the specified order.</p></li>
+<li><p>Try spinning the driving shaft and make sure that it does not have blocking points.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/mountback.png"><img alt="../../_images/mountback.png" class="align-center" src="../../_images/mountback.png" style="width: 467.0px; height: 266.0px;" /></a>
+<p><strong>The distance between cogwheels’ axis</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>The cogwheels are not perfectly round, therefore at a complete spin of wheel A, the space between the two might vary. This can result in:</dt><dd><ul>
+<li><p>Losing grip;</p></li>
+<li><p>Locking the wheels.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>What you should do:</dt><dd><ul>
+<li><p>Loosen up the C screw;</p></li>
+<li><p>Let someone spin both front wheels in order to see if the wheels are still coupled together while you are adjusting the distance between the two.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>When do you know it’s done?</dt><dd><ul>
+<li><p>This step can be considered done when the wheels move smoothly for a total spin of A cogwheel, with the mention that the cogwheels should be permanently jointed (When tightening the C screw back the cogwheel may move, and so modify the distance between the axis and therefore it might need to be setup properly once again).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/distance.png"><img alt="../../_images/distance.png" class="align-center" src="../../_images/distance.png" style="width: 407.0px; height: 456.0px;" /></a>
+</section>
+<section id="the-abnormal-free-movement-of-the-wheels">
+<h2>The abnormal free movement of the wheels<a class="headerlink" href="#the-abnormal-free-movement-of-the-wheels" title="Permalink to this heading"></a></h2>
+<dl class="simple">
+<dt>It is true that the wheel may seem a little bit too loose but this is not a bad thing. You have to make a compromise:</dt><dd><ul class="simple">
+<li><p>A freer move results in loose parts.</p></li>
+<li><p>Firm parts result in not such a free move.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Our suggestion is to put a very thin (how thin, it depends on the gap between bearing and safety cylinder) washer between the bearing and driving shaft joint.
+You should compare a wheel that doesn’t have a washer with the one you just mounted and see if it is ok for you.</p>
+<a class="reference internal image-reference" href="../../_images/wheelladjustment.png"><img alt="../../_images/wheelladjustment.png" class="align-center" src="../../_images/wheelladjustment.png" style="width: 100%;" /></a>
+</section>
+<section id="always-be-sure-that-the-driving-shafts-are-moving-freely">
+<h2>Always be sure that the driving shafts are moving freely<a class="headerlink" href="#always-be-sure-that-the-driving-shafts-are-moving-freely" title="Permalink to this heading"></a></h2>
+<p>The highlighted parts are the driving shafts. They should always freely move regardless of the wheels’ position and car’s distance to the ground.</p>
+<a class="reference internal image-reference" href="../../_images/drivingshaft.png"><img alt="../../_images/drivingshaft.png" class="align-center" src="../../_images/drivingshaft.png" style="width: 377.0px; height: 431.0px;" /></a>
+<dl class="simple">
+<dt>In order to let the driving shaft move freely, you need to increase the gap between the wheel and the differential:</dt><dd><ul class="simple">
+<li><p>Take the suited imbus screwdriver and unscrew both the upper and lower screws a little bit.</p></li>
+<li><p>Repeat the previous step until your driving shaft moves freely in any situation</p></li>
+</ul>
+</dd>
+</dl>
+<a class="reference internal image-reference" href="../../_images/gap.png"><img alt="../../_images/gap.png" class="align-center" src="../../_images/gap.png" style="width: 143.0px; height: 188.0px;" /></a>
+<p><strong>Frontal differential and steering</strong></p>
+<p>The front axis differential also needs the same treatment as the rear one.
+Also, the servo needs one more screw in order to ensure that the sttering column never jumps out. The position is hard to reach when the car is fully assembled.
+We suggest that, when working on the frontal differential, to also fix the servo’s couple. Please make sure that both Nucleo and servo are properly powered on
+when doing so, this way, the servo will be set to the 0 position. Afterwards, check that the wheels are in the neutral position. Then, you can safely tight the
+couple.</p>
+<a class="reference internal image-reference" href="../../_images/servo.png"><img alt="../../_images/servo.png" class="align-center" src="../../_images/servo.png" style="width: 384.0px; height: 280.0px;" /></a>
+</section>
+<section id="setting-the-wheels-camber">
+<h2>Setting the wheels’ Camber<a class="headerlink" href="#setting-the-wheels-camber" title="Permalink to this heading"></a></h2>
+<p><strong>What is the wheel’s Camber?</strong></p>
+<p>The Camber is the angle at which the wheel and tire stand relative to a perfectly flat surface and it can be positive or negative. A positive Camber means that
+the top of the wheel is pointed outwards, whereas negative Camber means the opposite, the top of the tire is leaned in closer to the car. Each of those two types
+of Camber have theirs advantages, but we suggest you approach a negative Camber.</p>
+<p><strong>What are the advantages of negative Camber?</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Improved handling of the vehicle;</p></li>
+<li><p>Reduced wheel vibration when turning;</p></li>
+<li><p>Possibility of cornering with higher speed;</p></li>
+<li><p>Steering reacts more directly;</p></li>
+<li><p>Steering forces are reduced;</p></li>
+</ul>
+</div></blockquote>
+<p><strong>How to set front axle Camber?</strong></p>
+<p>There are two ball-head screws (red circled). In order to set the front axle Camber you have to twist them using a 2.5 mm hexagon wrench that is inserted through
+the wheel’s rim. Unscrew the upper screw more than the lower one. Try as much as you can to set the Camber similar both left and right sides. If you unmount the
+wheel, you will see a plastic grub screw as in (green circled) that can be tighten with a 5 mm hexagon wrench. That only serve for fastening the axis stub to the
+ball-head screws (red circled). We suggest you check that both ball-head screw can move freely before you reattach the wheel. Always check for the suspension also
+to move freely after setting the Camber.</p>
+<a class="reference internal image-reference" href="../../_images/frontaxle.png"><img alt="../../_images/frontaxle.png" class="align-center" src="../../_images/frontaxle.png" style="width: 70%;" /></a>
+<p><strong>How to set rear axel Camber?</strong></p>
+<p>In order to set the Camber, you will need to turn the red circled screws so that the distance between the chassis and the top part of the wheels modify. The part
+doesn’t have to be disassembled in order to be modified, but of course you can remove and measure it with a caliper rule. Another way of modifying the rear axle
+Camber would be to change the mounting position of the traverse link into the rear axle leg (which has available three different mounting holes – the green circled parts).</p>
+<a class="reference internal image-reference" href="../../_images/backaxle.png"><img alt="../../_images/backaxle.png" class="align-center" src="../../_images/backaxle.png" style="width: 352.0px; height: 142.0px;" /></a>
+</section>
+<section id="setting-the-wheels-alignment">
+<h2>Setting the wheels’ alignment?<a class="headerlink" href="#setting-the-wheels-alignment" title="Permalink to this heading"></a></h2>
+<p><strong>What is wheel alignment?</strong></p>
+<p>Wheel alignment describes the relation of the wheel level to the driving direction. It is usually known as “toe-in” or “toe-out” where the toe measurement is the
+distance between the front of the tires and the back of the tires. Toe-in should be used because it improves lateral cornering of the tyres and it also leads to
+a more direct response to steerig.</p>
+<p><strong>Setting front axle alignment</strong></p>
+<p>The alignment on the front axle can be set by turning the track rod levers ( red circled). You do not have to dismantle them in order to do the adjustments, because
+they have threads in opposite. It is important that you set them equally (test after each modification that the car is moving straight).</p>
+<a class="reference internal image-reference" href="../../_images/frontaxlealignment.png"><img alt="../../_images/frontaxlealignment.png" class="align-center" src="../../_images/frontaxlealignment.png" style="width: 403.0px; height: 189.0px;" /></a>
+</section>
+<section id="adjust-the-cars-height">
+<h2>Adjust the car’s height<a class="headerlink" href="#adjust-the-cars-height" title="Permalink to this heading"></a></h2>
+<p>You have six possible combinations for the suspensions. We suggest you setup your ground clearance high enough to avoid any problems that can appear when driving
+on the ramp. You can see that there are two screws used as spacers (the light blue squares). Even if you setup you suspensions for a big ground clearance, it
+is possible that these spacers won’t let the lower control arm go as low as possible. So, you just have to unscrew the light blue highlighted screws (both
+front axle and rear axle).</p>
+<a class="reference internal image-reference" href="../../_images/height.png"><img alt="../../_images/height.png" class="align-center" src="../../_images/height.png" style="width: 447.0px; height: 244.0px;" /></a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="coding.html" class="btn btn-neutral float-left" title="Coding" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="materials.html" class="btn btn-neutral float-right" title="Aditional materials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Bosch Engineering Center Cluj and BFMC organizers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

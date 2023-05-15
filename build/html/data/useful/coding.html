@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding &mdash; BFMC - Competition Documentation  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+    <link rel="canonical" href="https://boschfuturemobility.com/data/useful/coding.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Hardware improvements" href="hardwareimprovements.html" />
+    <link rel="prev" title="Robot Operating System" href="ROS.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> BFMC - Competition Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../connectiondiagram.html">Connection diagram and components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../connectiondiagram/components.html">Components list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connectiondiagram/printedcomponents.html">Printed components - 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connectiondiagram/powerboard.html">Powerboard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../racetrack.html">Race track</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/groundmarkings.html">Ground markings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/trafficsigns.html">Traffic signs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/otherelements.html">Other elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/positioning.html">Positioning on track</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../vehicletoeverything.html">V2X - Vehicle to everything</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/localizationsysandmap.html">Localization system and mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/semaphore.html">Semaphore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/livetraffic.html">Live traffic system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/vehicletovehicle.html">V2V - Vehicle to vehicle communication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../embeddedplatform.html">Embedded platform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../embeddedplatform/toolsfordevelopment.html">Tools for development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../embeddedplatform/debugging.html">Debugging the code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../brain.html">Brain project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../brain/pythonmultiprocessing.html">Python and multiprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brain/rosversion.html">ROS setup and packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brain/roswithsimulator.html">ROS with simulator data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../computer.html">Computer projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../computer/setup.html">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../computer/testing.html">Simulated servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../computer/demo.html">Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../computer/dashboard.html">Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../simulator.html">Simulator</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../useful.html">Useful</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="usageraspberryclassic.html">Usage of rasbery pi - Classical approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usageRaspberryFast.html">Usage of rasbery pi - Fast approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ROS.html">Robot Operating System</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Coding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardwareimprovements.html">Hardware improvements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="materials.html">Aditional materials</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../periodicstatus.html">Periodic status and examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">BFMC - Competition Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../useful.html">Useful</a></li>
+      <li class="breadcrumb-item active">Coding</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ECC-BFMC/Documentation/blob/master/source/data/useful/coding.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="coding">
+<h1>Coding<a class="headerlink" href="#coding" title="Permalink to this heading"></a></h1>
+<section id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this heading"></a></h2>
+<p>Python is an interpreted high-level general-purpose programming language. It is versatile, easy to use and fast
+to develop, which makes it ideal for rapid prototyping. Some of it’s downsides is that it has speed limitation,
+it does not perform well with multithreading, making it inferior in performances to other, low-level programming languages.
+The links below represent a good starting point for this type of applications.
+- <a class="reference external" href="https://www.raspberrypi.org/documentation/usage/python">https://www.raspberrypi.org/documentation/usage/python</a>
+- <a class="reference external" href="https://www.digikey.com/en/maker/blogs/2018/how-to-run-python-programs-on-a-raspberry-pi">https://www.digikey.com/en/maker/blogs/2018/how-to-run-python-programs-on-a-raspberry-pi</a></p>
+</section>
+<section id="cpp">
+<h2>CPP<a class="headerlink" href="#cpp" title="Permalink to this heading"></a></h2>
+<p>It is one of the oldest, most used and most efficient programming languages. It has a wide support, it is powerful,
+fast and has a small amount of standard libraries. It’s major downside beying it’s complexity.
+- <a class="reference external" href="https://www.aranacorp.com/en/program-your-raspberry-pi-with-c/">https://www.aranacorp.com/en/program-your-raspberry-pi-with-c/</a></p>
+</section>
+<section id="bash">
+<h2>Bash<a class="headerlink" href="#bash" title="Permalink to this heading"></a></h2>
+<p>To be done!</p>
+</section>
+<section id="image-processing">
+<h2>Image processing<a class="headerlink" href="#image-processing" title="Permalink to this heading"></a></h2>
+<p>In this part, you can find some useful link for image processing on Raspberry pi.</p>
+<dl class="simple">
+<dt>Basic Python libraries:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://docs.opencv.org/4.1.2">Opencv Official Documentation</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=kdLM6AOd2vc&amp;list=PLS1QulWo1RIa7D1O6skqDQ-JZ1GGHKK-K">Opencv with python</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=eLTLtUVuuy4">Lane detection link 1</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=CvJN_jSVm30">Lane detection link 2</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=QHra6Xf6Mew">Traffic sign recognition link 1</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=LjK0hD3dfrY&amp;ab_channel=gsnikitin">Traffic sign recognition link 2</a></p></li>
+<li><p><a class="reference external" href="https://www.researchgate.net/publication/228405828_Automatic_camera_exposure_control">Automatic exposure control</a></p></li>
+<li><p><a class="reference external" href="https://ieeexplore.ieee.org/document/1315984">Automatic gain control</a></p></li>
+</ul>
+</dd>
+</dl>
+<p>Articles for Road Sign Recognition:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>A. Mogelmose, M. M. Trivedi and T. B. Moeslund, “Vision-Based Traffic Sign Detection and Analysis for Intelligent Driver Assistance Systems: Perspectives and Survey,”
+in IEEE Transactions on Intelligent Transportation Systems, vol. 13, no. 4, pp. 1484-1497, Dec. 2012. [<a class="reference external" href="https://ieeexplore.ieee.org/document/6335478/">link2</a>]</p></li>
+<li><p>S. Maldonado-Bascon, S. Lafuente-Arroyo, P. Gil-Jimenez, H. Gomez-Moreno and F. Lopez-Ferreras, “Road-Sign Detection and Recognition Based on Support Vector Machines,”
+in IEEE Transactions on Intelligent Transportation Systems, vol. 8, no. 2, pp. 264-278, June 2007. [<a class="reference external" href="https://ieeexplore.ieee.org/document/4220659">link3</a>]</p></li>
+<li><p>Y. Han and E. Oruklu, “Traffic sign recognition based on the NVIDIA Jetson TX1 embedded system using convolutional neural networks,”
+2017 IEEE 60th International Midwest Symposium on Circuits and Systems (MWSCAS), Boston, MA, 2017, pp. 184-187. [<a class="reference external" href="https://ieeexplore.ieee.org/document/8052891">link4</a>]</p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>Articles for Lane detection and tracking:</dt><dd><ul class="simple">
+<li><p>R. Danescu, S. Nedevschi, M. M. Meinecke and T. B. To, “Lane Geometry Estimation in Urban Environments Using a Stereovision System,”
+2007 IEEE Intelligent Transportation Systems Conference, Seattle, WA, 2007, pp. 271-276. [<a class="reference external" href="https://ieeexplore.ieee.org/document/4357686">link5</a>]</p></li>
+<li><p>R. Labayrade, J. Douret and D. Aubert, “A multi-model lane detector that handles road singularities,”
+2006 IEEE Intelligent Transportation Systems Conference, Toronto, Ont., 2006, pp. 1143-1148. [<a class="reference external" href="https://ieeexplore.ieee.org/document/1707376">link6</a>]</p></li>
+<li><p>Yue Dong, Jintao Xiong, Liangchao Li and Jianyu Yang, “Robust lane detection and tracking for lane departure warning,”
+2012 International Conference on Computational Problem-Solving (ICCP), Leshan, 2012, pp. 461-464. [<a class="reference external" href="https://ieeexplore.ieee.org/document/6384266">link7</a>]</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ROS.html" class="btn btn-neutral float-left" title="Robot Operating System" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="hardwareimprovements.html" class="btn btn-neutral float-right" title="Hardware improvements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Bosch Engineering Center Cluj and BFMC organizers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

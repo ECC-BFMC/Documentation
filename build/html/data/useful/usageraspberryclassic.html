@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usage of rasbery pi - Classical approach &mdash; BFMC - Competition Documentation  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+    <link rel="canonical" href="https://boschfuturemobility.com/data/useful/usageraspberryclassic.html" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Usage of rasbery pi - Fast approach" href="usageRaspberryFast.html" />
+    <link rel="prev" title="Useful" href="../useful.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> BFMC - Competition Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../connectiondiagram.html">Connection diagram and components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../connectiondiagram/components.html">Components list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connectiondiagram/printedcomponents.html">Printed components - 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connectiondiagram/powerboard.html">Powerboard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../racetrack.html">Race track</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/groundmarkings.html">Ground markings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/trafficsigns.html">Traffic signs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/otherelements.html">Other elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../racetrack/positioning.html">Positioning on track</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../vehicletoeverything.html">V2X - Vehicle to everything</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/localizationsysandmap.html">Localization system and mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/semaphore.html">Semaphore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/livetraffic.html">Live traffic system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vehicletoeverything/vehicletovehicle.html">V2V - Vehicle to vehicle communication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../embeddedplatform.html">Embedded platform</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../embeddedplatform/toolsfordevelopment.html">Tools for development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../embeddedplatform/debugging.html">Debugging the code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../brain.html">Brain project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../brain/pythonmultiprocessing.html">Python and multiprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brain/rosversion.html">ROS setup and packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../brain/roswithsimulator.html">ROS with simulator data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../computer.html">Computer projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../computer/setup.html">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../computer/testing.html">Simulated servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../computer/demo.html">Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../computer/dashboard.html">Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../simulator.html">Simulator</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../useful.html">Useful</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Usage of rasbery pi - Classical approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usageRaspberryFast.html">Usage of rasbery pi - Fast approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ROS.html">Robot Operating System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coding.html">Coding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardwareimprovements.html">Hardware improvements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="materials.html">Aditional materials</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../periodicstatus.html">Periodic status and examples</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">BFMC - Competition Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../useful.html">Useful</a></li>
+      <li class="breadcrumb-item active">Usage of rasbery pi - Classical approach</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ECC-BFMC/Documentation/blob/master/source/data/useful/usageraspberryclassic.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="usage-of-rasbery-pi-classical-approach">
+<h1>Usage of rasbery pi - Classical approach<a class="headerlink" href="#usage-of-rasbery-pi-classical-approach" title="Permalink to this heading"></a></h1>
+<section id="install-the-image-on-the-sd-card">
+<h2>Install the image on the SD card<a class="headerlink" href="#install-the-image-on-the-sd-card" title="Permalink to this heading"></a></h2>
+<p>Download the Raspbery Pi OS  (either Desktop or Lite version) from the following link:
+- <a class="reference internal" href="#images">Images</a>
+.. <span class="target" id="images">Images</span>: <a class="reference external" href="https://www.raspberrypi.org/software/operating-systems/">https://www.raspberrypi.org/software/operating-systems/</a></p>
+<p>Mount the chosen image on your RPi with the help of balenaetcher:
+- <a class="reference internal" href="#balenaetcher">BalenaEtcher</a>
+.. <span class="target" id="balenaetcher">BalenaEtcher</span>: <a class="reference external" href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a></p>
+<p>Another alternative is to use the Raspberry Pi Imager (for Windows, Ubuntu or macOs). From this tool you can easily flash any available os for raspbery pi
+and set up various things, such as network setup and ssh communication.
+- <a class="reference internal" href="#raspberry-pi-imager">Raspberry Pi Imager</a>
+.. <span class="target" id="raspberry-pi-imager">Raspberry Pi Imager</span>: <a class="reference external" href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a></p>
+</section>
+<section id="setting-up-wlan">
+<h2>Setting up WLAN<a class="headerlink" href="#setting-up-wlan" title="Permalink to this heading"></a></h2>
+<p>Without directly connecting to the RPi, you can set the LAN from the PC by creating a wpa_supplicanf.conf file under boot folder, in your SD card.
+You can set the content as follows:</p>
+<div class="line-block">
+<div class="line">ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev</div>
+<div class="line">update_config=1</div>
+<div class="line">country=RO</div>
+<div class="line">network=</div>
+<div class="line">{</div>
+<div class="line">ssid=”SSID”</div>
+<div class="line">psk=”Passwd”</div>
+<div class="line">}</div>
+</div>
+<p>You can also edit the file later on. it can be found under /etc/wpa_supplicant/wpa_supplicant.conf.</p>
+</section>
+<section id="configuring-your-raspberry-pi">
+<h2>Configuring your Raspberry Pi<a class="headerlink" href="#configuring-your-raspberry-pi" title="Permalink to this heading"></a></h2>
+<p>There is a series of configuration parameters that can be edited on the PC, prior to starting
+the RPI. Some of these are stored in the <strong>config.txt</strong> document, found in the /boot/ folder.
+By editing this document one could, for example, adjust the way the display is detected and
+the desktop displayed or overclock the Raspberry Pi (or return to default clock settings).
+A useful setting is the enabling of the Serial Console so that the Raspberry Pi’s terminal can
+be accessed using a serial connection. The file can be also visually edited by using the raspi-config
+application while accessing the RPi.</p>
+<dl class="simple">
+<dt>Editing the <strong>config.txt</strong> file:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://www.makeuseof.com/tag/edit-boot-config-file-raspberry-pi">https://www.makeuseof.com/tag/edit-boot-config-file-raspberry-pi</a></p></li>
+<li><p><a class="reference external" href="https://elinux.org/R-Pi_configuration_file">https://elinux.org/R-Pi_configuration_file</a></p></li>
+</ul>
+</dd>
+</dl>
+<p>Some more configurations can be done prior to starting the RPi, such as enabling SSH connection,
+Camera connection or I2C connection. In order to do so, you just have to create an empty file with the
+name of the interface, without an extension, under /boot/ folder. The same parameters can also be edited
+with the raspi-config application while accessing the RPi.</p>
+</section>
+<section id="raspberry-pi-ip-address">
+<h2>Raspberry Pi IP address<a class="headerlink" href="#raspberry-pi-ip-address" title="Permalink to this heading"></a></h2>
+<p>For most of the applications, the IP of the RPi is crucial. After you set up the network for your RPi and
+power it up, you can find the address with different means, such as: using a network scan tool on your PC
+(nmap for linux); connecting to your router and finding your connected devices; ping your device by using
+it’s username:
+| ping raspberrypi.local
+|
+| PING raspberrypi.local (192.168.1.131): 56 data bytes
+| 64 bytes from 192.168.1.131: icmp_seq=0 ttl=255 time=2.618 ms
+|
+| More information can be found at the following link:
+- <a class="reference external" href="https://www.raspberrypi.org/documentation/remote-access/ip-address.md">https://www.raspberrypi.org/documentation/remote-access/ip-address.md</a></p>
+</section>
+<section id="development-on-the-raspberry-pi">
+<h2>Development on the Raspberry Pi<a class="headerlink" href="#development-on-the-raspberry-pi" title="Permalink to this heading"></a></h2>
+<p>You have multiple ways of accessing the RPi:
+- Direct development approach, by using it as a standalone computer and connecting all the peripherals.
+- Direct connection approach, by connecting to it with a Serial cable or with an ethernet cable.
+- Remote connection approach, by connecting to it via ssh terminal communication and ftp for file transfer to the remote.</p>
+<section id="direct-development-approach">
+<h3>Direct development approach<a class="headerlink" href="#direct-development-approach" title="Permalink to this heading"></a></h3>
+<p>You can connect all the peripherals and develop on it as you would do on a PC. The suggested OS is the desktop version. Follow this guide for more info:
+- <a class="reference internal" href="#setting-up-your-raspberry-pi">Setting up your Raspberry Pi</a>
+.. <span class="target" id="setting-up-your-raspberry-pi">Setting up your Raspberry Pi</span>: <a class="reference external" href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up">https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up</a></p>
+</section>
+</section>
+<section id="direct-connection-approach">
+<h2>Direct connection approach.<a class="headerlink" href="#direct-connection-approach" title="Permalink to this heading"></a></h2>
+<p>This option for connecting to your Raspberry Pi in physical format can be done in may ways, but the most
+handful ones are with a TTL cable or with an Ethernet cable. By using the serial cable (e.g.
+<a class="reference external" href="https://www.ftdichip.com/Products/Cables/USBTTLSerial.htm">https://www.ftdichip.com/Products/Cables/USBTTLSerial.htm</a>) you can connect to your system for performing
+initial setup, such as WLAN SSID and password. You should have the Serial Console enabled for being able to
+connect to the Raspberry Pi in this way. This can be done easily by editing the config.txt file of the
+system. Another way in doing so is by setting up a LAN between the RPi and the PC, connecting them via
+ethernet and accessing it via ssh. Below you can find some useful resources that describe the steps
+required for connecting to the terminal in this way.
+a. <a class="reference external" href="https://learn.sparkfun.com/tutorials/headless-raspberry-pi-setup/serial-terminal">https://learn.sparkfun.com/tutorials/headless-raspberry-pi-setup/serial-terminal</a>
+#. <a class="reference external" href="https://www.instructables.com/Set-Up-Raspberry-Pi-4-Through-Laptoppc-Using-Ether/">https://www.instructables.com/Set-Up-Raspberry-Pi-4-Through-Laptoppc-Using-Ether/</a></p>
+</section>
+<section id="remote-connection-approach">
+<h2>Remote Connection approach<a class="headerlink" href="#remote-connection-approach" title="Permalink to this heading"></a></h2>
+<p>The best combination in programming your RPi remotely is a combination between a ssh connection for
+terminal commands and a SFTP connection for file sharing (this way, the OS installed can be the lite version).
+On linux the SSH connection can be done in any terminal (ssh <a class="reference external" href="mailto:user&#37;&#52;&#48;IP">user<span>&#64;</span>IP</a>) and the SFTP connection in any file
+explorer (other locations-&gt;Connect to Server: sftp://ip). On windows, the PUTTY application can be used for
+ssh connection and the WINSCP can be used for file sharing.
+- https://www.behind-the-scenes.co.za/using-winscp-to-connect-to-a-raspberry-pi</p>
+<p>VNC is a graphical desktop sharing system that allows you to remotely control the desktop interface of
+one computer. Running VNC Server, in our case Raspberry Pi, you can connect to it from another computer
+or mobile device (running VNC Viewer). The tutorial below describes how work on it from another device by remote control.
+- <a class="reference external" href="https://www.raspberrypi.org/documentation/remote-access/vnc">https://www.raspberrypi.org/documentation/remote-access/vnc</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../useful.html" class="btn btn-neutral float-left" title="Useful" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="usageRaspberryFast.html" class="btn btn-neutral float-right" title="Usage of rasbery pi - Fast approach" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Bosch Engineering Center Cluj and BFMC organizers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
