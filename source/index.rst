@@ -3,7 +3,7 @@ Welcome to BFMC's documentation!
 
 Bosch Future Mobility Challenge (BFMC) is an international student technical competition of Bosch Engineering Center Cluj since 2017. Our partner 
 is IEEE-ITSS. In this competition the participants have to to implement autonomous driving alghoritms on a vehicle at 1/10 scale, provided by Robert 
-Bosch.
+Bosch. Check here the competition `website <https://boschfuturemobility.com/>`_
 
 This is the official documentation of the competition and it includes the descriptions of the given code, the race-track and it's elements, V2X 
 systems, diagrams, hardware, as well as a starting point and directions of the knowledge required for the best experience.
