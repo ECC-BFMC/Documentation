@@ -26,14 +26,14 @@ Firstly you need a cross-compiler, you can find it on the official site of Arm D
 Install the Gnu Embedded Toolchain for Arm, then you need to add a new environment variable with 'GCC_ARM_FOLDER' name, which value is the 
 compiler folder (example in the following picture). 
 
-.. image:: ../images/toolsfordev/env_var_compiler.png
+.. image:: ../images/embedded_platform/env_var_compiler.png
     :align: center
     :scale: 75%
 
 
 Another application necessary for building is MSYS2. Add then the location of installation folder in the 'Path' environment variable. 
 
-.. image:: ../images/toolsfordev/env_var_mingw.png
+.. image:: ../images/embedded_platform/env_var_mingw.png
     :align: center
     :scale: 75%
 
@@ -55,7 +55,7 @@ The variable is accessible only for your user and you have to restart the termin
 If you set correctly the environment variable, then the 'make' command is recognized in command prompt (terminal). Just open it in the father 
 directory and then execute it (using more threads would help speed up the proccess). 
 
-.. image:: ../images/toolsfordev/make-ing.PNG
+.. image:: ../images/embedded_platform/make-ing.PNG
     :align: center
     :scale: 75%
 
@@ -96,7 +96,7 @@ The script creates two includes files: 'test.hpp' and 'test.inl' in the 'include
 If you want to compile these new components, then you must add them to the makefile like new objects, as in the picture below. We suggest to add
 the files between lines 49 and 69.
 
-.. image:: ../images/toolsfordev/makefile_example.png
+.. image:: ../images/embedded_platform/makefile_example.png
     :align: center
     :scale: 75%
 
