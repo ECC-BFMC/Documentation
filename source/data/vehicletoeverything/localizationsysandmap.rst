@@ -6,7 +6,7 @@ The anchors are set into know positions on the track. The tag devices, communica
 to the server and sends in the location data. The server collects and stores the data from the tag devices (location on map) and waits for connections from the 
 robot clients; then, upon connection, it serves the desired data to the clients. Down below a picture describing the process.
 
-.. image::  ../../images/Localisation_system.png
+.. image::  ../../images/v2x/Localisation_system.png
   :align: center
   :scale: 60%
 
@@ -14,7 +14,7 @@ The system will be installed only at the phisical competition. It is made of two
 and the actual device, which the team will get only while on the track. The active part will have displayed the ID of the connection. In the following image you 
 can see the place where the device will be placed, the fixed component and the actual device.
 
-.. image::  ../../images/Localisation_system_HW.png
+.. image::  ../../images/v2x/Localisation_system_HW.png
   :align: center
   :scale: 60%
 
@@ -37,7 +37,7 @@ library (making it easier to be imported on your platform). There are two types 
 and the distance between 2 nodes(on the same lane) will be roughly ~30 cm, with some variations. A connection describes the relations between twp nodes (dotted 
 or continuous line). Here you can see a straight road visual example:
 
-.. image::  ../../images/StraighRoadExample.PNG
+.. image::  ../../images/v2x/StraighRoadExample.PNG
   :align: center
   :scale: 60%
 
@@ -65,7 +65,7 @@ turn cases inside the intersection (if we only have a single point connected to 
 is done in the following images.
 
 +---------------------------------------------+---------------------------------------------+
-| .. image:: ../../images/3roadsExample.PNG   | .. image:: ../../images/4roadsExample.PNG   |
+| .. image:: ../../images/v2x/3roadsExample.PNG   | .. image:: ../../images/v2x/4roadsExample.PNG   |
 +---------------------------------------------+---------------------------------------------+
 
 You can find the figure and the digital representation on the following links: 
