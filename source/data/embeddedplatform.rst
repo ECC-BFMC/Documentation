@@ -8,10 +8,8 @@ uses mbed os version=5.6.
 The project is structured on 4 layers: Brain, Drivers, Periodics and Utils. 
     - The 'Brain' folder contains the state machine of the Nucleo. More controlling methods can be handled here. 
     - The 'Drivers' folder contains the code to interact directly with the steering motor, speeding motor and with the IMU.
-    - The 'Periodics' folder contains the tasks that are executed periodically by the Nucleo board, based on interruptions, such as writing the 
-    sensors values on the serial Tx or checking the serial Rx, then applying the necessary callbacks (used for movements control).
-    - The 'Utils' folder contains various working tools, such as the serial communication message construction/deconstruction, callbacks on
-    the necessary functions, tasks execution and queues.
+    - The 'Periodics' folder contains the tasks that are executed periodically by the Nucleo board, based on interruptions, such as writing the sensors values on the serial Tx or checking the serial Rx, then applying the necessary callbacks (used for movements control).
+    - The 'Utils' folder contains various working tools, such as the serial communication message construction/deconstruction, callbacks on the necessary functions, tasks execution and queues.
 
 
 The low level control application, which runs on the Nucleo-F401RE, is implemented in C/C++ language. Down below you can find some tips on how
@@ -19,6 +17,7 @@ to further develop on top of the project
 
 Building 
 --------
+
 After the modification or adition of any components, you have to rebuild the application. In order to do so, aditional software is required. 
 
 **Windows setup**
@@ -27,14 +26,14 @@ Firstly you need a cross-compiler, you can find it on the official site of Arm D
 Install the Gnu Embedded Toolchain for Arm, then you need to add a new environment variable with 'GCC_ARM_FOLDER' name, which value is the 
 compiler folder (example in the following picture). 
 
-.. image:: ../../images/toolsfordev/env_var_compiler.png
+.. image:: ../images/toolsfordev/env_var_compiler.png
     :align: center
     :scale: 75%
 
 
 Another application necessary for building is MSYS2. Add then the location of installation folder in the 'Path' environment variable. 
 
-.. image:: ../../images/toolsfordev/env_var_mingw.png
+.. image:: ../images/toolsfordev/env_var_mingw.png
     :align: center
     :scale: 75%
 
@@ -46,7 +45,10 @@ and decompress it on your pc. After decompressing, you need to set the 'GCC_ARM_
 the cross-compiler. Therefore the 'make' utility knows the location of cross-compiler. To add the persistent environment variable you will need to 
 introduce a code in terminal similar to the following:
 
-"echo "export GCC_ARM_FOLDER=/home/user/Workspace/Crosscompilers/gcc-arm-none-eabi-8-2019-q3-update/bin" >> ~/.bashrc"
+.. code-block:: bash
+    echo "export GCC_ARM_FOLDER=/home/user/Workspace/Crosscompilers/gcc-arm-none-eabi-8-2019-q3-update/bin" >> ~/.bashrc
+
+``python newComponent.py --help``
 
 The variable is accessible only for your user and you have to restart the terminal for it to be valid. 
 
@@ -55,7 +57,7 @@ The variable is accessible only for your user and you have to restart the termin
 If you set correctly the environment variable, then the 'make' command is recognized in command prompt (terminal). Just open it in the father 
 directory and then execute it (using more threads would help speed up the proccess). 
 
-.. image:: ../../images/toolsfordev/make-ing.png
+.. image:: ../images/toolsfordev/make-ing.png
     :align: center
     :scale: 75%
 
@@ -118,36 +120,36 @@ Go to session and then press Open.
 Now you can reset the Nucleo (black button) and check in the terminal for "I'm alive" message. If the message comes, the nucleo code is starting 
 correctly and now you can try to communicate with it. After each message, you have to press Ctrl+M, then Ctrl+J. 
 
-The sent messages structure is as follows:
+**The sent messages structure is as follows:**
 
 ``#1:speed;;`` 
-    - It is setting the navigation speed. Where speed must be between -5.0 and 5.0, and is measured in meters/second, while the minus indicates backward movement.
+It is setting the navigation speed. Where speed must be between -5.0 and 5.0, and is measured in meters/second, while the minus indicates backward movement.
 ``#2:angle;;`` 
-    - It is setting the steering angle. Where angle must be between -23.0 and 23.0, and is measured in degrees of the servo, while the minus indicates left turning.
+It is setting the steering angle. Where angle must be between -23.0 and 23.0, and is measured in degrees of the servo, while the minus indicates left turning.
 ``#3:angle;;`` 
-    - It is setting the brake. Where angle must be between -23.0 and 23.0, and is measured in degrees of the servo, while the minus indicates left turning.
+It is setting the brake. Where angle must be between -23.0 and 23.0, and is measured in degrees of the servo, while the minus indicates left turning.
 ``#4:1;;`` 
-    - It is starting the calibration method for the brushless motor, indications will be then returned on the screen.
+It is starting the calibration method for the brushless motor, indications will be then returned on the screen.
 
 
-The received messages structure is as follows:
+**The received messages structure is as follows:**
 
 ``@1:ack;;``  
-    - acknowledgment message that the speed has been set.
+acknowledgment message that the speed has been set.
 ``@2:ack;;``  
-    - acknowledgment message that the steering value has been set.
+acknowledgment message that the steering value has been set.
 ``@3:ack;;``  
-    - acknowledgment message that the brake state has been set.
+acknowledgment message that the brake state has been set.
 ``@4:action;;``  
-    - indications on how to proceed with the calibration.
+indications on how to proceed with the calibration.
 ``@4:ack;;``  
-    - acknowledgment message that the calibration has been done.
+acknowledgment message that the calibration has been done.
 ``@5:value;;``  
-    - value of the battery voltage level.
+value of the battery voltage level.
 ``@6:value;;``  
-    - value of the instant consumption (Watts).
+value of the instant consumption (Watts).
 ``@7:roll;pitch;yaw;accelx;accely;accelz;;``  
-    - values of the IMU measurements
+values of the IMU measurements
 
 Notes
 ------
