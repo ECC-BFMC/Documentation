@@ -7,6 +7,7 @@ Installing the simulator on the PC
 The Ubuntu version is 20.04, while the ROS version is Noetyc. Though, any Ubuntu and ROS 1 newer version should work. 
 Now clone the Simulator project inside the Documents folder of your PC. Then follow the next steps in order to build,
 source and run the simulator (change the {YOUR_USER} text with your actual username. 
+
 .. code-block:: bash
     catkin_make --pkg utils
     catkin_make
@@ -16,6 +17,7 @@ source and run the simulator (change the {YOUR_USER} text with your actual usern
     roslaunch sim_pkg map_with_all_objects.launch
 
 Now open two other terminals and do the following
+
 .. code-block:: bash
     source devel/setup.bash
     rosrun example camera.py
@@ -43,7 +45,7 @@ this change.
 All constants of double data type, with angles in radians and "." (dot) as decimal separator, as in this example:
 '<pose> X Y Z ROLL PITCH YAW </pose>'
 
-** Working with gazebo**
+**Working with gazebo:**
     - If you want to restart the simulation, instead of restarting gazebo, you can only restart the simulation with the help of the ROS services, such as: 'rosservice call /gazebo/reset_simulatio'
     - Deactivate GUI from the launch in order to save some computational power.
     - Play with rqt tool in order to check the images and other topic messages, frequency, etc.
@@ -61,6 +63,7 @@ variables must be set for ROS to be able to communicate between the devices.This
 the roscore from the PC, and you will be able to see the entire setup of the network (The roscore can be swapped to run on the phisical car as well).
 
 **On the RPI:**
+
 .. code-block:: bash
     export ROS_IP=`hostname -I`
     export ROS_HOSTNAME=`hostname -I`
@@ -69,6 +72,7 @@ the roscore from the PC, and you will be able to see the entire setup of the net
 , where PC_IP is the IP of the PC on the LAN.
 
 **On the PC:**
+
 .. code-block:: bash
     export ROS_IP=`hostname -I`
     export ROS_HOSTNAME=`hostname -I`
@@ -78,12 +82,14 @@ the roscore from the PC, and you will be able to see the entire setup of the net
 Then, just execute the normal launches:
 
 **On the RPI:**
+
 .. code-block:: bash
     cd Brain_ROS
     source devel/setup.bash
     roslaunch sim_pkg start_car_virtual.launch
 
 **On the PC:**
+
 .. code-block:: bash
     cd Simulator
     source devel/setup.bash
