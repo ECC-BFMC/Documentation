@@ -16,7 +16,7 @@ the computer project needs to be installed on a PC.
    :maxdepth: 1
    :hidden:
    
-   data/connectiondiagram
+   data/hardwaresetupofcar
    data/racetrack
    data/vehicletoeverything
    data/embeddedplatform
@@ -30,9 +30,9 @@ the computer project needs to be installed on a PC.
 Getting started
 ---------------
 
-* :doc:`Connection Diagram <data/connectiondiagram>`
+* :doc:`Connection Diagram <data/hardwaresetupofcar>`
 
-  - All the hardware components list that can be found on the car together with the diagram connection scheme.
+  - All the hardware components list that can be found on the car together with the diagram connection scheme and other useful things.
 
 * :doc:`Race track <data/racetrack>`
 

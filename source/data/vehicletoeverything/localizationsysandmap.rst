@@ -21,7 +21,7 @@ can see the place where the device will be placed, the fixed component and the a
 The device weights 280 grams and the mandatory position for the device is the one in the picture. The design can be found here:
   - `Bottom`_
   - `Box`_
-  - `Top`
+  - `Top`_
   
   .. _`Bottom`: https://github.com/ECC-BFMC/Documentation/blob/master/3DModels/Locsys_Bottom.STL
   .. _`Box`: https://github.com/ECC-BFMC/Documentation/blob/master/3DModels/Locsys_Box.STL
@@ -64,9 +64,9 @@ A2, A3, A4). This symbolization is done so to simulate a layered highway interse
 turn cases inside the intersection (if we only have a single point connected to all the nodes, then a turn like 18-A-17 would be possible). The representation 
 is done in the following images.
 
-+---------------------------------------------+---------------------------------------------+
++-------------------------------------------------+-------------------------------------------------+
 | .. image:: ../../images/v2x/3roadsExample.PNG   | .. image:: ../../images/v2x/4roadsExample.PNG   |
-+---------------------------------------------+---------------------------------------------+
++-------------------------------------------------+-------------------------------------------------+
 
 You can find the figure and the digital representation on the following links: 
  - `Test track figure`_
@@ -74,17 +74,14 @@ You can find the figure and the digital representation on the following links:
  - `Competition track figure`_
  - `Competition track digital`_
 
-  .. _`Test track figure`: https://github.com/ECC-BFMC/Documentation/blob/master/source/images/Test_track.png
+  .. _`Test track figure`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Test_track.png
   .. _`Test track digital`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Test_track.graphml
-  .. _`Competition track figure`: https://github.com/ECC-BFMC/Documentation/blob/master/source/images/Competition_track.png
+  .. _`Competition track figure`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Competition_track.png
   .. _`Competition track digital`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Competition_track.graphml
 
   The coordinates systems of the maps can be found here:
-  - `Test track coordinate system`_
-  - `Competition track coordinate system`_
-  
-     .. _`Test track coordinate system`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track_Test.png
-     .. _`Competition track coordinate system`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track.png
+    - `Test track coordinate system <https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track_Test.png>`_.
+    - `Competition track coordinate system <https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track.png>`_.
 
 
 To run

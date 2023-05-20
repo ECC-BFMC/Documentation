@@ -5,8 +5,7 @@ Useful
    :maxdepth: 1
    :hidden:
 
-   useful/usageraspberryclassic
-   useful/usageRaspberryFast
+   useful/usageraspberry
    useful/ROS
    useful/coding
    useful/hardwareimprovements
@@ -15,13 +14,9 @@ Useful
 In this section, you can find some useful links and some documentations for basic
 raspberry usage and image processing. 
 
-* :doc:`Raspberry Classic <useful/usageraspberryclassic>`
+* :doc:`Raspberry Classic <useful/usageraspberry>`
 
-  - How to classicaly develop on the raspbery pi (keyboard, mouse and display)
-
-* :doc:`Raspberry Fast <useful/usageRaspberryFast>`
-
-  - How to efficeiently develop on the raspbery pi (ssh connections)
+  - How to get started to develop on the raspbery pi
   
 * :doc:`ROS <useful/ROS>`
 

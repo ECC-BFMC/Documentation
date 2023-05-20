@@ -9,6 +9,7 @@ Now clone the Simulator project inside the Documents folder of your PC. Then fol
 source and run the simulator (change the {YOUR_USER} text with your actual username. 
 
 .. code-block:: bash
+    
     catkin_make --pkg utils
     catkin_make
     echo 'export GAZEBO_MODEL_PATH="/home/{YOUR_USER}/Documents/Simulator/src/models_pkg:$GAZEBO_MODEL_PATH"' > devel/setup.bash
@@ -19,10 +20,12 @@ source and run the simulator (change the {YOUR_USER} text with your actual usern
 Now open two other terminals and do the following
 
 .. code-block:: bash
+
     source devel/setup.bash
     rosrun example camera.py
 
 .. code-block:: bash
+
     source devel/setup.bash
     rosrun example control.py
 
@@ -39,8 +42,8 @@ You can change the resolution and the position of the camera, just have this fil
 Wou will find the `<width>` and `<height>` tags. Modifying them will allow you to change the camera resolution. You don't need to recompile the workspace after this change.
 
 `src/models_pkg/rcCar_assembly/model.sdf`
-you will find the inclusion of `<uri>model://camera</uri>`. Inside that same `<include>` tag, there is also a `<pose>` tag, which you will need to modify [according to the 
-SDF format specification](http://sdformat.org/spec?ver=1.6&elem=model#include_pose) in order to change the camera's position. You don't need to recompile the workspace after 
+you will find the inclusion of `<uri>model://camera</uri>`. Inside that same `<include>` tag, there is also a `<pose>` tag, which you will need to modify `according to the 
+SDF format specification <http://sdformat.org/spec?ver=1.6&elem=model#include_pose>`_ in order to change the camera's position. You don't need to recompile the workspace after 
 this change.
 All constants of double data type, with angles in radians and "." (dot) as decimal separator, as in this example:
 '<pose> X Y Z ROLL PITCH YAW </pose>'
@@ -65,6 +68,7 @@ the roscore from the PC, and you will be able to see the entire setup of the net
 **On the RPI:**
 
 .. code-block:: bash
+
     export ROS_IP=`hostname -I`
     export ROS_HOSTNAME=`hostname -I`
     export ROS_MASTER_URI="http://PC_IP:11311"
@@ -74,6 +78,7 @@ the roscore from the PC, and you will be able to see the entire setup of the net
 **On the PC:**
 
 .. code-block:: bash
+
     export ROS_IP=`hostname -I`
     export ROS_HOSTNAME=`hostname -I`
     export ROS_MASTER_URI="http://$ROS_IP:11311"
@@ -84,6 +89,7 @@ Then, just execute the normal launches:
 **On the RPI:**
 
 .. code-block:: bash
+
     cd Brain_ROS
     source devel/setup.bash
     roslaunch sim_pkg start_car_virtual.launch
@@ -91,6 +97,7 @@ Then, just execute the normal launches:
 **On the PC:**
 
 .. code-block:: bash
+
     cd Simulator
     source devel/setup.bash
     roslaunch sim_pkg map_with_car.launch

@@ -9,6 +9,12 @@ Race track
    racetrack/trafficsigns
    racetrack/otherelements
    racetrack/positioning
+   racetrack/localisation
+
+In this section the characteristics of the race track are described. You can find the maps in svg formats at the following links and extract all the non-specified dimensions: 
+    - `Test track <https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track_Test.svg>`_  
+    - `Race track <https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track.svg>`_   
+
 
 * :doc:`Ground markings on the track <racetrack/groundmarkings>`
 
@@ -26,10 +32,8 @@ Race track
 
   - The positioning of all the elements and where toe xpect them.
 
+* :doc:`Localisation system <racetrack/localisation>`
 
-In this section the characteristics of the race track are described. You can find the maps in svg formats at the following links and extract all the non-specified dimensions: 
-    - `Test track`_  
-    - `Race track`_   
-    
-    .. _`Test track`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track_Test.svg
-    .. _`Race track`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track.svg
+  - The description of our localisation system, which you can use in order to create your own.
+
+

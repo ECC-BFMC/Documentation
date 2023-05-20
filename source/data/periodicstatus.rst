@@ -22,7 +22,7 @@ Project plan and architecture
 -----------------------------
 Here is an example of a proposed layered and modular architecture
 
-.. image:: ../../templates/Proposed_architecture.PNG
+.. image:: ../images/periodicstatus/Proposed_architecture.PNG
     :align: center
     :scale: 80%
 
@@ -30,7 +30,7 @@ Here is an example of a projec plan(a time table and it's task list) based on th
 
 Project plan
 
-.. image:: ../../templates/Project_plan.PNG
+.. image:: ../images/periodicstatus/Project_plan.PNG
     :align: center
     :scale: 80%
 
@@ -38,7 +38,7 @@ Report
 ------
 Recommended report length is one/two page/2. Maximum report length is 3 pages.
 
-.. image:: ../../templates/Monthly_report.PNG
+.. image:: ../images/periodicstatus/Monthly_report.PNG
     :align: center
     :scale: 80%
 
