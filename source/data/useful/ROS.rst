@@ -18,8 +18,7 @@ ROS installation
 ````````````````
 You first have to install a supported operating system, either on your device or on a virtual machine. We suggest to not use a virtual machine since it may not have the same 
 specifications as if installed directly on the HDD/SSD. 
-For the Melodic installation, you can follow this link: 
-- http://wiki.ros.org/melodic/Installation/Ubuntu
+For the Melodic installation, you can follow this link: http://wiki.ros.org/melodic/Installation/Ubuntu
 
 In order to get started with the ROS functionalities, you can follow this guides:
-    - http://wiki.ros.org/ROS/Tutorials
+http://wiki.ros.org/ROS/Tutorials

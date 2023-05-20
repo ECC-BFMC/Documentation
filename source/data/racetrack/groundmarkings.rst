@@ -4,9 +4,10 @@ Ground markings
 Road markings
 '''''''''''''
 
-You can find below all road markings and their dimension. The lane markings may be dashed or continuous and are ~2cm wide white line.
-The lane has a width of ~35 cm, measured from the inside of the respective markings. 
-In the case of dashed markings, the line has a length 4.5 cm and the distance between two marks is similarly 4.5 cm. 
+You can find below all road markings and their dimension. The lane markings may be dashed or continuous 
+and are ~2cm wide white line. The lane has a width of ~35 cm, measured from the inside of the respective 
+markings. In the case of dashed markings, the line has a length 4.5 cm and the distance between two marks 
+is similarly 4.5 cm. 
 
 .. image:: ../../images/racetrack/road.png
    :align: center

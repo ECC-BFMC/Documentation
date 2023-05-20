@@ -39,7 +39,7 @@ You can change the resolution and the position of the camera, just have this fil
 
 `src/models_pkg/camera/model.sdf`
 
-Wou will find the `<width>` and `<height>` tags. Modifying them will allow you to change the camera resolution. You don't need to recompile the workspace after this change.
+You will find the `<width>` and `<height>` tags. Modifying them will allow you to change the camera resolution. You don't need to recompile the workspace after this change.
 
 `src/models_pkg/rcCar_assembly/model.sdf`
 you will find the inclusion of `<uri>model://camera</uri>`. Inside that same `<include>` tag, there is also a `<pose>` tag, which you will need to modify `according to the 
