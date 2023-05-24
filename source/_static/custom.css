@@ -10,6 +10,6 @@ a.reference.external{
 }
 
 /* Hide "On GitHub" section from versions menu */
-div.rst-versions > div.rst-other-versions > div.injected{
+div.rst-versions > div.rst-other-versions{
   display: none;
 }
