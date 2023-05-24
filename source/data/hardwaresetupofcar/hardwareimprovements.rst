@@ -23,22 +23,22 @@ The advantages are:
 The given car kit has an already implemented PID control, which means driving in a “constant speed” mode, meaning that even if the car tends to get stuck (based 
 on the signals received from the encoder) the car’s speed will be automatically adjusted and therefore the problem of the smoothness is eliminated (at least 
 partially). The car, by default, runs in “constant power consumption” mode, where any friction or physical tension will result in decreasing the car’s speed or 
-even in the situation of the car being stuck. Nevertheless, in both situations, a hardware care for the chassys is always welcomed :).
+even in the situation of the car being stuck. Nevertheless, in both situations, a hardware care for the chassis is always welcomed :).
 
 **What tools do I need?**
 
-    * Imbus screwdriver;
+    * Hex key screwdriver;
     * Grease ;
     * Degreaser;
     * Isopropyl alcohol;
     * Sponge & brush;
     * Pliers;
     * Phillips screwdriver;
-    * Flat file / dremel / sandpaper.
+    * Flat file /  sandpaper.
 
 .. image::  ../../images/hardwaresetupforcar/tools.png
    :align: center
-   :width: 100%
+   :width: 90%
 
 **How much time do I need?**
     
@@ -54,7 +54,7 @@ Disconnect all wires, remove the mounting support’s nut and then remove the sa
 
 .. image::  ../../images/hardwaresetupforcar/RPIsupport.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 **Removing the driving shafts**
 
@@ -62,7 +62,7 @@ Unscrew the highlighted screws.
 
 .. image::  ../../images/hardwaresetupforcar/suspensions.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 **Removing the differential**
 
@@ -70,7 +70,7 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
 
 .. image::  ../../images/hardwaresetupforcar/differential.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 **Cleaning the cogwheels**
 
@@ -79,7 +79,7 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
 
 .. image::  ../../images/hardwaresetupforcar/cogwheel.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 **Tighten the screws equally**
 
@@ -88,7 +88,7 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
 
 .. image::  ../../images/hardwaresetupforcar/drivenwheel.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 **Mount them back**
 
@@ -98,7 +98,7 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
 
 .. image::  ../../images/hardwaresetupforcar/mountback.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 **The distance between cogwheels’ axis**
 
@@ -113,7 +113,7 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
 
 .. image::  ../../images/hardwaresetupforcar/distance.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 
 The abnormal free movement of the wheels
@@ -128,7 +128,7 @@ You should compare a wheel that doesn’t have a washer with the one you just mo
 
 .. image::  ../../images/hardwaresetupforcar/wheelladjustment.png
    :align: center
-   :width: 100%
+   :width: 90%
 
 
 
@@ -139,28 +139,28 @@ The highlighted parts are the driving shafts. They should always freely move reg
 
 .. image::  ../../images/hardwaresetupforcar/drivingshaft.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 In order to let the driving shaft move freely, you need to increase the gap between the wheel and the differential:
-    * Take the suited imbus screwdriver and unscrew both the upper and lower screws a little bit.
+    * Take the suited hex key and unscrew both the upper and lower screws a little bit.
     * Repeat the previous step until your driving shaft moves freely in any situation
 
 .. image::  ../../images/hardwaresetupforcar/gap.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 
 **Frontal differential and steering**
 
 The front axis differential also needs the same treatment as the rear one. 
-Also, the servo needs one more screw in order to ensure that the sttering column never jumps out. The position is hard to reach when the car is fully assembled. 
+Also, the servo needs one more screw in order to ensure that the steering column never jumps out. The position is hard to reach when the car is fully assembled. 
 We suggest that, when working on the frontal differential, to also fix the servo’s couple. Please make sure that both Nucleo and servo are properly powered on 
 when doing so, this way, the servo will be set to the 0 position. Afterwards, check that the wheels are in the neutral position. Then, you can safely tight the 
 couple.
 
 .. image::  ../../images/hardwaresetupforcar/servo.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 Setting the wheels’ Camber
 --------------------------
@@ -189,7 +189,7 @@ to move freely after setting the Camber.
 
 .. image::  ../../images/hardwaresetupforcar/frontaxle.png
     :align: center
-    :width: 70%
+    :width: 90%
 
 
 **How to set rear axel Camber?**
@@ -200,7 +200,7 @@ Camber would be to change the mounting position of the traverse link into the re
 
 .. image::  ../../images/hardwaresetupforcar/backaxle.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 Setting the wheels’ alignment?
 -------------------------------
@@ -209,7 +209,7 @@ Setting the wheels’ alignment?
 
 Wheel alignment describes the relation of the wheel level to the driving direction. It is usually known as “toe-in” or “toe-out” where the toe measurement is the 
 distance between the front of the tires and the back of the tires. Toe-in should be used because it improves lateral cornering of the tyres and it also leads to 
-a more direct response to steerig.
+a more direct response to steering.
 
 **Setting front axle alignment**
 
@@ -218,7 +218,7 @@ they have threads in opposite. It is important that you set them equally (test a
 
 .. image::  ../../images/hardwaresetupforcar/frontaxlealignment.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
 Adjust the car’s height
 -----------------------
@@ -230,8 +230,8 @@ front axle and rear axle).
 
 .. image::  ../../images/hardwaresetupforcar/height.png
    :align: center
-   :scale: 100%
+   :width: 90%
 
-There are also some limiters on the height..... You can also strengthern the suspensions.... 
+There are also some limiters on the height..... You can also strengthen the suspensions.... 
 
 Toe be done!!!

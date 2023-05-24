@@ -8,7 +8,7 @@ robot clients; then, upon connection, it serves the desired data to the clients.
 
 .. image::  ../../images/v2x/Localisation_system.png
   :align: center
-  :scale: 60%
+  :width: 90%
 
 The system will be installed only at the phisical competition. It is made of two components: one fixed component that will be glued to the car body upon arrival 
 and the actual device, which the team will get only while on the track. The active part will have displayed the ID of the connection. In the following image you 
@@ -16,7 +16,7 @@ can see the place where the device will be placed, the fixed component and the a
 
 .. image::  ../../images/v2x/Localisation_system_HW.png
   :align: center
-  :scale: 60%
+  :width: 90%
 
 The device weights 280 grams and the mandatory position for the device is the one in the picture. The design can be found here:
   - `Bottom`_
@@ -39,7 +39,7 @@ or continuous line). Here you can see a straight road visual example:
 
 .. image::  ../../images/v2x/StraighRoadExample.PNG
   :align: center
-  :scale: 60%
+  :width: 90%
 
 Every node has 3 attributes: Id, X coordinate, Y coordinate. On the connectivity table instead, we have the start node id, the end node id and the type of 
 connection (straight or dotted road: TRUE or FALSE). 
@@ -64,9 +64,13 @@ A2, A3, A4). This symbolization is done so to simulate a layered highway interse
 turn cases inside the intersection (if we only have a single point connected to all the nodes, then a turn like 18-A-17 would be possible). The representation 
 is done in the following images.
 
-+-------------------------------------------------+-------------------------------------------------+
-| .. image:: ../../images/v2x/3roadsExample.PNG   | .. image:: ../../images/v2x/4roadsExample.PNG   |
-+-------------------------------------------------+-------------------------------------------------+
+|pic1|  |pic2|
+
+.. |pic1| image:: ../../images/v2x/3roadsExample.PNG
+   :width: 45%
+
+.. |pic2| image:: ../../images/v2x/4roadsExample.PNG
+   :width: 45%
 
 You can find the figure and the digital representation on the following links: 
  - `Test track figure`_
@@ -79,7 +83,7 @@ You can find the figure and the digital representation on the following links:
   .. _`Competition track figure`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Competition_track.png
   .. _`Competition track digital`: https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Competition_track.graphml
 
-  The coordinates systems of the maps can be found here:
+The coordinates systems of the maps can be found here:
     - `Test track coordinate system <https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track_Test.png>`_.
     - `Competition track coordinate system <https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/Track.png>`_.
 

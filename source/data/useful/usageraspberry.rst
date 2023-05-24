@@ -3,17 +3,17 @@ Start developing on raspberry
 
 Install the image on the SD card
 --------------------------------
-Download the Raspbery Pi OS (Desktop or Lite version) from `this <https://www.raspberrypi.org/software/operating-systems/>`_ link. 
+Download the Raspberry Pi OS (Desktop or Lite version) from `this <https://www.raspberrypi.org/software/operating-systems/>`_ link. 
 
-Mount the chosen image on your RPi with the help of `balenaetcher <https://www.balena.io/etcher/>`_.
+Mount the chosen image on your RPi with the help of `BalenaEtcher <https://www.balena.io/etcher/>`_.
 
 Another alternative is to use the `Raspberry Pi Imager <https://www.raspberrypi.com/software/>`_. From this tool you can easily 
-flash any available os for raspbery pi and set up various things, such as network setup and ssh communication.
+flash any available os for raspberry pi and set up various things, such as network setup and ssh communication.
 
 Setting up WLAN
 ---------------
-Without directly connecting to the RPi, you can set the LAN from the PC by creating a wpa_supplicanf.conf file under boot folder, on your SD card.
-You can set the content as follows (only valid for Raspbian OS, for Ubuntu os there's a different proccess):
+Without directly connecting to the RPi, you can set the LAN from the PC by creating a wpa_supplicant.conf file under boot folder, on your SD card.
+You can set the content as follows (only valid for Raspbian OS, for Ubuntu os there's a different process):
 
 .. code-block:: bash
 

@@ -26,6 +26,6 @@ the vehicle is re-used, and is designed for hobby-ing usage.
 
   - Info about the power distribution board.
 
-* :doc:`Powerboard <hardwaresetupofcar/hardwareimprovements>`
+* :doc:`Hardware improvements <hardwaresetupofcar/hardwareimprovements>`
 
-  - A guide on how to tacle all the hardware aspects of your chassis (Feel free to explore more).
+  - The kit could use some mechanical improvements!

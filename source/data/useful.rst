@@ -8,7 +8,6 @@ Useful
    useful/usageraspberry
    useful/ROS
    useful/coding
-   useful/hardwareimprovements
    useful/materials
 
 In this section, you can find some useful links and some documentations for basic
@@ -26,10 +25,6 @@ raspberry usage and image processing.
 
   - Coding on the raspbery pi
 
-* :doc:`Hardware improvements <useful/hardwareimprovements>`
-
-  - The kit could use some mechanical improvements!
-
 * :doc:`Materials used <useful/materials>`
 
-  - Liks and other stuff for testing materials.
+  - Links and other stuff for testing materials.

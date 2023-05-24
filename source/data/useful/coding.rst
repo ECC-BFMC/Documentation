@@ -14,7 +14,7 @@ The links below represent a good starting point for this type of applications.
 CPP
 ---
 It is one of the oldest, most used and most efficient programming languages. It has a wide support, it is powerful, 
-fast and has a small amount of standard libraries. It's major downside beying it's complexity. 
+fast and has a small amount of standard libraries. It's major downside being it's complexity. 
 - https://www.aranacorp.com/en/program-your-raspberry-pi-with-c/
 
 

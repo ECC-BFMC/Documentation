@@ -18,7 +18,7 @@ to further develop on top of the project
 Building 
 --------
 
-After the modification or adition of any components, you have to rebuild the application. In order to do so, aditional software is required. 
+After the modification or addition of any components, you have to rebuild the application. In order to do so, additional software is required. 
 
 **Windows setup**
 
@@ -28,14 +28,14 @@ compiler folder (example in the following picture).
 
 .. image:: ../images/embeddedplatform/env_var_compiler.png
     :align: center
-    :scale: 75%
+    :width: 90%
 
 
 Another application necessary for building is MSYS2. Add then the location of installation folder in the 'Path' environment variable. 
 
 .. image:: ../images/embeddedplatform/env_var_mingw.png
     :align: center
-    :scale: 75%
+    :width: 90%
 
 **Linux setup**
 
@@ -54,11 +54,11 @@ The variable is accessible only for your user and you have to restart the termin
 **Actual Building**
 
 If you set correctly the environment variable, then the 'make' command is recognized in command prompt (terminal). Just open it in the father 
-directory and then execute it (using more threads would help speed up the proccess). 
+directory and then execute it (using more threads would help speed up the process). 
 
 .. image:: ../images/embeddedplatform/make-ing.PNG
     :align: center
-    :scale: 75%
+    :width: 90%
 
 This will update the BUILD directory in your project
 
@@ -66,7 +66,7 @@ This will update the BUILD directory in your project
 Flashing 
 --------
 
-The nucleo board has two main parts: the programmer/debugger and the micro-controller. The programmer has the mini-usb connector while the 
+The Nucleo board has two main parts: the programmer/debugger and the micro-controller. The programmer has the mini-usb connector while the 
 micro-controller part is the one with the connectors. The micro-controller can be powered by external source (USB) or by a power supply (wires), 
 while the debugger can be powered on only by the USB. The jumper JP5 near the reset button choses the power source for the micro-controller 
 (E5V - via external or U5V - via usb). 
@@ -78,7 +78,7 @@ path. Alternatively, run the 'flash_win.bat' script, present in the project dire
 that the programmer mounted partition identification letter is the same one mentioned in script. If they don't match, you can update in the script 
 with the right new one (like D:, F:, C:). 
 
-After copying, the Nucleo will rebote and the code will be on the board.
+After copying, the Nucleo will reboot and the code will be on the board.
 
 New component
 -------------
@@ -103,13 +103,13 @@ the files between lines 49 and 69.
 
 .. image:: ../images/embeddedplatform/makefile_example.png
     :align: center
-    :scale: 75%
+    :width: 90%
 
 
 Debugging
 ---------
 
-You can easly try do debug your Nucleo code by communicating with it via serial. In order to do so, you can install putty and connect the nucleo 
+You can easily try do debug your Nucleo code by communicating with it via serial. In order to do so, you can install putty and connect the Nucleo 
 directly to the PC. Check the COM of the device and then open putty, by setting it as follows:
 
     - Connection type - Serial
@@ -120,7 +120,7 @@ directly to the PC. Check the COM of the device and then open putty, by setting 
 
 Go to session and then press Open.
 
-Now you can reset the Nucleo (black button) and check in the terminal for "I'm alive" message. If the message comes, the nucleo code is starting 
+Now you can reset the Nucleo (black button) and check in the terminal for "I'm alive" message. If the message comes, the Nucleo code is starting 
 correctly and now you can try to communicate with it. After each message, you have to press Ctrl+M, then Ctrl+J. 
 
 **The sent messages structure is as follows:**

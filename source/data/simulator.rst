@@ -63,7 +63,7 @@ ROS vehicle and simulator integration
 Both the car and the PC running the simulation have to be on the same network and the ssh communication has to be enabled on the RPi. 
 In order for the nodes to be able to communicate between them, some environmental variables have to be set. A set of environmental 
 variables must be set for ROS to be able to communicate between the devices.This setup will make the nodes on your car interact with 
-the roscore from the PC, and you will be able to see the entire setup of the network (The roscore can be swapped to run on the phisical car as well).
+the roscore from the PC, and you will be able to see the entire setup of the network (The roscore can be swapped to run on the physical car as well).
 
 **On the RPI:**
 
@@ -103,5 +103,5 @@ Then, just execute the normal launches:
     roslaunch sim_pkg map_with_car.launch
 
 Now the simulator will publish some info on the topics and you can subscribe to them from your car (automobile/image_raw, 
-automobile/localisation, automobile/IMU, automobile/feedback, automobile/semaphores/_). The simulator will also subscribe to 
+automobile/localization, automobile/IMU, automobile/feedback, automobile/semaphores/_). The simulator will also subscribe to 
 some info on the topics and you can publish on them from your car (automobile/command)

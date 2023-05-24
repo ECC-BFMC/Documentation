@@ -22,7 +22,7 @@ Each sign is encapsulate in a 6x6 cm square (scaled accordingly. You can see two
 
 .. image:: ../../images/racetrack/TrafficSign_Example.png
    :align: center
-   :scale: 75%
+   :width: 90%
 
 The pillars of the traffic sign are ~18.5 cm and the sign is placed at in the middle of the pole positioning surface.
 The complete heigh of the traffic sign is ~20cm. You can see an example below. A sample in STL format is given in the 
@@ -30,13 +30,13 @@ The complete heigh of the traffic sign is ~20cm. You can see an example below. A
 
 .. image:: ../../images/racetrack/TrafficSign_Construct.png
    :align: center
-   :scale: 75%
+   :width: 90%
 
 In the reality they look like on the pictures below:
 
 .. image:: ../../images/racetrack/StopSignReal.jpg
    :align: center
-   :scale: 10%
+   :width: 90%
 
 
 Traffic sign stand (3D)

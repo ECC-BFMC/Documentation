@@ -9,7 +9,7 @@ It's 24 cm heigh and the lights are 4.5cm diameter. You can see on the pictures 
 
 .. image:: ../../images/racetrack/TrafficLight.jpg
    :align: center
-   :scale: 10%
+   :width: 90%
 
 There will be four semaphores on the race track. One placed at the track entrance, which will mark 
 the start, and three placed in an intersection. Besides showing the appropriate color, they will 
@@ -21,15 +21,15 @@ Pedestrian
 ----------
 
 On the race track there will be a human-like pedestrian doll waiting to pass at one of the crosswalks 
-during the run and one crossing on an unsignaled space on the map (if the team choses to have it)
+during the run and one crossing on an unsigned space on the map (if the team choses to have it)
 
 Here you can find a picture of pedestrian:
 
 .. image:: ../../images/racetrack/Pedestriandoll.png
    :align: center
-   :scale: 25%
+   :width: 90%
 
-You can find the official link to the store here: `pedestrian <https://www.amazon.co.uk/Simba-EVI-Love-First-Bike/dp/B000UTKNI0>`_. 
+You can find the official link to the store here: `pedestrian doll <https://www.amazon.co.uk/Simba-EVI-Love-First-Bike/dp/B000UTKNI0>`_. 
 
 
 Obstacle vehicles
@@ -51,13 +51,13 @@ meaning that at the intersection the car has to go to the left. You can find the
 `here <https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/roadblock.pdf>`_.
 The mark will be placed on a structure similar to te highway separator.
 
-.. image:: ../../images/racetrack/roadblock_left.png
-   :align: center
-   :scale: 25%
+|pic1|  |pic2|
 
-.. image:: ../../images/racetrack/roadblock_right.png
-   :align: center
-   :scale: 25%
+.. |pic1| image:: ../../images/racetrack/roadblock_left.png
+   :width: 45%
+
+.. |pic2| image:: ../../images/racetrack/roadblock_right.png
+   :width: 45%
 
 Highway separator
 -----------------
@@ -73,4 +73,4 @@ The ramp is covered with the same material as the rest of the track, it's dimens
 
 .. image:: ../../images/racetrack/ramp.png
    :align: center
-   :scale: 100%
+   :width: 90%

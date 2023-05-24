@@ -11,32 +11,38 @@ is similarly 4.5 cm.
 
 .. image:: ../../images/racetrack/road.png
    :align: center
-   :scale: 30%
+   :width: 90%
 
 The following image shows the tightest curve, which is the most common curve on the track. 
 
 .. image:: ../../images/racetrack/marking_tight_curve.png
    :align: center
-   :scale: 20%
+   :width: 90%
 
 Below you can see the two types of intersections:
 
 .. image:: ../../images/racetrack/intersection.png
    :align: center
-   :scale: 20%
+   :width: 90%
 
 .. image:: ../../images/racetrack/intersection_T.png
    :align: center
-   :scale: 20%
+   :width: 90%
 
 Here are the dimensions for the crosswalk signalization
 
 .. image:: ../../images/racetrack/Crosswalk.PNG
    :align: center
-   :scale: 80%
+   :width: 90%
 
 Here are the dimensions for the two types of parking spots
 
 .. image:: ../../images/racetrack/Parking_spots.PNG
    :align: center
-   :scale: 80%
+   :width: 90%
+
+And the dimensions for the roundabout
+
+.. image:: ../../images/racetrack/Roundabout.PNG
+   :align: center
+   :width: 90%
