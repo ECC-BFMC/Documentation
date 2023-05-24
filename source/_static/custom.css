@@ -8,3 +8,8 @@ a.reference.external{
   max-height: 500px; 
   object-fit: contain;
 }
+
+/* Hide "On GitHub" section from versions menu */
+div.rst-versions > div.rst-other-versions > div.injected{
+  display: none;
+}
