@@ -13,3 +13,8 @@ a.reference.external{
 div.rst-versions > div.rst-other-versions{
   display: none;
 }
+
+/* Hide "On GitHub" section from versions menu */
+div.rst-versions > div.rst-versions{
+  display: none;
+}
