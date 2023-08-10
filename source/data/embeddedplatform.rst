@@ -18,49 +18,44 @@ to further develop on top of the project
 Building 
 --------
 
-After the modification or addition of any components, you have to rebuild the application. In order to do so, additional software is required. 
+After the modification or addition of any components, you have to rebuild the application. In order to do so, additional software is required. `MBED CLI 2 <https://os.mbed.com/docs/mbed-os/v6.16/build-tools/mbed-cli-2.html>`_
+is used for the software build. 
 
 **Windows setup**
 
 Firstly you need a cross-compiler, you can find it on the official site of Arm Developer. Here is a `link <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads>`_ .
-Install the Gnu Embedded Toolchain for Arm, then you need to add a new environment variable with 'GCC_ARM_FOLDER' name, which value is the 
-compiler folder (example in the following picture). 
+Install the Gnu Embedded Toolchain for Arm, then you need to add the bin folder of the installation to the 'path' environment variable, either on the user or global variables,
+as in the picture below. You will have to restart the terminal for the variable to become valid. 
 
-.. image:: ../images/embeddedplatform/env_var_compiler.png
+.. image:: ../images/embeddedplatform/envVariable.PNG
     :align: center
     :width: 90%
 
 
-Another application necessary for building is MSYS2. Add then the location of installation folder in the 'Path' environment variable. 
+Another prerequisite is Python 3.6 or newer, plus pip.
 
-.. image:: ../images/embeddedplatform/env_var_mingw.png
-    :align: center
-    :width: 90%
-
-**Linux setup**
-
-The GNU Core utilities are already installed on linux, so only the setup for Gnu Embedded Toolchain for Arm is required, which means you will have to download
-a linux version from this `link <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads>`_  
-and decompress it on your pc. After decompressing, you need to set the 'GCC_ARM_FOLDER' environment variable with the location where you decompressed
-the cross-compiler. Therefore the 'make' utility knows the location of cross-compiler. To add the persistent environment variable you will need to 
-introduce a code in terminal similar to the following:
+Lastley, you need to install cmake and ninja via pip:
 
 .. code-block:: bash
 
-    echo "export GCC_ARM_FOLDER=/home/user/Workspace/Crosscompilers/gcc-arm-none-eabi-8-2019-q3-update/bin" >> ~/.bashrc
+    pip install ninja cmake
 
-The variable is accessible only for your user and you have to restart the terminal for it to be valid. 
+Now, you need to fetch the mbed-os from the actual commit in the 'mbed-os.lib' file with the command "deploy". If at one point you need another 
+MBED OS Verison, just modify the line with the desired commit.
+
+.. code-block:: bash
+
+    mbed-tools deploy
 
 **Actual Building**
 
-If you set correctly the environment variable, then the 'make' command is recognized in command prompt (terminal). Just open it in the father 
-directory and then execute it (using more threads would help speed up the process). 
+As for the MBED CLI 2 documentaiton, mbed-tools command is used for the building, the outcome being as follows (if no modification is done):
 
 .. image:: ../images/embeddedplatform/make-ing.PNG
     :align: center
     :width: 90%
 
-This will update the BUILD directory in your project
+This will update the cmake_build directory in your project
 
 
 Flashing 
@@ -72,39 +67,23 @@ while the debugger can be powered on only by the USB. The jumper JP5 near the re
 (E5V - via external or U5V - via usb). 
 
 
-Connect the programmer to your computer ( make sure the programmer and make sure the micro-controller are both powered on)., and you will see a 
-new Path in your file explorer, that being the Nucleo_F401RE. Simply copy the binary file from BUILD directory (Nucleo_mbedrobot.bin) on the 
-path. Alternatively, run the 'flash_win.bat' script, present in the project directory (it does the same action). If you use the flash_win, check 
-that the programmer mounted partition identification letter is the same one mentioned in script. If they don't match, you can update in the script 
-with the right new one (like D:, F:, C:). 
+Connect the programmer to your computer (make sure the programmer and make sure the micro-controller are both powered on), and you will see a 
+new Path in your file explorer, that being something like: D:Nucleo_F401RE. Simply copy the binary file from cmake_build\NUCLEO_F401RE\develop\GCC_ARM 
+directory (mbed_robot_car.bin) on this path. 
 
-After copying, the Nucleo will reboot and the code will be on the board.
+Another way to flashing your code on the car is to add a "-f" flag to the compile command (check the mbed cli 2 documentation)
+
+During the flashing, the led of the programmer will flash alternatively with Green&Red light, staying still on red once it's finished. At the end, the 
+Nucleo will reboot and the code will be running on the board.
 
 New component
 -------------
 
-When you want to implement some new feature, it's recommended to keep clean the project structure. For this reason, you need to create the header 
-files in the 'include' directory and the source file in the 'src' folder (following the same name and location). You can also do this by running 
-the 'newComponent.py' script, which creates automatically the include file and the source file. There are some optional parameters: you can check 
-them by using '-help' parameter. 
+When you want to implement some new feature, it's recommended to keep clean the project structure. With this in mind, you will notice that the "include"
+and the "source" directory are following the same structure, ".hpp" files being under the the "include" and ".cpp" files under source. 
 
-.. code-block:: bash
-
-    python newComponent.py --help
-
-The script creates two includes files: 'test.hpp' and 'test.inl' in the 'include' folder and a source file ('test.cpp') in the 'src' folder. 
-
-.. code-block:: bash
-
-    python newComponent.py -c test
-
-If you want to compile these new components, then you must add them to the makefile like new objects, as in the picture below. We suggest to add
-the files between lines 49 and 69.
-
-.. image:: ../images/embeddedplatform/makefile_example.png
-    :align: center
-    :width: 90%
-
+Usually, when adding new components, they should be added to the "CMakeList.txt", but in this case, all the subdirectories are automatically included, as
+long as they are within the same structure. If you wish to add a new layer, modifications must be done to the file, adding the new layer.
 
 Debugging
 ---------
