@@ -1,5 +1,5 @@
-.container {
-  max-width: 90%; /* Adjust this value as needed */
+div.wy-nav-content {
+  max-width: 80%; /* Adjust this value as needed */
 }
 
 a.reference.external{
