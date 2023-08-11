@@ -57,6 +57,7 @@ html_theme_options = {  'body_max_width': 'none',
                         'collapse_navigation': False,
                         'sticky_navigation': True,
                         'navigation_depth': -1,
+                        'body_max_width': '90%',
                     }
 
 # Add any paths that contain custom static files (such as style sheets) here,
