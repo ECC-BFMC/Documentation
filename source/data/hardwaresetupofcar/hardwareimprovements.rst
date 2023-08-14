@@ -36,9 +36,9 @@ even in the situation of the car being stuck. Nevertheless, in both situations, 
     * Phillips screwdriver;
     * Flat file /  sandpaper.
 
-.. image::  ../../images/hardwaresetupforcar/tools.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/tools.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 **How much time do I need?**
     
@@ -52,43 +52,43 @@ Let’s get this show on the road!
 
 Disconnect all wires, remove the mounting support’s nut and then remove the safety clamps and case holders.
 
-.. image::  ../../images/hardwaresetupforcar/RPIsupport.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/RPIsupport.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 **Removing the driving shafts**
 
 Unscrew the highlighted screws.
 
-.. image::  ../../images/hardwaresetupforcar/suspensions.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/suspensions.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 **Removing the differential**
 
 Unscrew the highlighted screws and after step no. 3 you will be able to see the cogwheels.
 
-.. image::  ../../images/hardwaresetupforcar/differential.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/differential.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 **Cleaning the cogwheels**
 
     1. Remove both pieces. From Piece A remove the bearing and afterwards remove the washer permanently.
     2. Clean the grease from the differential’s case, cogwheels and bearings. Make sure you also use alcohol for degreasing the bearings until they freely spin.
 
-.. image::  ../../images/hardwaresetupforcar/cogwheel.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/cogwheel.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 **Tighten the screws equally**
 
     * Remove the safety washer (A) and then also remove the (B) washer permanently. 
     * Remove the screws from the plastic cogwheel and then try sandpapering the surface where the flange will be attached (until it is perfectly flat).
 
-.. image::  ../../images/hardwaresetupforcar/drivenwheel.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/drivenwheel.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 **Mount them back**
 
@@ -96,9 +96,9 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
     * Tighten the screws equally (do not screw them too hard) in the specified order.
     * Try spinning the driving shaft and make sure that it does not have blocking points.
 
-.. image::  ../../images/hardwaresetupforcar/mountback.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/mountback.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 **The distance between cogwheels’ axis**
 
@@ -111,9 +111,9 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
     * When do you know it’s done?
         - This step can be considered done when the wheels move smoothly for a total spin of A cogwheel, with the mention that the cogwheels should be permanently jointed (When tightening the C screw back the cogwheel may move, and so modify the distance between the axis and therefore it might need to be setup properly once again).
 
-.. image::  ../../images/hardwaresetupforcar/distance.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/distance.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 
 The abnormal free movement of the wheels
@@ -126,9 +126,9 @@ It is true that the wheel may seem a little bit too loose but this is not a bad 
 Our suggestion is to put a very thin (how thin, it depends on the gap between bearing and safety cylinder) washer between the bearing and driving shaft joint. 
 You should compare a wheel that doesn’t have a washer with the one you just mounted and see if it is ok for you.
 
-.. image::  ../../images/hardwaresetupforcar/wheelladjustment.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/wheelladjustment.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 
 
@@ -137,17 +137,17 @@ Always be sure that the driving shafts are moving freely
 
 The highlighted parts are the driving shafts. They should always freely move regardless of the wheels' position and car’s distance to the ground.
 
-.. image::  ../../images/hardwaresetupforcar/drivingshaft.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/drivingshaft.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 In order to let the driving shaft move freely, you need to increase the gap between the wheel and the differential:
     * Take the suited hex key and unscrew both the upper and lower screws a little bit.
     * Repeat the previous step until your driving shaft moves freely in any situation
 
-.. image::  ../../images/hardwaresetupforcar/gap.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/gap.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 
 **Frontal differential and steering**
@@ -158,9 +158,9 @@ We suggest that, when working on the frontal differential, to also fix the servo
 when doing so, this way, the servo will be set to the 0 position. Afterwards, check that the wheels are in the neutral position. Then, you can safely tight the 
 couple.
 
-.. image::  ../../images/hardwaresetupforcar/servo.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/servo.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 Setting the wheels’ Camber
 --------------------------
@@ -187,9 +187,9 @@ wheel, you will see a plastic grub screw as in (green circled) that can be tight
 ball-head screws (red circled). We suggest you check that both ball-head screw can move freely before you reattach the wheel. Always check for the suspension also 
 to move freely after setting the Camber.
 
-.. image::  ../../images/hardwaresetupforcar/frontaxle.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/frontaxle.png
     :align: center
-    :width: 90%
+    :width: 50%
 
 
 **How to set rear axel Camber?**
@@ -198,9 +198,9 @@ In order to set the Camber, you will need to turn the red circled screws so that
 doesn’t have to be disassembled in order to be modified, but of course you can remove and measure it with a caliper rule. Another way of modifying the rear axle 
 Camber would be to change the mounting position of the traverse link into the rear axle leg (which has available three different mounting holes – the green circled parts).
 
-.. image::  ../../images/hardwaresetupforcar/backaxle.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/backaxle.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 Setting the wheels’ alignment?
 -------------------------------
@@ -216,9 +216,9 @@ a more direct response to steering.
 The alignment on the front axle can be set by turning the track rod levers ( red circled). You do not have to dismantle them in order to do the adjustments, because 
 they have threads in opposite. It is important that you set them equally (test after each modification that the car is moving straight).
 
-.. image::  ../../images/hardwaresetupforcar/frontaxlealignment.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/frontaxlealignment.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 Adjust the car’s height
 -----------------------
@@ -228,9 +228,9 @@ on the ramp. You can see that there are two screws used as spacers (the light bl
 is possible that these spacers won’t let the lower control arm go as low as possible. So, you just have to unscrew the light blue highlighted screws (both 
 front axle and rear axle). 
 
-.. image::  ../../images/hardwaresetupforcar/height.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/height.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 There are also some limiters on the height..... You can also strengthen the suspensions.... 
 
