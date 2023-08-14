@@ -2,9 +2,14 @@ div.wy-nav-content {
   max-width: 80%; /* Adjust this value as needed */
 }
 
-.max-width-table {
-  max-width: 80%; /* Adjust the percentage as needed */
-  margin: 0 auto;
+td:nth-child(1) {
+  width: 15%;
+}
+td:nth-child(2) {
+  width: 20%;
+}
+td:nth-child(3) {
+  width: 10%;
 }
 
 a.reference.external{

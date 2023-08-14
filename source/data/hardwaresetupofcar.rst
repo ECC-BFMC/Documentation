@@ -35,7 +35,7 @@ In this schematics you can see the connections diagram of all the HW components 
 And here's the table with all the components and all the needed details.
 ------------------------------------------------------------------------
 
-.. table:: :class: max-width-table
+.. table::
    :widths: 15 20 10 10 10 10 25
 
    ================  ========================  =========  ================  ============  ======  =====================
