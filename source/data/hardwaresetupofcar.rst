@@ -35,6 +35,8 @@ In this schematics you can see the connections diagram of all the HW components 
 And here's the table with all the components and all the needed details.
 ------------------------------------------------------------------------
 
+Table1:
+
 .. table::
    :width: 80%
 
@@ -44,6 +46,7 @@ And here's the table with all the components and all the needed details.
    Chassis           The base structure of     1          N/A               `Link 1`_     ~€74    .. image:: ../images/hardwaresetupforcar/products/Chassis.jpg
                      the car. Comes   
                      completely assembled. 
+                     
                      model: Reely TC-04 
    Servo             Actuator used for the     1          N/A               `Link 2`_     ~€22    .. image:: ../images/hardwaresetupforcar/products/Servo.jpg
                      steering mechanism. 
