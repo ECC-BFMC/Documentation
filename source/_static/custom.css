@@ -2,16 +2,6 @@ div.wy-nav-content {
   max-width: 80%; /* Adjust this value as needed */
 }
 
-td:nth-child(1) {
-  width: 15%;
-}
-td:nth-child(2) {
-  width: 20%;
-}
-td:nth-child(3) {
-  width: 10%;
-}
-
 a.reference.external{
   font-weight: bold;
 } 
