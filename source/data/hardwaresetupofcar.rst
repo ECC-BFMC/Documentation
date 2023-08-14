@@ -36,7 +36,7 @@ And here's the table with all the components and all the needed details.
 ------------------------------------------------------------------------
 
 .. table::
-   :widths: 20 30 10 10 10 20
+   :widths: 15 20 10 10 10 10 25
 
    ================  ========================  =========  ================  ============  ======  =====================
    Product           Description               Quantity   Mount Materials   URL           Price   Picture
