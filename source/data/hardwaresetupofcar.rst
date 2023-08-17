@@ -86,17 +86,17 @@ Table1:
                      camera-module-3,  
                      wide-angle version 
    Battery           Used to power up the      1          N/A               `Link 71`_    ~€41    .. image:: ../images/hardwaresetupforcar/products/Battery.jpg
-                     entire vehicle. It's a                                 `Link 72`_ 
+                     entire vehicle. It's a                                 
                      
-                     2 cells LiPo battery,                                  `Link 73`_ 
+                     2 cells LiPo battery,                                  `Link 72`_ 
                      ranging from 4500 mAh  
                      
-                     to 6200 mAh (randomly  
+                     to 6200 mAh (randomly                                  `Link 73`_
                      assigned) 
    IMU               Sensor Bosch BNO055       1          Ducktape          `Link 81`_    ~€25    .. image:: ../images/hardwaresetupforcar/products/IMU.jpg
-                     installed on 3 kinds of                                `Link 82`_
+                     installed on 3 kinds of                                
                      
-                     different boards  
+                     different boards                                       `Link 82`_
                      (2 custom and 1  
                      
                      official). Randomly  
@@ -150,12 +150,12 @@ Table1:
    Charger           Charger for the LiPo      1          N/A               `Link 14`_    ~€32    .. image:: ../images/hardwaresetupforcar/products/Charger.jpg
                      battery.
    Car Body          The cover body that       1          N/A               `Link 151`_   ~€40    .. image:: ../images/hardwaresetupforcar/products/CarBody.jpg
-                     goes on top of the car,                                `Link 152`_ 
+                     goes on top of the car,                                 
                      
-                     covering the entire                                    `Link 153`_ 
+                     covering the entire                                    `Link 152`_
                      vehicle interior. 
                      
-                     model: Lexus, BMW, ford 
+                     model: Lexus, BMW, ford                                `Link 153`_
                      assigned randomly. 
                      
                      The vehicle can be  
@@ -188,20 +188,24 @@ And here are the 3d printed components for the car itself. Available also in edi
 
 .. _sldprt_extension: https://github.com/ECC-BFMC/Documentation/tree/master/source/3DModels/CustomParts/sldprt..
 
-================  ========================  =========  ================  ==========  =====================
-Product           Description               Quantity   Mount Materials   URL         Picture
-================  ========================  =========  ================  ==========  =====================
-Boards support    The support for Raspbery  1          spacer nut + nut  `Link 21`_   .. image:: ../images/hardwaresetupforcar/products/Boardsupport.jpg
+Table 2
+
+================  ========================  =========  ================  ============  =====================
+Product           Description               Quantity   Mount Materials   URL            Picture
+================  ========================  =========  ================  ============  =====================
+Boards support    The support for Raspbery  1          spacer nut + nut  `Link 21`_     .. image:: ../images/hardwaresetupforcar/products/Boardsupport.jpg
                   and Nucleo.                          threaded rod 
-Camera support    The camera support        1          m2 x 20 + nut     `Link 22`_   .. image:: ../images/hardwaresetupforcar/products/Camerasupport.jpg
+Camera support    The camera support        1          m2 x 20 + nut     `Link 22`_     .. image:: ../images/hardwaresetupforcar/products/Camerasupport.jpg
                   sitself. 
-Camera rotation   The part that enables     1          2x spacer nut     `Link 23`_   .. image:: ../images/hardwaresetupforcar/products/Camerarotation.jpg
+Camera rotation   The part that enables     1          2x spacer nut     `Link 23`_     .. image:: ../images/hardwaresetupforcar/products/Camerarotation.jpg
                   the rotation of the                  m3 + 2x nut + 
+                  
                   camera.                              threaded rod
-Chassis mount     The part that fixes the   1          2x M6x12 poly     `Link 24`_   .. image:: ../images/hardwaresetupforcar/products/Chassismount.jpg
+Chassis mount     The part that fixes the   1          2x M6x12 poly     `Link 24`_     .. image:: ../images/hardwaresetupforcar/products/Chassismount.jpg
                   entire assemble to the               + 2x nuts
+                  
                   chassis.  
-================  ========================  =========  ================  ==========  =====================
+================  ========================  =========  ================  ============  =====================
 
 .. _Link 21: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CustomParts/Nucleo%2BRpi_Suport.STL..
 .. _Link 22: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CustomParts/PIcameraHolderPart2.STL..

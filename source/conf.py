@@ -73,7 +73,7 @@ html_context = {
     'display_github': True,
     'github_user': 'ECC-BFMC',
     'github_repo': 'Documentation',
-    'github_version': 'master/source/',  
+    'github_version': 'master/',  
 }
 
 html_css_files=['custom.css']

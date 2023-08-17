@@ -9,7 +9,7 @@ It's 24 cm heigh and the lights are 4.5cm diameter. You can see on the pictures 
 
 .. image:: ../../images/racetrack/TrafficLight.jpg
    :align: center
-   :width: 90%
+   :width: 50%
 
 There will be four semaphores on the race track. One placed at the track entrance, which will mark 
 the start, and three placed in an intersection. Besides showing the appropriate color, they will 
@@ -27,7 +27,7 @@ Here you can find a picture of pedestrian:
 
 .. image:: ../../images/racetrack/Pedestriandoll.png
    :align: center
-   :width: 90%
+   :width: 50%
 
 You can find the official link to the store here: `pedestrian doll <https://www.amazon.co.uk/Simba-EVI-Love-First-Bike/dp/B000UTKNI0>`_. 
 
@@ -48,21 +48,21 @@ The closed road stand is positioned on the one way&two lane road, it can be plac
 lanes. If the stand is placed on the left lane, it's arrows are pointing to the right, meaning that at the 
 intersection the car must go right. If it is placed on the right lane, it's arrows are pointing to the left, 
 meaning that at the intersection the car has to go to the left. You can find the label in pdf format 
-`here <https://github.com/ECC-BFMC/Documentation/blob/master/source/templates/roadblock.pdf>`_.
+`here <https://github.com/ECC-BFMC/Documentation/blob/master/source/racetrack/roadblock.pdf>`_.
 The mark will be placed on a structure similar to te highway separator.
 
 |pic1|  |pic2|
 
 .. |pic1| image:: ../../images/racetrack/roadblock_left.png
-   :width: 45%
+   :width: 35%
 
 .. |pic2| image:: ../../images/racetrack/roadblock_right.png
-   :width: 45%
+   :width: 35%
 
 Highway separator
 -----------------
 
-A series of `Separator blocks <https://github.com/ECC-BFMC/Documentation/blob/master/3DModels/Separator_block.STL>`_
+A series of `Separator blocks <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/Separator_block.STL>`_
 wil be placed on the highway, on the line which is dividing the driving ways. 
 
 
@@ -73,4 +73,4 @@ The ramp is covered with the same material as the rest of the track, it's dimens
 
 .. image:: ../../images/racetrack/ramp.png
    :align: center
-   :width: 90%
+   :width: 50%
