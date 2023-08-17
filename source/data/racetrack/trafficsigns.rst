@@ -14,11 +14,15 @@ On the track can appear the following types of traffic signs:
  - Round-about sign
  - One way road sign
  - No-entry road sign
+ - 30 cm/s speed limit start
+ - 30 cm/s speed limit end
+ - 30 cm/s speed limit start
+ - 30 cm/s speed limit end
  
 Here ou can find the `traffic signs <https://github.com/ECC-BFMC/Documentation/blob/master/source/racetrack/TrafficSign.pdf>`_  
 in pdf format, which you can print in order to reproduce them.
 
-Each sign is encapsulate in a 6x6 cm square (scaled accordingly. You can see two examples in the picture below:
+Each sign is encapsulate in a 6x6 cm square (scaled accordingly). You can see two examples in the picture below:
 
 .. image:: ../../images/racetrack/TrafficSign_Example.png
    :align: center

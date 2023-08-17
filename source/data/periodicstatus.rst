@@ -44,4 +44,11 @@ Recommended report length is one/two page/2. Maximum report length is 3 pages.
 
 Media document
 --------------
-It can be in video format or images format. The size of the video should not exceed 15 MB.
+It can be in video format or images format. The size of the video should not exceed 50 MB nor 3 minutes in length.
+
+
+The files presented here can be found also in editable formats here:
+- `Periodics example`_
+
+  .. _`Periodics example`: https://github.com/ECC-BFMC/Documentation/tree/master/source/periodic_report
+
