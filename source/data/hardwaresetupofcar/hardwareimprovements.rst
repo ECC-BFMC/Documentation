@@ -1,35 +1,32 @@
 Hardware improvements
 =====================
 
+Let’s say you have just written a script that turns on a light bulb. At the first glance, there is no light coming out from the bulb. What are you going to do? 
+Well, sometimes it’s better to check if the bulb is properly plugged in, rather than rewriting your code. 
+Basically, this guide explains what modifications can be done to the chassis itself.
+
 FAQ
 ---
-
-**WHY?**
-
-Let’s say you have just written a script that turns on a light bulb. At the first glance, there is no light coming out from the bulb. What are you going to do? 
-Well, sometimes it’s better to check if the bulb is properly plugged in, rather than rewriting your code. Basically all you need to do is cleaning, lubricating 
-and, where needed, removing some parts of the car.
 
 **What are the advantages?**
 
 The advantages are:
     * Developing / improving mechanical skills;
-    * Lower friction - involving lower current consumption;
-    * Driving smoothness;
-    * Low chance of getting the car stuck when cornering.
+    * Lowering frictions in the system - involving lower current consumption;
+    * Smoother driving;
+    * Lowering the possibility of getting the car stuck when cornering.
 
 **Can this part be skipped?**
 
-The given car kit has an already implemented PID control, which means driving in a “constant speed” mode, meaning that even if the car tends to get stuck (based 
-on the signals received from the encoder) the car’s speed will be automatically adjusted and therefore the problem of the smoothness is eliminated (at least 
-partially). The car, by default, runs in “constant power consumption” mode, where any friction or physical tension will result in decreasing the car’s speed or 
-even in the situation of the car being stuck. Nevertheless, in both situations, a hardware care for the chassis is always welcomed :).
+The given car kit has a brushless motor with an integrated esc, which is rotating in a “constant speed” mode, meaning that even if the car tends to get stuck (based 
+on the signals received from the Nucleo) the car’s speed will be automatically adjusted and therefore the problem of the smoothness is eliminated (at least 
+partially). Nevertheless, as when buying a used car, it is always recommended to give it a mechanical check.
 
 **What tools do I need?**
 
     * Hex key screwdriver;
     * Grease ;
-    * Degreaser;
+    * Degrease;
     * Isopropyl alcohol;
     * Sponge & brush;
     * Pliers;
@@ -38,15 +35,18 @@ even in the situation of the car being stuck. Nevertheless, in both situations, 
 
 .. image::  ../../images/hardwaresetupforcar/hardware_improvements/tools.png
    :align: center
-   :width: 50%
+   :width: 40%
 
 **How much time do I need?**
     
     * Working time approximately 4 hours.
 
 
-Let’s get this show on the road!
---------------------------------
+The transmission from the motor
+-------------------------------
+
+The transmission from the motor includes cleaning and greasing the differentials (front and back), adjusting all the distances when 
+remounting all the components and checking for whatever frictions may be present. 
 
 **Removing the computer boards’ support**
 
@@ -56,11 +56,11 @@ Disconnect all wires, remove the mounting support’s nut and then remove the sa
    :align: center
    :width: 50%
 
-**Removing the driving shafts**
+**Removing the back driving shafts**
 
 Unscrew the highlighted screws.
 
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/suspensions.png
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/back_driving_shaft.png
    :align: center
    :width: 50%
 
@@ -70,7 +70,7 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
 
 .. image::  ../../images/hardwaresetupforcar/hardware_improvements/differential.png
    :align: center
-   :width: 50%
+   :width: 70%
 
 **Cleaning the cogwheels**
 
@@ -88,7 +88,7 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
 
 .. image::  ../../images/hardwaresetupforcar/hardware_improvements/drivenwheel.png
    :align: center
-   :width: 50%
+   :width: 70%
 
 **Mount them back**
 
@@ -98,7 +98,7 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
 
 .. image::  ../../images/hardwaresetupforcar/hardware_improvements/mountback.png
    :align: center
-   :width: 50%
+   :width: 70%
 
 **The distance between cogwheels’ axis**
 
@@ -115,6 +115,9 @@ Unscrew the highlighted screws and after step no. 3 you will be able to see the 
    :align: center
    :width: 50%
 
+**Front axist differential**
+
+The front axis differential also needs the same treatment as the rear one. So just adapt the upper lines to the front one.
 
 The abnormal free movement of the wheels
 ----------------------------------------
@@ -150,17 +153,21 @@ In order to let the driving shaft move freely, you need to increase the gap betw
    :width: 50%
 
 
-**Frontal differential and steering**
 
-The front axis differential also needs the same treatment as the rear one. 
-Also, the servo needs one more screw in order to ensure that the steering column never jumps out. The position is hard to reach when the car is fully assembled. 
-We suggest that, when working on the frontal differential, to also fix the servo’s couple. Please make sure that both Nucleo and servo are properly powered on 
-when doing so, this way, the servo will be set to the 0 position. Afterwards, check that the wheels are in the neutral position. Then, you can safely tight the 
-couple.
+Steering
+--------
+The servo needs one more screw to ensure that the steering column never jumps out. The position is hard to reach when the car is fully assembled, 
+so three options are available (beforehand, make sure that both Nucleo and servo are properly powered on when screwing, this way, the servo will be 
+set to the 0 position).
+
+- You can either fix it when working on the frontal differential (more exactley when it is removed).
+- Placing the rod when the car is assembled, unscrewing the servo without removing the rod, fixing the rod with the screw and place the servo back.
+- For those of you with more patience, an angle screwdriver can be improvised.
 
 .. image::  ../../images/hardwaresetupforcar/hardware_improvements/servo.png
    :align: center
    :width: 50%
+
 
 Setting the wheels’ Camber
 --------------------------
@@ -169,7 +176,7 @@ Setting the wheels’ Camber
 
 The Camber is the angle at which the wheel and tire stand relative to a perfectly flat surface and it can be positive or negative. A positive Camber means that 
 the top of the wheel is pointed outwards, whereas negative Camber means the opposite, the top of the tire is leaned in closer to the car. Each of those two types 
-of Camber have theirs advantages, but we suggest you approach a negative Camber.
+of Camber have theirs advantages and disadvantages. For the purpose of the challenge, we suggest a negative Camber approach.
 
 **What are the advantages of negative Camber?**
 
@@ -178,6 +185,7 @@ of Camber have theirs advantages, but we suggest you approach a negative Camber.
     * Possibility of cornering with higher speed;
     * Steering reacts more directly;
     * Steering forces are reduced;
+    * Lower cornering angles
 
 **How to set front axle Camber?**
 
@@ -223,15 +231,20 @@ they have threads in opposite. It is important that you set them equally (test a
 Adjust the car’s height
 -----------------------
 
-You have six possible combinations for the suspensions. We suggest you setup your ground clearance high enough to avoid any problems that can appear when driving 
-on the ramp. You can see that there are two screws used as spacers (the light blue squares). Even if you setup you suspensions for a big ground clearance, it 
-is possible that these spacers won’t let the lower control arm go as low as possible. So, you just have to unscrew the light blue highlighted screws (both 
-front axle and rear axle). 
+The car ground clearance is set at maximum through 4 screws. If you want to increase this ground clearance, you can unscrew them at the maximum level (please do not remove)
+This is the location of the 4 screws:
 
 .. image::  ../../images/hardwaresetupforcar/hardware_improvements/height.png
    :align: center
    :width: 50%
 
-There are also some limiters on the height..... You can also strengthen the suspensions.... 
+Adjust the car’s suspensions
+-----------------------------
 
-Toe be done!!!
+Eventhough the height of the ground clearance has increased, chances are that the car won't stay at that height, due to the fact that the suspensions can't push 
+it that high. The good thing is that the suspensions can be hardened, and for each suspension you have 6 combinations. The suspensions can then be further hardened 
+by adding a spacer between the spring and their support.
+
+.. image::  ../../images/hardwaresetupforcar/hardware_improvements/suspensions_back.png
+   :align: center
+   :width: 50%
