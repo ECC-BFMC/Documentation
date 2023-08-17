@@ -9,7 +9,7 @@ V2X - Vehicle to everything
    vehicletoeverything/localizationsysandmap
    vehicletoeverything/CarsAndSemaphores
 
-* :doc:`Live traffic system <vehicletoeverything/TrafficCommunication>`
+* :doc:`Traffic communication system <vehicletoeverything/TrafficCommunication>`
 
   - How the TrafficCommunication system is working and how to interact with it
 
@@ -17,7 +17,7 @@ V2X - Vehicle to everything
 
   - How the localization system is working, and the mapping that comes with it.
 
-* :doc:`Vehicle to vehicle <vehicletoeverything/CarsAndSemaphores>`
+* :doc:`Cars and semaphores <vehicletoeverything/CarsAndSemaphores>`
 
   - How the moving vehicles and the semaphores are streaming data on the track.
 
@@ -29,8 +29,3 @@ real systems will interact with yours in a proper manner.
 
 A set of API's and the corresponding simulated systems is made available, so that the participants can ensure the functionality of all the systems present at the 
 location. The API's will run on the vehicle while, under the Brain project, while the simulated systems on a remote machine, from the Computer project
-
-
-
-
-
