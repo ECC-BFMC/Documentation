@@ -27,8 +27,8 @@ the computer project needs to be installed on a PC.
    data/periodicstatus   
 
 
-Getting started
----------------
+All given packages
+------------------
 
 * :doc:`Connection Diagram <data/hardwaresetupofcar>`
 
