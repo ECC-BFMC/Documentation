@@ -73,22 +73,9 @@ is done in the following images.
 .. |pic2| image:: ../../images/v2x/4roadsExample.PNG
    :width: 35%
 
-You can find the figure and the digital representation on the following links: 
- - `Test track figure`_
- - `Test track digital`_
+You can find the figure and the digital representation of the competition track at the following links: 
  - `Competition track figure`_
  - `Competition track digital`_
 
-  .. _`Test track figure`: https://github.com/ECC-BFMC/Documentation/blob/master/source/racetrack/Test_track_graph.png
-  .. _`Test track digital`: https://github.com/ECC-BFMC/Documentation/blob/master/source/racetrack/Test_track_graph.graphml
   .. _`Competition track figure`: https://github.com/ECC-BFMC/Documentation/blob/master/source/racetrack/Competition_track_graph.png
   .. _`Competition track digital`: https://github.com/ECC-BFMC/Documentation/blob/master/source/racetrack/Competition_track_graph.graphml
-
-The coordinates systems of the maps can be found here:
-    - `Test track coordinate system <https://github.com/ECC-BFMC/Documentation/blob/master/source/racetrack/Track_Test.png>`_.
-    - `Competition track coordinate system <https://github.com/ECC-BFMC/Documentation/blob/master/source/racetrack/Track.png>`_.
-
-
-To run
-------
-The API is interconnected with the livetraffic application. Explanation on how it works can be found there. 

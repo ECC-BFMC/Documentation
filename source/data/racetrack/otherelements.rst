@@ -41,23 +41,7 @@ placed either in a parking spot or on the road, simulating a broken car, while a
 which is moving on the track. The difference between them is that the dynamic vehicle streams it's position 
 on the LAN
 
-Closed road stand
------------------
 
-The closed road stand is positioned on the one way&two lane road, it can be placed randomly on one of the 
-lanes. If the stand is placed on the left lane, it's arrows are pointing to the right, meaning that at the 
-intersection the car must go right. If it is placed on the right lane, it's arrows are pointing to the left, 
-meaning that at the intersection the car has to go to the left. You can find the label in pdf format 
-`here <https://github.com/ECC-BFMC/Documentation/blob/master/source/racetrack/roadblock.pdf>`_.
-The mark will be placed on a structure similar to te highway separator.
-
-|pic1|  |pic2|
-
-.. |pic1| image:: ../../images/racetrack/roadblock_left.png
-   :width: 35%
-
-.. |pic2| image:: ../../images/racetrack/roadblock_right.png
-   :width: 35%
 
 Highway separator
 -----------------

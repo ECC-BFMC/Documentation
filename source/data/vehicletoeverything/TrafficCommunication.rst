@@ -58,23 +58,15 @@ shared_memory.insert(m, val)
 +-----+-------------------------------------+
 | 9   | Traffic Sign - No Entry             |
 +-----+-------------------------------------+
-| 10  | Traffic Sign - Speed limit 30 start |
+| 10  | Static car on parking               |
 +-----+-------------------------------------+
-| 11  | Traffic Sign - Speed limit 30 exit  |
+| 11  | Pedestrian on crosswalk             |
 +-----+-------------------------------------+
-| 12  | Traffic Sign - Speed limit 15 start |
+| 12  | Pedestrian on road                  |
 +-----+-------------------------------------+
-| 13  | Traffic Sign - Speed limit 15 exit  |
+| 13  | Roadblock                           |
 +-----+-------------------------------------+
-| 14  | Static car on parking               |
-+-----+-------------------------------------+
-| 15  | Pedestrian on crosswalk             |
-+-----+-------------------------------------+
-| 16  | Pedestrian on road                  |
-+-----+-------------------------------------+
-| 17  | Roadblock                           |
-+-----+-------------------------------------+
-| 18  | Traffic light                       |
+| 14  | Traffic light                       |
 +-----+-------------------------------------+
 
 To run

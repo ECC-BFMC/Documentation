@@ -37,6 +37,9 @@ is similarly 4.5 cm.
    :align: center
    :width: 50%
 
+As for the highway, the width of the lane is approximately 37 cm, where the lines are 4 cm in width
+and the dotted line is of 9x9 cm (full and empty color).
+
 The following image shows the tightest curve, which is the most common curve on the track. 
 
 .. image:: ../images/racetrack/marking_tight_curve.png
@@ -81,10 +84,14 @@ outside the road limits.
    :align: center
    :width: 50%
 
-Exceptions to this rule are the highway traffic signs and:
-    - Highway entry. There's a sign right at the intersection of the highway entrance
-    - Highway exit. There's a sign before the dotted lane starts
+**Starting point**
+The starting point is made out of an incomplete rectangle, which is exactly the width of the vehicle (20cm)
+and ends 56 cm from the chessboard print. 
 
-.. image:: ../images/racetrack/Highway.PNG
+The chessboard print is made out of a 7x6 squares matrix, occupying the entire width of the lane (5cm square).
+
+The chessboard can be used for the automatic calibration of the camera.
+
+.. image:: ../images/racetrack/Start.PNG
    :align: center
    :width: 50%
