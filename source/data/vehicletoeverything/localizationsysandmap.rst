@@ -7,7 +7,7 @@ The anchors are set into know positions on the track. The tag devices, communica
 to the server and sends in the location data. The server collects and stores the data from the tag devices (location on map) and waits for connections from the 
 robot clients; then, upon connection, it serves the desired data to the clients. Down below a picture describing the process.
 
-.. image::  ../../images/v2x/Localisation_system.png
+.. image::  ../../images/vehicletoeverything/Localisation_system.png
   :align: center
   :width: 50%
 
@@ -15,7 +15,7 @@ The system will be installed only at the phisical competition. It is made of two
 and the actual device, which the team will get only while on the track. The active part will have displayed the ID of the connection. In the following image you 
 can see the place where the device will be placed, the fixed component and the actual device.
 
-.. image::  ../../images/v2x/Localisation_system_HW.png
+.. image::  ../../images/vehicletoeverything/Localisation_system_HW.png
   :align: center
   :width: 50%
 
@@ -38,7 +38,7 @@ library (making it easier to be imported on your platform). There are two types 
 and the distance between 2 nodes(on the same lane) will be roughly ~30 cm, with some variations. A connection describes the relations between twp nodes (dotted 
 or continuous line). Here you can see a straight road visual example:
 
-.. image::  ../../images/v2x/StraighRoadExample.PNG
+.. image::  ../../images/vehicletoeverything/StraighRoadExample.PNG
   :align: center
   :width: 50%
 
@@ -67,10 +67,10 @@ is done in the following images.
 
 |pic1|  |pic2|
 
-.. |pic1| image:: ../../images/v2x/3roadsExample.PNG
+.. |pic1| image:: ../../images/vehicletoeverything/3roadsExample.PNG
    :width: 35%
 
-.. |pic2| image:: ../../images/v2x/4roadsExample.PNG
+.. |pic2| image:: ../../images/vehicletoeverything/4roadsExample.PNG
    :width: 35%
 
 You can find the figure and the digital representation of the competition track at the following links: 
