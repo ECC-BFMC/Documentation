@@ -11,6 +11,8 @@ Brain project
 
   - Describing how to fresh-start with the project
 
+As substitutes for this Brain project are the Startup_c and Brain_ROS. Though none of them are maintained, so if you chose to develop on each of them, you will 
+have to adapt it based on the information you find here. 
 
 This documentation describes the given brain project, which runs on the raspberry pi. It eases the 
 process of starting up your vehicle by displaying some basic functionalities and describes 
@@ -157,8 +159,9 @@ reading... On the other thread instead, it receives information, such as "acknow
 (such as "speed has been set") or sensor data (such as "Rotation is...). 
 
 
+++++++
 To Run
-======
+++++++
 
 Simply run the main.py in on the car (should automatically start with the given image).
 
