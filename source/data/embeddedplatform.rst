@@ -1,6 +1,14 @@
 Embedded platform
 =================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   embeddedplatform/flowDiagram
+
+* :doc:`Test <embeddedplatform/flowDiagram>`
+
 The embedded platform refers to the code that is written on the Nucleo board, more precisely the low level application, which runs on the 
 micro-controller. It aims to provide an interface between high level processing and low level motors control and sensor reading. The code 
 uses mbed os version=5.6. 
@@ -15,36 +23,71 @@ The project is structured on 4 layers: Brain, Drivers, Periodics and Utils.
 The low level control application, which runs on the Nucleo-F401RE, is implemented in C/C++ language. Down below you can find some tips on how
 to further develop on top of the project
 
-Building 
+Building
 --------
 
-After the modification or addition of any components, you have to rebuild the application. In order to do so, additional software is required. `MBED CLI 2 <https://os.mbed.com/docs/mbed-os/v6.16/build-tools/mbed-cli-2.html>`_
-is used for the software build. 
+Preliminary Setup
+~~~~~~~~~~~~~~~~~
 
-**Windows setup**
+Before you initiate the building process, ensure to correctly set up your environment. Below, you will find a step-by-step guide to setting up the necessary tools and environments:
 
-Firstly you need a cross-compiler, you can find it on the official site of Arm Developer. Here is a `link <https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads>`_ .
-Install the Gnu Embedded Toolchain for Arm, then you need to add the bin folder of the installation to the 'path' environment variable, either on the user or global variables,
-as in the picture below. You will have to restart the terminal for the variable to become valid. 
+1. **Python Installation**:
+   
+   Install a Python version that is 3.6 or newer. You can download it from the `official Python website <https://www.python.org/downloads/>`_.
 
-.. image:: ../images/embeddedplatform/envVariable.PNG
-    :align: center
-    :width: 90%
+2. **CMake Installation**:
 
+   Install CMake to manage the build process of your software. `Download it here <https://cmake.org/download/>`_.
 
-Another prerequisite is Python 3.6 or newer, plus pip.
+3. **Ninja Installation**:
 
-Lastley, you need to install cmake and ninja via pip:
+   Install Ninja using the following pip command:
+
+   .. code-block:: bash
+
+      pip install ninja
+      python -m pip install ninja
+
+   If you prefer to install it through a different method, you can find the installation commands `on this GitHub page <https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages>`_.
+
+4. **Mbed-tools Installation**:
+
+   Install mbed-tools using the pip command as follows:
+
+   .. code-block:: bash
+
+      pip install mbed-tools
+      python -m pip install mbed-tools
+
+5. **Cross-Compiler Installation**:
+
+   Install a cross-compiler to build your project for the Nucleo-F401RE. `Find the suitable one here <https://developer.arm.com/downloads/-/gnu-rm>`_.
+
+Windows Setup
+~~~~~~~~~~~~~
+
+After installing all the preliminary components, you need to check the environment variables to ensure they are set up correctly. Verify if you can find them as shown in the image below:
+
+.. image:: ../images/embeddedplatform/envVariables.PNG
+   :align: center
+   :width: 90%
+
+If they are not present, you can copy the following paths to set up your environment variables correctly:
+
+- ``C:\Program Files\CMake\bin``
+- ``C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311``
+- ``C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311\Scripts``
+- ``C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin``
+
+Make sure to replace ``fill_with_your_user`` with your actual username.
+
+**Setting Up the MBED OS Version**
+
+To set up the necessary MBED OS version, first navigate to the project path in your command prompt or terminal. Once there, fetch the mbed-os from the actual commit specified in the 'mbed-os.lib' file using the "deploy" command. If at any point you wish to use a different MBED OS version, simply modify the line with the desired commit.
 
 .. code-block:: bash
 
-    pip install ninja cmake
-
-Now, you need to fetch the mbed-os from the actual commit in the 'mbed-os.lib' file with the command "deploy". If at one point you need another 
-MBED OS Verison, just modify the line with the desired commit.
-
-.. code-block:: bash
-
+    cd path/to/your/project
     mbed-tools deploy
 
 **Actual Building**
