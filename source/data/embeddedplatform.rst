@@ -68,7 +68,7 @@ Windows Setup
 
 After installing all the preliminary components, you need to check the environment variables to ensure they are set up correctly. Verify if you can find them as shown in the image below:
 
-.. image:: ../images/embeddedplatform/envVariables.PNG
+.. image:: ../images/embeddedplatform/envVariables.png
    :align: center
    :width: 90%
 
