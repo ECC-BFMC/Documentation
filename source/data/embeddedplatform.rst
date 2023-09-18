@@ -7,8 +7,6 @@ Embedded platform
 
    embeddedplatform/flowDiagram
 
-* :doc:`Test <embeddedplatform/flowDiagram>`
-
 The embedded platform refers to the code that is written on the Nucleo board, more precisely the low level application, which runs on the 
 micro-controller. It aims to provide an interface between high level processing and low level motors control and sensor reading. The code 
 uses mbed os version=5.6. 
@@ -190,5 +188,6 @@ Notes
 ------
 
 The script for creating a new component (newComponent.py) and for flashing the micro-controller weren't projected to linux usage, so we cannot guarantee the 
-correct working. 
+correct working.
+* :doc:`Flow diagram <embeddedplatform/flowDiagram>` 
 
