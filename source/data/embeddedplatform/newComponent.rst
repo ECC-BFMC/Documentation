@@ -15,3 +15,9 @@ To facilitate the addition of new components to the project, utilize the newComp
 2. Run the script in a terminal or an IDE.
 3. When prompted, input the category of the component (valid options are "brain," "driver," "periodics," or "utils").
 4. Next, input the name of the new component.
+
+Notes
+------
+
+The script for creating a new component (newComponent.py) and for flashing the micro-controller weren't projected to linux usage, so we cannot guarantee the 
+correct working. 
