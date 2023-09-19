@@ -62,18 +62,14 @@ If they are not present, you can copy the following paths to set up your environ
 
     C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin
 
-.. - ``C:\Program Files\CMake\bin``
-.. - ``C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311``
-.. - ``C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311\Scripts``
-.. - ``C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin``
-
 Make sure to replace ``fill_with_your_user`` with your actual username.
 
 **Setting Up the MBED OS Version**
 
 To set up the necessary MBED OS version, first navigate to the project path in your command prompt or terminal. Once there, fetch the mbed-os from the actual commit specified in the 'mbed-os.lib' file using the "deploy" command. If at any point you wish to use a different MBED OS version, simply modify the line with the desired commit.
 
+- ``cd path/to/your/project``
+
 .. code-block:: bash
 
-    cd path/to/your/project
     mbed-tools deploy
