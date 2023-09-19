@@ -5,7 +5,11 @@ Embedded platform
    :maxdepth: 1
    :hidden:
 
-   embeddedplatform/flowDiagram
+   embeddedplatform/preliminarySetup
+   embeddedplatform/continuous
+   embeddedplatform/newComponent
+   embeddedplatform/debugging
+   embeddedplatform/mainFlow
 
 The embedded platform refers to the code that is written on the Nucleo board, more precisely the low level application, which runs on the 
 micro-controller. It aims to provide an interface between high level processing and low level motors control and sensor reading. The code 
@@ -197,6 +201,5 @@ Notes
 ------
 
 The script for creating a new component (newComponent.py) and for flashing the micro-controller weren't projected to linux usage, so we cannot guarantee the 
-correct working.
-* :doc:`Flow diagram <embeddedplatform/flowDiagram>` 
+correct working. 
 

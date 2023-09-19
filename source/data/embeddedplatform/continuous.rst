@@ -1,4 +1,4 @@
-Flow diagram
+Building
 ==============================
 
 Overview
