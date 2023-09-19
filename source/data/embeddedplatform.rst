@@ -28,9 +28,6 @@ to further develop on top of the project
 Building
 --------
 
-Preliminary Setup
-~~~~~~~~~~~~~~~~~
-
 **Actual Building**
 
 As for the MBED CLI 2 documentaiton, mbed-tools command is used for the building, the outcome being as follows (if no modification is done):
@@ -60,39 +57,10 @@ Another way to flashing your code on the car is to add a "-f" flag to the compil
 During the flashing, the led of the programmer will flash alternatively with Green&Red light, staying still on red once it's finished. At the end, the 
 Nucleo will reboot and the code will be running on the board.
 
-New component
--------------
-
-When you want to implement some new feature, it's recommended to keep clean the project structure. With this in mind, you will notice that the "include"
-and the "source" directory are following the same structure, ".hpp" files being under the the "include" and ".cpp" files under source. 
-
-Usually, when adding new components, they should be added to the "CMakeList.txt", but in this case, all the subdirectories are automatically included, as
-long as they are within the same structure. If you wish to add a new layer, modifications must be done to the file, adding the new layer.
-
-**Utilizing the newComponent.py Script**
-
-To facilitate the addition of new components to the project, utilize the newComponent.py script. This script automates the process of creating the necessary files and directories for a new component, adhering to the existing structure of the project. Here is how you can use the script:
-
-1. Navigate to the directory where the newComponent.py script is located (should be inside the project directory).
-2. Run the script in a terminal or an IDE.
-3. When prompted, input the category of the component (valid options are "brain," "driver," "periodics," or "utils").
-4. Next, input the name of the new component.
-
 Debugging
 ---------
 
-You can easily try do debug your Nucleo code by communicating with it via serial. In order to do so, you can install putty and connect the Nucleo 
-directly to the PC. Check the COM of the device and then open putty, by setting it as follows:
-
-    - Connection type - Serial
-    - Speed - 19200
-    - Serial line - COMxx
-    - Terminal == local-echo - Force on
-    - Terminal == Local line editing - Force on
-
-Go to session and then press Open.
-
-Now you can reset the Nucleo (black button) and check in the terminal for "I'm alive" message. If the message comes, the Nucleo code is starting 
+If the message comes, the Nucleo code is starting 
 correctly and now you can try to communicate with it. After each message, you have to press Ctrl+M, then Ctrl+J. 
 
 **The sent messages structure is as follows:**

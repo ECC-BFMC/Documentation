@@ -1,13 +1,15 @@
-Preliminary setup
+Debugging
 ==============================
 
-Overview
---------
+You can easily try do debug your Nucleo code by communicating with it via serial. In order to do so, you can install putty and connect the Nucleo 
+directly to the PC. Check the COM of the device and then open putty, by setting it as follows:
 
-The flow diagram depicted below outlines the functional operation and the structure of the embedded platform's software. This graphical representation facilitates a deeper understanding of how various components interact within the system.
+    - Connection type - Serial
+    - Speed - 19200
+    - Serial line - COMxx
+    - Terminal == local-echo - Force on
+    - Terminal == Local line editing - Force on
 
-Through the diagram, we aim to showcase the hierarchical nature of different software layers and how they contribute to the overarching functionality of the platform. It also illustrates the interaction between the main loop and the various subsystems.
+Go to session and then press Open.
 
-.. image:: ../../images/embeddedplatform/embeddedPlatformDiagram.png
-   :align: center
-   :width: 100%
+Now you can reset the Nucleo (black button) and check in the terminal for "I'm alive" message.
