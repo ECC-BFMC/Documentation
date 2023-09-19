@@ -46,10 +46,26 @@ After installing all the preliminary components, you need to check the environme
 
 If they are not present, you can copy the following paths to set up your environment variables correctly:
 
-- ``C:\Program Files\CMake\bin``
-- ``C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311``
-- ``C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311\Scripts``
-- ``C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin``
+.. code-block:: bash
+
+    C:\Program Files\CMake\bin
+
+.. code-block:: bash
+
+    C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311
+
+.. code-block:: bash
+
+    C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311\Scripts
+
+.. code-block:: bash
+
+    C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin
+
+.. - ``C:\Program Files\CMake\bin``
+.. - ``C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311``
+.. - ``C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311\Scripts``
+.. - ``C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin``
 
 Make sure to replace ``fill_with_your_user`` with your actual username.
 
