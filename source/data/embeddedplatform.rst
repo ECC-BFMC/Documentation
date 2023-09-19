@@ -22,5 +22,5 @@ The project is structured on 4 layers: Brain, Drivers, Periodics and Utils.
     - The 'Utils' folder contains various working tools, such as the serial communication message construction/deconstruction, callbacks on the necessary functions, tasks execution and queues.
 
 
-The low level control application, which runs on the Nucleo-F401RE, is implemented in C/C++ language. Down below you can find some tips on how
-to further develop on top of the project
+The low level control application, which runs on the Nucleo-F401RE, is implemented in C/C++ language. In the following you can find some tips on how
+to further develop on top of the project.
