@@ -30,7 +30,7 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinx.ext.ifconfig',
     'sphinx.ext.intersphinx',
-    # 'sphinx_copybutton',
+    'sphinx_copybutton',
     'sphinx_rtd_theme',
     # 'sphinx_sitemap',
 ]
