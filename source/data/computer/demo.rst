@@ -27,6 +27,11 @@ The interface contains the next elements:
 
 Camera frame
 -------------
+
+.. image:: ../../images/computer/demo-camera.png
+    :align: center
+    :width: 100%
+
 In the gray square represented in the picture you will see the image given by the camera.
 
 The image is in an YUV400 format.
@@ -35,6 +40,11 @@ You will be able to see the image only if the connection between interface and r
 
 Buttons for recording and starting the engine
 ----------------------------------------------
+
+.. image:: ../../images/computer/demo-buttons.png
+    :align: center
+    :width: 100%
+
 This interface has two buttons Start Engine and Start Recording.
 
 At the beginning the buttons are not enabled. 
@@ -47,6 +57,11 @@ As their name says, the recording button will start the record on the raspberryP
 
 Sliders for angle and speed adjustment
 ---------------------------------------
+
+.. image:: ../../images/computer/demo-sliders.png
+    :align: center
+    :width: 100%
+
 There are two slides one vertical slider and one horizontal slider.
 
 The vertical slider will adjust the speed of the car. The horizontal one will adjust the steering angle of the car.
@@ -57,6 +72,11 @@ Each modification on the sliders is sent to Raspberry Pi as a dictionary which c
 
 Table of flags/data
 --------------------
+
+.. image:: ../../images/computer/demo-table.png
+    :align: center
+    :width: 100%
+
 This table will have nine rows that will always be showed. If the interface receive more information to be showed in the table it will add a new row.
 
 There are two types of rows: information row and flag row.
