@@ -10,9 +10,9 @@ Clone the Computer repository from GitHub to your desired location (e.g., under 
     git clone https://github.com/ECC-BFMC/Computer
 
 
-Get raspberryPI`s IP address.
+Get Raspberry PI`s IP address.
 ------------------------------
-You will need raspberryPI`s IP address.
+You will need Raspberry PI`s IP address.
 
 - Open the terminal.
 - Enter the following command:
@@ -34,15 +34,15 @@ IP address
 After you found your IP address you will have to write it in two places to be able to connect to Demo and Dashboard.
 
 - Go to Demo/threadRemotehandler.py in the __init__ function of the threadRemoteHandlerPC class;
-- Change the current IP address with the raspberryPI`s IP;
-- From now you will be able to connect the raspberry PI and Demo interface;
+- Change the current IP address with the Raspberry PI`s IP;
+- From now you will be able to connect the Raspberry PI and Demo interface;
 
 .. image:: ../../images/computer/threadRemoteHandler.png
     :align: center
     :width: 100%
 
 - Go to Dashboard/setup/PairingData.json;
-- Change the current IP address with the raspberryPI`s IP.
+- Change the current IP address with the Raspberry PI`s IP.
 
 .. image:: ../../images/computer/dashboard_pair.png
     :align: center
