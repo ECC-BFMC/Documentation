@@ -58,6 +58,8 @@ If one of the buttons is pressed the other one will be disable.
 
 To enable the other button you will have to stop the pushed button.
 
+These two buttons work on the same set of data, but you will have to change the output of them. For example, you will have to turn down the semaphore recognition for the speed probe.
+
 Table of alerts
 ----------------
 
@@ -115,20 +117,6 @@ Line alignment graphical information
 
 In the middle of the interface you can find a car and two horizontal lines on the sides of it. The car will move according to the real 1/10 car. It will change its position between the two lanes as the real car will be placed between the two lanes of the track.
 
-Buttons for load, save and reset for table
--------------------------------------------
-.. image:: ../../images/computer/dashboard-save_buttons.png
-    :align: center
-    :width: 80%
-
-On the bottom left part of the control table you will find the three buttons.
-
-Save button will save the current values from the table in the json file.
-
-Reset button will change the current values from the table with the values from the json.
-
-Load button will send the current values from the control table to Raspberry PI but only if their boxes are checked.
-
 Steering angle  graphical and numeric information
 --------------------------------------------------
 
@@ -156,3 +144,17 @@ If the values will be more than the table can show it will start to increase its
 The last two types of value will have a checkbox( the checkbox that we talk about at the load button).
 
 If the value is changed from the value that it is stored in the json, it will be marked with a red square.
+
+Buttons for load, save and reset for table
+-------------------------------------------
+.. image:: ../../images/computer/dashboard-save_buttons.png
+    :align: center
+    :width: 80%
+
+On the bottom left part of the control table you will find the three buttons.
+
+Save button will save the current values from the table in the json file.
+
+Reset button will change the current values from the table with the values from the json.
+
+Load button will send the current values from the control table to Raspberry PI but only if their boxes are checked.

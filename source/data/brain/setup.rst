@@ -5,15 +5,27 @@ Download Raspberry Pi Imager
 -----------------------------
 You can download the Raspberry Pi Imager from the official website: https://www.raspberrypi.com/software
 
+.. image:: ../../images/brain/raspberry.png
+    :align: center
+    :width: 80%
+
 Choose the Raspberry Pi OS
 ---------------------------
 When configuring the Raspberry Pi Imager, select "Raspberry Pi OS Lite" as your operating system (OS) of choice.
+
+.. image:: ../../images/brain/raspberryOptions.png
+    :align: center
+    :width: 80%
 
 Set Up Your Raspberry Pi
 -------------------------
 - Configure your desired username and password.
 - Set up your Wi-Fi network settings.
 - Enable SSH connection for remote access.
+
+.. image:: ../../images/brain/raspberrySettings.png
+    :align: center
+    :width: 80%
 
 Write the OS Image
 -------------------
@@ -26,6 +38,10 @@ Place the SD card into your Raspberry Pi and power it up.
 Find the IP Address of Your Raspberry Pi
 -----------------------------------------
 Locate the IP address of your Raspberry Pi on your local network.
+
+.. image:: ../../images/computer/raspberry_address.png
+    :align: center
+    :width: 80%
 
 Connect to the Raspberry Pi via ssh
 ------------------------------------

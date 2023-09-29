@@ -7,7 +7,7 @@ Brain project
 
    brain/setup
 
-* :doc:`Python Multi Processing <brain/setup>`
+* :doc:`Project Setup <brain/setup>`
 
   - Describing how to fresh-start with the project
 
@@ -179,7 +179,7 @@ to change the connection password under https://github.com/ECC-BFMC/Brain/blob/m
   :align: center
   :width: 80%
 
-- Press the engine button. It will make a long sound and after a pause another short sound. 
+- Simply push the engine button. It will make a long sound and after a pause another short sound. 
   If the process was carried out successfully, it will have a constant red color. If it failed, you will blink in red. In this case, you will have to press and hold the button until the color disappears and you have to restart
   the process.
   
