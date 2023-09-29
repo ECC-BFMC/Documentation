@@ -2,7 +2,7 @@ Demo
 ====
 .. image:: ../../images/computer/demo.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 Starting the Demo
 ------------------
@@ -30,7 +30,7 @@ Camera frame
 
 .. image:: ../../images/computer/demo-camera.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 In the gray square represented in the picture you will see the image given by the camera.
 
@@ -43,7 +43,7 @@ Buttons for recording and starting the engine
 
 .. image:: ../../images/computer/demo-buttons.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 This interface has two buttons Start Engine and Start Recording.
 
@@ -60,7 +60,7 @@ Sliders for angle and speed adjustment
 
 .. image:: ../../images/computer/demo-sliders.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 There are two slides one vertical slider and one horizontal slider.
 
@@ -75,7 +75,7 @@ Table of flags/data
 
 .. image:: ../../images/computer/demo-table.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 This table will have nine rows that will always be showed. If the interface receive more information to be showed in the table it will add a new row.
 

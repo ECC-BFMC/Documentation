@@ -34,7 +34,7 @@ the Gateway. All the messages on the arrows can be prioritized as you see fit (G
 
 .. image:: ../images/brain/Architecture.png
    :align: center
-   :width: 100%
+   :width: 80%
 
 ++++++++++++++++++++++++
 The starting point, Main
@@ -163,7 +163,29 @@ reading... On the other thread instead, it receives information, such as "acknow
 To Run
 ++++++
 
+1. Software part
 Simply run the main.py in on the car (should automatically start with the given image).
 
 To tune your connection, especially for when you will be present at the challenge, we suggest 
 to change the connection password under https://github.com/ECC-BFMC/Brain/blob/master/src/utils/PCcommunicationDemo/threads/connection.py, line 61
+
+2. Hardware part
+
+- Check the battery connection with the powerboard.
+- Turn on the power supply by presing the button.
+
+.. image:: ../images/brain/Button.png
+  :align: center
+  :width: 80%
+
+- Press the engine button. It will make a long sound and after a pause another short sound. 
+  If the process was carried out successfully, it will have a constant red color. If it failed, you will blink in red. In this case, you will have to press and hold the button until the color disappears and you have to restart
+  the process.
+  
+.. image:: ../images/brain/EngineButtonOFF.jpg
+  :align: center
+  :width: 80%
+
+.. image:: ../images/brain/EngineButtonON.jpg
+   :align: center
+   :width: 80%

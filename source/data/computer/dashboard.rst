@@ -2,7 +2,7 @@ Dashboard
 =========
 .. image:: ../../images/computer/dashboard.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 
 Starting the Dashboard
@@ -37,7 +37,7 @@ Camera frame
 
 .. image:: ../../images/computer/dashboard-camera.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 In the image with the BFMC logo you will see the image given by the camera.
 
@@ -50,7 +50,7 @@ Starting buttons
 
 .. image:: ../../images/computer/dashboard-start_buttons.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 The main purpose of these buttons is to start the car for the two challenges.
 
@@ -63,7 +63,7 @@ Table of alerts
 
 .. image:: ../../images/computer/dashboard-alerts.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 This table will show the alerts for 3 seconds. They will fade away. 
 
@@ -76,7 +76,7 @@ Speedometer
 
 .. image:: ../../images/computer/dashboard-speedometer.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 The Speedometer will show you the speed in cm/seconds.
 
@@ -89,7 +89,7 @@ Battery level graphical information
 
 .. image:: ../../images/computer/dashboard-battery.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 Right above the speedometer we have our battery level graphical information.
 
@@ -100,7 +100,7 @@ Map
 
 .. image:: ../../images/computer/dashboard_map.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 What you can see by starting the interface is a small part of the entire map. The window that you can see will move when you are moving, so we don`t need to show the entire map, only a small portion of it.
 
@@ -111,7 +111,7 @@ Line alignment graphical information
 
 .. image:: ../../images/computer/dashboard-car.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 In the middle of the interface you can find a car and two horizontal lines on the sides of it. The car will move according to the real 1/10 car. It will change its position between the two lanes as the real car will be placed between the two lanes of the track.
 
@@ -119,7 +119,7 @@ Buttons for load, save and reset for table
 -------------------------------------------
 .. image:: ../../images/computer/dashboard-save_buttons.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 On the bottom left part of the control table you will find the three buttons.
 
@@ -134,7 +134,7 @@ Steering angle  graphical and numeric information
 
 .. image:: ../../images/computer/dashboard-arrowpng.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 Above the car in the middle of the interface you will see an arrow which show you the steering angle of the car in real time. It also writes the angle in degrees right besides the arrow.
 
@@ -143,7 +143,7 @@ Control Table
 
 .. image:: ../../images/computer/dashboard-table.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 The control table is the most complex strucutre in the interface. It will receive three type of information:
 

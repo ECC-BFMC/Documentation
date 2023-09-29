@@ -25,7 +25,7 @@ You will need Raspberry PI`s IP address.
 
 .. image:: ../../images/computer/raspberry_address.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 
 IP address
@@ -39,14 +39,14 @@ After you found your IP address you will have to write it in two places to be ab
 
 .. image:: ../../images/computer/threadRemoteHandler.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 - Go to Dashboard/setup/PairingData.json;
 - Change the current IP address with the Raspberry PI`s IP.
 
 .. image:: ../../images/computer/dashboard_pair.png
     :align: center
-    :width: 100%
+    :width: 80%
 
 
 Libs
