@@ -164,6 +164,7 @@ To Run
 ++++++
 
 1. Software part
+  
 Simply run the main.py in on the car (should automatically start with the given image).
 
 To tune your connection, especially for when you will be present at the challenge, we suggest 
