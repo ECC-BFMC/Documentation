@@ -30,9 +30,14 @@ Measuring Procedure:
 3. Place the second marker underneath the midpoint of the rear axle at the final position.
 4. Ensure that the starting (0 point) and final positions are on the same straight line, essentially forming a semicircle.
 5. Use the ruler to measure the distance between the two markers.
-6. This distance will represent the diameter of the turning circle of the RC car.
+6. This distance will represent the diameter of the turning circle of the RC car. Use this value in the formula below.
    
    .. math:: \theta = \arctan\left(\frac{L}{R}\right)
+
+         where:
+         L = \text{wheelbase (260 mm = 0.26 m)}
+         R = \frac{\text{measured diameter}}{2} \text{[m]}
+
 
 
 By following these steps, you'll obtain an accurate measurement of the car's steering angle. Ensure to perform these measurements in a stable environment without disturbances for the most accurate results.
@@ -42,10 +47,12 @@ Fine tune the steering system
 
 To fine-tune the steering calibration of your RC car, we focus on two main parameters:
 
-1. zero_default parameter
-2. step_value parameter
+**1. zero_default parameter**
+   - In situations where the steering system exhibits significant deviations in a particular direction during testing, this parameter needs to be updated. For instance, if you test for values (15, -15) and obtain results (14, -16), adjustments are required.
+**2. step_value parameter**
+   - In situations where the steering system's response is either below or above the expected range during testing, this parameter should be adjusted. For instance, when testing for values (15, -15) and obtaining results such as (14, -14) or (16, -16), calibration is needed.
 
-3. Adjusting the zero_default parameter
+Adjusting the zero_default parameter
 ---------------------------------------
 
 
