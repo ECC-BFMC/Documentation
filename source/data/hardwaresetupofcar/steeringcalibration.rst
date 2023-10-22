@@ -10,7 +10,7 @@ The Solution
 To enhance your experience and ensure consistent performance, we've developed a state-of-the-art software solution to address these minor calibration variations...
 
 Measuring the Steering Angle
-============================
+-----------------------------
 
 To accurately measure the steering angle of the cars, it's essential to have the right tools on hand and to follow the steps below:
 
@@ -157,7 +157,7 @@ This will ensure that your RC car steers more accurately based on your desired s
 
 
 2. Adjusting the Step Value
-============================
+----------------------------
 
 .. image:: ../../images/hardwaresetupforcar/steeringCalibration/deltaStepValue1.png
    :align: center
