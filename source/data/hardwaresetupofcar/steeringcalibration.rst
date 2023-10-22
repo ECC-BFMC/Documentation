@@ -33,8 +33,7 @@ Measuring Procedure:
 6. This distance will represent the diameter of the turning circle of the RC car. Use this value in the formula below.
    
    .. math:: \theta = \arctan\left(\frac{L}{R}\right)
-
-   where:
+   .. math:: \text{where:}
    .. math:: L = \text{wheelbase (260 mm = 0.26 m)}
    .. math:: R = \frac{\text{measured diameter}}{2} \text{[m]}
 
@@ -50,7 +49,7 @@ To fine-tune the steering calibration of your RC car, we focus on two main param
 **1. zero_default parameter**
    - In situations where the steering system exhibits significant deviations in a particular direction during testing, this parameter needs to be updated. For instance, if you test for values (15, -15) and obtain results (14, -16), adjustments are required.
 **2. step_value parameter**
-   - In situations where the steering system's response is either below or above the expected range during testing, this parameter should be adjusted. For instance, when testing for values (15, -15) and obtaining results such as (14, -14) or (16, -16), calibration is needed.
+   - In situations where the steering system's response is either below or above the expected range during testing, this parameter should be adjusted. For instance, when testing for values (15, -15) and obtaining results such as (14, -14) or (16, -16), adjustments are required.
 
 Adjusting the zero_default parameter
 ---------------------------------------
