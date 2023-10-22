@@ -34,9 +34,9 @@ Measuring Procedure:
    
    .. math:: \theta = \arctan\left(\frac{L}{R}\right)
 
-         where:
-         L = \text{wheelbase (260 mm = 0.26 m)}
-         R = \frac{\text{measured diameter}}{2} \text{[m]}
+   where:
+   .. math:: L = \text{wheelbase (260 mm = 0.26 m)}
+   .. math:: R = \frac{\text{measured diameter}}{2} \text{[m]}
 
 
 
