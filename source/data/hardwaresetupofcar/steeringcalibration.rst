@@ -30,7 +30,10 @@ Measuring Procedure:
 3. Place the second marker underneath the midpoint of the rear axle at the final position.
 4. Ensure that the starting (0 point) and final positions are on the same straight line, essentially forming a semicircle.
 5. Use the ruler to measure the distance between the two markers.
-6. This distance will represent the steering angle or degree of turn of the car.
+6. This distance will represent the diameter of the turning circle of the RC car.
+   
+   .. math:: \theta = \arctan\left(\frac{L}{R}\right)
+
 
 By following these steps, you'll obtain an accurate measurement of the car's steering angle. Ensure to perform these measurements in a stable environment without disturbances for the most accurate results.
 
@@ -42,7 +45,7 @@ To fine-tune the steering calibration of your RC car, we focus on two main param
 1. zero_default parameter
 2. step_value parameter
 
-1. Adjusting the zero_default parameter
+3. Adjusting the zero_default parameter
 ---------------------------------------
 
 
