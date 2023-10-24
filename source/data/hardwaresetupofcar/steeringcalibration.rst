@@ -58,7 +58,7 @@ Adjusting the zero_default parameter
 .. math:: SV = \text{actual step value}
 
 1. **Adjustment to zero_default (ΔDC)**:
-   This is the product of the discrepancy and the step value. It helps us determine how much we need to adjust our zero_default parameter to match our desired turning angle.
+   This is the product of the discrepancy and the step value. It helps us determine how much we need to adjust our zero_default parameter to match our desired turning angles.
 
 2. **Average Discrepancy (D)**:
    This represents the average difference between the desired and actual turning angles of the car, in both positive and negative directions.. To calculate the average discrepancy you can use the formula below:
