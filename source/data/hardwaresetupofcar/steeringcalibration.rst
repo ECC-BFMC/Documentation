@@ -3,19 +3,16 @@ Steering calibration
 
 As part of our commitment to delivering exceptional experiences, each participant will receive a finely assembled RC car. Our dedicated assembly line has crafted these cars with precision, ensuring that they're ready for action right out of the box.
 
-However, like all masterpieces, there might be minor variations in the steering calibration due to the manual assembly process. This isn't a flaw, but a testament to the individual attention each car has received. For instance, while you might set the car to turn at 15 degrees, it could turn at, say, 17 degrees in reality.
+However, like all masterpieces, there might be minor variations in the steering calibration due to the manual assembly process. This isn't a flaw, but a proof to the individual attention each car has received. For instance, while you might set the car to turn at 15 degrees, it could turn at, say, 17 degrees in reality.
 
 The Solution
 ------------
-To enhance your experience and ensure consistent performance, we've developed a state-of-the-art mathematical solution to address these minor calibration variations...
-
-Measuring the Steering Angle
------------------------------
-
-To accurately measure the steering angle of the cars, it's essential to have the right tools on hand and to follow the steps below:
+To enhance your experience and ensure consistent performance, we've deduced a mathematical solution to address these minor calibration variations…
 
 Required Tools:
 ----------------
+
+To accurately measure the steering angle of the cars, it's essential to have the right tools on hand and to follow the steps below:
 
 1. Ruler: For precise measurements.
 2. Two markers:
@@ -24,6 +21,12 @@ Required Tools:
 
 Measuring Procedure:
 ----------------------
+
+Below, you will find a figure illustrating the steps and the procedure required for the measurement process.
+
+.. image:: ../../images/hardwaresetupforcar/demoMeasurement.jpg
+   :align: center
+   :width: 50%
 
 1. Place the first marker underneath the midpoint of the rear axle when the car is at point 0.
 2. Move the car to the desired point or its steering limit.
