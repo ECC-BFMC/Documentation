@@ -102,8 +102,6 @@ Conversely:
 
 This new zero default value will ensure that the RC car steers accurately according to the desired angle, taking into account any discrepancies found in the actual turning angles.
 
-Remember, accurate steering calibration is crucial for optimal performance, so ensure you follow the above steps carefully.
-
 Adjusting the Step Value parameter
 -----------------------------------
 
@@ -132,8 +130,6 @@ Conversely:
 
 - If the steering angle obtained is greater than the desired one, then you need to decrease the step value. For instance, if when testing the direction for a value of 15 you obtain 16, then you should decrease the step value.
 
-Utilize this guidance and the formulas provided to ensure that the steering mechanism is adjusted appropriately for optimal performance.
-
 **Update predefined values for Steering**
 ------------------------------------------
 
@@ -147,3 +143,6 @@ Operational example: After conducting tests for the values (16, -16) and determi
    const float zeroDefaultValues[2] = {0.07714891, 0.07672070};
 
 You must pay attention to the position within the array of the values. If 16 has an index of 2 in the positive values array, it should have the same index in the negative values array. The same applies to the step_value and zero_default values.
+
+**Utilize this guidance and the formulas provided to ensure that the steering mechanism is adjusted appropriately for optimal performance.**
+**Remember, accurate steering calibration is crucial for optimal performance, so ensure you follow the above steps carefully.**
