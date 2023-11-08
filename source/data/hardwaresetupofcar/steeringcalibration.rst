@@ -149,7 +149,7 @@ Operational example: After conducting tests for the values (16, -16) and determi
 
 .. code-block::
 
-   Embedded_Platform\include\drivers
+   Embedded_Platform\include\drivers\steeringmotor.hpp
 
 You must pay attention to the position within the array of the values. If 16 has an index of 2 in the positive values array, it should have the same index in the negative values array. The same applies to the step_value and zero_default values.
 
