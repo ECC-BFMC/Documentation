@@ -28,6 +28,8 @@ Below, you will find a figure illustrating the steps and the procedure required 
    :align: center
    :width: 50%
 
+..
+
 1. Place the first marker underneath the midpoint of the rear axle when the car is at point 0.
 2. Move the car to the desired point or its steering limit.
 3. Place the second marker underneath the midpoint of the rear axle at the final position.
@@ -144,6 +146,10 @@ Operational example: After conducting tests for the values (16, -16) and determi
    const float steeringValueN[2] = {-15.0, -20.0};
    const float stepValues[2] = {0.0008594, 0.000951570};
    const float zeroDefaultValues[2] = {0.07714891, 0.07672070};
+
+.. code-block::
+
+   Embedded_Platform\include\drivers
 
 You must pay attention to the position within the array of the values. If 16 has an index of 2 in the positive values array, it should have the same index in the negative values array. The same applies to the step_value and zero_default values.
 

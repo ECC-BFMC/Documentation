@@ -23,8 +23,8 @@ If the `I'm alive` message comes, the Nucleo code is starting correctly and now 
 ``#7:1;;`` 
     | It is starting the IMU measurements.
 
-``#8:point1.x,point1.y;..;pointN.x,pointN.y;;`` 
-    | It is taking the provided 2D points and used them as control points for a Bezier Curve. The car will then follow the resulting curve as its path.
+.. ``#8:point1.x,point1.y;..;pointN.x,pointN.y;;`` 
+..     | It is taking the provided 2D points and used them as control points for a Bezier Curve. The car will then follow the resulting curve as its path.
 
 ``#9:speed,time,angle;;`` 
     | This sets the `speed` and the steering `angle` for a specified period of `time`.
@@ -49,8 +49,8 @@ If the `I'm alive` message comes, the Nucleo code is starting correctly and now 
 ``@7:roll;pitch;yaw;accelx;accely;accelz;;``  
     | values of the IMU measurements.
 
-``@8:ack;;``  
-    | acknowledgment message that the Bezier curve has been computed and the car can follow it.
+.. ``@8:ack;;``  
+..     | acknowledgment message that the Bezier curve has been computed and the car can follow it.
 
 ``@9:ack;;``  
     | acknowledgment message indicating that the speed and steering angle have been set for the specified duration.
