@@ -22,7 +22,7 @@ To accurately measure the real speed of the car, it's essential to have the righ
 Measuring Procedure:
 ----------------------
 
-Below, you will find a figure illustrating the steps and the procedure required for the measurement process.
+.. Below, you will find a figure illustrating the steps and the procedure required for the measurement process.
 
 .. .. image:: ../../images/hardwaresetupforcar/demoMeasurement.png
 ..    :align: center
