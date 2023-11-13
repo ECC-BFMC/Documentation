@@ -11,6 +11,7 @@ To facilitate the addition of new components to the project, utilize the newComp
 Here is how you can use the script:
 
 1. Navigate to the directory where the newComponent.py script is located (should be inside the project directory).
+
 .. code-block::
 
    Embedded_Platform\newComponent\newComponent.py
