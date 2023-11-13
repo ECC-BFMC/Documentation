@@ -18,10 +18,6 @@ Connection diagram and components
 
   - The kit could use some mechanical improvements!
 
-* :doc:`Steering calibration <hardwaresetupofcar/steeringcalibration>`
-
-  - 
-
 In this section, you can find all the topics related to the hardware of the vehicle. The vehicle, as stated in the regulation
 and in the project description, is a 1/10 scale on-road vehicle, and it can come with various hardware fine tunned parts (as 
 the vehicle is re-used), and is designed for hobby-ing usage. 

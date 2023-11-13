@@ -29,7 +29,7 @@ Measuring Procedure:
 ..    :width: 50%
 
 1. Place the first marker underneath the midpoint of the rear axle when the car is at point 0.
-2. Utilize Command #9 to establish the tested speed for a specified duration. This command is structured to precisely control the vehicle's velocity over a designated time interval.
+2. Utilize :doc:`Command #9 <../embeddedplatform/mainFlow>` to establish the tested speed for a specified duration. This command is structured to precisely control the vehicle's velocity over a designated time interval.
 3. Place the second marker underneath the midpoint of the rear axle at the final position.
 4. Ensure that the starting and final positions are on the same straight line.
 5. Use the ruler to measure the distance between the two markers.
@@ -121,15 +121,15 @@ To fine-tune the velocity system responsiveness, users can use this formula:
 .. math:: S = \text{Actual speed (calculated previously)}
 .. math:: S_{set} = \text{Speeding set value (the desired target for speeding)}
 
-**Understanding the Plus-Minus Sign**
+.. **Understanding the Plus-Minus Sign**
 
-When adjusting the `step_value` value, it's important to understand the direction in which to make the adjustment:
+.. When adjusting the `step_value` value, it's important to understand the direction in which to make the adjustment:
 
-- If the obtained velocity is smaller than the desired one, then you need to increase the step value.
+.. - If the obtained velocity is smaller than the desired one, then you need to increase the step value.
 
-Conversely:
+.. Conversely:
 
-- If the obtained velocity is greater than the desired one, then you need to decrease the step value.
+.. - If the obtained velocity is greater than the desired one, then you need to decrease the step value.
 
 **Update predefined values for Steering**
 ------------------------------------------
