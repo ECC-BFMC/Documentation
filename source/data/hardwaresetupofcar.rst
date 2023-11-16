@@ -7,6 +7,8 @@ Connection diagram and components
 
    hardwaresetupofcar/powerboard
    hardwaresetupofcar/hardwareimprovements
+   hardwaresetupofcar/steeringcalibration
+   hardwaresetupofcar/speedingcalibration
   
 * :doc:`Powerboard <hardwaresetupofcar/powerboard>`
 
