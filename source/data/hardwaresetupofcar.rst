@@ -173,7 +173,7 @@ Table1:
 .. _Link 73: https://www.conrad.com/p/absima-scale-model-battery-pack-lipo-74-v-6200-mah-60-c-hard-case-xt90-2357348
 .. _Link 81: https://github.com/ECC-BFMC/Documentation/blob/master/source/PCB/imu_schematic.pdf
 .. _Link 82: https://www.rutronik24.com/product/bosch+se/bno055+shuttle+board+3.0/16103955.html
-.. _Link 9: https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/connectiondiagram/powerboard.html
+.. _Link 9: https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/hardwaresetupofcar/powerboard.html
 .. _Link 10: https://www.conrad.com/p/intenso-16-gb-micro-sdhc-card-microsdhc-card-16-gb-class-4-incl-sd-adapter-416887
 .. _Link 11: https://www.conrad.com/p/renkforce-usb-cable-usb-20-usb-a-plug-usb-mini-b-plug-015-m-black-gold-plated-connectors-rf-4455804-1485268
 .. _Link 12: https://www.conrad.com/p/joy-it-rb-camera-030-camera-cable-raspberry-pi-1x-csi-1x-csi-3000-cm-white-1426885
