@@ -3,6 +3,9 @@ Main Flow
 
 If the `I'm alive` message comes, the Nucleo code is starting correctly and now you can try to communicate with it. After each message, you have to press Ctrl+M, then Ctrl+J. 
 
+.. image:: ../../images/embeddedplatform/putty.png
+   :align: center
+
 **The sent messages structure is as follows:**
 
 ``#1:speed;;`` 
