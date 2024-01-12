@@ -95,3 +95,12 @@ The chessboard can be used for the automatic calibration of the camera.
 .. image:: ../images/racetrack/Start.PNG
    :align: center
    :width: 50%
+
+**Elements positioning**
+
+The corresponding elements are placed in those areas.
+Start Semaphore at start. Parking sign at the beginind and at the end of the parking on left&right. Traffic lights at each entry of the intersection. Roundabout sign at the roundabout. Highway entry and exit. 
+
+.. image:: ../images/racetrack/Track.png
+   :align: center
+   :width: 50%
