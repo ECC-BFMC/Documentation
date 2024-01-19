@@ -14,28 +14,43 @@ The data of the locsys will be sent to the car as x and y, corresponding to the 
 
 The data which must be sent to the livetraffic server is the following:
 
+
 Speed of the vehicle, with 1HZ.
-m = deviceSpeed
+
+m = "deviceSpeed"
+
 val = [0.2] # 0.2 is a speed example, Where speed is measured in cm/s
+
 shared_memory.insert(m, val)
 
 
 Position of the vehicle, with respect to the track coordinate system, with 1HZ.
-m = devicePos
-val = [12.3, 6.9] # 12.3 is a x example, 6.9 is a y example, Where position is measured in m
+
+m = "devicePos"
+
+val = [12.3, 6.9] # 12.3 is a x example, 6.9 is a y example, Where position is measured in meters
+
 shared_memory.insert(m, val)
 
 
 Rotation of the vehicle, with respect to the track rotation, with 1HZ.
-m = deviceRot
+
+m = "deviceRot"
+
 val = [108] #108 is the rotation, Where rotation is measured in degrees, 0 being on x axis, positive number counter-clockwise, just positive angle (181 being correct, instead of -179)
+
 shared_memory.insert(m, val)
 
-historyData
+
+
 Obstacle encountered, once x obstacle.
-m = deviceRot
+
+m = "historyData"
+
 val = [2, 7.2, 3.8] # 2 is the id of the obstacle, 7.2 is the x of the obstacle, 3.8 iw the y of the obstacle. Where the id's can be found in the following table.
+
 shared_memory.insert(m, val)
+
 
 +-----+-------------------------------------+
 | ID  | Description                         |
