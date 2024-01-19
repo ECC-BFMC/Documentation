@@ -168,7 +168,7 @@ To Run
 Simply run the main.py in on the car (should automatically start with the given image).
 
 To tune your connection, especially for when you will be present at the challenge, we suggest 
-to change the connection password under https://github.com/ECC-BFMC/Brain/blob/master/src/utils/PCcommunicationDemo/threads/connection.py, line 61
+to change the connection password under https://github.com/ECC-BFMC/Computer/blob/35992e917c4cb37ff8b26a04b76ac1a2d04212c2/Demo/threadRemoteHandlerPC.py#L54C28-L54C68, line 61
 
 2. Hardware part
 
