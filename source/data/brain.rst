@@ -164,11 +164,15 @@ To Run
 ++++++
 
 1. Software part
-  
-Simply run the main.py in on the car (should automatically start with the given image).
 
-To tune your connection, especially for when you will be present at the challenge, we suggest 
-to change the connection password under https://github.com/ECC-BFMC/Computer/blob/35992e917c4cb37ff8b26a04b76ac1a2d04212c2/Demo/threadRemoteHandlerPC.py#L54C28-L54C68, line 61
+Simply run the main.py on the car.
+
+Edit file with the IP of the vehicle (on the Brain project). 
+Change https://github.com/ECC-BFMC/Computer/blob/35992e917c4cb37ff8b26a04b76ac1a2d04212c2/Demo/threadRemoteHandlerPC.py#L54C28-L54C68 with the IP of the Car.
+
+To connect to the Dashboard instead, you must change this file data: https://github.com/ECC-BFMC/Computer/blob/main/Dashboard/setup/PairingData.json
+
+Especially for when you will be present at the challenge, we change also the connection password in the same file, as well ad on the Brain: https://github.com/ECC-BFMC/Brain/blob/f679ff060fb85ba90c35a6cb68abba184b7ff291/src/utils/PCcommunicationDashBoard/threads/connection.py#L59
 
 2. Hardware part
 
