@@ -44,3 +44,12 @@ Traffic sign stand (3D)
 And here's the 3d models of the stands:
     - `Traffic sign base <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/SignPole_Base.STL>`_
     - `Traffic sign pole <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/SignPole.STLL>`_
+
+The locations of traffic sign and light are similar and are calculated with respect to the 
+object (which can be an intersection, the end/beginning of the parking, or others). Each object 
+is located ~10 cm before (or after, in depending on the case) the road signalization and ~5 cm 
+outside the road limits.
+
+.. image:: ../../images/racetrack/Pedestrian_Sign_Position.png
+   :align: center
+   :width: 50%

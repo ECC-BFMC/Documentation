@@ -58,3 +58,10 @@ The ramp is covered with the same material as the rest of the track, it's dimens
 .. image:: ../../images/racetrack/ramp.png
    :align: center
    :width: 50%
+
+
+
+Tunnel
+------
+
+A `tunnel <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/Tunnel.STL>`_ placed on the speed curve. 
