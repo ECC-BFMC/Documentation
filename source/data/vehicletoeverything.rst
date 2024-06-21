@@ -12,7 +12,7 @@ V2X - Vehicle to everything
 
   - How the TrafficCommunication system is working and how to interact with it
 
-* :doc:`emaphores <vehicletoeverything/Semaphores>`
+* :doc:`Semaphores <vehicletoeverything/Semaphores>`
 
   - How the semaphores are streaming data on the track.
 

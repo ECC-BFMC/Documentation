@@ -4,7 +4,10 @@ Simulator
 Installing the simulator on the PC
 ----------------------------------
 
-The Ubuntu version is 20.04, while the ROS version is Noetyc. Though, any Ubuntu and ROS 1 newer version should work. 
+The Ubuntu version is 20.04, while the ROS version is Noetic. Though, any Ubuntu and ROS 1 newer version should work. 
+
+Other two branches are created in the same repo, each made available by a team whose name is in the branch itself.
+
 Now clone the Simulator project inside the Documents folder of your PC. Then follow the next steps in order to build,
 source and run the simulator (change the {YOUR_USER} text with your actual username. 
 

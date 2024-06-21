@@ -11,6 +11,9 @@ Race track
    racetrack/otherelements
    racetrack/localization
 
+* :doc:`Material </data/racetrack/roadmarkings>`
+
+  - Display of material characteristics
 * :doc:`Road markings </data/racetrack/roadmarkings>`
 
   - The road markings on the track, their size and some other technical details. 

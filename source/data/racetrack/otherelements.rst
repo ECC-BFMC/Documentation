@@ -53,6 +53,8 @@ wil be placed on the highway, on the line which is dividing the driving ways.
 Ramp
 ----
 
+A `ramp <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/ramp.STL>`_ placed right before the highway. 
+
 The ramp is covered with the same material as the rest of the track, it's dimensions can be seen in the picture below:
 
 .. image:: ../../images/racetrack/ramp.png
@@ -65,3 +67,7 @@ Tunnel
 ------
 
 A `tunnel <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/Tunnel.STL>`_ placed on the speed curve. 
+
+.. image:: ../../images/racetrack/tunnel.png
+   :align: center
+   :width: 50%

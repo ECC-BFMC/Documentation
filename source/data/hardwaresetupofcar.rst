@@ -13,11 +13,11 @@ Connection diagram and components
 
   - The kit could use some mechanical adjustments, like height elevation, reducing steering limitations, reducing mechanical frections. All by following this 
 
-* :doc:`Hardware improvements <hardwaresetupofcar/steeringcalibration>`
+* :doc:`Steering calibration <hardwaresetupofcar/steeringcalibration>`
 
   - The kit steering may or may not be calibrated, so steering value may not mean the actual steering angle. By following this tutorial you can endsure the value is the real one.
 
-* :doc:`Hardware improvements <hardwaresetupofcar/speedingcalibration>`
+* :doc:`Speeding calibration <hardwaresetupofcar/speedingcalibration>`
 
   - There's not a movement function corelating PWM signal to speed value. All measurements have been done manually. If a more precise resolution is wanted, measurements can be done again.
 
@@ -36,6 +36,12 @@ In this schematics you can see the connections diagram of all the HW components 
    :align: center
    :width: 70%
 
+In this schematics you can see the entire architecture and components of the competition
+
+.. image:: ../images/hardwaresetupforcar/detailed.png
+   :align: center
+   :width: 70%
+
 And here's the table with all the components and all the needed details.
 ------------------------------------------------------------------------
 
@@ -49,89 +55,133 @@ Table1:
    ===================  ========================  =========  ================  ======  ============   ====================
    `Chassis`_           The base structure of     1          N/A               ~€74                   .. image:: ../images/hardwaresetupforcar/products/Chassis.jpg
                         the car. Comes   
+
                         completely assembled. 
                         model: Reely TC-04 
+
    `Servo`_             Actuator used for the     1          N/A               ~€22                   .. image:: ../images/hardwaresetupforcar/products/Servo.jpg
                         steering mechanism. 
+
                         model: RS-610WP 
                         (or similar) 
+
    `Motor`_             Brushless motor with      1          N/A               ~€66                   .. image:: ../images/hardwaresetupforcar/products/Motor.jpg
                         integrated ESC.   
+
                         Controls the speed of 
                         the vehicle. 
+
                         model: Quickrun Fusion  
                         SE, 1200KV 
-    `Brain`_            Single-board computer     1          2x m2x6           ~€80                   .. image:: ../images/hardwaresetupforcar/products/Brain.jpg
+
+   `Brain`_             Single-board computer     1          2x m2x6           ~€80                   .. image:: ../images/hardwaresetupforcar/products/Brain.jpg
                         thought to control the  
+
                         automated part of the  
                         vehicle (thinking  
+
                         part). model:                      
                         raspberry pi 4b 8GB RAM  
+
    `Controller`_        Micro Controller used     1          2x m3x6            ~€32                  .. image:: ../images/hardwaresetupforcar/products/Controller.jpg
                         to control the motors  
+
                         and read data from the 
                         sensors and power  
+
                         board. model: Nucleo  
                         F401RE         
+                        
    `Camera`_            Monocular, wide-angle     1          2x m2x6            ~€30                  .. image:: ../images/hardwaresetupforcar/products/Camera.jpg
                         camera, the main sensor              +2x nuts
+
                         in the vehicle. model:               poly material
                         Raspbery pi  
+
                         camera-module-3,  
                         wide-angle version 
+
    `Battery`_           Used to power up the      1          N/A                ~€41   `Battery2`_    .. image:: ../images/hardwaresetupforcar/products/Battery.jpg
-                        entire vehicle. It's a                                                      
+                        entire vehicle. It's a       
+
                         2 cells LiPo battery,                                          `Battery3`_
                         ranging from 4500 mAh  
+
                         to 6200 mAh (randomly                
                         assigned) 
+
    `IMU`_               Sensor Bosch BNO055       1          Ducktape           ~€25   `IMU2`_        .. image:: ../images/hardwaresetupforcar/products/IMU.jpg
-                        installed on 3 kinds of                                
+                        installed on 3 kinds of                  
+
                         different boards                     
                         (2 custom and 1  
+
                         official). Randomly  
                         assigned to the teams. 
+
    `Power board`_       Custom made power         1          3x 25 spacer-nut   N/A                   .. image:: ../images/hardwaresetupforcar/products/Powerboard.jpg
                         distribution board.  
+
                         Enables connection of 2 
                         batteries (increased  
+                        
                         autonomy), delivers  
                         the power in the entire  
+
                         vehicle, returns  
                         feedback regarding  
+
                         battery voltage and the  
                         instant consumption of  
+
                         the entire vehicle. 
                         It has also some  
+
                         configurable aspects. 
+
    `uSD Card`_          Micro SD card of 16GB.    1          N/A               ~€5                    .. image:: ../images/hardwaresetupforcar/products/uSD.jpg
                         Serves as the  
+
                         raspberry  
                         pi memory.Various  
+
                         brands may be  
                         distributed. 
-    `USB0-miniUSB`_     Cable for communication   1          N/A               ~€3                    .. image:: ../images/hardwaresetupforcar/products/USB0-miniUSB.jpg
+
+   `USB0-miniUSB`_      Cable for communication   1          N/A               ~€3                    .. image:: ../images/hardwaresetupforcar/products/USB0-miniUSB.jpg
                         between Raspberry and  
+
                         Nucleo. USB(RPi) and  
                         mini-USB(Nucleo). It's  
+
                         a 15cm cable. 
-    `Camera cable`_     Cable flexi cable for     1          N/A               ~€3                    .. image:: ../images/hardwaresetupforcar/products/Cameracable.jpg
+
+   `Camera cable`_      Cable flexi cable for     1          N/A               ~€3                    .. image:: ../images/hardwaresetupforcar/products/Cameracable.jpg
                         communication between  
+
                         Raspberry and it's  
                         camera. It's a 30 cm  
+
                         cable. 
+
    `RPi alimentation`_  Cable for alimentation    1          N/A                ~€3                   .. image:: ../images/hardwaresetupforcar/products/RPialimentation.jpg
                         of the raspbery pi.  
+
                         It's a simple type-c  
                         cable 
+
    `Charger`_           Charger for the LiPo      1          N/A                ~€32                  .. image:: ../images/hardwaresetupforcar/products/Charger.jpg
                         battery.
+
    `Car Body`_          The cover body that       1          N/A                ~€40   `Car Body2`_   .. image:: ../images/hardwaresetupforcar/products/CarBody.jpg
-                        goes on top of the car,                                        
+                        goes on top of the car,            
+
                         covering the entire                                            `Car Body3`_
-                        vehicle interior.                                              
+                        vehicle interior.                   
+
                         model: Lexus, BMW, ford                                        
                         assigned randomly. 
+
                         The vehicle can be  
                         of various colors 
    ===================  ========================  =========  ================  ======  ============   ====================
@@ -180,6 +230,7 @@ Product             Description                 Mount Materials      Picture
                      camera.                    M3 threaded rod
 `Chassis mount`_     The part that fixes the    2x M6x12 poly        .. image:: ../images/hardwaresetupforcar/products/Chassismount.jpg
                      entire assemble to the     screw+ 2x nuts
+
                      chassis.  
 ==================  ==========================  ===================  =====================
 

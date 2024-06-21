@@ -19,15 +19,17 @@ process of starting up your vehicle by displaying some basic functionalities and
 how to use the given APIs to interact with the V2X systems. The following things are implemented
 in the project (be advised that everything can be tunned to your project needs!):
 
-    - Simple service-like architecture based on parallel processes, each with different running threads. 
-    - Gateway that handles all the sent messages and forwards them to the subscribers (to enable easy testing and developing).
+    - Simple service-like architecture based on 4 Queues, each with a higher level of prioritization, where messages can be sent.
+    - Example of parallel processes, each with different running threads. 
     - A class that describes all the messages, who's their owner and what their type is.
+    - Subscription examples for certain messages
+    - Gateway that handles all the sent messages and forwards them to the subscribers (to enable easy testing and developing).
     - A camera driver-like process that can also modify in real time some of the camera parameters (like ISO and aperture), send multiple images with different settings (like resolution) and enables easy camera recording functionality.
     - A serial communication driver-like process, that communicates with the Nucleo board, it read messages form the nucleo on one thread (like battery info) and sends messages to it from another (like speed command).
-    - An asyncronous server-like process that communicates with the Demo project from the Computer. It acts as middle-ground between the car and the demo, gets movement commands from the PC to the nucleo and forwards data info the other way around, plus getting data from the v2x APIs.
-    - An asyncronous server-like process that communicates with the Dashboard project from the Computer. It acts as middle-ground between the car and the Dashboard projects, sending monitoring data to it.
     - API that gathers data sent via UDP on the network (assync data, from cars and from semaphores)
     - API that communicates with the TrafficCommunication server. Gets location data from the localization device and sends traffic info to the server.
+    - An asyncronous server-like process that communicates with the Demo project from the Computer. It acts as middle-ground between the car and the demo, gets movement commands from the PC or allows some parameters set. Allows the forwarding of data info from Brain project and displays them on the dashboard.
+    
 
 *The following diagram shows the connections between the different processes and 
 the Gateway. All the messages on the arrows can be prioritized as you see fit (General, Warning or Critical).*
@@ -41,10 +43,10 @@ The starting point, Main
 ++++++++++++++++++++++++
 
 The processes project consist of multiple processes that run concurrently and can be activated or deactivated
-using certain **flags** present in the Main Script.
+using certain **flags** present in the **Main** Script.
 
-This is the script that initiates all the processes, including the most important one - the GateWay. 
-The message queues are initialized as well and they are listed based on priority (which is not handled, just given out as a hint)
+This is the script that initiates all the processes, including the most important one - the Gateway. 
+The message queues are initialized as well and they are listed based on priority.
 
   #. Critical
   #. Warning
@@ -55,15 +57,13 @@ As mentioned, the queues can be used for prioritization of the messages. Critica
 Warning, something that requires attention; general, for all the information; config, for subscribing/unsubscribing to 
 certain messages.
 
-The GateWay process is started nonetheless, but all the other processes have **flags** assigned to them. 
+The Gateway process is started nonetheless, but all the other processes have **flags** assigned to them. 
 
 *Camera* - enables the Camera process
 
 *PCCommDemo* - it enables the PC Communication with the Demo app
 
-*PCCommDasboard* - it enables the PC Communication with the Dashboard app, 
-
-*SemsAndCars* - enables the Cars and Semaphores process
+*Sems* - enables Semaphores process
 
 *Traffic* - enables the Traffic Communication process
 
@@ -90,91 +90,52 @@ messages has arrived.
 The Camera Process
 ++++++++++++++++++
 The Camera Process takes on the crucial role of interacting with the 
-car's camera, which is the may sensor of the car.
+car's camera, which is the main sensor of the car.
 This process has a thread that captures real-time images of the car's surroundings
 on two different channels (big and small resolution) and sends them on the queue. 
 
-Besides, the thread is also subscribed to the camera-config message, where other parties can 
-send messages to modify some parameters of the camera. One other message where the thread is 
-subscribed, is the record message, where start and stop recording commands can be sent. 
+The thread is also subscribed to the camera-config message, where other threads/processes can 
+send messages to modify some parameters of the camera. 
+
+One other message where the thread is subscribed, is the record message, where start and stop recording commands can be sent. 
 
 
-++++++++++++++++++++++
-PC Communication Demo
-++++++++++++++++++++++
-The PC Communication Process 
-acts as the bridge between our car and the Demo script on the Computer. Subscribes to all the 
-main messages in the car and sends the data to the Demo app, from whom it receives commands 
-such as speed and steering, and sends them on the queue, where the serialThread is subscribed 
-and sends the commands to the Nucleo.
+++++
+Demo
+++++
+The Demo is actually the display server. It subscribes to all the 
+main messages in the car and sends the data to the Demo app, from whom it also receives commands 
+such as speed and steering, and sends them on their queue.
 
 This process enables remote controlling and data exchange. 
-Think of it as the car's messenger, relaying important information to 
-and from the virtual realm.
-
 
 ++++++++++++++++++++++++++
-PC Communication Dashboard
+The Serial Handler Process
 ++++++++++++++++++++++++++
-Very similar to the Demo communication process, the main difference being that it should be 
-running when the car is (more or less) autonomous. It should serve as middle-ground for sending
-monitoring data of the car to the Computer, enabling the team to check in real time all the systems 
-of the car, such as flags pop-ups when certain obstacles are encountered, error to middle lane, 
-steering angle of the car, speed, battery data, etc...
+This process establishes and maintains a two-way conversation with the STM32 microcontroller embedded in our vehicle. 
+It sends commands to control the car's various functions, such as: speed set, steering angle set, enable battery data reading, enable IMU data
+reading and much more... On the other thread instead, it receives information, such as "acknowledge" of the sent command, sensor data (such as "Rotation is...),
+readings from the powerboard, and so on.
 
-+++++++++++++++++++++++++++++++
-The Cars and Semaphores Process
-+++++++++++++++++++++++++++++++
-The Cars and Semaphores Process 
-is like a master conductor overseeing 
-the symphony of vehicles and traffic lights signals on the road. 
-This process listens for data about the positions 
-of cars on the track and the status of traffic lights, sharing them with the interested parties.
-
-It can be user as validation of certain obstacles, states or expectations. 
+++++++++++++++++++++++
+The Semaphores Process
+++++++++++++++++++++++
+Explained in the V2X section.
 
 
 +++++++++++++++++++++++++++++++++
 The Traffic Communication Process
 +++++++++++++++++++++++++++++++++
-The Traffic Process does some nesting activities. Firstly, it looks for the server on the network.
-Once the server has been found, it validates it with an exchange of cryptographic data. Once the 
-server has been validated, it requires the IP of the Localization device mounted on the car, from 
-which it will listen from now on for all the localization data, forward it to the interested parties.
+Explained in the V2X section.
 
-One other crucial thing is, it listens for data from the car, and sends traffic information to the 
-server, helping it design a real-time map situation of the traffic.
-
-
-++++++++++++++++++++++++++
-The Serial Handler Process
-++++++++++++++++++++++++++
-Imagine the Serial Handler Process as the smooth-talking communicator 
-of our software ecosystem. 
-This process establishes and maintains a two-way conversation 
-with the STM32 microcontroller embedded in our vehicle. 
-It sends commands to control the car's 
-various functions, such as: speed set, steering angle set, enable battery data reading, enable IMU data
-reading... On the other thread instead, it receives information, such as "acknowledge" of the sent command 
-(such as "speed has been set") or sensor data (such as "Rotation is...). 
+ 
 
 
 ++++++
 To Run
 ++++++
 
-1. Software part
-
-Simply run the main.py on the car.
-
-Edit file with the IP of the vehicle (on the Brain project). 
-Change https://github.com/ECC-BFMC/Computer/blob/35992e917c4cb37ff8b26a04b76ac1a2d04212c2/Demo/threadRemoteHandlerPC.py#L54C28-L54C68 with the IP of the Car.
-
-To connect to the Dashboard instead, you must change this file data: https://github.com/ECC-BFMC/Computer/blob/main/Dashboard/setup/PairingData.json
-
-Especially for when you will be present at the challenge, we change also the connection password in the same file, as well ad on the Brain: https://github.com/ECC-BFMC/Brain/blob/f679ff060fb85ba90c35a6cb68abba184b7ff291/src/utils/PCcommunicationDashBoard/threads/connection.py#L59
-
-2. Hardware part
+1. Hardware part
 
 - Check the battery connection with the powerboard.
 - Turn on the power supply by presing the button.
@@ -183,9 +144,8 @@ Especially for when you will be present at the challenge, we change also the con
   :align: center
   :width: 80%
 
-- Simply push the engine button. It will make a long sound and after a pause another short sound. 
-  If the process was carried out successfully, it will have a constant red color. If it failed, you will blink in red. In this case, you will have to press and hold the button until the color disappears and you have to restart
-  the process.
+- Simply push the engine button. It will make a long BEEP and after a pause a short BEEP. 
+  If the process was carried out successfully, it will have a constant red color. If it failed, you will blink in red. In this case, you will have to restart the ESC by pressing and holding the button until the color disappears, then start it again.
   
 .. image:: ../images/brain/EngineButtonOFF.jpg
   :align: center
@@ -194,3 +154,14 @@ Especially for when you will be present at the challenge, we change also the con
 .. image:: ../images/brain/EngineButtonON.jpg
    :align: center
    :width: 80%
+
+2. Start servers on computer. Check how under the **Computer** section
+
+3. Software part
+
+Simply run the main.py on the car. 
+
+Edit file with the IP of the vehicle (on the Brain project). 
+Change https://github.com/ECC-BFMC/Computer/blob/35992e917c4cb37ff8b26a04b76ac1a2d04212c2/Demo/threadRemoteHandlerPC.py#L54C28-L54C68 with the IP of the Car.
+
+Especially for when you will be present at the challenge, we change also the connection password in the same file, as well ad on the Brain: https://github.com/ECC-BFMC/Brain/blob/f679ff060fb85ba90c35a6cb68abba184b7ff291/src/utils/PCcommunicationDashBoard/threads/connection.py#L59
