@@ -81,7 +81,7 @@ Table1:
                         vehicle (thinking  
 
                         part). model:                      
-                        raspberry pi 4b 8GB RAM  
+                        raspberry pi 5  
 
    `Controller`_        Micro Controller used     1          2x m3x6            ~€32                  .. image:: ../images/hardwaresetupforcar/products/Controller.jpg
                         to control the motors  
@@ -108,18 +108,9 @@ Table1:
                         ranging from 4500 mAh  
 
                         to 6200 mAh (randomly                
-                        assigned) 
+                        assigned)  
 
-   `IMU`_               Sensor Bosch BNO055       1          Ducktape           ~€25   `IMU2`_        .. image:: ../images/hardwaresetupforcar/products/IMU.jpg
-                        installed on 3 kinds of                  
-
-                        different boards                     
-                        (2 custom and 1  
-
-                        official). Randomly  
-                        assigned to the teams. 
-
-   `Power board`_       Custom made power         1          3x 25 spacer-nut   N/A                   .. image:: ../images/hardwaresetupforcar/products/Powerboard.jpg
+   `Power board&IMu`_   Custom made power         1          3x 25 spacer-nut   N/A                   .. image:: ../images/hardwaresetupforcar/products/Powerboard.jpg
                         distribution board.  
 
                         Enables connection of 2 
@@ -135,9 +126,9 @@ Table1:
                         instant consumption of  
 
                         the entire vehicle. 
-                        It has also some  
-
-                        configurable aspects. 
+                        It has also the IMU embedded 
+                        
+                        in it 
 
    `uSD Card`_          Micro SD card of 16GB.    1          N/A               ~€5                    .. image:: ../images/hardwaresetupforcar/products/uSD.jpg
                         Serves as the  
@@ -187,7 +178,7 @@ Table1:
    ===================  ========================  =========  ================  ======  ============   ====================
 
 .. _Chassis: https://www.conrad.com/p/reely-tc-04-onroad-chassis-110-rc-model-car-electric-road-version-4wd-arr-1406735
-.. _Servo: https://www.conrad.com/p/reely-standard-servo-rs-610wp-mg-analogue-servo-gear-box-material-metal-connector-system-jr-2141322
+.. _Servo: https://shop.robitronic.com/en/srt-metallgetriebe-dl3017
 .. _Motor: https://www.hobbywingdirect.com/collections/quicrun-fusion-se
 .. _Brain: https://www.raspberrypi.com/products/raspberry-pi-4-model-b
 .. _Controller: https://www.conrad.com/p/stmicroelectronics-pcb-design-board-nucleo-f401re-stm32-f4-series-1416924
