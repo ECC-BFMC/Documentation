@@ -1,5 +1,8 @@
-Building
-==============================
+Building and Flashing
+=====================
+
+Building 
+--------
 
 As for the MBED CLI 2 documentaiton, mbed-tools command is used for the building, the outcome being as follows (if no modification is done):
 

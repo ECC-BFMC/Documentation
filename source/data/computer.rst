@@ -5,28 +5,29 @@ Computer projects
    :maxdepth: 1
    :hidden:
 
-   computer/setup
+   computer/preliminarySetup
    computer/testing
    computer/demo
-   computer/dashboard
 
-* :doc:`Computer setup <computer/setup>`
+* :doc:`Preliminary setup <computer/preliminarySetup>`
 
   - Describing the setup for the computer code
 
 * :doc:`Computer Testing <computer/testing>`
 
-  - Describing the setup for the computer simulated servers and devices!
-  
+  - Describing the behavior and how to run the computer simulated servers and devices!
+
 * :doc:`Demo <computer/demo>`
 
-  - Describing the setup for the computer demo code.
-
-* :doc:`Dashboard <computer/dashboard>`
-
-  - Describing the setup for the computer demo code.
+  - Describing the behavior of the Demo and how to run it. 
 
 
+Those codes have the purpose of simulating the semaphore scripts and the Traffic Communication Server, both present at the competition. The teams 
+should run and analyze this code in order to validate the functionality of the data. 
 
-This is the sum of codes that have to be run on the computer side, either if it's for testing purposes (testing the V2X systems), the demo, 
-the simulator, or the Dashboard.
+Aditionally, you can try to use the sape scripts to replciate reals systems in your testing environment, so to also test the actual behavior of your 
+car in relation to those same systems.
+
+
+
+

@@ -1,5 +1,5 @@
-Project Setup
-=============
+Preliminary Setup
+=================
 
 Download Raspberry Pi Imager
 -----------------------------

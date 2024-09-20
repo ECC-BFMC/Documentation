@@ -35,10 +35,19 @@ Before you initiate the building process, ensure to correctly set up your enviro
 
    Install a cross-compiler to build your project for the Nucleo-F401RE. `Find the suitable one here <https://developer.arm.com/downloads/-/gnu-rm>`_.
 
+6. **Packages for building output**:
+
+   Install some packages for output readability
+
+   .. code-block:: bash
+
+      pip install prettytable intelhex
+
 Windows Setup
 ~~~~~~~~~~~~~
 
-After installing all the preliminary components, you need to check the environment variables to ensure they are set up correctly. Verify if you can find them as shown in the image below:
+After installing all the preliminary components, you need to check the environment variables to ensure they are set up correctly. Check if you can find them 
+as shown in the image below:
 
 .. image:: ../../images/embeddedplatform/envVariables.png
    :align: center
@@ -52,11 +61,11 @@ If they are not present, you can copy the following paths to set up your environ
 
 .. code-block:: bash
 
-    C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311
+    C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python3XX
 
 .. code-block:: bash
 
-    C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python311\Scripts
+    C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python3XX\Scripts
 
 .. code-block:: bash
 
@@ -68,8 +77,8 @@ Make sure to replace ``fill_with_your_user`` with your actual username.
 
 To set up the necessary MBED OS version, first navigate to the project path in your command prompt or terminal. Once there, fetch the mbed-os from the actual commit specified in the 'mbed-os.lib' file using the "deploy" command. If at any point you wish to use a different MBED OS version, simply modify the line with the desired commit.
 
-- ``cd path/to/your/project``
 
 .. code-block:: bash
 
+    ``cd path/to/your/project``  
     mbed-tools deploy
