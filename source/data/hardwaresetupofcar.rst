@@ -8,6 +8,7 @@ Connection diagram and components
    hardwaresetupofcar/hardwareimprovements
    hardwaresetupofcar/steeringcalibration
    hardwaresetupofcar/speedingcalibration
+   hardwaresetupofcar/powerboard
 
 * :doc:`Hardware improvements guide <hardwaresetupofcar/hardwareimprovements>`
 
@@ -20,6 +21,11 @@ Connection diagram and components
 * :doc:`Speeding calibration guide <hardwaresetupofcar/speedingcalibration>`
 
   - There's not a movement function corelating PWM signal to speed value, so a series of measurements have been done manually. If a more precise resolution is desired (ex: 211.2 mm/s), measurements can be done again by following this guide.
+
+* :doc:`Powerboard & IMU details <hardwaresetupofcar/powerboard>`
+
+  - There's not a movement function corelating PWM signal to speed value, so a series of measurements have been done manually. If a more precise resolution is desired (ex: 211.2 mm/s), measurements can be done again by following this guide.
+
 
 In this section, you can find all the topics related to the hardware of the vehicle, which is a 1/10 scale on-road chassis variant.
 

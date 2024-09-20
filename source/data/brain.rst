@@ -6,7 +6,6 @@ Brain project
    :hidden:
 
    brain/preliminarySetup
-   brain/build
    brain/newComponent
    brain/running
    brain/mainFlow
