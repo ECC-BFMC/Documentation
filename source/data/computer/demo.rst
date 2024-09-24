@@ -19,4 +19,34 @@ You will need Raspberry PI`s IP address.
     :align: center
     :width: 80%
 
+- Now, just input the same adress in an URL bar, following the port 4200 (as seen below).
+- A password field will show up. Leave it empty and press enter.
 
+.. image:: ../../images/computer/login.png
+    :align: center
+    :width: 80%
+
+- Now you should see the following:
+
+.. image:: ../../images/computer/demo.png
+    :align: center
+    :width: 80%
+
+- For the challenge, don't forget to change your passward here:
+
+https://github.com/ECC-BFMC/Brain/tree/master/src/dashboard/frontend/src/app/app.component.ts#L20
+
+&
+
+https://github.com/ECC-BFMC/Brain/tree/master/src/dashboard/frontend/src/app/app.component.ts#L21
+
+
+- The dashboard is structured as follows:
+  
+.. image:: ../../images/computer/detailed.png
+    :align: center
+    :width: 80%
+
+- Now, to start playing with the car, just activate the Klemme (15 only for reading, 30 for reading and control, so go with 30.
+- Activate the manual driving mode.
+- By using the computer arrows, control your vehicles.

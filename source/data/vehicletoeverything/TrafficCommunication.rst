@@ -1,21 +1,30 @@
 Traffic Communication
 =====================
 
-The API is handling the communication with the localization system and also streams certain data to the live-traffic monitoring system (Waze like).
+The API manages communication with the localization system and streams specific data to the live-traffic monitoring system (similar to Waze).
 
-The API is made out of 5 parts:
-    - UDPListener - It listens on port 9000 for the communication from the server. Once it receives the message from the server, it validates the message by using the publick_key of the server, and, after the server is validated, activates the serverfound callback function, which creates a TCP connection with the LiveTraffic server on a separate thread
-    - tcpClient - Is keeping the connection to the server alive or continuously trying to connect to it, in case the connection breaks. Once the connection is established, it requests the IP and port of a localizaiton device, by passing it's id. Once it receives the IP, creates a connection to the locsys device, on a separate thread.
-    - PeriodicTask - It's a task that runs every second, checking if the connection to the LiveTrafficServ is established, and if it is, it sends the data inside the shared memory. The shared memory data. SharedMemory is used in the eventuality that car is ready to send some data but the server connection is not established
-    - Locsys device - The locsys connection just keeps getting info from the localization system, putting them on a pipe, for the car to read.
-    - Shared Memory - It's a shared object between the Car and the tcpClient. It has a method for inserting data to send to the server(done by the car) and one for getting the data to send, done by the periodictask.
-    
+The API consists of five main components:
+  - UDP Listener
+    - Listens on port 9000 for messages from the server
+    - Upon receiving a message, it validates it using the server's public key. Once validated, it activates the serverfound callback function, which establishes a TCP connection to the LiveTraffic server.
+  - tcp Client
+    - Maintains a continuous connection to the server or attempts to reconnect if the connection is lost.
+    - Once connected, it signals the location device by passing its id(number on the device) to the server. 
+    - Keeps getting the location of the device, then forwards it on the gateway as a message.
+  - Periodic Task
+    - Runs every second, checking if the tcp Connection is established. 
+    - If connection is established, sends all the data present in the queue, otherwise just keeps it there.
+  - Shared memory
+    - Acts as a shared resource between the car and the tcp Client
+    - Provides methods for inserting data (done by the car) and retrieving data to send to the server (handled by the Periodic Task).
     
 
-The data of the locsys will be sent to the car as x and y, z and quality of trustness in the position.
+The position data will be sent to the tcp client (car) as x and y, z and quality of trustness in the position.
+
+``{"x":float, "y":float, "z":float, "quality":int``
+
 
 The data which must be sent to the livetraffic server is the following:
-
 
 
 The shared memory
@@ -35,6 +44,14 @@ The shared memory
 ``m = "devicePos"``
 
 ``val = [12.3, 6.9] # 12.3 is a x example, 6.9 is a y example, Where position is measured in meters``
+
+``shared_memory.insert(m, val)``
+
+**Rotation of the vehicle, with 1HZ.**
+
+``m = "deviceRotation"``
+
+``val = [191] # 191 is a rotation example, Where rotation is measured in degrees. 0 deg is considered the starting point and orientation. MEasurement is done clockwise``
 
 ``shared_memory.insert(m, val)``
 
@@ -92,10 +109,18 @@ The shared memory
 Localization system 
 -------------------
 
-It has four main components: server, robot client(cars) and anchor device and tag device. 
-The anchors are set into know positions on the track. The tag devices, communicate with the anchors in order to get their position on the map; then the tags connect 
-to the server and sends in the location data. The server collects and stores the data from the tag devices (location on map) and waits for connections from the 
-robot clients; then, upon connection, it serves the desired data to the clients. Down below a picture describing the process.
+It has four main components: server, localization box and anchor device and tag device. 
+The anchors are set into know positions on the track. The tag devices, communicate with the anchors in order to get their position on the map; 
+
+The localization box instead does the following:
+  - Reads via I2C communication the tag location on the map. 
+  - Calculates it's accurate position on the map, integrating BNO055.
+  - Hosts a BLE server and waits for the server connection to it.
+  - Shares RAW and calculated position on the map.
+
+
+The server collects and stores the data from the tag devices and waits for connections from the 
+robot clients; then, upon connection, it serves the desired data to the clients (raw data only). Down below a picture describing the process.
 
 .. image::  ../../images/vehicletoeverything/Localisation_system.png
   :align: center

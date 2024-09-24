@@ -1,44 +1,45 @@
 Semaphores
 ==========
 
+UDP (User Datagram Protocol) is a fast and lightweight method for sending and receiving network messages. These messages 
+are often "un-targeted," meaning they may be broadcast to multiple receivers without requiring an acknowledgment or validation 
+of the sender. This lack of confirmation is acceptable in cases where communication speed is essential, or when the 
+sender’s identity is not important. In this context, UDP is ideal for transmitting informational messages, such as status 
+updates or sensor readings, where receiving every message is not critical.
+
+
 UDP is a way to rapidly send & receive on the network un-targeted messages, that generally are just informative
 and don't need a validation of the sender (due to communication speed necessity or simply because there's no need to pinpoint the 
 sender). It should be simply used to validate messages or states.
 
 
-Each semaphore broadcast messages with a frequency of 5 Hz, including the semaphore position on the map and it's state.
+Each semaphore broadcasts its status at a frequency of 5 Hz. These broadcasts include the semaphore’s position on the map and 
+its current state (red, yellow, or green).
 
-State
------
-The states of the semaphores are described in the following table
+Semaphore state
+---------------
 
-=============  =============  =============
- Semaphore State
--------------------------------------------
-      0              1              2
-=============  =============  =============
-     RED          YELLOW          GREEN
-=============  =============  =============
+=======================  =============  =============  =============
+Semaphore state          0              1              2
+=======================  =============  =============  =============
+Color                    RED            YELLOW         GREEN
+=======================  =============  =============  =============
 
-Cycle
-------
+Semaphore cycle
+---------------
+
 The cycle of each semaphore is described in the table below
 
-=============  =============  =============  =============
- Semaphore cycle
-----------------------------------------------------------
-    State          State          State          State         
-=============  =============  =============  =============
-     RED          YELLOW          GREEN           RED          
-=============  =============  =============  =============
+=============  ======  ==========  =============  ======
+Start Cycle    RED     GREEN       YELLOW         RED              
+=============  ======  ==========  =============  ======
 
 
 
 To run
 ------
 
-The API is listening on 5007 port for UDP messages. You can run the src/data/Semaphores/processSemaphores.py 
-script to intercept all the data and test it. 
+The API listens for UDP messages on port 5007. To intercept and test these messages, run the script located at src/data/Semaphores/processSemaphores.py.
 
-The simulated script, which sends fake data, can be found on the Computer project, and you can run it on your computer in order to 
-validate data transmission
+For testing purposes, you can simulate the data transmission using a script found in the "Computer" project. 
+Running this simulation on your computer will allow you to validate that data is being transmitted and received correctly.
