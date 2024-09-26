@@ -18,7 +18,7 @@ Brain project
 
   - This is how you can integrate new components in the code.
 
-- * :doc:`New component <brain/running>`
+- * :doc:`Running the system <brain/running>`
 
   - This is how you start your code.
 

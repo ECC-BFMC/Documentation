@@ -6,20 +6,20 @@ Computer projects
    :hidden:
 
    computer/preliminarySetup
-   computer/testing
    computer/demo
+   computer/testing
 
 * :doc:`Preliminary setup <computer/preliminarySetup>`
 
   - Describing the setup for the computer code
 
-* :doc:`Computer Testing <computer/testing>`
-
-  - Describing the behavior and how to run the computer simulated servers and devices!
-
 * :doc:`Demo <computer/demo>`
 
   - Describing the behavior of the Demo and how to run it. 
+
+* :doc:`Computer Testing <computer/testing>`
+
+  - Describing the behavior and how to run the computer simulated servers and devices!
 
 
 Those codes have the purpose of simulating the semaphore scripts and the Traffic Communication Server, both present at the competition. The teams 

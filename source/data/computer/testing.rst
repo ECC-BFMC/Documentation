@@ -17,5 +17,5 @@ In the second terminal run the following command. It will simulate the streaming
 
 .. code-block:: bash
 
-    cd Computer/servers/carsAndSemaphoreStreamSIM
+    cd Computer/servers/SemaphoreStreamSIM
     python3 udpStreamSIM.py

@@ -59,6 +59,7 @@ Clone the Brain repository from GitHub to your desired location (e.g., under "Do
 .. code-block:: bash
 
    git clone https://github.com/ECC-BFMC/Brain
+   
 
 
 Update and Install Necessary Software
@@ -67,10 +68,73 @@ Run the following commands to update and upgrade your Raspberry Pi's software an
 
 .. code-block:: bash
    
-   sudo apt-get update
-   sudo apt-get upgrade
-   sudo apt-get install python3-opencv
-   pip3 install -r requirements.txt
+    cd Brain
+    sudo apt update
+    sudo apt upgrade
+    pip3 install -r requirements.txt
+    xargs sudo apt install -y < "requirement.txt" 
+    cd src/dashboard/frontend/ 
+    curl -fsSL https://fnm.vercel.app/install | bash 
+    source ~/.bashrc 
+    fnm install --lts 
+    npm install -g @angular/cli@17 
+    npm install
+
+
+Start the code
+--------------
+
+We just need to power up the main
+
+.. code-block:: bash
+   
+    cd ../../../
+    python3 main.py
+
+Automatic start
+----------------
+
+If you want your code to run automatically at startup, we need to set the file as exec 
+rights from anywhere, create a new service that starts the app and then make the service go at startup
+
+.. code-block:: bash
+   
+    chmod +x main.py
+    sudo nano /etc/systemd/system/BFMCcar.service
+
+Now add this to the file:
+
+.. code-block:: bash
+   
+    [Unit]
+    Description=My Python Script Service
+    After=multi-user.target
+
+    [Service]
+    Type=idle
+    User=pi
+    ExecStart=/usr/bin/python3 /home/pi/Brain/main.py
+
+    [Install]
+    WantedBy=multi-user.target
+
+Let's make it run at startup:
+
+.. code-block:: bash
+   
+    sudo systemctl daemon-reload
+    sudo systemctl enable BFMCcar.service
+    sudo systemctl start BFMCcar.service
+    sudo systemctl status my_python_script.service
+
+Now the code will start running in this session, and from now on it will go automatically at startup.
+
+For debugging and logging:
+
+.. code-block:: bash
+   
+    sudo systemctl status my_python_script.service
+    journalctl -u my_python_script.service
 
 
 Enjoy Your Raspberry Pi Brain Setup
