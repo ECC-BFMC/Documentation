@@ -35,9 +35,9 @@ Nucleo expects via serial the following structure:
 
 And, for each command that it receives, it sends back the following structure:
 
-``@command;response1;response2;;\r\n``
+``@command:response1;response2;responsex;;\r\n``
 
-Where, ``command`` can be any of the following, while ``valx`` and ``responsex``, can be configured separately. while ``;\r\n`` signals the end of the message.
+Where, ``command`` identifies the message, values are ended by a ``;``, while ``;\r\n`` signals the end of the message.
 
 The commands sent are
 ----------------------
@@ -46,38 +46,38 @@ The commands sent are
 ==================  ==================  ====================  ==============================  ==============================
 command             Description         value                 Example request                 Example response      
 ==================  ==================  ====================  ==============================  ==============================
-speeding            Sets the target     signed int Speed      #speed:60;;\r\n                 @speed:60;;\r\n
+speeding            Sets the target     signed int Speed      #speed:60;;\\r\\n               @speed:60;;\\r\\n
                     speed of the        [mm/s] (-500,+500)     
   
                     vehicle                   
   
-steering            Sets the target     signed int steer      #steer:180;;\r\n                @steer:60;;\r\n
+steering            Sets the target     signed int steer      #steer:180;;\\r\\n              @steer:60;;\\r\\n
                     steering of the     [deg*10] (-230,+230)       
   
                     vehicle   
   
-braking             Sets the vehicle    signed int steer      #brake:180;;\r\n                @brake:60;;\r\n
+braking             Sets the vehicle    signed int steer      #brake:180;;\\r\\n              @brake:60;;\\r\\n
                     in brake state      [deg] (-23,+23)       
   
                     but allows to set         
                     the steering      
 
-battery enable      Enables/Disables    bool                  #battery:1;;\r\n                @battery:1;;\r\n 
+battery enable      Enables/Disables    bool                  #battery:1;;\\r\\n              @battery:1;;\\r\\n 
                     publishing total
 
                     battery value
 
-instant enable      Enables/Disables    bool                  #instant:1;;\r\n                @instant:1;;\r\n 
+instant enable      Enables/Disables    bool                  #instant:1;;\\r\\n              @instant:1;;\\r\\n 
                     instant 
 
                     consumption value
 
-imu enable          Enables/Disables    bool                  #imu:1;;\r\n                    @imu:1;;\r\n 
+imu enable          Enables/Disables    bool                  #imu:1;;\\r\\n                  @imu:1;;\\r\\n 
                     imu publishing 
 
                     values
 
-Controlled move     Sets the velocity   signed int Speed      #vcd:80;-130;121;\r\n           @vcd:80;-130;121;;\r\n
+Controlled move     Sets the velocity   signed int Speed      #vcd:80;-130;121;\\r\\n         @vcd:80;-130;121;;\\r\\n
                     control duration    signed int Steer                                    
   
                     i.e. a specific     signed int time     
@@ -85,15 +85,15 @@ Controlled move     Sets the velocity   signed int Speed      #vcd:80;-130;121;\
   
                     period of time    
   
-kl                  Sets the power      unsigned int state    #kl:15;;\r\n                    @kl:60,;\r\n
+kl                  Sets the power      unsigned int state    #kl:15;;\\r\\n                  @kl:60,;\\r\\n
                     state of the        [0,15,30]   
                       
                     nucleo  
   
-batteryCapacity     Sets the capacity   unsigned int          #batteryCapacity:12000;;\r\n    @batteryCapacity:60;;\r\n
+batteryCapacity     Sets the capacity   unsigned int          #batteryCapacity:12000;;\\r\\n  @batteryCapacity:60;;\\r\\n
                     of the battery/s    mAh (0,n)
 
-resource enable     Enables/Disables    bool                  #resourceMonitor:1;;\r\n        @resourceMonitor:1;;\r\n 
+resource enable     Enables/Disables    bool                  #resourceMonitor:1;;\\r\\n      @resourceMonitor:1;;\\r\\n 
                     resource monitor 
 
                     publishing
@@ -107,15 +107,15 @@ Information received
 ======================  ==================================  =======================================
 type                    Example response                    Description
 ======================  ==================================  =======================================
-Battery level           @battery:7800;;\r\n                 Signals the battery level is 7.8V.
+Battery level           @battery:7800;;\\r\\n               Signals the battery level is 7.8V.
 
-Instant consumption     @instant:1;;\r\n                    1 mA consumed in the last second(frequency can be modified).
+Instant consumption     @instant:1;;\\r\\n                  1 mA consumed in the last second(frequency can be modified).
 
-Warning battery level   @warning:0;1;13;;\r\n               possibly 0 hours, 1 minute and 13 seconds until sleep.
+Warning battery level   @warning:0;1;13;;\\r\\n             possibly 0 hours, 1 minute and 13 seconds until sleep.
 
-Error battery level     @shutdown:ack;;\r\n                 Nucleo going into shut down mode.
+Error battery level     @shutdown:ack;;\\r\\n               Nucleo going into shut down mode.
 
-imu data                @imu:1,2,3,4,5,6\r\n                roll,pitch,yaw (deg) and accelx,accely,accelz (m/s).
+imu data                @imu:1,2,3,4,5,6\\r\\n              roll,pitch,yaw (deg) and accelx,accely,accelz (m/s).
 
-Velocity-control-dur    @vcd:0;0;0;;\r\n                    The movement has finished.
+Velocity-control-dur    @vcd:0;0;0;;\\r\\n                  The movement has finished.
 ======================  ==================================  =======================================
