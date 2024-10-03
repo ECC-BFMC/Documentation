@@ -9,17 +9,19 @@ The API consists of five main components:
     - Upon receiving a message, it validates it using the server's public key. Once validated, it activates the serverfound callback function, which establishes a TCP connection to the LiveTraffic server.
   - tcp Client
     - Maintains a continuous connection to the server or attempts to reconnect if the connection is lost.
-    - Once connected, it signals the location device by passing its id(number on the device) to the server. 
+    - Once connected, it signals the location device by passing its id(number on the device) to the server, and the frequency it wisesh to receive positions (must be between 0.1 and 5 seconds). 
     - Keeps getting the location of the device, then forwards it on the gateway as a message.
   - Periodic Task
-    - Runs every second, checking if the tcp Connection is established. 
-    - If connection is established, sends all the data present in the queue, otherwise just keeps it there.
+    - Runs every second if the server is connected
+    - Sends the data present in the shared, with the help of the tcp Client
   - Shared memory
-    - Acts as a shared resource between the car and the tcp Client
+    - Acts as a shared resource between the car and the periodic task
     - Provides methods for inserting data (done by the car) and retrieving data to send to the server (handled by the Periodic Task).
     
 
 The position data will be sent to the tcp client (car) as x and y, z and quality of trustness in the position.
+
+positions are sent in meters, quality is sent in percentage. The data is sent in the following format:
 
 ``{"x":float, "y":float, "z":float, "quality":int``
 
@@ -126,7 +128,7 @@ robot clients; then, upon connection, it serves the desired data to the clients 
   :align: center
   :width: 50%
 
-The system will be installed only at the phisical competition. It is made of two components: one fixed component that will be glued to the car body upon arrival 
+The system will be installed at the phisical competition. It is made of two components: one fixed component that will be glued to the car body upon arrival 
 and the actual device, which the team will get only while on the track. The active part will have displayed the ID of the connection. In the following image you 
 can see the place where the device will be placed, the fixed component and the actual device.
 
@@ -144,7 +146,7 @@ The device weights 280 grams and the mandatory position for the device is the on
   .. _`Top`: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/Locsys/Locsys_Tap.STL
 
 Technical data of the system:
- - The frequency of the given messages is ~5 Hz
+ - The frequency of the read locations is 10 Hz
  - The error of the system is of maximum 15 cm radius
  - The delay of the received messages is ~1 second
 
