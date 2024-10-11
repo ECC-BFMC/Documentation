@@ -11,7 +11,7 @@ facilitates a deeper understanding of how various components interact within the
 Through the diagram, we aim to showcase the hierarchical nature of different software layers and how they contribute to the overarching functionality 
 of the platform. It also illustrates the interaction between the main loop and the various subsystems.
 
-.. image:: ../../images/embeddedplatform/embeddedPlatformDiagram.png
+.. image:: ../../images/embeddedplatform/embeddedPlatformDiagram2025.png
    :align: center
    :width: 100%
 
