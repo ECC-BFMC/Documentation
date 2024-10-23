@@ -23,7 +23,7 @@ while the debugger can be powered on only by the USB. The jumper JP5 near the re
 
 
 Connect the programmer to your computer (make sure the programmer and make sure the micro-controller are both powered on), and you will see a 
-new Path in your file explorer, that being something like: D:Nucleo_F401RE. Simply copy the binary file from cmake_build\NUCLEO_F401RE\develop\GCC_ARM 
+new Path in your file explorer, that being something like: D:Nucleo_F401RE. Simply copy the binary file from cmake_build\\NUCLEO_F401RE\\develop\\GCC_ARM 
 directory (mbed_robot_car.bin) on this path.
 
 .. image:: ../../images/embeddedplatform/flashing.gif
