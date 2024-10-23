@@ -20,7 +20,7 @@ you have to press Ctrl+M, then Ctrl+J.
    :width: 50%
 
 The Nucleo has 3 power states: KL0, KL15 and KL30, all designed as a safety feature:
-    - ``KL0`` Nothingis working. whatever command you send or ask from the Nucleo, will be discarted.
+    - ``KL0`` Nothing is working. whatever command you send or ask from the Nucleo, will be discarted.
     - ``KL15`` Only the interaction with the sensors work, actions like: reading data from IMU, reading data regarding instant consumption, total voltage, autonomy...
     - ``KL30`` Enables also the control of the vehicle. Now, messages like: set speed, set seering angle, set movement duration will work.
 
