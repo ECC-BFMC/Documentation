@@ -119,3 +119,13 @@ imu data                @imu:1,2,3,4,5,6\\r\\n              roll,pitch,yaw (deg)
 
 Velocity-control-dur    @vcd:0;0;0;;\\r\\n                  The movement has finished.
 ======================  ==================================  =======================================
+
+
+Limits 
+------
+
+The Nucleo has a few limits, as follows:
+    - The maximum speed is 500 mm/s.
+    - The maximum steering angle is 25 degrees.
+    - The maximum time for a controlled movement is 255 deciseconds (25,5 seconds).
+    - The maximum frequency for the imu is 6.67 Hz (150ms).
