@@ -114,7 +114,7 @@ Table1:
                         to 6200 mAh (randomly                
                         assigned)  
 
-   `Power board&IMu`_   Custom made power         1          3x 25 spacer-nut   N/A                   .. image:: ../images/hardwaresetupforcar/products/Powerboard.jpg
+   `Power board`_       Custom made power         1          3x 25 spacer-nut   N/A                   .. image:: ../PCB/PWR_Board/3D/Top View.png
                         distribution board.  
 
                         Enables connection of 2 
@@ -133,6 +133,8 @@ Table1:
                         It has also the IMU 
                         
                         embedded in it 
+
+   `Imu`_               Custom made IMU board     1          duck tape         N/A                    .. image:: ../PCB/IMU_BOARD/3D/Top View.png
 
    `uSD Card`_          Micro SD card of 16GB.    1          N/A               ~€5                    .. image:: ../images/hardwaresetupforcar/products/uSD.jpg
                         Serves as the  
@@ -191,7 +193,8 @@ Table1:
 .. _Battery: https://www.conrad.com/p/conrad-energy-scale-model-battery-pack-lipo-74-v-5500-mah-no-of-cells-2-20-c-softcase-xt90-1344152
 .. _Battery2: https://www.conrad.com/p/hacker-scale-model-battery-pack-lipo-74-v-5000-mah-no-of-cells-2-20-c-softcase-xt90-2178297
 .. _Battery3: https://www.conrad.com/p/absima-scale-model-battery-pack-lipo-74-v-6200-mah-60-c-hard-case-xt90-2357348
-.. _Power board&IMu: https://github.com/ECC-BFMC/Documentation/blob/master/source/PCB/imu_schematic.pdf
+.. _Power board: https://github.com/ECC-BFMC/Documentation/tree/master/source/PCB/PWR_Board/schematic/Schematic_V3_Final.pdf
+.. _Imu: https://github.com/ECC-BFMC/Documentation/tree/master/source/PCB/IMU_BOARD/schematic/Schematic_IMU.pdf
 .. _uSD Card: https://www.conrad.com/p/intenso-16-gb-micro-sdhc-card-microsdhc-card-16-gb-class-4-incl-sd-adapter-416887
 .. _USB0-miniUSB: https://www.conrad.com/p/renkforce-usb-cable-usb-20-usb-a-plug-usb-mini-b-plug-015-m-black-gold-plated-connectors-rf-4455804-1485268
 .. _Camera cable: https://www.raspberrypi.com/products/camera-cable/
