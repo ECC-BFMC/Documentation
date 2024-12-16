@@ -5,7 +5,7 @@ You can easily try do debug your Nucleo code by communicating with it via serial
 directly to the PC. Check the COM of the device (in device manager) and then open putty, by setting it as follows:
 
     - Connection type - Serial
-    - Speed - 19200
+    - Speed - 115200
     - Serial line - COMxx
     - Terminal == local-echo - Force on
     - Terminal == Local line editing - Force on
@@ -51,12 +51,12 @@ speeding            Sets the target     signed int Speed      #speed:60;;\\r\\n 
   
                     vehicle                   
   
-steering            Sets the target     signed int steer      #steer:180;;\\r\\n              @steer:60;;\\r\\n
+steering            Sets the target     signed int steer      #steer:180;;\\r\\n              @steer:180;;\\r\\n
                     steering of the     [deg*10] (-230,+230)       
   
                     vehicle   
   
-braking             Sets the vehicle    signed int steer      #brake:180;;\\r\\n              @brake:60;;\\r\\n
+braking             Sets the vehicle    signed int steer      #brake:180;;\\r\\n              @brake:180;;\\r\\n
                     in brake state      [deg] (-23,+23)       
   
                     but allows to set         
@@ -85,12 +85,12 @@ Controlled move     Sets the velocity   signed int Speed      #vcd:80;-130;121;\
   
                     period of time    
   
-kl                  Sets the power      unsigned int state    #kl:15;;\\r\\n                  @kl:60,;\\r\\n
+kl                  Sets the power      unsigned int state    #kl:15;;\\r\\n                  @kl:15;\\r\\n
                     state of the        [0,15,30]   
                       
                     nucleo  
   
-batteryCapacity     Sets the capacity   unsigned int          #batteryCapacity:12000;;\\r\\n  @batteryCapacity:60;;\\r\\n
+batteryCapacity     Sets the capacity   unsigned int          #batteryCapacity:12000;;\\r\\n  @batteryCapacity:12000;;\\r\\n
                     of the battery/s    mAh (0,n)
 
 resource enable     Enables/Disables    bool                  #resourceMonitor:1;;\\r\\n      @resourceMonitor:1;;\\r\\n 

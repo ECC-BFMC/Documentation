@@ -14,7 +14,7 @@ Website
 
 Each project report comes at a certain deadline. 
 
-- Report (maximum 3 pages). It should raughly explain the sprint status.
+- Report (maximum 2 pages). It should raughly explain the sprint status.
 
 .. image:: ../images/periodicstatus/Monthly_report.PNG
     :align: center

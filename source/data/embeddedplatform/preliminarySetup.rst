@@ -73,12 +73,14 @@ If they are not present, you can copy the following paths to set up your environ
 
 Make sure to replace ``fill_with_your_user`` with your actual username.
 
-**Setting Up the MBED OS Version**
+**Pull project and set up the MBED OS Version**
 
 To set up the necessary MBED OS version, first navigate to the project path in your command prompt or terminal. Once there, fetch the mbed-os from the actual commit specified in the 'mbed-os.lib' file using the "deploy" command. If at any point you wish to use a different MBED OS version, simply modify the line with the desired commit.
 
 
 .. code-block:: bash
-
-    ``cd path/to/your/project``  
-    mbed-tools deploy
+   
+   cd working_directory 
+   github clone https://github.com/ECC-BFMC/Embedded_Platform.git
+   cd path/to/your/project 
+   mbed-tools deploy
