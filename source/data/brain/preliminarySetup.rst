@@ -69,18 +69,47 @@ Run the following commands to update and upgrade your Raspberry Pi's software an
 .. code-block:: bash
    
     cd Brain
-    sudo apt update
-    sudo apt upgrade
-    pip3 install -r requirements.txt
-    xargs sudo apt install -y < "requirement.txt" 
-    cd src/dashboard/frontend/ 
-    curl -fsSL https://fnm.vercel.app/install | bash 
-    source ~/.bashrc 
-    fnm install --lts 
-    npm install -g @angular/cli@17 
-    npm install
 
+.. code-block:: bash
 
+   sudo apt update
+    
+.. code-block:: bash
+   
+   sudo apt upgrade
+
+.. code-block:: bash
+
+   pip3 install -r requirements.txt
+    
+.. code-block:: bash
+   
+   xargs sudo apt install -y < "requirement.txt"
+
+.. code-block:: bash
+
+   cd src/dashboard/frontend/
+    
+.. code-block:: bash
+   
+   curl -fsSL https://fnm.vercel.app/install | bash
+
+.. code-block:: bash
+
+   source ~/.bashrc
+    
+.. code-block:: bash
+
+   fnm install --lts
+    
+.. code-block:: bash
+   
+   npm install -g @angular/cli@17
+
+.. code-block:: bash
+
+   npm install
+    
 Start the code
 --------------
 
@@ -89,6 +118,9 @@ We just need to power up the main
 .. code-block:: bash
    
     cd ../../../
+
+.. code-block:: bash
+   
     python3 main.py
 
 Automatic start
