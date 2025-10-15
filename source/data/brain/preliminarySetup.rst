@@ -51,7 +51,6 @@ Use SSH to establish a connection to your Raspberry Pi:
 
    ssh <username>@<Raspberry_Pi_IP_Address>
     
-
 Clone the Brain Repository
 ---------------------------
 Clone the Brain repository from GitHub to your desired location (e.g., under "Documents"):
@@ -60,8 +59,6 @@ Clone the Brain repository from GitHub to your desired location (e.g., under "Do
 
    git clone https://github.com/ECC-BFMC/Brain
    
-
-
 Update and Install Necessary Software
 --------------------------------------
 Run the following commands to update and upgrade your Raspberry Pi's software and install required packages:
@@ -110,18 +107,18 @@ Run the following commands to update and upgrade your Raspberry Pi's software an
 
    npm install
     
-Start the code
---------------
+Start the code-Test
+--------------------
 
 We just need to power up the main
 
 .. code-block:: bash
    
-    cd ../../../
+   cd ../../../
 
 .. code-block:: bash
    
-    python3 main.py
+   python3 main.py
 
 Automatic start
 ----------------
@@ -131,8 +128,11 @@ rights from anywhere, create a new service that starts the app and then make the
 
 .. code-block:: bash
    
-    chmod +x main.py
-    sudo nano /etc/systemd/system/BFMCcar.service
+   chmod +x main.py
+
+.. code-block:: bash
+   
+   sudo nano /etc/systemd/system/BFMCcar.service
 
 Now add this to the file:
 
@@ -155,8 +155,17 @@ Let's make it run at startup:
 .. code-block:: bash
    
     sudo systemctl daemon-reload
+    
+.. code-block:: bash
+
     sudo systemctl enable BFMCcar.service
+
+.. code-block:: bash
+
     sudo systemctl start BFMCcar.service
+
+.. code-block:: bash
+
     sudo systemctl status my_python_script.service
 
 Now the code will start running in this session, and from now on it will go automatically at startup.
