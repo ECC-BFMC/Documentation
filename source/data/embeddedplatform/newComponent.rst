@@ -17,8 +17,9 @@ Here is how you can use the script:
    Embedded_Platform\newComponent\newComponent.py
 
 2. Run the script in a terminal or an IDE.
-3. When prompted, input the category of the component (existing options are "brain," "driver," "periodics," or "utils").
-4. Next, input the name of the new component.
+3. Input the category of the component (existing options are "brain," "driver," "periodics," or "utils").
+4. Input the name of the new component.
+5. Choose if you want a serial callback command (like `here <https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/embeddedplatform/debugging.html#the-commands-sent-are>`_).
 
 Notes
 ------
