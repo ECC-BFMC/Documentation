@@ -15,6 +15,9 @@ of the platform. It also illustrates the interaction between the main loop and t
    :align: center
    :width: 100%
 
+.. raw:: html
+
+   <div style="margin-top: 20px;"></div>
 
 Deep dive
 ---------

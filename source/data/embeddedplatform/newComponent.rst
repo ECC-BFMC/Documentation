@@ -4,11 +4,13 @@ New component
 When you want to implement some new feature, it's recommended to keep clean the project structure. With this in mind, you will notice that the "include"
 and the "source" directory are following the same structure, ".hpp" files being under the the "include" and ".cpp" files under source. 
 
-To facilitate the addition of new components to the project, utilize the newComponent.py script. This script automates the process of creating the necessary files and directories for a new component, adhering to the existing structure of the project.
+To simplify the addition of new components, use the ``newComponent.py`` script.  
+This script automatically creates the required files and directories, following the existing project structure.
 
-**Utilizing the newComponent.py Script**
+Using the ``newComponent.py`` Script
+------------------------------------
 
-Here is how you can use the script:
+Follow these steps to create a new component:
 
 1. Navigate to the directory where the newComponent.py script is located (should be inside the project directory).
 
@@ -16,13 +18,12 @@ Here is how you can use the script:
 
    Embedded_Platform\newComponent\newComponent.py
 
-2. Run the script in a terminal or an IDE.
-3. Input the category of the component (existing options are "brain," "driver," "periodics," or "utils").
-4. Input the name of the new component.
-5. Choose if you want a serial callback command (like `here <https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/embeddedplatform/debugging.html#the-commands-sent-are>`_).
+2. Run the script in a terminal or IDE.
+3. Enter the **category** of the component (options: ``brain``, ``driver``, ``periodics``, ``utils``).
+4. Enter the **name** of the new component.
+5. Choose whether to add a **serial callback command** (see `the related section here <https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/embeddedplatform/debugging.html#the-commands-sent-are>`_).
 
-Notes
-------
+.. note::
 
-The script for creating a new component (newComponent.py) and for flashing the micro-controller weren't projected to linux usage, so we cannot guarantee the 
-correct working. 
+   The script ``newComponent.py`` and the flashing tool were **not designed for Linux usage**.  
+   Correct functionality on Linux is therefore **not guaranteed**

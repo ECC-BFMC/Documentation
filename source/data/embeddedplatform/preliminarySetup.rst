@@ -1,86 +1,110 @@
-Preliminary setup
+Preliminary Setup
 ==============================
 
-Before you initiate the building process, ensure to correctly set up your environment. Below, you will find a step-by-step guide to setting up the necessary tools and environments:
+Before you initiate the building process, ensure your environment is correctly configured.  
+This guide provides a clear, step-by-step setup for all required tools and components.
 
-1. **Python Installation**:
-   
-   Install a Python version that is 3.6 or newer. You can download it from the `official Python website <https://www.python.org/downloads/>`_.
+.. note::
 
-2. **CMake Installation**:
+   All installations should use **Python 3.6+**.  
+   Administrative privileges may be required for some steps.
 
-   Install CMake to manage the build process of your software. `Download it here <https://cmake.org/download/>`_.
+1. **Python Installation**
+--------------------------
 
-3. **Ninja Installation**:
+Install Python version 3.6 or newer.  
+You can download it from the `official Python website <https://www.python.org/downloads/>`_.
 
-   Install Ninja using the following pip command:
+2. **CMake Installation**
+-------------------------
 
-   .. code-block:: bash
+Install CMake to manage the build process of your software.  
+`Download it here <https://cmake.org/download/>`_.
 
-      pip install ninja
-      python -m pip install ninja
+3. **Ninja Installation**
+-------------------------
 
-   If you prefer to install it through a different method, you can find the installation commands `on this GitHub page <https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages>`_.
+Install Ninja using pip:
 
-4. **Mbed-tools Installation**:
+.. code-block:: bash
 
-   Install mbed-tools using the pip command as follows:
+   pip install ninja
+   python -m pip install ninja
 
-   .. code-block:: bash
+Alternatively, you can find other installation options on the `Ninja GitHub page <https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages>`_.
 
-      pip install mbed-tools
-      python -m pip install mbed-tools
+4. **Mbed-tools Installation**
+------------------------------
 
-5. **Cross-Compiler Installation**:
+Install mbed-tools using pip:
 
-   Install a cross-compiler to build your project for the Nucleo-F401RE. `Find the suitable one here <https://developer.arm.com/downloads/-/gnu-rm>`_.
+.. code-block:: bash
 
-6. **Packages for building output**:
+   pip install mbed-tools
+   python -m pip install mbed-tools
 
-   Install some packages for output readability
+5. **Cross-Compiler Installation**
+----------------------------------
 
-   .. code-block:: bash
+Install a cross-compiler to build your project for the Nucleo-F401RE.  
+`Download a suitable version here <https://developer.arm.com/downloads/-/gnu-rm>`_.
 
-      pip install prettytable intelhex
+6. **Packages for Building Output**
+-----------------------------------
+
+Install additional packages for better output formatting:
+
+.. code-block:: bash
+
+   pip install prettytable intelhex
+
 
 Windows Setup
 ~~~~~~~~~~~~~
 
-After installing all the preliminary components, you need to check the environment variables to ensure they are set up correctly. Check if you can find them 
-as shown in the image below:
+After installing all components, verify that environment variables are set correctly.  
+They should look similar to the image below:
 
 .. image:: ../../images/embeddedplatform/envVariables.png
    :align: center
    :width: 90%
 
-If they are not present, you can copy the following paths to set up your environment variables correctly:
+If they are missing, add the following paths manually:
 
 .. code-block:: bash
 
-    C:\Program Files\CMake\bin
+   C:\Program Files\CMake\bin
 
 .. code-block:: bash
 
-    C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python3XX
+   C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python3XX
 
 .. code-block:: bash
 
-    C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python3XX\Scripts
+   C:\Users\fill_with_your_user\AppData\Local\Programs\Python\Python3XX\Scripts
 
 .. code-block:: bash
 
-    C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin
+   C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin
 
-Make sure to replace ``fill_with_your_user`` with your actual username.
+.. tip::
 
-**Pull project and set up the MBED OS Version**
+   Replace ``fill_with_your_user`` with your actual Windows username.
 
-To set up the necessary MBED OS version, first navigate to the project path in your command prompt or terminal. Once there, fetch the mbed-os from the actual commit specified in the 'mbed-os.lib' file using the "deploy" command. If at any point you wish to use a different MBED OS version, simply modify the line with the desired commit.
 
+Pull Project and Set up the MBED OS Version
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To configure the correct MBED OS version:
+
+1. Navigate to the project directory in your terminal.
+2. Clone the repository and deploy the required MBED OS version using the commit specified in the ``mbed-os.lib`` file.
 
 .. code-block:: bash
-   
-   cd working_directory 
-   github clone https://github.com/ECC-BFMC/Embedded_Platform.git
-   cd path/to/your/project 
+
+   cd working_directory
+   git clone https://github.com/ECC-BFMC/Embedded_Platform.git
+   cd path/to/your/project
    mbed-tools deploy
+
+If you wish to use a different MBED OS version, modify the commit line in ``mbed-os.lib`` accordingly.

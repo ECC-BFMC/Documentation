@@ -10,6 +10,10 @@ As for the MBED CLI 2 documentation, mbed-tools command is used for the building
     :align: center
     :width: 90%
 
+.. raw:: html
+
+   <div style="margin-top: 20px;"></div>
+   
 This will update the cmake_build directory in your project
 
 
@@ -29,6 +33,10 @@ directory (mbed_robot_car.bin) on this path.
 .. image:: ../../images/embeddedplatform/flashing.gif
     :align: center
     :width: 90%
+
+.. raw:: html
+
+   <div style="margin-top: 20px;"></div>
 
 Another way to flashing your code on the car is to add a "-f" flag to the compile command (check the mbed cli 2 documentation)
 

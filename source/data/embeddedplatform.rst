@@ -11,17 +11,19 @@ Embedded platform
    embeddedplatform/debugging
    embeddedplatform/mainFlow
 
+**Quick navigation**
+
 * :doc:`Preliminary setup <embeddedplatform/preliminarySetup>`
 
-  - You will need to follow this in order to set up your environment. 
+  - Follow this first to correctly set up your environment. 
 
 * :doc:`This is how you can build your project <embeddedplatform/buildAndFlash>`
 
-  - This is how you can build the project once the modifications are done.
+  - Step-by-step instructions to compile and flash the code.
 
 * :doc:`Adding a new component (object) <embeddedplatform/newComponent>`
 
-  - If you wish to add a new component, we have a script for it!
+  - Use our helper script to easily generate new components.
 
 * :doc:`Debugging via serial <embeddedplatform/debugging>`
 
@@ -29,14 +31,37 @@ Embedded platform
 
 * :doc:`How it works <embeddedplatform/mainFlow>`
 
-  - Some explanations regarding how the code works
+  - A high-level view of how the embedded logic works.
 
-The embedded platform refers to the code that is written on the Nucleo board, more precisely the low level application, which runs on the 
-micro-controller Nucleo-F401RE. It aims to provide an interface between high level processing and low level motors control and sensor reading. The code 
-uses mbed os version=6.17, and such, it's written in C/C++. 
+.. note::
 
-The project is structured on 4 layers: Brain, Drivers, Periodics and Utils:
-    - The 'Brain' folder contains the state machine of the Nucleo, the KL mannager and the power safety features, together with a file for global states defininition. More controlling methods can be handled here. 
-    - The 'Drivers' folder contains the code to interact directly with the BatteryManager, BNO, SteeringMotor, SpeedingMotor, SerialCommunication, VelocityControlDuration.
-    - The 'Periodics' folder contains the tasks that are executed periodically by the Nucleo board, such as IMU publishing values on serial, blinker to signal the running version, instant consumption publisher, the total voltage publisher, and ResourceMonitor.
-    - The 'Utils' folder contains various working tools, such as the serial communication message construction/deconstruction, callbacks on the necessary functions, tasks interface and task manager.
+   The **embedded platform** runs on the :code:`Nucleo-F401RE` microcontroller.  
+   It acts as a bridge between high-level processing and low-level motor control & sensor reading.
+
+The project is based on **C/C++** and uses **mbed OS v6.17**.  
+Its architecture is organized into **four main layers**:
+
+**1. Brain**
+   - State machine of the Nucleo
+   - KL manager and power safety features
+   - Global states definition
+   - High-level controlling logic
+
+**2. Drivers**
+   - Interfaces for: BatteryManager, BNO, SteeringMotor, SpeedingMotor, SerialCommunication, VelocityControlDuration
+   - Responsible for low-level hardware interaction
+
+**3. Periodics**
+   - Periodic tasks such as:
+     - IMU value publishing
+     - Blinker signals (running version)
+     - Instant consumption & total voltage publisher
+     - Resource monitor
+
+**4. Utils**
+   - Helper tools: serial message (de)construction, callbacks, tasks interface, task manager
+
+.. tip::
+
+   Start with the **Preliminary setup** if this is your first time working on the platform.  
+   Once everything is installed and built, explore the **Debugging** section to test your setup.

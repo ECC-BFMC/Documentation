@@ -39,7 +39,7 @@ Here's the description of the car, with all it's components:
 
 In the following schematics you can see the connections diagram of all the HW components of the car. The GPIO lines are marked on each component.
 
-.. image:: ../images/hardwaresetupforcar/ConnectionDiagram.png
+.. image:: ../images/hardwaresetupforcar/ConnectionDiagram2026.png
    :align: center
    :width: 70%
 
@@ -84,7 +84,7 @@ Table1:
                         part). model:                      
                         raspberry pi 5  
 
-   `Cooler`_            Air-Conditioner for       1          2x m2x6           ~€80                   .. image:: ../images/hardwaresetupforcar/products/Brain.jpg
+   `Cooler`_            Air-Conditioner for       1          2x m2x6            ~€4                   .. image:: ../images/hardwaresetupforcar/products/brainColler.jpg
                         your rpi  
 
    `Controller`_        Micro Controller used     1          2x m3x6            ~€32                  .. image:: ../images/hardwaresetupforcar/products/Controller.jpg
@@ -108,13 +108,13 @@ Table1:
    `Battery`_           Used to power up the      1          N/A                ~€41   `Battery2`_    .. image:: ../images/hardwaresetupforcar/products/Battery.jpg
                         entire vehicle. It's a       
 
-                        2 cells LiPo battery,                                          `Battery3`_
+                        2 cells LiPo battery,
                         ranging from 4500 mAh  
 
                         to 6200 mAh (randomly                
                         assigned)  
 
-   `Power board`_       Custom made power         1          3x 25 spacer-nut   N/A                   .. image:: ../PCB/PWR_Board/3D/Top View.png
+   `Power board`_       Custom made power         1          3x 25 spacer-nut   N/A                   .. image:: ../PCB/PWR_Board/3D/TopView.png
                         distribution board.  
 
                         Enables connection of 2 
@@ -134,7 +134,13 @@ Table1:
                         
                         embedded in it 
 
-   `Imu`_               Custom made IMU board     1          duck tape         N/A                    .. image:: ../PCB/IMU_BOARD/3D/Top View.png
+   `Imu`_               Custom made IMU board     1          duck tape         ~€26    `Imu2`_        .. image:: ../PCB/IMU_BOARD/3D/TopView.png
+                                                                                                          :width: 120px
+
+                                                                                                      ⠀
+
+                                                                                                      .. image:: ../images/hardwaresetupforcar/products/imu2025.png
+                                                                                                          :width: 120px
 
    `uSD Card`_          Micro SD card of 16GB.    1          N/A               ~€5                    .. image:: ../images/hardwaresetupforcar/products/uSD.jpg
                         Serves as the  
@@ -153,7 +159,7 @@ Table1:
 
                         a 15cm cable. 
 
-   `Camera cable`_      Cable flexi cable for     1          N/A               ~€1                    .. image:: ../images/hardwaresetupforcar/products/Cameracable.jpg
+   `Camera cable`_      Cable flexi cable for     1          N/A               ~€1                    .. image:: ../images/hardwaresetupforcar/products/Cameracable2026.jpg
                         communication between  
 
                         Raspberry and it's  
@@ -191,10 +197,10 @@ Table1:
 .. _Controller: https://www.conrad.com/p/stmicroelectronics-pcb-design-board-nucleo-f401re-stm32-f4-series-1416924
 .. _Camera: https://www.raspberrypi.com/products/camera-module-3/?variant=camera-module-3-wide
 .. _Battery: https://www.conrad.com/p/conrad-energy-scale-model-battery-pack-lipo-74-v-5500-mah-no-of-cells-2-20-c-softcase-xt90-1344152
-.. _Battery2: https://www.conrad.com/p/hacker-scale-model-battery-pack-lipo-74-v-5000-mah-no-of-cells-2-20-c-softcase-xt90-2178297
-.. _Battery3: https://www.conrad.com/p/absima-scale-model-battery-pack-lipo-74-v-6200-mah-60-c-hard-case-xt90-2357348
-.. _Power board: https://github.com/ECC-BFMC/Documentation/tree/master/source/PCB/PWR_Board/schematic/Schematic_V3_Final.pdf
-.. _Imu: https://github.com/ECC-BFMC/Documentation/tree/master/source/PCB/IMU_BOARD/schematic/Schematic_IMU.pdf
+.. _Battery2: https://www.conrad.com/p/absima-scale-model-battery-pack-lipo-74-v-6200-mah-60-c-hard-case-xt90-2357348
+.. _Power board: https://github.com/ECC-BFMC/Documentation/blob/master/source/PCB/PWR_Board/schematic/Schematic_V3_Final.pdf
+.. _Imu: https://github.com/ECC-BFMC/Documentation/blob/master/source/PCB/IMU_BOARD/Schematic/Schematic_IMU.pdf
+.. _Imu2: https://www.adafruit.com/product/4646?srsltid=AfmBOopnQ0Wz7pybaQ8pl5rxnVkUl1BGRdpT2Tj3lMROoyumzva5HKms
 .. _uSD Card: https://www.conrad.com/p/intenso-16-gb-micro-sdhc-card-microsdhc-card-16-gb-class-4-incl-sd-adapter-416887
 .. _USB0-miniUSB: https://www.conrad.com/p/renkforce-usb-cable-usb-20-usb-a-plug-usb-mini-b-plug-015-m-black-gold-plated-connectors-rf-4455804-1485268
 .. _Camera cable: https://www.raspberrypi.com/products/camera-cable/
@@ -209,7 +215,7 @@ Table1:
 And here are the 3d printed components for the car itself. Available also in editable format, as sldprt extension at this link: `solid parts`_.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-.. _solid parts: https://github.com/ECC-BFMC/Documentation/tree/master/source/3DModels/CustomParts/sldprt..
+.. _solid parts: https://github.com/ECC-BFMC/Documentation/tree/master/source/3DModels/CustomParts/sldprt
 
 Table 2
 
@@ -233,10 +239,10 @@ Product             Description                 Mount Materials      Picture
                      chassis.  
 ==================  ==========================  ===================  =====================
 
-.. _Boards support: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CustomParts/Nucleo%2BRpi_Suport.STL..
-.. _Camera support: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CustomParts/PIcameraHolderPart2.STL..
-.. _Camera rotation: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CustomParts/PIcameraHolderPart3.STL..
-.. _Chassis mount: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CustomParts/PicameraHolderBase.STL..
+.. _Boards support: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CustomParts/Nucleo%2BRpi_Suport.STL
+.. _Camera support: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CustomParts/PIcameraHolderPart2.STL
+.. _Camera rotation: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CustomParts/PIcameraHolderPart3.STL
+.. _Chassis mount: https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/CustomParts/PicameraHolderBase.STL
 
 
 There are some parts of the chassis available in STL in editable formats, created due to worn or lost here: `spare parts`_.

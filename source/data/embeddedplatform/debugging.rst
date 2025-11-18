@@ -1,35 +1,51 @@
 Debugging
 =========
 
-You can easily try do debug your Nucleo code by communicating with it via serial. In order to do so, you can install putty and connect the Nucleo 
-directly to the PC. Check the COM of the device (in device manager) and then open putty, by setting it as follows:
+You can easily debug your Nucleo code by communicating with it via serial.  
+To do this, install **PuTTY** and connect the Nucleo board directly to your PC.
 
-    - Connection type - Serial
-    - Speed - 115200
-    - Serial line - COMxx
-    - Terminal == local-echo - Force on
-    - Terminal == Local line editing - Force on
+First, check the COM port of the device (in **Device Manager**) and then configure PuTTY as follows:
 
-Go to session and then press Open.
+    - **Connection type** - Serial
+    - **Speed** - 115200
+    - **Serial line** - COMxx
+    - **Terminal → Local echo** - *Force on*
+    - **Terminal → Local line editing** - *Force on*
 
-Once you started the putty, a sign that everything works is: == the `I'm alive` message, after that you can try to communicate with it. After each message sent, 
-you have to press Ctrl+M, then Ctrl+J. 
+Go to **Session** and press **Open**.
+
+Once PuTTY is running, a successful connection is indicated by the message:
+
+``I'm alive``
 
 .. image:: ../../images/embeddedplatform/putty.png
    :align: center
    :width: 50%
 
-The Nucleo has 3 power states: KL0, KL15 and KL30, all designed as a safety feature:
+.. raw:: html
+
+   <div style="margin-top: 20px;"></div>
+
+After this message appears, you can send commands to the Nucleo.  
+After each message, press **Ctrl+M**, **Ctrl+J** and then **Enter**.
+
+Power States
+------------
+
+The Nucleo has 3 power states: ``KL0``, ``KL15`` and ``KL30``. All designed as a safety feature:
     - ``KL0`` Nothing is working. whatever command you send or ask from the Nucleo, will be discarted.
     - ``KL15`` Only the interaction with the sensors work, actions like: reading data from IMU, reading data regarding instant consumption, total voltage, autonomy...
     - ``KL30`` Enables also the control of the vehicle. Now, messages like: set speed, set seering angle, set movement duration will work.
 
 The Nucleo has a PowerManager, used to protect your work and to increase your safety. Mainly, it does the following:
-    - If the battery drops below 7.2 Volts, it sends via serial a warning about it, it does so every x seconds.
-    - If the battery drops below 7.1 Volts, it sends via serial an error, and then the nucleo puts itself into sleep mode. 
-    - To avoid building each time a battery is changed, it also can receive messages via serial about the capacity of the battery/s connected.
+    - If the battery drops below 7.2 Volts → a **warning** is sent periodically via serial.
+    - If the battery drops below 7.0 Volts → an **error** is sent and the Nucleo enters sleep mode.
+    - After battery replacement, the Nucleo can receive the new capacity via serial (no rebuild required)
 
-Nucleo expects via serial the following structure:
+Message Structure
+-----------------
+
+Nucleo expects messages with the following format:
 
 ``#command:val1;val2;valx;;\r\n``
 
@@ -125,7 +141,11 @@ Limits
 ------
 
 The Nucleo has a few limits, as follows:
-    - The maximum speed is 500 mm/s.
-    - The maximum steering angle is 25 degrees.
-    - The maximum time for a controlled movement is 255 deciseconds (25,5 seconds).
-    - The maximum frequency for the imu is 6.67 Hz (150ms).
+    - The maximum speed is **500 mm/s**.
+    - The maximum steering angle is **25°**.
+    - The maximum time for a controlled movement is **255 deciseconds** (25.5 seconds).
+    - The maximum frequency for the imu is **6.67 Hz** (150 ms).
+
+.. tip::
+
+   If you experience inconsistent behavior during debugging, double-check the **power state** and **message formatting**.
