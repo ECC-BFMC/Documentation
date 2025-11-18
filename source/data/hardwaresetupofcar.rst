@@ -114,7 +114,7 @@ Table1:
                         to 6200 mAh (randomly                
                         assigned)  
 
-   `Power board`_       Custom made power         1          3x 25 spacer-nut   N/A                   .. image:: ../PCB/PWR_Board/3D/Top View.png
+   `Power board`_       Custom made power         1          3x 25 spacer-nut   N/A                   .. image:: ../images/hardwaresetupforcar/products/Powerboard.jpg
                         distribution board.  
 
                         Enables connection of 2 
@@ -134,7 +134,7 @@ Table1:
                         
                         embedded in it 
 
-   `Imu`_               Custom made IMU board     1          duck tape         N/A                    .. image:: ../PCB/IMU_BOARD/3D/Top View.png
+   `Imu`_               Custom made IMU board     1          duck tape         N/A                    .. image:: ../images/hardwaresetupforcar/products/IMU.jpg
 
    `uSD Card`_          Micro SD card of 16GB.    1          N/A               ~€5                    .. image:: ../images/hardwaresetupforcar/products/uSD.jpg
                         Serves as the  
