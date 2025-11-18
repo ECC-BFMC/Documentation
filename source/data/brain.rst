@@ -5,13 +5,8 @@ Brain project
    :maxdepth: 1
    :hidden:
 
-   brain/preliminarySetup
    brain/newComponent
    brain/mainFlow
-
-- * :doc:`Preliminary setup <brain/preliminarySetup>`
-
-  - You will need to follow this in order to set up your environment. 
 
 - * :doc:`New component <brain/newComponent>`
 

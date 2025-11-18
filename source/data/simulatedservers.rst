@@ -14,6 +14,7 @@ There are 2 simulated servers, which behave the same way as the servers that can
 To start the simulated servers you will have to open two terminals(one for each one of them).
 
 In the first terminal run the following command. It will simulate the communication the trafficCommunicationServer and the getting of positions from it.
+
 .. code-block:: bash
 
     cd src/servers/trafficCommunicationServer
@@ -21,6 +22,7 @@ In the first terminal run the following command. It will simulate the communicat
 
 
 In the second terminal run the following command. It will simulate the streaming data from the semaphore.
+
 .. code-block:: bash
 
     cd src/servers/SemaphoreStreamSIM
