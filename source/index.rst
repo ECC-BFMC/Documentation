@@ -16,12 +16,13 @@ the computer project needs to be installed on a PC.
    :maxdepth: 1
    :hidden:
    
+   data/demo
    data/hardwaresetupofcar
    data/racetrack
    data/vehicletoeverything
    data/embeddedplatform
    data/brain
-   data/computer
+   data/simulatedservers
    data/simulator
    data/useful
    data/periodicstatus   
@@ -29,6 +30,10 @@ the computer project needs to be installed on a PC.
 
 All given packages
 ------------------
+
+* :doc:`Demo <data/demo>`
+
+  - Describes how to play with the car, with the gven demo.
 
 * :doc:`Connection Diagram <data/hardwaresetupofcar>`
 
@@ -50,9 +55,9 @@ All given packages
 
   - The code that is already installed on the raspbery. Here's how it works.
 
-* :doc:`Computer <data/computer>`
+* :doc:`Computer <data/simulatedservers>`
 
-  - The code that can be run on a remote computer. Contains simulated servers or devices for the Vehicle-to-Everything communication, together with a demo on how to get the car running and a dashboard for monitoring it's states.
+  - The code that can be run on a remote computer. Contains simulated servers or devices for the Vehicle-to-Everything communication.
 
 * :doc:`Simulator <data/simulator>`
 

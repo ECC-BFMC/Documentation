@@ -37,11 +37,11 @@ Place the SD card into your Raspberry Pi and power it up.
 
 Find the IP Address of Your Raspberry Pi
 -----------------------------------------
-Locate the IP address of your Raspberry Pi on your local network.
+Locate the IP address of your Raspberry Pi on your local network by pinging it
 
-.. image:: ../../images/computer/raspberry_address.png
-    :align: center
-    :width: 80%
+.. code-block:: bash
+
+   ping raspberry.local
 
 Connect to the Raspberry Pi via ssh
 ------------------------------------

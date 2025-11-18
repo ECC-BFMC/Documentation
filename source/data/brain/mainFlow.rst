@@ -98,10 +98,10 @@ readings from the powerboard, and so on.
 ++++++++++++++++++++++
 The Semaphores Process
 ++++++++++++++++++++++
-`Explained in the V2X section <https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/vehicletoeverything/Semaphores.html>`_.
+`Explained in the V2X section-semaphores <https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/vehicletoeverything/Semaphores.html>`_.
 
 
 +++++++++++++++++++++++++++++++++
 The Traffic Communication Process
 +++++++++++++++++++++++++++++++++
-`Explained in the V2X section <https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/vehicletoeverything/TrafficCommunication.html>`_.
+`Explained in the V2X section-traffic communication <https://bosch-future-mobility-challenge-documentation.readthedocs-hosted.com/data/vehicletoeverything/TrafficCommunication.html>`_.

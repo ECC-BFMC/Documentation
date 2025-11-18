@@ -7,7 +7,6 @@ Brain project
 
    brain/preliminarySetup
    brain/newComponent
-   brain/running
    brain/mainFlow
 
 - * :doc:`Preliminary setup <brain/preliminarySetup>`
@@ -17,10 +16,6 @@ Brain project
 - * :doc:`New component <brain/newComponent>`
 
   - This is how you can integrate new components in the code.
-
-- * :doc:`Running the system <brain/running>`
-
-  - This is how you start your code.
 
 - * :doc:`How it works <brain/mainFlow>`
 
