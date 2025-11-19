@@ -1,250 +1,298 @@
-Hardware improvements
+Hardware Improvements
 =====================
 
-Let’s say you have just written a script that turns on a light bulb. At the first glance, there is no light coming out from the bulb. What are you going to do? 
-Well, sometimes it’s better to check if the bulb is properly plugged in, rather than rewriting your code. 
-Basically, this guide explains what modifications can be done to the chassis itself.
+Let’s imagine you write a script to turn on a light bulb. At first glance, nothing happens.  
+Should you rewrite the code?  
+Often, the simplest approach is to check whether the bulb is properly plugged in.
+
+This guide follows the same philosophy.  
+Before troubleshooting software issues or motor-control logic, you should first ensure that the **mechanical parts of the chassis are functioning optimally**.
+
+Below you will find recommendations for mechanical improvements, adjustments, and common checks that help prevent unnecessary debugging.
 
 FAQ
 ---
 
 **What are the advantages?**
 
-The advantages are:
-    * Developing / improving mechanical skills;
-    * Lowering frictions in the system - involving lower current consumption;
-    * Smoother driving;
-    * Lowering the possibility of getting the car stuck when cornering.
+- Improving mechanical skills  
+- Reducing friction in the transmission (lower current consumption)  
+- Achieving smoother driving  
+- Reducing the risk of the car getting stuck while cornering  
 
-**Can this part be skipped?**
+**Can this step be skipped?**
 
-The given car kit has a brushless motor with an integrated esc, which is rotating in a “constant speed” mode, meaning that even if the car tends to get stuck (based 
-on the signals received from the Nucleo) the car’s speed will be automatically adjusted and therefore the problem of the smoothness is eliminated (at least 
-partially). Nevertheless, as when buying a used car, it is always recommended to give it a mechanical check.
+The car kit includes a brushless motor with an integrated ESC, which maintains a nearly constant speed.  
+This compensates partially for drivetrain friction and helps avoid getting stuck.  
+However—just like buying a used car—it is strongly recommended to perform a mechanical inspection to ensure optimal performance.
 
 **What tools do I need?**
 
-    * Hex key screwdriver;
-    * Grease ;
-    * Degrease;
-    * Isopropyl alcohol;
-    * Sponge & brush;
-    * Pliers;
-    * Phillips screwdriver;
-    * Flat file /  sandpaper.
+- Hex key screwdriver  
+- Grease  
+- Degreaser  
+- Isopropyl alcohol  
+- Sponge & brush  
+- Pliers  
+- Phillips screwdriver  
+- Flat file / sandpaper  
 
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/tools.png
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/tools.png
    :align: center
    :width: 40%
 
-**How much time do I need?**
-    
-    * Working time approximately 4 hours.
+**How much time is needed?**
 
+- Approximately **4 hours** of work.
 
-The transmission from the motor
+Transmission from the Motor
+---------------------------
+
+This part includes:
+
+- Cleaning and greasing both differentials  
+- Adjusting distances when remounting components  
+- Checking for friction throughout the drivetrain  
+
+Removing the Computer Board Support
+-----------------------------------
+
+Disconnect all wires, remove the mounting nut, then take off the safety clamps and case holders.
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/RPIsupport.png
+   :align: center
+   :width: 50%
+
+Removing the Back Driving Shafts
+---------------------------------
+
+Unscrew the highlighted screws:
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/back_driving_shaft.png
+   :align: center
+   :width: 50%
+
+Removing the Differential
+-------------------------
+
+Unscrew the highlighted screws. After step 3 you will see the cogwheels.
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/differential.png
+   :align: center
+   :width: 70%
+
+Cleaning the Cogwheels
+----------------------
+
+1. Remove both differential halves.  
+   From **Piece A**, remove the bearing and permanently remove the washer.  
+2. Clean all grease from the case, cogwheels, and bearings.  
+   Degrease the bearings thoroughly (e.g., with isopropyl alcohol) until they spin freely.
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/cogwheel.png
+   :align: center
+   :width: 50%
+
+Tightening the Screws Equally
+-----------------------------
+
+- Remove the safety washer (A), then permanently remove the washer (B).  
+- Remove the screws from the plastic cogwheel.  
+  Lightly sand the surface where the flange attaches until flat.
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/drivenwheel.png
+   :align: center
+   :width: 70%
+
+Mounting Them Back
+------------------
+
+- Apply grease to all moving parts.  
+- Tighten screws evenly (not too tight), in the order indicated.  
+- Spin the driving shaft to verify there are no blocking points.
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/mountback.png
+   :align: center
+   :width: 70%
+
+Adjusting the Distance Between Cogwheel Axes
+--------------------------------------------
+
+Because cogwheels are not perfectly round, the gap between them may change during a full rotation.  
+This may cause:
+
+- Loss of grip  
+- Wheel locking  
+
+**Procedure:**
+
+- Loosen screw **C**  
+- Have someone spin both front wheels while you adjust the cogwheel distance  
+- The goal is smooth rotation throughout the *entire* revolution of cogwheel A  
+
+Note: tightening screw C may shift the cogwheel, requiring re-adjustment.
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/distance.png
+   :align: center
+   :width: 50%
+
+Front-Axis Differential
+-----------------------
+
+The front differential requires **exactly the same treatment** as the rear one.
+
+Abnormal Free Movement of the Wheels
+------------------------------------
+
+It is normal for wheels to feel slightly loose.  
+You must balance:
+
+- Too much freedom → loose parts  
+- Too much stiffness → restricted movement  
+
+We recommend placing a **thin washer** between the bearing and the driving shaft joint (thickness depends on the gap).  
+Compare the modified wheel with an unmodified one.
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/wheelladjustment.png
+   :align: center
+   :width: 50%
+
+Driving Shafts Must Move Freely
 -------------------------------
 
-The transmission from the motor includes cleaning and greasing the differentials (front and back), adjusting all the distances when 
-remounting all the components and checking for whatever frictions may be present. 
+The highlighted parts are the driving shafts. They must always move freely, regardless of wheel angle or ground clearance.
 
-**Removing the computer boards’ support**
-
-Disconnect all wires, remove the mounting support’s nut and then remove the safety clamps and case holders.
-
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/RPIsupport.png
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/drivingshaft.png
    :align: center
    :width: 50%
 
-**Removing the back driving shafts**
+To increase free movement:
 
-Unscrew the highlighted screws.
+- Slightly unscrew both the upper and lower screws  
+- Repeat until the shaft moves freely in all positions  
 
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/back_driving_shaft.png
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/gap.png
    :align: center
    :width: 50%
-
-**Removing the differential**
-
-Unscrew the highlighted screws and after step no. 3 you will be able to see the cogwheels.
-
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/differential.png
-   :align: center
-   :width: 70%
-
-**Cleaning the cogwheels**
-
-    1. Remove both pieces. From Piece A remove the bearing and afterwards remove the washer permanently.
-    2. Clean the grease from the differential’s case, cogwheels and bearings. Make sure you also use alcohol for degreasing the bearings until they freely spin.
-
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/cogwheel.png
-   :align: center
-   :width: 50%
-
-**Tighten the screws equally**
-
-    * Remove the safety washer (A) and then also remove the (B) washer permanently. 
-    * Remove the screws from the plastic cogwheel and then try sandpapering the surface where the flange will be attached (until it is perfectly flat).
-
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/drivenwheel.png
-   :align: center
-   :width: 70%
-
-**Mount them back**
-
-    * Grease all moving parts .
-    * Tighten the screws equally (do not screw them too hard) in the specified order.
-    * Try spinning the driving shaft and make sure that it does not have blocking points.
-
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/mountback.png
-   :align: center
-   :width: 70%
-
-**The distance between cogwheels’ axis**
-
-    * The cogwheels are not perfectly round, therefore at a complete spin of wheel A, the space between the two might vary. This can result in:
-        - Losing grip;
-        - Locking the wheels.
-    * What you should do:
-        - Loosen up the C screw;
-        - Let someone spin both front wheels in order to see if the wheels are still coupled together while you are adjusting the distance between the two.
-    * When do you know it’s done?
-        - This step can be considered done when the wheels move smoothly for a total spin of A cogwheel, with the mention that the cogwheels should be permanently jointed (When tightening the C screw back the cogwheel may move, and so modify the distance between the axis and therefore it might need to be setup properly once again).
-
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/distance.png
-   :align: center
-   :width: 50%
-
-**Front axist differential**
-
-The front axis differential also needs the same treatment as the rear one. So just adapt the upper lines to the front one.
-
-The abnormal free movement of the wheels
-----------------------------------------
-
-It is true that the wheel may seem a little bit too loose but this is not a bad thing. You have to make a compromise:
-    * A freer move results in loose parts.
-    * Firm parts result in not such a free move.
-
-Our suggestion is to put a very thin (how thin, it depends on the gap between bearing and safety cylinder) washer between the bearing and driving shaft joint. 
-You should compare a wheel that doesn’t have a washer with the one you just mounted and see if it is ok for you.
-
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/wheelladjustment.png
-   :align: center
-   :width: 50%
-
-
-
-Always be sure that the driving shafts are moving freely
---------------------------------------------------------
-
-The highlighted parts are the driving shafts. They should always freely move regardless of the wheels' position and car’s distance to the ground.
-
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/drivingshaft.png
-   :align: center
-   :width: 50%
-
-In order to let the driving shaft move freely, you need to increase the gap between the wheel and the differential:
-    * Take the suited hex key and unscrew both the upper and lower screws a little bit.
-    * Repeat the previous step until your driving shaft moves freely in any situation
-
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/gap.png
-   :align: center
-   :width: 50%
-
-
 
 Steering
 --------
-The servo needs one more screw to ensure that the steering column never jumps out. The position is hard to reach when the car is fully assembled, 
-so three options are available (beforehand, make sure that both Nucleo and servo are properly powered on when screwing, this way, the servo will be 
-set to the 0 position).
 
-- You can either fix it when working on the frontal differential (more exactley when it is removed).
-- Placing the rod when the car is assembled, unscrewing the servo without removing the rod, fixing the rod with the screw and place the servo back.
-- For those of you with more patience, an angle screwdriver can be improvised.
+The steering servo requires an additional screw to ensure the steering column does not disengage.  
+The placement is difficult to access when the car is fully assembled.
 
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/servo.png
+Possible options:
+
+1. Install it while working on the front differential.  
+2. Unscrew the servo (without removing the rod), install the screw, and then reassemble.  
+3. Use an improvised angled screwdriver—best for patient users.
+
+**Important:** Ensure the Nucleo and servo are powered so that the servo holds the **0° position** during installation.
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/servo.png
    :align: center
    :width: 50%
 
 
-Setting the wheels’ Camber
+Setting the Wheels’ Camber
 --------------------------
 
-**What is the wheel’s Camber?**
+**What is wheel camber?**
 
-The Camber is the angle at which the wheel and tire stand relative to a perfectly flat surface and it can be positive or negative. A positive Camber means that 
-the top of the wheel is pointed outwards, whereas negative Camber means the opposite, the top of the tire is leaned in closer to the car. Each of those two types 
-of Camber have theirs advantages and disadvantages. For the purpose of the challenge, we suggest a negative Camber approach.
+Camber is the angle of the wheel relative to a flat surface:
 
-**What are the advantages of negative Camber?**
+- **Positive camber**: top of wheel leans outward  
+- **Negative camber**: top leans inward  
 
-    * Improved handling of the vehicle;
-    * Reduced wheel vibration when turning;
-    * Possibility of cornering with higher speed;
-    * Steering reacts more directly;
-    * Steering forces are reduced;
-    * Lower cornering angles
+For this challenge, a **negative camber** is recommended.
 
-**How to set front axle Camber?**
+**Benefits:**
 
-There are two ball-head screws (red circled). In order to set the front axle Camber you have to twist them using a 2.5 mm hexagon wrench that is inserted through 
-the wheel’s rim. Unscrew the upper screw more than the lower one. Try as much as you can to set the Camber similar both left and right sides. If you unmount the 
-wheel, you will see a plastic grub screw as in (green circled) that can be tighten with a 5 mm hexagon wrench. That only serve for fastening the axis stub to the 
-ball-head screws (red circled). We suggest you check that both ball-head screw can move freely before you reattach the wheel. Always check for the suspension also 
-to move freely after setting the Camber.
+- Improved handling  
+- Reduced vibration during turns  
+- Higher cornering speeds  
+- More direct steering  
+- Reduced steering force  
+- Smaller steering angles  
 
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/frontaxle.png
-    :align: center
-    :width: 50%
+### Setting Front-Axle Camber
 
+Two ball-head screws (red circled) control camber.  
+Steps:
 
-**How to set rear axel Camber?**
+- Insert a **2.5 mm hex wrench** through the wheel rim  
+- Unscrew the upper screw more than the lower one  
+- Adjust both sides symmetrically  
 
-In order to set the Camber, you will need to turn the red circled screws so that the distance between the chassis and the top part of the wheels modify. The part 
-doesn’t have to be disassembled in order to be modified, but of course you can remove and measure it with a caliper rule. Another way of modifying the rear axle 
-Camber would be to change the mounting position of the traverse link into the rear axle leg (which has available three different mounting holes – the green circled parts).
+When removing the wheel, you will see a **plastic grub screw** (green circled), tightened with a **5 mm hex wrench**.  
+This only secures the axis stub.
 
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/backaxle.png
+Before reattaching the wheel:
+
+- Ensure both ball-head screws rotate freely  
+- Ensure suspension moves freely after adjustment  
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/frontaxle.png
    :align: center
    :width: 50%
 
-Setting the wheels’ alignment?
--------------------------------
+### Setting Rear-Axle Camber
+
+You can modify rear camber by:
+
+- Turning the red-circled screws to change the distance between chassis and wheel top  
+- OR adjusting the traverse link mounting position (three available holes, green circled)
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/backaxle.png
+   :align: center
+   :width: 50%
+
+
+Setting the Wheels’ Alignment
+-----------------------------
 
 **What is wheel alignment?**
 
-Wheel alignment describes the relation of the wheel level to the driving direction. It is usually known as “toe-in” or “toe-out” where the toe measurement is the 
-distance between the front of the tires and the back of the tires. Toe-in should be used because it improves lateral cornering of the tyres and it also leads to 
-a more direct response to steering.
+Alignment (toe-in / toe-out) describes how the wheels point relative to the driving direction.
 
-**Setting front axle alignment**
+**Toe-in** is recommended for this challenge:
 
-The alignment on the front axle can be set by turning the track rod levers ( red circled). You do not have to dismantle them in order to do the adjustments, because 
-they have threads in opposite. It is important that you set them equally (test after each modification that the car is moving straight).
+- Improves lateral cornering  
+- Gives more direct steering response  
 
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/frontaxlealignment.png
+### Setting Front-Axle Alignment
+
+Turn the **track rod levers** (red circled).  
+They have reverse threads and can be adjusted without disassembly.  
+Ensure both sides are adjusted symmetrically and test that the car drives straight.
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/frontaxlealignment.png
    :align: center
    :width: 50%
 
-Adjust the car’s height
------------------------
 
-The car ground clearance is set at maximum through 4 screws. If you want to increase this ground clearance, you can unscrew them at the maximum level (please do not remove)
-This is the location of the 4 screws:
+Adjusting the Car’s Height
+--------------------------
 
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/height.png
+Ground clearance is set using four screws.  
+To increase height, loosen them (do **not** remove them).
+
+Screw locations:
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/height.png
    :align: center
    :width: 50%
 
-Adjust the car’s suspensions
------------------------------
 
-Eventhough the height of the ground clearance has increased, chances are that the car won't stay at that height, due to the fact that the suspensions can't push 
-it that high. The good thing is that the suspensions can be hardened, and for each suspension you have 6 combinations. The suspensions can then be further hardened 
-by adding a spacer between the spring and their support.
+Adjusting the Suspensions
+-------------------------
 
-.. image::  ../../images/hardwaresetupforcar/hardware_improvements/suspensions_back.png
+Even after increasing clearance, the car may not stay elevated due to soft suspension springs.
+
+Suspensions can be hardened by:
+- Using one of **six possible combinations**  
+- Adding a **spacer** between the spring and its support  
+
+.. image:: ../../images/hardwaresetupforcar/hardware_improvements/suspensions_back.png
    :align: center
    :width: 50%

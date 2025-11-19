@@ -5,13 +5,16 @@
 Material
 ========
 
-The material of the track itself is made of rolls 1.6 meters wide wide, printed on top with white paint:
+The track surface is made from rolls **1.6 meters wide**, with the road markings printed on top using white paint.
 
-The material can be found here: https://poolsidebycgt.com/europe/black-slate/
+The material can be found here:  
+https://poolsidebycgt.com/europe/black-slate/
 
-Down below you can see the reaciton of the track based on different light in angles. Notice that:
-   - Images are raw, parameters are not adapted to the light.
-   - The images were taken close to direct sunlight, which we will try to reduce at the location. 
+Below you can see how the track surface reacts under different lighting angles.  
+Note the following:
+
+- The images are raw; no camera parameters were adjusted for light adaptation.
+- The photos were taken in conditions close to direct sunlight, which we will attempt to reduce at the competition venue.
 
 .. image:: ../../images/racetrack/Piece90deg.jpeg
    :align: center

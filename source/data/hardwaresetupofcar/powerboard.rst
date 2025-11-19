@@ -24,3 +24,6 @@ For the protection of the batteries, the Powerboard has the following features:
 
 All the data related to the powerboard can be found here:
 `Power Distribution Board <https://github.com/ECC-BFMC/Documentation/tree/master/source/PCB/PWR_Board>`_
+
+
+TO BE CHECKED!!!

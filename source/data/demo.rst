@@ -1,5 +1,5 @@
-Demo 
-=====
+Demo
+====
 
 .. toctree::
    :maxdepth: 2
@@ -9,35 +9,37 @@ Demo
    demo/services
    demo/explaining
 
-
 * :doc:`Fresh start <demo/freshstart>`
+  
+  - How to set up your Raspberry Pi from scratch.
 
-  - Describing how to set-up your raspbery pi from scratch.
+* :doc:`Services description <demo/services>`
+  
+  - How the installed services work.
 
-* :doc:`services description <demo/services>`
+* :doc:`Explaining <demo/explaining>`
+  
+  - Overview of the dashboard and how to add/remove fields.
 
-  - Describing how the installed services work
+1. Power Up the System
+----------------------
 
-* :doc:`explaining <demo/explaining>`
-
-  - Describing what is there on the dashboard, and how to add/remove fields
-
-1. Power up the system
-
-- Check the battery connection with the powerboard.
-- Turn on the power supply by using the .
-- Leds should turn on.
+- Ensure the battery is connected to the power board.  
+- Turn on the power supply using the switch.  
+- The LEDs should turn on.
 
 .. image:: ../images/demo/Switch.jpeg
-  :align: center    
-  :width: 80%
+   :align: center
+   :width: 80%
 
-2. Power up the Brushless Motor&ESC
+2. Power Up the Brushless Motor & ESC
+-------------------------------------
 
-- Simply press the button once tos tart it. You should heer 2 short beeps (signal that the motor is ready) followed by a slightly longer one (Signal that the ESC is calibrated).
-- The button should also flash red.
+- Press the button once to start the ESC.  
+- You should hear **two short beeps** (motor ready) followed by a **slightly longer beep** (ESC calibrated).  
+- The button should begin flashing red.
 
-|pic1| => |pic2|
+|pic1| ⇒ |pic2|
 
 .. |pic1| image:: ../images/demo/EngineButtonOFF.jpg
    :width: 40%
@@ -46,35 +48,52 @@ Demo
    :width: 40%
 
 3. Wait & Connect to Wi-Fi
+--------------------------
 
-- Wait for Wi-Fi BFMCDemoCar (at first boot with our image, raspbery may take longer then expected to power up)
-- Connect to it with Password: supersecurepassword
-- Or simply scan this qr code (valid also via phone)
+- Wait for the Wi-Fi network **BFMCDemoCar** to appear.  
+  (On first boot with our image, the Raspberry Pi may take longer than expected.)  
+- Connect using the password: **supersecurepassword**  
+- Or scan the QR code below (works on a phone as well):
 
 .. image:: ../images/demo/wifiQR.png
-  :align: center    
-  :width: 50%
+   :align: center
+   :width: 25%
 
-4. Connect to the frontend
+4. Connect to the Frontend
+--------------------------
 
-- Open any browse and go to: http://192.168.50.1:4200
-- Or simply scan this qr code (valid also via phone)
+- Open any browser and go to: **http://192.168.50.1:4200**  
+- Or scan the QR code:
 
 .. image:: ../images/demo/link.png
-  :align: center    
-  :width: 50%
+   :align: center
+   :width: 25%
 
-5. Wait & Submit
+5. Log In & Initialize
+----------------------
 
-- Wait for "Backend connection lost" message to disappear (Front-end page starts automatically. Back-end starts only once you connect to the web-page)
-- Leave password field empty
-- Press Submit
-- Close "Security Setup Required" (It will pop-up until you set a password for your interface src->Dashboard->ProcessDashboard.py)
-- Press Battery status (KL) 15 for sensor data, 30 for motors activation
-- Press Driving mode manual to control the car via keyboard (beeper should make a sound)
-- Drive with WASD + space (for break)
-- Press stop to Close (beeper should make a sound)
+- Wait for the **“Backend connection lost”** message to disappear.  
+  (The frontend starts immediately; the backend starts only after the webpage connects.)  
+- Leave the password field empty.  
+- Press **Submit**.  
+- Close the **"Security Setup Required"** popup.  
+  It will reappear until you set a password in  
+  ``src/dashboard/frontend/src/app/app.component.ts`` (line 50).  
+- To change the popup timeout, modify line 194 (value in ms).  
+- To disable the alert entirely, set line 152 to **False**.
+
+6. Explore the Interface
+------------------------
+
+- Set **Battery status (KL)** to:  
+  - **15** for sensor data  
+  - **30** for motor activation  
+- Set **Driving mode → Manual** to control the car using the keyboard  
+  (the beeper should activate).  
+- Drive using: **W A S D** + **Space** (brake).  
+- To stop, set **Driving Mode → Stop** and **Battery status → 0**  
+  (the beeper should activate again).
 
 .. image:: ../images/demo/front-end.png
-  :align: center    
-  :width: 90%
+   :align: center
+   :width: 90%

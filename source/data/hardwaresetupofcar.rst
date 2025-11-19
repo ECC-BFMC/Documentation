@@ -6,25 +6,21 @@ Connection diagram and components
    :hidden:
 
    hardwaresetupofcar/hardwareimprovements
-   hardwaresetupofcar/steeringcalibration
-   hardwaresetupofcar/speedingcalibration
+   hardwaresetupofcar/IMU
    hardwaresetupofcar/powerboard
+
 
 * :doc:`Hardware improvements guide <hardwaresetupofcar/hardwareimprovements>`
 
   - The kit could use some mechanical adjustments, like height elevation, reducing steering limitations, reducing mechanical friction. All by following this guide
 
-* :doc:`Steering calibration guide <hardwaresetupofcar/steeringcalibration>`
+* :doc:`IMU details <hardwaresetupofcar/IMU>`
 
-  - The kit steering may not be configured properly, so steering value could have an error when doing a movement. By following this guide you can ensure the value set is the real one.
+  - Details regarding the IMU boards (3 versions).
 
-* :doc:`Speeding calibration guide <hardwaresetupofcar/speedingcalibration>`
+* :doc:`Powerboard details <hardwaresetupofcar/powerboard>`
 
-  - There's not a movement function corelating PWM signal to speed value, so a series of measurements have been done manually. If a more precise resolution is desired (ex: 211.2 mm/s), measurements can be done again by following this guide.
-
-* :doc:`Powerboard & IMU details <hardwaresetupofcar/powerboard>`
-
-  - There's not a movement function corelating PWM signal to speed value, so a series of measurements have been done manually. If a more precise resolution is desired (ex: 211.2 mm/s), measurements can be done again by following this guide.
+  - Details regarding the powerboard.
 
 
 In this section, you can find all the topics related to the hardware of the vehicle, which is a 1/10 scale on-road chassis variant.

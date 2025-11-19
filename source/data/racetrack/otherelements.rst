@@ -1,19 +1,29 @@
-Other elements
+Other Elements
 ==============
 
-Traffic lights
+Traffic Lights
 --------------
 
-The traffic lights are similar to the real traffic lights with three colors: red, yellow and green. 
-It's 24 cm heigh and the lights are 4.5cm diameter. 
+The traffic lights used on the track resemble real traffic lights with three colors:  
+**red, yellow, and green**.
 
-There will be five semaphores on the race track. One placed at the starting point, and for placed in 
-the traffic light intersection. Besides showing the appropriate color, they will 
-also broadcast their state via Wi-Fi UDP messages (described in the V2X section). You can find the 
-link to the traffic light here: `traffic light <https://www.amazon.com/TOYANDONA-Multicoloured-Simulation-Crosswalk-Education/dp/B08SM96CHK/ref=sr_1_5?keywords=traffic+light+toy&qid=1665752048&qu=eyJxc2MiOiI1LjQ3IiwicXNhIjoiNS4xNiIsInFzcCI6IjQuNjQifQ%3D%3D&sr=8-5>`_. 
+Specifications:
 
+- Height: **24 cm**  
+- Light diameter: **4.5 cm**  
 
-And you can see it on the picture below:
+There will be **five** traffic lights on the race track:
+
+- One placed at the **starting point**  
+- Four placed at the **traffic-light intersection**
+
+Besides displaying their current color, the semaphores also broadcast their state through  
+**Wi-Fi UDP messages** (details in the V2X section).
+
+Link to the model used:  
+`Traffic light <https://www.amazon.com/TOYANDONA-Multicoloured-Simulation-Crosswalk-Education/dp/B08SM96CHK/ref=sr_1_5?keywords=traffic+light+toy&qid=1665752048&sr=8-5>`_
+
+Example:
 
 .. image:: ../../images/racetrack/TrafficLight.jpg
    :align: center
@@ -23,42 +33,53 @@ And you can see it on the picture below:
 Pedestrian
 ----------
 
-On the race track there will be a human-like pedestrian doll waiting to pass at one of the crosswalks 
-during the run and one crossing on an unsigned space on the map (if the team choses to have it)
+The race track features **human-like pedestrian dolls**:
 
-You can find the official link to the store here: `pedestrian doll <https://www.amazon.co.uk/Simba-EVI-Love-First-Bike/dp/B000UTKNI0>`_. 
+- One pedestrian waits at a **designated crosswalk** during the run.  
+- Another may cross at a **non-signaled location**, depending on the team’s chosen scenario.
 
-And you can see it on the picture below:
+Official link to the model:  
+`Pedestrian doll <https://www.amazon.co.uk/Simba-EVI-Love-First-Bike/dp/B000UTKNI0>`_
+
+Example:
 
 .. image:: ../../images/racetrack/Pedestriandoll.png
    :align: center
    :width: 50%
 
 
-Obstacle vehicles
+Obstacle Vehicles
 -----------------
 
-The obstacle vehicles are cars (similar to the car each team got) with different casings. The cars can either be
-static, they won't move and they will be simulating a broken car; or dynamic, so they will be moving around the track.
+Obstacle vehicles are cars similar to the one provided to each team, but with **different casings**.
+
+They can appear in two modes:
+
+- **Static** — simulating a broken/stopped vehicle  
+- **Dynamic** — moving autonomously around the track  
 
 
-
-Highway separator
+Highway Separator
 -----------------
 
-A series of `Separator blocks <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/Separator_block.STL>`_
-wil be placed on the highway, on the line which is dividing the driving ways. 
+A series of  
+`Separator blocks <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/Separator_block.STL>`_  
+will be placed on the **highway section**, along the line separating the two driving directions.
 
 .. image:: ../../images/racetrack/HighwaySeparator.png
    :align: center
    :width: 50%
 
+
 Ramp
 ----
 
-A `ramp <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/ramp.STL>`_ placed right before the highway. 
+A  
+`ramp <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/ramp.STL>`_  
+is placed right before the highway entrance.
 
-The ramp is covered with the same material as the rest of the track, it's dimensions can be seen in the picture below:
+It is covered with the same material as the rest of the track.  
+Dimensions can be seen below:
 
 .. image:: ../../images/racetrack/ramp.png
    :align: center
@@ -68,7 +89,9 @@ The ramp is covered with the same material as the rest of the track, it's dimens
 Tunnel
 ------
 
-A `tunnel <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/Tunnel.STL>`_ placed on the speed curve. 
+A  
+`tunnel <https://github.com/ECC-BFMC/Documentation/blob/master/source/3DModels/TrackParts/Tunnel.STL>`_  
+is placed on the **speed curve**.
 
 .. image:: ../../images/racetrack/tunnel.png
    :align: center

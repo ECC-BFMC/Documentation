@@ -1,28 +1,53 @@
 Services
 ========
 
-There are 3 services installed on the raspberry designed to facilitate some things
+Three services are installed on the Raspberry Pi to simplify configuration,
+startup behavior, and development workflows.
 
 angular-autostart
-------------------
-It starts automatically the front-end (dashboard) at start-up... Even if the code changes, the front-end doesn't have to restart every time.
-It is useful during development, as front-end start could take some time.
-Documentation regarding this service can be found in the `raspberry-BFMC2025-angular-autostart readme`_ file.
+-----------------
+This service automatically starts the frontend (dashboard) during boot.
 
-.. _`raspberry-BFMC2025-angular-autostart readme`: https://github.com/ECC-BFMC/Brain/tree/master/services/angular-autostart
+Key points:
+
+- The frontend starts once at boot, even if its code changes.  
+- There is **no need to manually restart** the frontend after code updates.  
+- This is especially useful during development, as frontend startup can take time.
+
+Documentation for this service is available in the  
+`raspberry-BFMC2025-angular-autostart README`_.
+
+.. _raspberry-BFMC2025-angular-autostart README: https://github.com/ECC-BFMC/Brain/tree/master/services/angular-autostart
 
 brain-autostart
 ---------------
-It waits for a http connection to the angular specific port. Once someone does, it starts the Brain main.py script. 
-It is useful mostly during demos. Could be stopped during development.
-Documentation regarding this service can be found in the `raspberry-BFMC2025-brain-autostart readme`_ file.
+This service waits for an incoming HTTP connection on the Angular frontend port.
+Once a connection is detected, it automatically starts the Brain ``main.py`` script.
 
-.. _`raspberry-BFMC2025-brain-autostart readme`: https://github.com/ECC-BFMC/Brain/tree/master/services/brain-autostart
+Key points:
+
+- Primarily useful during demos.  
+- Can be disabled during active development if manual control is preferred.
+
+Documentation is available in the  
+`raspberry-BFMC2025-brain-autostart README`_.
+
+.. _raspberry-BFMC2025-brain-autostart README: https://github.com/ECC-BFMC/Brain/tree/master/services/brain-autostart
 
 rpi-wifi-fallback
 -----------------
-At start-up, it checks whether or not there is a wifi connection available. If there is no wifi connection, it starts a hotspot, so that a computer/phone may connect to this wifi.
-After connection, you can either stay on this hotspot (no available internet) or connect the raspbery to a valid wifi.
-Documentation regarding this service can be found in the `raspberry-BFMC2025-rpi-wifi-fallback readme`_ file.
+At boot, this service checks whether the Raspberry Pi can connect to a known Wi-Fi network.
 
-.. _`raspberry-BFMC2025-rpi-wifi-fallback readme`: https://github.com/ECC-BFMC/Brain/tree/master/services/rpi-wifi-fallback
+Behavior:
+
+- If a valid Wi-Fi connection **is available**, it connects normally.  
+- If **no Wi-Fi network is found**, it automatically starts a hotspot, allowing a computer
+  or phone to connect to the Raspberry Pi.  
+- After connecting, you may either:
+  - remain on the hotspot (no internet), or  
+  - configure the Raspberry Pi to connect to a valid Wi-Fi network.
+
+Documentation is available in the  
+`raspberry-BFMC2025-rpi-wifi-fallback README`_.
+
+.. _raspberry-BFMC2025-rpi-wifi-fallback README: https://github.com/ECC-BFMC/Brain/tree/master/services/rpi-wifi-fallback

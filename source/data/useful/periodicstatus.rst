@@ -16,7 +16,7 @@ Each project report comes at a certain deadline.
 
 - Report (maximum 2 pages). It should raughly explain the sprint status.
 
-.. image:: ../images/periodicstatus/Monthly_report.PNG
+.. image:: ../../images/useful/Monthly_report.PNG
     :align: center
     :width: 90%
 
@@ -33,13 +33,13 @@ If you feel that a hardware architecture would fit in the documentation of the p
 
 - Project plan example:
 
-.. image:: ../images/periodicstatus/Project_plan.PNG
+.. image:: ../../images/useful/Project_plan.PNG
     :align: center
     :width: 90%
 
 - Architecture example:
 
-.. image:: ../images/periodicstatus/Proposed_architecture.PNG
+.. image:: ../../images/useful/Proposed_architecture.PNG
     :align: center
     :width: 90%
 

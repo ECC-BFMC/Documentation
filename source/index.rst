@@ -22,10 +22,8 @@ the computer project needs to be installed on a PC.
    data/vehicletoeverything
    data/embeddedplatform
    data/brain
-   data/simulatedservers
    data/simulator
    data/useful
-   data/periodicstatus   
 
 
 All given packages
@@ -55,10 +53,6 @@ All given packages
 
   - The code that is already installed on the raspbery. Here's how it works.
 
-* :doc:`Computer <data/simulatedservers>`
-
-  - The code that can be run on a remote computer. Contains simulated servers or devices for the Vehicle-to-Everything communication.
-
 * :doc:`Simulator <data/simulator>`
 
   - All the information regarding the simulator, how to run it and how to make it interact with the car.
@@ -66,7 +60,3 @@ All given packages
 * :doc:`Useful links and information <data/useful>`
 
   - General useful information. A series of tools and skills that would be beneficial for this project. Of course you can use your own.
-
-* :doc:`Periodic status <data/periodicstatus>`
-
-  - Examples of documents for the periodic status.

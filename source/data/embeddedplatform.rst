@@ -10,6 +10,7 @@ Embedded platform
    embeddedplatform/newComponent
    embeddedplatform/debugging
    embeddedplatform/mainFlow
+   embeddedplatform/calibration
 
 **Quick navigation**
 
@@ -32,6 +33,10 @@ Embedded platform
 * :doc:`How it works <embeddedplatform/mainFlow>`
 
   - A high-level view of how the embedded logic works.
+
+* :doc:`calibration procedure <embeddedplatform/calibration>`
+
+  - A few notes regarding the calibration
 
 .. note::
 

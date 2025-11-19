@@ -1,28 +1,42 @@
-Road markings
-==============
+Road Markings
+=============
 
-The lane markings may be dashed or continuous and are ~2cm wide white line, and the length between dashed lines is 4.5 cm,
-the same being valid for the line itself. The lane has a width of ~35 cm, measured from the inside of the respective 
-markings.
+The lane markings may be **dashed or continuous** and use a **~2 cm wide white line**.  
+For dashed lane markings:
+
+- Dash length: **4.5 cm**
+- Gap length: **4.5 cm**
+
+The lane width is **~35 cm**, measured from the **inner edges** of the respective markings.
 
 .. image:: ../../images/racetrack/road.png
    :align: center
    :width: 50%
 
-As for the highway, the width of the lane is approximately 37 cm, where the lines are 4 cm in width
-and the dashed line is of 9 cm on, 9 cm off.
+Highway Markings
+----------------
+
+On the highway section:
+
+- Lane width: **~37 cm**
+- Line width: **4 cm**
+- Dashed pattern: **9 cm on / 9 cm off**
 
 .. image:: ../../images/racetrack/Highway.png
    :align: center
    :width: 50%
 
-The following image shows the tightest curve, which is the most common curve on the track. 
+Curves and Intersections
+------------------------
+
+The following image shows the **tightest curve** on the track (also the most frequent curve type):
 
 .. image:: ../../images/racetrack/marking_tight_curve.png
    :align: center
    :width: 50%
 
-Below you can see the main types of intersections (more types are on the track, but the dimensions are similar).
+Below are the main types of **intersections**.  
+More variations exist on the track, but their dimensions are largely similar.
 
 .. image:: ../../images/racetrack/intersection.png
    :align: center
@@ -32,35 +46,41 @@ Below you can see the main types of intersections (more types are on the track, 
    :align: center
    :width: 50%
 
-Here are the dimensions for the crosswalk signalization (dimensions valid also for crosswalk on 1 lane).
+Crosswalk Dimensions
+--------------------
+
+Dimensions for crosswalk signalization (also valid for 1-lane crosswalks):
 
 .. image:: ../../images/racetrack/Crosswalk.PNG
    :align: center
    :width: 50%
 
-Here are the dimensions for parking spots.
+Parking Spot Dimensions
+-----------------------
 
 .. image:: ../../images/racetrack/Parking_spots.PNG
    :align: center
    :width: 50%
 
-And the dimensions for the roundabout
+Roundabout Dimensions
+---------------------
 
 .. image:: ../../images/racetrack/Roundabout.PNG
    :align: center
    :width: 50%
 
+Starting Point
+--------------
 
-**Starting point**
+The starting point consists of an **incomplete rectangle**:
 
-The starting point is made out of an incomplete rectangle, which is exactly the width of the vehicle (20cm)
-and ends 56 cm from the chessboard print. 
+- Width: **20 cm** (equal to the vehicle width)
+- Positioned **56 cm** before the chessboard print
 
-The chessboard print is made out of a 7x6 squares matrix, occupying the entire width of the lane (5cm square).
+The chessboard is a **7×6 grid of 5 cm squares**, spanning the full lane width.
 
-The chessboard can be used for the automatic calibration of the camera at the start.
+It can be used for **automatic camera calibration** at the start of the run.
 
 .. image:: ../../images/racetrack/Start.PNG
    :align: center
    :width: 50%
-

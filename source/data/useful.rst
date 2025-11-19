@@ -6,8 +6,7 @@ Useful
    :hidden:
 
    useful/usageraspberry
-   useful/ROS
-   useful/coding
+   useful/periodicstatus
    useful/materials
 
 In this section, you can find some useful links and some documentations for basic
@@ -16,14 +15,10 @@ raspberry usage and image processing.
 * :doc:`Raspberry Classic <useful/usageraspberry>`
 
   - How to get started to develop on the raspbery pi
-  
-* :doc:`ROS <useful/ROS>`
 
-  - Getting started with ROS
+* :doc:`Coding in Raspberry <useful/periodicstatus>`
 
-* :doc:`Coding in Raspberry <useful/coding>`
-
-  - Coding on the raspbery pi
+  - Example of periodic status report & monitoring
 
 * :doc:`Materials used <useful/materials>`
 

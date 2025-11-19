@@ -1,14 +1,44 @@
-Localization system
+Localization System
 ===================
 
-The localization system used in our location is made out of MDEK1001 `MDEK1001 <https://www.qorvo.com/products/p/MDEK1001>`_. devices,
-which can be reproduced in the testing location of each team. A set of 12 boards can be found for ~300 dollars. 
+The localization system used at our competition venue is built using  
+**MDEK1001** devices (`MDEK1001 <https://www.qorvo.com/products/p/MDEK1001>`_),  
+which can be reproduced in each team’s testing environment.  
+A full kit of **12 boards** can typically be found for **~300 USD**.
 
-Each device can be set either as Anchor, Tag or Gateway and can be configured accordingly with the help of the quorvo application by using BLE. 
+Each MDEK1001 module can be configured as an:
 
-Another characteristic of our system is that we get the data from the Tag directly via serial communication, not 
-from the Gateway. Meaning, we have a device connected directly to the MDEK board that gets the data from it, then it shares it wirelessly 
-with the TrafficCommunicationServer. The TrafficCommunicationServer then serves the location to the interested cars.
+- **Anchor**
+- **Tag**
+- **Gateway**
 
-To best simulate the gathering of the data, we encourage you to build your project based on this info and take as
-starting point the TrafficCommunicationServer, described in the Computer section.
+All configuration is done through Qorvo’s mobile application via **BLE**.
+
+System Architecture
+-------------------
+
+One important characteristic of our setup is that we **do not** obtain the
+location data from the Gateway.  
+Instead:
+
+1. The **Tag** outputs its position directly over **serial communication**.  
+2. A small device is connected via UART to the MDEK Tag.  
+3. That device sends the location wirelessly to the **TrafficCommunicationServer**.  
+4. The TrafficCommunicationServer provides location updates to the interested cars.
+
+This approach ensures low latency, simpler integration, and independence from the
+MDEK’s built-in network positioning messages.
+
+Recommendation for Teams
+------------------------
+
+To best simulate how localization data is gathered and distributed in the
+official environment, we encourage you to:
+
+- Base your implementation on this architecture  
+- Use the **TrafficCommunicationServer** (described in the *Computer* section)
+  as your starting point  
+- Read UWB Tag data via **serial/UART**, not via the Gateway
+
+By mirroring this structure, your system will behave consistently with the one
+used during the competition.
