@@ -1,26 +1,28 @@
 Simulator
 =========
 
-Installing the simulator on the PC
+Installing the Simulator on the PC
 ----------------------------------
 
-The Ubuntu version is 20.04, while the ROS version is Noetic. Though, any Ubuntu and ROS 1 newer version should work. 
+The reference environment uses **Ubuntu 20.04** and **ROS Noetic**, but any newer Ubuntu version and any newer **ROS 1** distribution should also work.
 
-Other two branches are created in the same repo, each made available by a team whose name is in the branch itself.
+The same repository contains **additional branches**, each contributed independently by participating teams.  
+These branches were **created and published by the teams themselves**.  
+**Bosch does not maintain, curate, or take ownership of the content in those branches;** they are made available *as-is* for reference or inspiration.
 
-Now clone the Simulator project inside the Documents folder of your PC. Then follow the next steps in order to build,
-source and run the simulator (change the {YOUR_USER} text with your actual username. 
+To install the simulator, clone the repository into your **Documents** folder, then follow the steps below  
+(replace `{YOUR_USER}` with your actual username):
 
 .. code-block:: bash
-    
+
     catkin_make --pkg utils
     catkin_make
-    echo 'export GAZEBO_MODEL_PATH="/home/{YOUR_USER}/Documents/Simulator/src/models_pkg:$GAZEBO_MODEL_PATH"' > devel/setup.bash
-    export 'ROS_PACKAGE_PATH="/home/{YOUR_USER}/Documents/Simulator/src:$ROS_PACKAGE_PATH"'> devel/setup.bash
+    echo 'export GAZEBO_MODEL_PATH="/home/{YOUR_USER}/Documents/Simulator/src/models_pkg:$GAZEBO_MODEL_PATH"' >> devel/setup.bash
+    echo 'export ROS_PACKAGE_PATH="/home/{YOUR_USER}/Documents/Simulator/src:$ROS_PACKAGE_PATH"' >> devel/setup.bash
     source devel/setup.bash
     roslaunch sim_pkg map_with_all_objects.launch
 
-Now open two other terminals and do the following
+Next, open **two additional terminals** and run:
 
 .. code-block:: bash
 
@@ -33,42 +35,57 @@ Now open two other terminals and do the following
     rosrun example control.py
 
 
-Additional notes
+Additional Notes
 ----------------
 
-**Camera**
+Camera
+~~~~~~
 
-You can change the resolution and the position of the camera, just have this files in mind:
+To modify camera **resolution** or **position**, adjust the following files:
 
-`src/models_pkg/camera/model.sdf`
+- `src/models_pkg/camera/model.sdf`  
+  Contains `<width>` and `<height>` tags for resolution.  
+  No workspace recompilation is required.
 
-You will find the `<width>` and `<height>` tags. Modifying them will allow you to change the camera resolution. You don't need to recompile the workspace after this change.
+- `src/models_pkg/rcCar_assembly/model.sdf`  
+  Contains:
 
-`src/models_pkg/rcCar_assembly/model.sdf`
-you will find the inclusion of `<uri>model://camera</uri>`. Inside that same `<include>` tag, there is also a `<pose>` tag, which you will need to modify `according to the 
-SDF format specification <http://sdformat.org/spec?ver=1.6&elem=model#include_pose>`_ in order to change the camera's position. You don't need to recompile the workspace after 
-this change.
-All constants of double data type, with angles in radians and "." (dot) as decimal separator, as in this example:
-'<pose> X Y Z ROLL PITCH YAW </pose>'
+  - `<uri>model://camera</uri>` (camera inclusion)  
+  - `<pose>` tag specifying position and orientation  
+    (format: `<pose>X Y Z ROLL PITCH YAW</pose>` in radians)
 
-**Working with gazebo:**
-    - If you want to restart the simulation, instead of restarting gazebo, you can only restart the simulation with the help of the ROS services, such as: 'rosservice call /gazebo/reset_simulatio'
-    - Deactivate GUI from the launch in order to save some computational power.
-    - Play with rqt tool in order to check the images and other topic messages, frequency, etc.
-    - You can change the resolution of the map from `src/models_pkg/track/materials/scripts/bfmc_track.material`. The available maps are under the textures directory. Bigger the resolution, bigger the requirements of the simulation.
-    - Inside the `src/sim_pkg/launch/sublaunchers` directory, there is a launch file for each type of elements on the map or groups of elements. You can also spawn some of them separately while the simulator is running, based on the requirements at the moment. 
-    - You can also configure your own launching files, you can create a launch file that includes multiple launch files. See the `map_with_all_objects.launch` file inside the `src/sim_pkg/launch` as an example.
+  No recompilation is required after these changes.
+
+Working with Gazebo
+~~~~~~~~~~~~~~~~~~~
+
+- To restart the simulation without restarting Gazebo:  
+  `rosservice call /gazebo/reset_simulation`
+- Disable the GUI in your launch file to save computational resources.
+- Use **rqt** to inspect images, topics, frequencies, and debug data.
+- To change map resolution, edit:  
+  `src/models_pkg/track/materials/scripts/bfmc_track.material`  
+  Higher resolution = higher resource usage.
+- In `src/sim_pkg/launch/sublaunchers/` you will find launch files for each group of objects.  
+  You can spawn specific elements while the simulator is running.
+- You may create your own launch configurations by including existing launch files.  
+  Example: `map_with_all_objects.launch` in `src/sim_pkg/launch/`.
 
 
-ROS vehicle and simulator integration
+ROS Vehicle and Simulator Integration
 -------------------------------------
 
-Both the car and the PC running the simulation have to be on the same network and the ssh communication has to be enabled on the RPi. 
-In order for the nodes to be able to communicate between them, some environmental variables have to be set. A set of environmental 
-variables must be set for ROS to be able to communicate between the devices.This setup will make the nodes on your car interact with 
-the roscore from the PC, and you will be able to see the entire setup of the network (The roscore can be swapped to run on the physical car as well).
+To integrate the physical car with the simulator, both the **RPi** and the **PC** must:
 
-**On the RPI:**
+- Be on the **same network**
+- Have **SSH enabled** on the Raspberry Pi
+- Share consistent **ROS environment variables**
+
+This setup allows the nodes on the car to communicate with the **roscore** running on the PC  
+(or vice versa, if you choose to run roscore on the RPi instead).
+
+On the Raspberry Pi
+~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -76,9 +93,10 @@ the roscore from the PC, and you will be able to see the entire setup of the net
     export ROS_HOSTNAME=`hostname -I`
     export ROS_MASTER_URI="http://PC_IP:11311"
 
-, where PC_IP is the IP of the PC on the LAN.
+Where **PC_IP** is the IP address of the simulation PC.
 
-**On the PC:**
+On the PC
+~~~~~~~~~
 
 .. code-block:: bash
 
@@ -86,10 +104,11 @@ the roscore from the PC, and you will be able to see the entire setup of the net
     export ROS_HOSTNAME=`hostname -I`
     export ROS_MASTER_URI="http://$ROS_IP:11311"
 
+Launching the System
+--------------------
 
-Then, just execute the normal launches:
-
-**On the RPI:**
+On the Raspberry Pi
+~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -97,7 +116,8 @@ Then, just execute the normal launches:
     source devel/setup.bash
     roslaunch sim_pkg start_car_virtual.launch
 
-**On the PC:**
+On the PC
+~~~~~~~~~
 
 .. code-block:: bash
 
@@ -105,6 +125,16 @@ Then, just execute the normal launches:
     source devel/setup.bash
     roslaunch sim_pkg map_with_car.launch
 
-Now the simulator will publish some info on the topics and you can subscribe to them from your car (automobile/image_raw, 
-automobile/localization, automobile/IMU, automobile/feedback, automobile/semaphores/_). The simulator will also subscribe to 
-some info on the topics and you can publish on them from your car (automobile/command)
+After launching:
+
+- The **simulator publishes** on topics such as:  
+  `automobile/image_raw`,  
+  `automobile/localization`,  
+  `automobile/IMU`,  
+  `automobile/feedback`,  
+  `automobile/semaphores/_`
+
+- The **simulator subscribes** to:  
+  `automobile/command`
+
+Your vehicle (Brain_ROS on the RPi) can publish and subscribe normally, as if interacting with a real-world system.
