@@ -54,12 +54,20 @@ Button behavior:
 
 Calibration Procedure
 ---------------------
-The calibration process ensures the vehicle moves straight and measures distances accurately.
+The calibration process is meant to fine-tune the steering and speed control equations of the vehicle, 
+ensuring accurate response to input commands. The procedure involves a series of velocities and speeds 
+sent to the vehicle, followed by manual measuring the actual distance traveled, and the angle of the movement, all 
+meant adjusting the equations accordingly.
 
 .. tip::
   For optimal results, perform multiple calibration runs. Each subsequent run refines the steering and speed equations using the previous data, progressively improving accuracy.
 
-- **Track Setup** – Requires a straight line of at least **3 meters** with unobstructed space.
+.. tip::
+  To ensure that measurements are as accurate as possible, ensure the mechanical state of the vehicle is in optimal condiitons.
+  i.e. Steering mechanism moves freely when driving manually, resetting correctly when releasing the steering. Motor moves chassys
+  smoothly without jerks or unexpected resistance. Have your hardware specialist check the car and take a look at the :doc:`Hardware Improvements guide </hardwaresetupofcar/hardwareimprovements>`.
+
+- **Track Setup** – Requires a straight line of at least **3 meters** with unobstructed space. Place a second line at 90 degrees to the first for angle measurements. 
 
   .. image:: ../../images/demo/calibration_step1.png
      :align: center
@@ -69,7 +77,7 @@ The calibration process ensures the vehicle moves straight and measures distance
 
    <div style="margin-top: 15px;"></div>
 
-- **Calibration Process** – Involves positioning the vehicle, running it at specific angles/speeds (Left, Right, Backward), and measuring the actual distance traveled.
+- **Calibration Process** – Involves positioning the vehicle, running it according to the specific step(Left, Right, Backward), and measuring the actual distance traveled.
 
   .. list-table::
      :widths: 50 50
@@ -97,8 +105,11 @@ The calibration process ensures the vehicle moves straight and measures distance
             :width: 77%
             :align: left
 
-- **Saving** – The new CPP files will be downloaded to the machine accessing the dashboard and also saved to ``src/calibration/source/drivers``. These files can then be pasted into the embedded project.
+- **Saving** – The new CPP files will be downloaded to the machine accessing the dashboard and also saved to ``src/calibration/source/drivers``. 
 
   .. image:: ../../images/demo/calibration_save.png
     :align: center
     :width: 45%
+
+- **flashing the vehicle** – After saving, the new calibration files must be copied in the Embedded project, then the project must be :doc:`build & flashed </embeddedplatform/buildAndFlash>`,
+according to the documentation.
