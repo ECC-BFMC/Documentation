@@ -1,20 +1,17 @@
 Explaining
 ==========
 
+To add or modify a cluster in the dashboard, check the subfolders under: ``src/dashboard/frontend/src/app/cluster``
+
+Currently `allMessages`_ going through the gateway are forwarded to the front-end. The backend component responsible for forwarding 
+gateway messages to the frontend is: ``src/dashboard/processDashboard.py``. You can adapt it as needed.
+
+The frontend has two main components: Dynamic view and JSON table.
+
 Dynamic View
 ------------
 
-To add or modify a cluster in the dashboard, check the subfolders under:
-
-``src/dashboard/frontend/src/app/cluster``
-
-The backend component responsible for forwarding gateway messages to the frontend is:
-
-``src/dashboard/processDashboard.py``
-
-On the frontend side:
-
-- Messages **explicitly handled** in the view (i.e., not shown in the JSON table) are processed in  
+- Messages **explicitly handled** in the dynamic view (image below) are processed in  
   ``src/dashboard/frontend/src/app/webSocket/web-socket.service.ts`` under the ``handledEvents`` list.
 
 .. image:: ../../images/demo/front-end-explained.png
@@ -24,9 +21,9 @@ On the frontend side:
 JSON Table
 ----------
 
-Any message circulating through the gateway that is **not** explicitly handled elsewhere will appear in the JSON table automatically.
+Any message that is sent tot he frontend and is **not** explicitly handled in the dynamic view will appear in the JSON table automatically.
 
-If you want to dynamically send messages *from* the JSON table, you must first add the corresponding entry to the  
+If you want to dynamically send messages **from** the JSON table, you must first add the corresponding entry to the  
 `table_state`_ JSON file. The message names must match those defined in `allMessages`_.
 
 .. _table_state: https://github.com/ECC-BFMC/Brain/blob/master/src/utils/table_state.json
@@ -34,18 +31,18 @@ If you want to dynamically send messages *from* the JSON table, you must first a
 
 Fields explained:
 
-- **Interval** – How frequently the message is received.  
+- **Interval** – How frequently the message is received or sent.  
 - **Value** – The most recent value of the message.  
-- **Range** – The value to send/save (editable range).  
+- **Range** – The value to send/save (editable range, in case the message is set as a sending one).  
 - **Action** – Enables Save/Load actions for this message.  
-- **Changed** – Indicates that the current value differs from what is stored in the Load file.
+- **Changed** – Indicates that the current value differs from what is stored in the `table_state`_ file.
 
 Button behavior:
 
 - **Save** – Saves the selected value to the JSON file for future use  
   (e.g., saving tuned PID parameters).  
 - **Load** – Sends the stored value through the gateway  
-  (e.g., reloading previous PID tuning values).  
+  (e.g., loading  PID tuning values).  
 - **Reset** – Reverts the editable value to what is already stored in the JSON file  
   (e.g., undoing accidental overshoot while tuning).
 

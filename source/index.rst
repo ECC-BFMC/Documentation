@@ -22,7 +22,6 @@ the computer project needs to be installed on a PC.
    data/vehicletoeverything
    data/embeddedplatform
    data/brain
-   data/simulator
    data/useful
 
 
@@ -52,10 +51,6 @@ All given packages
 * :doc:`Brain <data/brain>`
 
   - The code that is already installed on the raspbery. Here's how it works.
-
-* :doc:`Simulator <data/simulator>`
-
-  - All the information regarding the simulator, how to run it and how to make it interact with the car.
 
 * :doc:`Useful links and information <data/useful>`
 

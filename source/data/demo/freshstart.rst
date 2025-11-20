@@ -20,7 +20,7 @@ You can quickly set up your Raspberry Pi by flashing our preconfigured
    (default: ``pi`` / ``raspberry``).  
 7. Click **Next** and complete the flashing process.
 
-After flashing, insert the SD card into the Raspberry Pi and power it on.
+After flashing, insert the SD card into the Raspberry Pi and power it on. First boot after the flash might take a little bit longer.
 
 Option 2 – Build From Scratch
 -----------------------------
