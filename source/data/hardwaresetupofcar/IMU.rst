@@ -84,10 +84,10 @@ Pin mapping (from left to right):
 - **ADR:** Interrupt output (INT)  
 - RST: IMU reset (active low)
 
-Note:  
-This revision uses a different silkscreen convention for the INT and ADR pins.
-Functionally the signals are identical to newer versions; only the printed labels
-differ.
+.. warning:: 
+   This revision uses a different silkscreen convention for the INT and ADR pins.
+   Functionally the signals are identical to newer versions; only the printed labels
+   differ.
 
 Board B
 --------
@@ -135,3 +135,5 @@ Pin mapping (from left to right):
 - SCL: I2C clock  
 - SDA: I2C data  
 
+.. tip:: 
+   Address select also available via shorting the solder jumper on the back of the board:
