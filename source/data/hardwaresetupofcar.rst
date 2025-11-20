@@ -205,7 +205,7 @@ And here's the table with all the components and all the needed details.
         - 1
         - on the chassys pillars, held with clips.
         - ~55
-        - `Car Body2`_, `Car Body3`_, `Car Body4`_, `Car Body5`_, `Car Body6`_
+        - `Car Body2`_, `Car Body3`_, `Car Body4`_, `Car Body5`_
         - .. image:: ../images/hardwaresetupforcar/products/CarBody.jpg
            :width: 120px
 
@@ -229,9 +229,8 @@ And here's the table with all the components and all the needed details.
 .. _Car Body: https://www.eurorc.com/product/21265/killerbody-lexus-rc-finished-body-orange-190mm
 .. _Car Body2: https://hpi-racing.ro/acasa/caroserie-vopsita-ford-mustang-mach-e-1400-200mm.html
 .. _Car Body3: https://hpi-racing.ro/onroadtouringdrift/caroserie-hpi-3d-bmw-m3-gt2-e92200mm.html
-.. _Car Body4: https://www.hpiracing.com/en/part/160561
-.. _Car Body5: https://www.hpiracing.com/en/part/160561
-.. _Car Body6: https://www.hpiracing.com/en/part/160561
+.. _Car Body4: https://hpi-racing.ro/caroserii-pentru-automodele/caroserie-hpi-nissan-gt-r-r35200mm.html
+.. _Car Body5: https://hpi-racing.ro/onroadtouringdrift/caroserie-ford-mustang-2015-rtr-spec-5-200mmnevopsita.html
 
 
 

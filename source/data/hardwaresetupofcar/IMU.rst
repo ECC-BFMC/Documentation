@@ -4,20 +4,19 @@ IMU
 The BFMC car uses a 9-DoF absolute orientation sensor based on the **Bosch BNO055**.  
 Across the years, three revisions of the IMU board were produced, all electrically compatible and using the same sensor.
 
+.. |imu23| image:: ../../images/hardwaresetupforcar/products/imu_2023.png
+   :width: 30%
+
+.. |imu24| image:: ../../images/hardwaresetupforcar/products/imu_2024.png
+   :width: 30%
+
+.. |imu25| image:: ../../images/hardwaresetupforcar/products/imu2025.png
+   :width: 30%
+
 Available IMU board versions
 ----------------------------
 
-.. image:: ../../images/hardwaresetupforcar/products/imu_2023.png
-   :align: center
-   :width: 45%
-
-.. image:: ../../images/hardwaresetupforcar/products/imu_2024.png
-   :align: center
-   :width: 45%
-
-.. image:: ../../images/hardwaresetupforcar/products/imu2025.png
-   :align: center
-   :width: 45%
+|imu23| |imu24| |imu25|
 
 All boards contain the **BNO055** module (3-axis accelerometer, 3-axis gyroscope, 3-axis magnetometer, with on-chip sensor fusion).
 
