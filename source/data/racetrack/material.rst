@@ -7,8 +7,7 @@ Material
 
 The track surface is made from rolls **1.6 meters wide**, with the road markings printed on top using white paint.
 
-The material can be found here:  
-https://poolsidebycgt.com/europe/black-slate/
+The material can be found here: https://www.poolsidebycgt.com/north-america/black-slate-2/
 
 Below you can see how the track surface reacts under different lighting angles.  
 Note the following:

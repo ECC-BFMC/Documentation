@@ -40,10 +40,11 @@ At boot, this service checks whether the Raspberry Pi can connect to a known Wi-
 
 Behavior:
 
-- If a valid Wi-Fi connection **is available**, it connects normally.  
+- If a valid Wi-Fi connection **is available**, it connects normally (based on the prioritization of the networks).
 - If **no Wi-Fi network is found**, it automatically starts a hotspot, allowing a computer
   or phone to connect to the Raspberry Pi.  
 - After connecting, you may either:
+  
   - remain on the hotspot (no internet), or  
   - configure the Raspberry Pi to connect to a valid Wi-Fi network.
 

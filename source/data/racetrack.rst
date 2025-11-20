@@ -53,6 +53,7 @@ The corresponding elements are fixed in the following locations on the track and
 - Highway exit signs at every highway exit.  
 - Crosswalk signs at every crosswalk.  
 - Tunnel location remains fixed.
+- Different size in lane width.
 
 .. image:: ../images/racetrack/Track.png
    :align: center

@@ -4,10 +4,6 @@ Power board
 On the robot we built a power distribution board which has the role of managing all the aspects of the power 
 management inside the car.
 
-.. image::  ../../images/hardwaresetupforcar/Powerboard/powerboard_plain.png
-  :align: center
-  :width: 80%
-
 For the protection of the batteries, the Powerboard has the following features:
 
     - To increase the cars autonomy, two batteries can be connected at any time (the board will work just fine with one).

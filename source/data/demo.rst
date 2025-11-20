@@ -1,6 +1,7 @@
 Demo
 ====
 
+
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -39,13 +40,25 @@ Demo
 - You should hear **two short beeps** (motor ready) followed by a **slightly longer beep** (ESC calibrated).  
 - The button should begin flashing red.
 
-|pic1| ⇒ |pic2|
++--------------------------+--------------------------+
+| |pic1|                   | |pic2|                   |
++--------------------------+--------------------------+
 
 .. |pic1| image:: ../images/demo/EngineButtonOFF.jpg
-   :width: 40%
+  :width: 40%
 
 .. |pic2| image:: ../images/demo/EngineButtonON.jpg
-   :width: 40%
+  :width: 40%
+
+..
+  .. image:: ../images/demo/EngineButtonOFF.jpg
+    :align: center
+    :width: 25%
+
+  .. image:: ../images/demo/EngineButtonON.jpg
+    :align: center
+    :width: 25%
+
 
 3. Wait & Connect to Wi-Fi
 --------------------------
@@ -97,3 +110,4 @@ Demo
 .. image:: ../images/demo/front-end.png
    :align: center
    :width: 90%
+
