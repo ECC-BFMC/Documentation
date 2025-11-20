@@ -65,6 +65,10 @@ The calibration process ensures the vehicle moves straight and measures distance
      :align: center
      :width: 45%
 
+  .. raw:: html
+
+   <div style="margin-top: 15px;"></div>
+
 - **Calibration Process** – Involves positioning the vehicle, running it at specific angles/speeds (Left, Right, Backward), and measuring the actual distance traveled.
 
   .. list-table::

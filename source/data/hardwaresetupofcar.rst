@@ -163,7 +163,7 @@ And here's the table with all the components and all the needed details.
         - .. image:: ../images/hardwaresetupforcar/products/uSD.jpg
            :width: 120px
 
-      * - `USB0-miniUSB`_
+      * - `USB-miniUSB`_
         - Cable for Raspberry Pi ↔ Nucleo communication (15cm).
         - 1
         - Goes inside the usb and mini-usb
@@ -205,7 +205,7 @@ And here's the table with all the components and all the needed details.
         - 1
         - on the chassys pillars, held with clips.
         - ~55
-        - `Car Body2`_, `Car Body3`_, `Car Body4`_
+        - `Car Body2`_, `Car Body3`_, `Car Body4`_, `Car Body5`_, `Car Body6`_
         - .. image:: ../images/hardwaresetupforcar/products/CarBody.jpg
            :width: 120px
 
@@ -219,10 +219,9 @@ And here's the table with all the components and all the needed details.
 .. _Camera: https://www.raspberrypi.com/products/camera-module-3/?variant=camera-module-3-wide
 .. _Battery: https://www.conrad.com/p/conrad-energy-scale-model-battery-pack-lipo-74-v-5500-mah-no-of-cells-2-20-c-softcase-xt90-1344152
 .. _Battery2: https://www.conrad.com/p/absima-scale-model-battery-pack-lipo-74-v-6200-mah-60-c-hard-case-xt90-2357348
-.. _Power board: https://github.com/ECC-BFMC/Documentation/blob/master/source/PCB/PWR_Board/schematic/Schematic_V3_Final.pdf
 .. _Imu2: https://www.adafruit.com/product/4646?srsltid=AfmBOopnQ0Wz7pybaQ8pl5rxnVkUl1BGRdpT2Tj3lMROoyumzva5HKms
 .. _uSD Card: https://www.conrad.com/p/intenso-16-gb-micro-sdhc-card-microsdhc-card-16-gb-class-4-incl-sd-adapter-416887
-.. _USB0-miniUSB: https://www.conrad.com/p/renkforce-usb-cable-usb-20-usb-a-plug-usb-mini-b-plug-015-m-black-gold-plated-connectors-rf-4455804-1485268
+.. _USB-miniUSB: https://www.conrad.com/p/renkforce-usb-cable-usb-20-usb-a-plug-usb-mini-b-plug-015-m-black-gold-plated-connectors-rf-4455804-1485268
 .. _Camera cable: https://www.raspberrypi.com/products/camera-cable/
 .. _RPi alimentation: https://www.conrad.com/p/joy-it-k-1473-power-cable-raspberry-pi-arduino-banana-pi-cubieboard-1x-usb-c-plug-1x-open-cable-ends-100-m-blac-2159636
 .. _Charger: https://www.conrad.com/p/voltcraft-v-charge-eco-lipo-3000-scale-model-battery-charger-230-v-3-a-lipolymer-1409525
@@ -231,30 +230,10 @@ And here's the table with all the components and all the needed details.
 .. _Car Body2: https://hpi-racing.ro/acasa/caroserie-vopsita-ford-mustang-mach-e-1400-200mm.html
 .. _Car Body3: https://hpi-racing.ro/onroadtouringdrift/caroserie-hpi-3d-bmw-m3-gt2-e92200mm.html
 .. _Car Body4: https://www.hpiracing.com/en/part/160561
+.. _Car Body5: https://www.hpiracing.com/en/part/160561
+.. _Car Body6: https://www.hpiracing.com/en/part/160561
 
 
-.. _Chassis: https://www.conrad.com/p/reely-tc-04-onroad-chassis-110-rc-model-car-electric-road-version-4wd-arr-1406735
-.. _Servo: https://shop.robitronic.com/en/srt-metallgetriebe-dl3017
-.. _Motor: https://www.hobbywingdirect.com/collections/quicrun-fusion-se
-.. _Brain: https://www.raspberrypi.com/products/raspberry-pi-5
-.. _Cooler: https://www.raspberrypi.com/products/active-cooler
-.. _Controller: https://www.conrad.com/p/stmicroelectronics-pcb-design-board-nucleo-f401re-stm32-f4-series-1416924
-.. _Camera: https://www.raspberrypi.com/products/camera-module-3/?variant=camera-module-3-wide
-.. _Battery: https://www.conrad.com/p/conrad-energy-scale-model-battery-pack-lipo-74-v-5500-mah-no-of-cells-2-20-c-softcase-xt90-1344152
-.. _Battery2: https://www.conrad.com/p/absima-scale-model-battery-pack-lipo-74-v-6200-mah-60-c-hard-case-xt90-2357348
-.. _Power board: https://github.com/ECC-BFMC/Documentation/blob/master/source/PCB/PWR_Board/schematic/Schematic_V3_Final.pdf
-.. _Imu: https://github.com/ECC-BFMC/Documentation/blob/master/source/PCB/IMU_BOARD/Schematic/Schematic_IMU.pdf
-.. _Imu2: https://www.adafruit.com/product/4646?srsltid=AfmBOopnQ0Wz7pybaQ8pl5rxnVkUl1BGRdpT2Tj3lMROoyumzva5HKms
-.. _uSD Card: https://www.conrad.com/p/intenso-16-gb-micro-sdhc-card-microsdhc-card-16-gb-class-4-incl-sd-adapter-416887
-.. _USB0-miniUSB: https://www.conrad.com/p/renkforce-usb-cable-usb-20-usb-a-plug-usb-mini-b-plug-015-m-black-gold-plated-connectors-rf-4455804-1485268
-.. _Camera cable: https://www.raspberrypi.com/products/camera-cable/
-.. _RPi alimentation: https://www.conrad.com/p/joy-it-k-1473-power-cable-raspberry-pi-arduino-banana-pi-cubieboard-1x-usb-c-plug-1x-open-cable-ends-100-m-blac-2159636
-.. _Charger: https://www.conrad.com/p/voltcraft-v-charge-eco-lipo-3000-scale-model-battery-charger-230-v-3-a-lipolymer-1409525
-.. _Charger2: https://www.absima.shop/pp/absima-charger-cube-2-0.htm?shop=absima_en&SessionId=&a=article&ProdNr=4000033&t=19114&c=19196&p=19196
-.. _Car Body: https://www.eurorc.com/product/21265/killerbody-lexus-rc-finished-body-orange-190mm
-.. _Car Body2: https://hpi-racing.ro/acasa/caroserie-vopsita-ford-mustang-mach-e-1400-200mm.html
-.. _Car Body3: https://hpi-racing.ro/onroadtouringdrift/caroserie-hpi-3d-bmw-m3-gt2-e92200mm.html
-.. _Car Body4: https://www.hpiracing.com/en/part/160561
 
 And here are the 3d printed components for the car itself. Available also in editable format, as sldprt extension at this link: `solid parts`_.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
