@@ -52,4 +52,44 @@ Button behavior:
 
 Calibration Procedure
 ---------------------
-TO BE DONE!!!
+.. image:: ../../images/demo/calibration_start.png
+   :align: center
+   :width: 80%
+The calibration process ensures the vehicle moves straight and measures distances accurately.
+
+- **Track Setup** – Requires a straight line of at least **3 meters** with unobstructed space.
+
+  .. image:: ../../images/demo/calibration_step1.png
+     :align: center
+     :width: 80%
+
+- **Calibration Process** – Involves positioning the vehicle, running it at specific angles/speeds (Left, Right, Backward), and measuring the actual distance traveled.
+
+  .. list-table::
+     :widths: 50 50
+     :align: center
+     :class: borderless
+
+     * - .. image:: ../../images/demo/calibration_step2.png
+            :width: 100%
+       - .. image:: ../../images/demo/calibration_step3.png
+            :width: 100%
+
+- **Visualizations** – Displays the zero offset spline and polynomial plots to verify the calibration model's accuracy before saving.
+  
+The final steering plot's limits are adjusted by the zero offset value, which can result in points appearing beyond the nominal limits.
+  .. list-table::
+     :widths: 50 50
+     :align: center
+     :class: borderless
+
+     * - .. image:: ../../images/demo/calibration_plot1.png
+            :width: 100%
+       - .. image:: ../../images/demo/calibration_plot2.png
+            :width: 100%
+
+- **Saving** – The new CPP files will be downloaded to the machine accessing the dashboard and also saved to ``src/calibration/source/drivers``. These files can then be pasted into the embedded project.
+
+  .. image:: ../../images/demo/calibration_save.png
+    :align: center
+    :width: 80%

@@ -52,9 +52,11 @@
       .. list-table:: 
 */
 
-.hardware-width > table.docutils {
-    width: 80% !important;              /* table = 80% of page */
-    margin-left: auto !important;       /* centered */
+.hardware-width>table.docutils {
+    width: 80% !important;
+    /* table = 80% of page */
+    margin-left: auto !important;
+    /* centered */
     margin-right: auto !important;
 }
 
@@ -65,20 +67,20 @@
  **************************************************************/
 
 a.reference.external {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .rst-content .align-center:not(table) {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  max-height: 500px;
-  object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 500px;
+    object-fit: contain;
 }
 
 /* Hide RTD “On GitHub” menu */
 div.rst-versions {
-  display: none;
+    display: none;
 }
 
 
@@ -90,7 +92,26 @@ div.rst-versions {
 }
 
 .image-row img {
-    width: 150px;      /* adjust as needed */
+    width: 150px;
+    /* adjust as needed */
     height: auto;
     border-radius: 4px;
+}
+
+/* Remove borders, backgrounds, and shadows from the table structure */
+table.borderless,
+table.borderless td,
+table.borderless th {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    /* Removes the grey 'zebra striping' */
+}
+
+/* Remove borders and drop shadows specifically from images INSIDE the borderless table */
+table.borderless img {
+    border: none !important;
+    box-shadow: none !important;
+    /* This removes the specific drop shadow you see */
+    background: transparent !important;
 }

@@ -73,6 +73,11 @@ Typical actions:
     cd Brain
     chmod +x setup.sh
     ./setup.sh
+    cd src/dashboard/frontend
+    npm start
+    answer "y" to the popup
+    close the frontend (CTRL + C)
+    cd ../..
 
 5. Install required services and reboot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
