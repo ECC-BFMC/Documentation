@@ -52,21 +52,18 @@ Button behavior:
 
 Calibration Procedure
 ---------------------
-.. image:: ../../images/demo/calibration_start.png
-   :align: center
-   :width: 80%
 The calibration process ensures the vehicle moves straight and measures distances accurately.
 
 - **Track Setup** – Requires a straight line of at least **3 meters** with unobstructed space.
 
   .. image:: ../../images/demo/calibration_step1.png
      :align: center
-     :width: 80%
+     :width: 50%
 
 - **Calibration Process** – Involves positioning the vehicle, running it at specific angles/speeds (Left, Right, Backward), and measuring the actual distance traveled.
 
   .. list-table::
-     :widths: 50 50
+     :widths: 35 35
      :align: center
      :class: borderless
 
@@ -75,11 +72,10 @@ The calibration process ensures the vehicle moves straight and measures distance
        - .. image:: ../../images/demo/calibration_step3.png
             :width: 100%
 
-- **Visualizations** – Displays the zero offset spline and polynomial plots to verify the calibration model's accuracy before saving.
+- **Visualizations** – Displays the zero offset spline and polynomial plots to verify the calibration model's accuracy before saving. The final steering plot's limits are adjusted by the zero offset value, which can result in points appearing beyond the nominal limits.
   
-The final steering plot's limits are adjusted by the zero offset value, which can result in points appearing beyond the nominal limits.
   .. list-table::
-     :widths: 50 50
+     :widths: 35 35
      :align: center
      :class: borderless
 
@@ -92,4 +88,4 @@ The final steering plot's limits are adjusted by the zero offset value, which ca
 
   .. image:: ../../images/demo/calibration_save.png
     :align: center
-    :width: 80%
+    :width: 50%
