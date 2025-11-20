@@ -23,7 +23,10 @@ For the protection of the batteries, the Powerboard has the following features:
     - The **RPI** supply pin provides **5V**, with a maximum recommended current of **4A**.
     - The **SERVO** connector must be used to supply the servo motor **(6V, max 5A)**
     - The motor pins can drain the battery until the voltage of the battery goes below 7.1V, then there will be no current flow so the LED should be off.
-    - If the LED is off then the current consumption is almost zero(uA). 
+    - The **VBAT LED** (next to the ON/OFF switch) indicates that the Powerboard is powered.  
+    - If **VBAT LED** is off, the board is not active and the current consumption is almost zero.
+    - Each main power output **(SERVO, RPI, AUX1, AUX2, AUX3, BOOST)** has its own status LED. These LEDs are normally ON whenever the Powerboard is powered.
+    - If one of these LEDs is **OFF** while the board is **ON**, it indicates a short-circuit condition or an overcurrent fault on that specific connector.
     - If the LED is on and no additional devices(DC motor, servo motor, development board etc) are functional the current consumption is around 70mA.
 
 All the data related to the powerboard can be found here:
