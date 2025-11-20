@@ -101,11 +101,12 @@ div.rst-versions {
 /* Remove borders, backgrounds, and shadows from the table structure */
 table.borderless,
 table.borderless td,
-table.borderless th {
+table.borderless th,
+table.borderless tr {
     border: none !important;
     box-shadow: none !important;
     background: transparent !important;
-    /* Removes the grey 'zebra striping' */
+    background-color: transparent !important;
 }
 
 /* Remove borders and drop shadows specifically from images INSIDE the borderless table */
