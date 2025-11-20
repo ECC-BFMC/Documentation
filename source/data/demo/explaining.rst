@@ -50,6 +50,8 @@ Button behavior:
    :align: center
    :width: 80%
 
+|
+
 Calibration Procedure
 ---------------------
 The calibration process ensures the vehicle moves straight and measures distances accurately.
@@ -58,8 +60,9 @@ The calibration process ensures the vehicle moves straight and measures distance
 
   .. image:: ../../images/demo/calibration_step1.png
      :align: center
-     :width: 35%
+     :width: 45%
 
+|
 
 - **Calibration Process** – Involves positioning the vehicle, running it at specific angles/speeds (Left, Right, Backward), and measuring the actual distance traveled.
 
@@ -69,12 +72,13 @@ The calibration process ensures the vehicle moves straight and measures distance
      :class: borderless
 
      * - .. image:: ../../images/demo/calibration_step2.png
-            :width: 70%
-            :align: center
+            :width: 85%
+            :align: right
        - .. image:: ../../images/demo/calibration_step3.png
-            :width: 64%
-            :align: center
+            :width: 76%
+            :align: left
 
+|
 
 - **Visualizations** – Displays the zero offset spline and polynomial plots to verify the calibration model's accuracy before saving. The final steering plot's limits are adjusted by the zero offset value, which can result in points appearing beyond the nominal limits.
   
@@ -84,15 +88,16 @@ The calibration process ensures the vehicle moves straight and measures distance
      :class: borderless
 
      * - .. image:: ../../images/demo/calibration_plot1.png
-            :width: 70%
-            :align: center
+            :width: 85%
+            :align: right
        - .. image:: ../../images/demo/calibration_plot2.png
-            :width: 65%
-            :align: center
+            :width: 77%
+            :align: left
 
+|
 
 - **Saving** – The new CPP files will be downloaded to the machine accessing the dashboard and also saved to ``src/calibration/source/drivers``. These files can then be pasted into the embedded project.
 
   .. image:: ../../images/demo/calibration_save.png
     :align: center
-    :width: 35%
+    :width: 45%
