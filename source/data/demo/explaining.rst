@@ -65,7 +65,7 @@ meant adjusting the equations accordingly.
 .. tip::
   To ensure that measurements are as accurate as possible, ensure the mechanical state of the vehicle is in optimal condiitons.
   i.e. Steering mechanism moves freely when driving manually, resetting correctly when releasing the steering. Motor moves chassys
-  smoothly without jerks or unexpected resistance. Have your hardware specialist check the car and take a look at the :doc:`Hardware Improvements guide </hardwaresetupofcar/hardwareimprovements>`.
+  smoothly without jerks or unexpected resistance. Have your hardware specialist check the car and take a look at the :doc:`Hardware Improvements guide <../hardwaresetupofcar/hardwareimprovements>`.
 
 - **Track Setup** – Requires a straight line of at least **3 meters** with unobstructed space. Place a second line at 90 degrees to the first for angle measurements. 
 
@@ -111,5 +111,7 @@ meant adjusting the equations accordingly.
     :align: center
     :width: 45%
 
-- **flashing the vehicle** – After saving, the new calibration files must be copied in the Embedded project, then the project must be :doc:`build & flashed </embeddedplatform/buildAndFlash>`,
+- **flashing the vehicle** 
+
+After saving, the new calibration files must be copied in the Embedded project, then the project must be :doc:`build & flashed <../embeddedplatform/buildAndFlash>`,
 according to the documentation.
