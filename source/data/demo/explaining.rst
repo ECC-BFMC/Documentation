@@ -63,7 +63,7 @@ meant adjusting the equations accordingly.
   For optimal results, perform multiple calibration runs. Each subsequent run refines the steering and speed equations using the previous data, progressively improving accuracy.
 
 .. tip::
-  To ensure that measurements are as accurate as possible, ensure the mechanical state of the vehicle is in optimal condiitons.
+  To ensure that measurements are as accurate as possible, ensure the mechanical state of the vehicle is in optimal conditions.
   i.e. Steering mechanism moves freely when driving manually, resetting correctly when releasing the steering. Motor moves chassys
   smoothly without jerks or unexpected resistance. Have your hardware specialist check the car and take a look at the :doc:`Hardware Improvements guide <../hardwaresetupofcar/hardwareimprovements>`.
 

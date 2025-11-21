@@ -7,6 +7,7 @@ Brain Project
 
    brain/newComponent
    brain/mainFlow
+   brain/stateMachine
 
 * :doc:`New component <brain/newComponent>`
   
@@ -15,6 +16,10 @@ Brain Project
 * :doc:`How it works <brain/mainFlow>`
   
   - Explanations regarding the internal flow and structure of the code.
+
+* :doc:`The State Machine <brain/stateMachine>`
+
+  - Detailed guide on adding new modes, transitions, and using the State Machine.
 
 Alternative Projects
 --------------------
