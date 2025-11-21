@@ -48,7 +48,6 @@ The Gateway process is started nonetheless, but all the other processes have **f
 *SerialHandler* - enables the Serial Handler process
 
 
-
 +++++++++++
 The Gateway
 +++++++++++
@@ -87,6 +86,7 @@ such as speed and steering, and sends them on their queue.
 
 This process enables remote controlling and data exchange. 
 
+
 ++++++++++++++++++++++++++
 The Serial Handler Process
 ++++++++++++++++++++++++++
@@ -94,6 +94,21 @@ This process establishes and maintains a two-way conversation with the STM32 mic
 It sends commands to control the car's various functions, such as: speed set, steering angle set, enable battery data reading, enable IMU data
 reading and much more... On the other thread instead, it receives information, such as "acknowledge" of the sent command, sensor data (such as "Rotation is...),
 readings from the powerboard, and so on.
+
+
++++++++++++++++++
+The State Machine
++++++++++++++++++
+The State Machine is a multiprocessing-safe singleton that manages the system's operating modes. It ensures that the car transitions correctly between different states and controls which processes are active in each mode.
+
+It uses a **Transition Table** to validate all mode change requests, preventing invalid transitions.
+
+**Modes:**
+
+The system comes with several pre-defined modes (Default, Auto, Manual, Legacy, Stop), but you can add as many custom modes as needed.
+
+For detailed instructions on how to add new modes, define transitions, and use the State Machine in your code, please refer to the :doc:`stateMachine` page.
+
 
 ++++++++++++++++++++++
 The Semaphores Process
