@@ -28,7 +28,7 @@ Add a new entry to the ``SystemMode`` Enum. Each mode defines which processes ar
 
 **Configuration Details:**
 
-*   **process**: The ``enabled`` flag is actually a message sent to the process (e.g., ``processCamera``). The process uses this flag to **pause or resume** its owning threads.
+*   **process**: The ``enabled`` flag is actually a message sent to the process (e.g. ``processCamera``). The process uses this flag to **pause or resume** its owning threads.
 *   **thread**: This dictionary is for the threads owned by the process. You can pass custom messages here, such as ``"resolution": "720p"``. 
     
     *Note: The "resolution" key is just an example. Changing this value does not automatically change the camera's actual resolution unless the thread logic is implemented to read this value and apply the change.*
