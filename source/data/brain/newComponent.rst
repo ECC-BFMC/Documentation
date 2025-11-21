@@ -21,8 +21,3 @@ Here is how you can use the script:
 
 2. Next, input the name of the new component.
 3. When prompted, input the category of the component (existing directories are "data," "gateway," "hardware," "template," or "utils").
-
-
-
-
-TO BE CHECKED!!!

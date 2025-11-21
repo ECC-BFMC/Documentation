@@ -111,4 +111,9 @@ meant adjusting the equations accordingly.
     :align: center
     :width: 45%
 
+  .. raw:: html
+
+   <div style="margin-top: 15px;"></div>
+
+
 - **Flashing the vehicle** - After saving, the new calibration files must be :doc:`copied in the Embedded project<../embeddedplatform/calibration>`, then the project must be :doc:`build & flashed <../embeddedplatform/buildAndFlash>`, according to the documentation.
