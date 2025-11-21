@@ -105,7 +105,7 @@ meant adjusting the equations accordingly.
             :width: 77%
             :align: left
 
-- **Saving** – The new CPP files will be downloaded to the machine accessing the dashboard and also saved to ``src/calibration/source/drivers``. 
+- **Saving** – The new CPP files will be downloaded to the machine.
 
   .. image:: ../../images/demo/calibration_save.png
     :align: center
@@ -116,4 +116,5 @@ meant adjusting the equations accordingly.
    <div style="margin-top: 15px;"></div>
 
 
-- **Flashing the vehicle** - After saving, the new calibration files must be :doc:`copied in the Embedded project<../embeddedplatform/calibration>`, then the project must be :doc:`build & flashed <../embeddedplatform/buildAndFlash>`, according to the documentation.
+- **Proceeding in embedded project** - Check :ref:`Go to calibration section <my_calibration_section>`
+
