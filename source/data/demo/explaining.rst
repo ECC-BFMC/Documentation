@@ -113,5 +113,5 @@ meant adjusting the equations accordingly.
 
 - **flashing the vehicle** 
 
-After saving, the new calibration files must be copied in the Embedded project, then the project must be :doc:`build & flashed <../embeddedplatform/buildAndFlash>`,
+After saving, the new calibration files must be :doc:`copied in the Embedded project<../embeddedplatform/calibration>`, then the project must be :doc:`build & flashed <../embeddedplatform/buildAndFlash>`,
 according to the documentation.
