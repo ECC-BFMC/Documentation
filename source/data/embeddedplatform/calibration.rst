@@ -115,14 +115,7 @@ and the firmware is rebuilt and flashed, all speed and steering commands are
 translated using the newly calibrated polynomial models and updated limits, rather
 than the generic factory interpolation curves.
 
-Prerequisites
--------------
-
-Before continuing, ensure that:
-
-- You have fully completed the calibration workflow in the dashboard.
-- You have downloaded the generated archive
-  (typically named ``calibration-source-YYYY-MM-DDThh-mm-ss.zip``).
+.. _my_calibration_section:
 
 Steps
 -----
@@ -146,27 +139,19 @@ Step 2. Copy the calibration source folder
 After this step, the firmware project will contain the latest calibration sources.
 These files will automatically be compiled and linked during the next build.
 
-Step 3. Build and flash
-------------------------
-
-1. Rebuild the Embedded project.
-2. Flash the firmware to the vehicle by following the instructions in the
-   :doc:`Build & Flash Guide <../embeddedplatform/buildAndFlash>`.
-
-Once flashing is complete, the vehicle will run using the newly generated
-calibration model (steering, speed, and offset corrections).
-
-
-Optional: Visual walkthrough
-----------------------------
-
 .. image:: ../../images/embeddedplatform/calibration.gif
    :alt: Copying calibration source files into the Embedded_Platform project
+   :width: 90%
    :align: center
 
 .. raw:: html
 
    <div style="margin-top: 15px;"></div>
 
-The animation illustrates the complete process: extracting the archive, copying the
-``source`` folder into ``Embedded_Platform``, followed by :doc:`rebuilding and flashing<../embeddedplatform/buildAndFlash>`.
+Step 3. Build and flash
+------------------------
+
+Flash the firmware to the vehicle by following the instructions in the :doc:`Build & Flash Guide <../embeddedplatform/buildAndFlash>`.
+
+Once flashing is complete, the vehicle will run using the newly generated
+calibration model (steering, speed, and offset corrections).
