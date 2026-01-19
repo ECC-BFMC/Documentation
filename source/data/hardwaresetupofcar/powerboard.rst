@@ -4,7 +4,7 @@ Power board
 On the robot we built a power distribution board which has the role of managing all the aspects of the power 
 management inside the car.
 
-.. image::  ../../images/hardwaresetupforcar/Powerboard/powerboard_top_view_no_phoenix.jpg
+.. image::  ../../images/hardwaresetupforcar/Powerboard/powerboard_top_view_with_phoenix.jpg
   :align: center
   :width: 80%
 
