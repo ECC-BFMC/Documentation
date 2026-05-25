@@ -50,34 +50,32 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 
-html_theme = 'sphinx_rtd_theme' # Best/
+html_theme = 'sphinx_rtd_theme'
+html_title = 'BFMC Documentation'
 
-
-html_theme_options = {  'body_max_width': 'none',
-                        'collapse_navigation': False,
-                        'sticky_navigation': True,
-                        'navigation_depth': -1,
-                        'body_max_width': '90%',
-                    }
+html_theme_options = {
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 3,
+    'style_nav_header_background': '#102a43',
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_favicon = "_static/favicon.png"
+html_favicon = '_static/favicon.png'
 html_baseurl = 'https://boschfuturemobility.com'
-
-
+html_show_copyright = False
+html_show_sphinx = False
 
 html_context = {
     'display_github': True,
     'github_user': 'ECC-BFMC',
     'github_repo': 'Documentation',
     'github_version': 'master/',
-    'conf_py_path': '/source/',  
+    'conf_py_path': '/source/',
 }
 
-html_css_files=['custom.css']
-
-
- 
+html_css_files = ['custom.css']
+html_js_files = ['image-lightbox.js']

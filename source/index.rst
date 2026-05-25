@@ -1,21 +1,32 @@
-Welcome to BFMC's documentation!
-================================
+Bosch Future Mobility Challenge
+===============================
 
-Bosch Future Mobility Challenge (BFMC) is an international student technical competition of Bosch Engineering Center Cluj since 2017. Our partner 
-is IEEE-ITSS. In this competition the participants have to to implement autonomous driving alghoritms on a vehicle at 1/10 scale, provided by Robert 
-Bosch. Check here the competition `website <https://boschfuturemobility.com/>`_
+.. container:: home-hero
 
-This is the official documentation of the competition and it includes the descriptions of the given code, the race-track and it's elements, V2X 
-systems, diagrams, hardware, as well as a starting point and directions of the knowledge required for the best experience.
+   .. rubric:: Competition Documentation
 
-The Brain project is already installed on the provided Raspberry Pi, while the embedded project is already implemented on the Nucleo board, while 
-the computer project needs to be installed on a PC.
+   Design, develop, and test autonomous driving algorithms on a provided
+   1/10 scale vehicle. This documentation brings together the vehicle setup,
+   software platforms, race track, and V2X systems used in the competition.
+
+   .. container:: home-actions
+
+      :doc:`Start with the demo <data/demo>`
+
+      :doc:`Explore the hardware <data/hardwaresetupofcar>`
+
+      `Visit the competition website <https://boschfuturemobility.com/>`_
+
+BFMC is an international student technical competition organized by Bosch
+Engineering Center Cluj in partnership with IEEE-ITSS. The provided Raspberry
+Pi includes the Brain project, and the Nucleo board includes the embedded
+platform firmware; participants develop and install the computer-side project.
 
 .. toctree::
    :titlesonly:
    :maxdepth: 1
    :hidden:
-   
+
    data/demo
    data/hardwaresetupofcar
    data/racetrack
@@ -25,33 +36,83 @@ the computer project needs to be installed on a PC.
    data/useful
 
 
-All given packages
+Start Here
+----------
+
+.. container:: path-grid
+
+   .. container:: path-step
+
+      .. rubric:: 01 / Run the car
+
+      Follow the :doc:`demo guide <data/demo>` to power up the vehicle,
+      connect to the dashboard, and try manual control.
+
+   .. container:: path-step
+
+      .. rubric:: 02 / Know the platform
+
+      Review the :doc:`connection diagram <data/hardwaresetupofcar>`,
+      embedded controller, sensors, and Raspberry Pi components.
+
+   .. container:: path-step
+
+      .. rubric:: 03 / Build autonomy
+
+      Extend the :doc:`Brain project <data/brain>` and integrate the
+      :doc:`V2X services <data/vehicletoeverything>` for competition tasks.
+
+
+Explore The System
 ------------------
 
-* :doc:`Demo <data/demo>`
+.. container:: topic-grid
 
-  - Describes how to play with the car, with the gven demo.
+   .. container:: topic-card
 
-* :doc:`Connection Diagram <data/hardwaresetupofcar>`
+      .. rubric:: Demo
 
-  - All the hardware components list that can be found on the car together with the diagram connection scheme and other useful things.
+      :doc:`Get the vehicle moving <data/demo>` with first-boot setup,
+      dashboard controls, and service descriptions.
 
-* :doc:`Race track <data/racetrack>`
+   .. container:: topic-card
 
-  - Info about all the phisical elements that can be found on the racetrack, their dimensions and placement. This info can be used in order to recreate a similar environment.
+      .. rubric:: Hardware
 
-* :doc:`Vehicle to everything <data/vehicletoeverything>`
+      :doc:`Map every connection <data/hardwaresetupofcar>` and find
+      component, IMU, powerboard, and mechanical improvement details.
 
-  - A series of connectivity servers and softwares will be present at the competition, like semaphores, a localization system, a traffic monitor and vehicle communication.
+   .. container:: topic-card
 
-* :doc:`Embedded platform <data/embeddedplatform>`
+      .. rubric:: Race Track
 
-  - The code that is already installed on the Nucleo board. Here's how it works.
+      :doc:`Recreate the environment <data/racetrack>` using track materials,
+      markings, signs, dimensions, and localization guidance.
 
-* :doc:`Brain <data/brain>`
+   .. container:: topic-card
 
-  - The code that is already installed on the raspbery. Here's how it works.
+      .. rubric:: V2X
 
-* :doc:`Useful links and information <data/useful>`
+      :doc:`Connect to competition services <data/vehicletoeverything>`,
+      including semaphores, traffic communication, and local simulators.
 
-  - General useful information. A series of tools and skills that would be beneficial for this project. Of course you can use your own.
+   .. container:: topic-card
+
+      .. rubric:: Embedded Platform
+
+      :doc:`Work with the Nucleo firmware <data/embeddedplatform>` to build,
+      flash, debug, calibrate, and extend the low-level controller.
+
+   .. container:: topic-card
+
+      .. rubric:: Brain Project
+
+      :doc:`Develop Raspberry Pi logic <data/brain>` using the process
+      architecture, gateway, camera, serial, and state machine components.
+
+   .. container:: topic-card topic-card-wide
+
+      .. rubric:: Resources And Tools
+
+      :doc:`Find useful references <data/useful>` for Raspberry Pi
+      development, project reporting, materials, and simulator setup.
